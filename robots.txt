@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://therealnalley.github.io/harris-gauges/sitemap.xml
+Sitemap: https://gulfcoastgauges.com/sitemap.xml
