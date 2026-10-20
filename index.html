@@ -1,0 +1,57 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Harris County Gauge Readings – Current Water Levels</title><meta name="description" content="Current water surface elevations and history for Harris County Flood Warning System stream gauges, with distance to top of bank."><link rel="canonical" href="https://therealnalley.github.io/harris-gauges/"><meta property="og:title" content="Harris County Gauge Readings – Current Water Levels"><meta property="og:description" content="Current water surface elevations and history for Harris County Flood Warning System stream gauges, with distance to top of bank."><meta property="og:type" content="website"><style>
+:root{--bg:#fff;--fg:#14181f;--muted:#5b6472;--line:#e3e7ee;--accent:#1d4ed8;--warn:#b45309;
+--card:#f7f9fc}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e8edf5;--muted:#9aa6b5;
+--line:#232b36;--accent:#7aa2ff;--card:#141b24}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-sans-serif,system-ui,
+-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:780px;margin:0 auto;padding:20px 18px 56px}
+a{color:var(--accent)}
+nav.crumb{font-size:13px;color:var(--muted);margin-bottom:14px}
+h1{font-size:27px;line-height:1.25;margin:.2em 0 .1em}
+h2{font-size:19px;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 18px}
+.now{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.big{font-size:38px;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+.now dl{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:14px 0 0}
+.now dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.now dd{margin:2px 0 0;font-size:16px;font-weight:550}
+table{border-collapse:collapse;width:100%;font-size:14px;margin-top:8px}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+.chart{width:100%;height:auto;display:block;margin:10px 0 4px}
+.grid{stroke:var(--line);stroke-width:1}
+.trace{fill:none;stroke:var(--accent);stroke-width:2}
+.bar{fill:var(--accent);opacity:.75}
+.rain{fill:#0891b2;opacity:.7}
+.bank{stroke:var(--warn);stroke-width:1.5;stroke-dasharray:5 4}
+.banklab,.ylab,.xlab{font-size:10px;fill:var(--muted)}
+.banklab{fill:var(--warn)}
+.muted{color:var(--muted)}
+.note{background:var(--card);border-left:3px solid var(--warn);padding:12px 14px;
+border-radius:0 8px 8px 0;font-size:14px}
+footer{margin-top:2.5em;padding-top:1em;border-top:1px solid var(--line);font-size:13px;
+color:var(--muted)}
+footer p{margin:.5em 0}
+</style><script type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"Harris County Gauge Readings","url":"https://therealnalley.github.io/harris-gauges/","description":"Water level readings from Harris County Flood Warning System stream gauges, with history and daily highs and lows."}</script></head><body><div class="wrap">
+<h1>Harris County Gauge Readings</h1>
+<p class="sub">Readings republished from the Harris County Flood Warning System, with the history each gauge's own feed does not keep.</p>
+<div class="note">No National Weather Service alert covering Harris County was active when this page was generated (Oct 20, 2026 at 1:02 AM CDT). Alerts are issued and expire at any time; the current list is at <a href="https://alerts.weather.gov/" rel="nofollow noopener">alerts.weather.gov</a>.</div>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Level</th><th class="n">Below top of bank</th><th>Reading taken</th></tr></thead><tbody>
+<tr><td><a href="gauge/clear-creek-at-i-45.html">Clear Creek at I-45</a></td><td class="n">1.18 ft</td><td class="n">4.8 ft</td><td>Oct 19, 2026 at 11:03 PM CDT</td></tr>
+<tr><td><a href="gauge/cypress-creek-at-grant-road.html">Cypress Creek at Grant Road</a></td><td class="n">102.39 ft</td><td class="n">19.8 ft</td><td>Oct 19, 2026 at 11:23 PM CDT</td></tr>
+<tr><td><a href="gauge/cypress-creek-at-us-290.html">Cypress Creek at US 290</a></td><td class="n">120.80 ft</td><td class="n">15.6 ft</td><td>Oct 19, 2026 at 11:27 PM CDT</td></tr>
+<tr><td><a href="gauge/langham-creek-at-clay-rd.html">Langham Creek at Clay Rd</a></td><td class="n">88.64 ft</td><td class="n">8.4 ft</td><td>Oct 19, 2026 at 11:42 PM CDT</td></tr>
+<tr><td><a href="gauge/spring-creek-at-fm-2978.html">Spring Creek at FM 2978</a></td><td class="n">121.79 ft</td><td class="n">19.3 ft</td><td>Oct 19, 2026 at 11:12 PM CDT</td></tr>
+</tbody></table></div>
+<h2>Why this site exists</h2>
+<p>Harris County publishes these gauges on an interactive map, which answers the question "what is the level right now" and then forgets. The county feed serves only each sensor's current value, so there is no public record of what a gauge read last Tuesday. This site records every reading as it is published and keeps it.</p>
+<footer>
+<p><strong>Source.</strong> Stage readings are republished from the <a href="https://www.harriscountyfws.org/" rel="nofollow noopener">Harris County Flood Warning System</a>. Flood watches, advisories and warnings are issued by <a href="https://www.weather.gov/hgx/" rel="nofollow noopener">NWS Houston/Galveston</a>. This site is not affiliated with either agency.</p>
+<p><strong>No guidance, no forecast.</strong> This page reports measurements and official alert text only. It does not predict water levels, assess whether any road, property or route is passable, or advise any action. For decisions about safety, use <a href="https://www.weather.gov/hgx/" rel="nofollow noopener">official sources</a> and local emergency management.</p>
+<p><strong>Accuracy.</strong> HCFCD makes no representations, guarantees or warranties as to the availability, accuracy, completeness, currency or suitability of Flood Warning System data, and disclaims liability for actions taken or not taken based on it. Gauges can fail, report late, or report in error. Nothing here is verified independently.</p>
+<p>Readings recorded continuously since Sep 11, 2026 at 3:49 AM CDT. 124,321 readings from 201 sensors stored to date.</p>
+</footer></div></body></html>
