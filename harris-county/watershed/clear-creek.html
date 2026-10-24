@@ -1,0 +1,180 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Clear Creek Watershed Water Levels – 18 Gauges</title><meta name="description" content="Current readings from all 18 Harris County Flood Warning System stream gauges in the Clear Creek watershed, with distance to top of bank and 7-day history for each."><link rel="canonical" href="https://gulfcoastgauges.com/harris-county/watershed/clear-creek.html"><meta property="og:title" content="Clear Creek Watershed Water Levels – 18 Gauges"><meta property="og:description" content="Current readings from all 18 Harris County Flood Warning System stream gauges in the Clear Creek watershed, with distance to top of bank and 7-day history for each."><meta property="og:type" content="website"><meta property="og:url" content="https://gulfcoastgauges.com/harris-county/watershed/clear-creek.html"><meta property="og:site_name" content="Gulf Coast Gauges"><meta property="og:image" content="https://gulfcoastgauges.com/og/watershed-clear-creek.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://gulfcoastgauges.com/og/watershed-clear-creek.png"><link rel="icon" href="/assets/favicon.ico" sizes="any"><link rel="icon" href="/assets/favicon-32.png" type="image/png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><style>
+:root{--bg:#fff;--fg:#14181f;--muted:#5b6472;--line:#e3e7ee;--accent:#1d4ed8;--warn:#b45309;
+--card:#f7f9fc}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e8edf5;--muted:#9aa6b5;
+--line:#232b36;--accent:#7aa2ff;--card:#141b24}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-sans-serif,system-ui,
+-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:780px;margin:0 auto;padding:20px 18px 56px}
+a{color:var(--accent)}
+nav.crumb{font-size:13px;color:var(--muted);margin-bottom:14px}
+h1{font-size:27px;line-height:1.25;margin:.2em 0 .1em}
+h2{font-size:19px;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 18px}
+.now{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.big{font-size:38px;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+.now dl{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:14px 0 0}
+.now dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.now dd{margin:2px 0 0;font-size:16px;font-weight:550}
+table{border-collapse:collapse;width:100%;font-size:14px;margin-top:8px}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+.chart{width:100%;height:auto;display:block;margin:10px 0 4px}
+.grid{stroke:var(--line);stroke-width:1}
+.trace{fill:none;stroke:var(--accent);stroke-width:2}
+.bar{fill:var(--accent);opacity:.75}
+.band{fill:var(--accent);opacity:.1}
+.rain{fill:#0891b2;opacity:.7}
+.bank{stroke:var(--warn);stroke-width:1.5;stroke-dasharray:5 4}
+.banklab,.ylab,.xlab{font-size:10px;fill:var(--muted)}
+.banklab{fill:var(--warn)}
+.muted{color:var(--muted)}
+.note{background:var(--card);border-left:3px solid var(--warn);padding:12px 14px;
+border-radius:0 8px 8px 0;font-size:14px}
+footer{margin-top:2.5em;padding-top:1em;border-top:1px solid var(--line);font-size:13px;
+color:var(--muted)}
+footer p{margin:.5em 0}
+h3{font-size:16px;margin:1.6em 0 .2em}
+td.n,td.nw{white-space:nowrap}
+@media (max-width:560px){table{font-size:13px}th,td{padding:6px 5px}}
+.brand{display:inline-block;margin:0 0 14px}.brand img{display:block;height:30px;width:auto}
+.hero{display:block;width:100%;height:auto;border-radius:10px;margin:14px 0 18px}
+
+textarea.snip{width:100%;font:12px/1.5 ui-monospace,Consolas,monospace;padding:10px;
+border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);resize:vertical}
+button.copy{font:inherit;font-size:14px;padding:6px 14px;border-radius:8px;border:1px solid var(--line);
+background:var(--card);color:var(--fg);cursor:pointer;margin:6px 0 14px}
+iframe.preview{border:0;max-width:100%;display:block;margin:8px 0}
+
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:0 0 16px;
+padding-bottom:12px;border-bottom:1px solid var(--line)}
+.top .brand{margin:0}
+nav.main{display:flex;align-items:center;gap:16px;font-size:14px}
+nav.main a,nav.main summary{color:var(--fg);text-decoration:none;font-weight:550}
+nav.main a:hover,nav.main summary:hover{color:var(--accent);text-decoration:underline}
+details.states{position:relative}
+details.states summary{cursor:pointer;list-style:none;padding-right:13px;position:relative}
+details.states summary::-webkit-details-marker{display:none}
+details.states summary::after{content:"";position:absolute;right:0;top:45%;border:4px solid transparent;
+border-top-color:currentColor}
+details.states[open] summary::after{top:15%;border-top-color:transparent;border-bottom-color:currentColor}
+details.states .menu{position:absolute;z-index:30;top:calc(100% + 8px);left:-10px;min-width:150px;
+background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 0;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+details.states .menu a{display:block;padding:8px 14px;font-weight:500}
+details.states .menu a:hover{background:var(--card);text-decoration:none}
+details.states .menu a.all{border-top:1px solid var(--line);margin-top:4px;padding-top:9px;
+color:var(--muted);font-size:13px}
+form.find{position:relative;flex:1 1 220px;max-width:280px;margin-left:auto}
+form.find input{width:100%;font:inherit;font-size:14px;padding:7px 10px;color:var(--fg);
+background:var(--card);border:1px solid var(--line);border-radius:8px}
+form.find input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.results{position:absolute;z-index:20;top:calc(100% + 4px);left:0;right:0;max-height:340px;
+overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:8px;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.results a{display:block;padding:7px 10px;color:var(--fg);text-decoration:none;font-size:14px}
+.results a small{display:block;color:var(--muted);font-size:12px}
+.results a.on,.results a:hover{background:var(--card)}
+.results p{margin:0;padding:8px 10px;font-size:13px;color:var(--muted)}
+.fnav{font-size:13px}
+.fnav a{margin-right:12px}
+ul.cols{columns:2;column-gap:28px;padding-left:18px;margin:.4em 0}
+ul.cols li{break-inside:avoid;margin:0 0 4px}
+@media (max-width:560px){form.find{max-width:none;flex-basis:100%;order:3}
+nav.main{gap:12px}ul.cols{columns:1}}
+
+.multi{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin:12px 0 6px}
+.panel h3{font-size:14px;margin:0;line-height:1.35}
+.panel p{margin:0 0 2px;font-size:12.5px;color:var(--muted)}
+.panel svg{width:100%;height:auto;display:block;overflow:visible}
+.wash{fill:var(--accent);opacity:.12}
+.alertband{fill:var(--muted);opacity:.12}
+.peak{fill:var(--accent);stroke:var(--bg);stroke-width:2}
+.panel{position:relative}
+.hov{cursor:crosshair;touch-action:pan-y}
+.xh{stroke:var(--muted);stroke-width:1}
+.tip{position:absolute;pointer-events:none;background:var(--bg);border:1px solid var(--line);
+border-radius:6px;padding:4px 7px;font-size:12px;line-height:1.35;white-space:nowrap;
+box-shadow:0 4px 12px rgba(0,0,0,.12);z-index:5}
+.stem{stroke:var(--line);stroke-width:1.5}
+.hollow{fill:var(--bg);stroke:var(--accent);stroke-width:2}
+.feature{border:1px solid var(--line);border-radius:10px;padding:14px 16px 10px;margin:18px 0}
+.feature h2{border:0;margin:0 0 .2em;padding:0}
+@media (max-width:560px){.multi{grid-template-columns:1fr}}
+
+.regions{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:6px 0 4px}
+.regions a{display:block;border:1px solid var(--line);border-radius:8px;padding:8px 10px;
+text-decoration:none;color:var(--fg);font-weight:550;font-size:14px;line-height:1.3}
+.regions a:hover{border-color:var(--accent)}
+.regions small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:2px}
+h3.state{margin:1.1em 0 .1em;font-size:15px}
+h3.state a{color:var(--fg)}
+@media (max-width:760px){.regions{grid-template-columns:1fr 1fr}}
+</style><script type="application/ld+json">[{"@context":"https://schema.org","@type":"CollectionPage","name":"Clear Creek Watershed Water Levels \u2013 18 Gauges","url":"https://gulfcoastgauges.com/harris-county/watershed/clear-creek.html","description":"Current readings from all 18 Harris County Flood Warning System stream gauges in the Clear Creek watershed, with distance to top of bank and 7-day history for each.","mainEntity":{"@type":"ItemList","numberOfItems":18,"itemListElement":[{"@type":"ListItem","position":1,"name":"Beamer Ditch at Hughes Road","url":"https://gulfcoastgauges.com/harris-county/beamer-ditch-at-hughes-road.html"},{"@type":"ListItem","position":2,"name":"Chigger Creek at Windsong Lane","url":"https://gulfcoastgauges.com/harris-county/chigger-creek-at-windsong-lane.html"},{"@type":"ListItem","position":3,"name":"Clear Creek at Bay Area Boulevard","url":"https://gulfcoastgauges.com/harris-county/clear-creek-at-bay-area-boulevard.html"},{"@type":"ListItem","position":4,"name":"Clear Creek at Country Club Drive","url":"https://gulfcoastgauges.com/harris-county/clear-creek-at-country-club-drive.html"},{"@type":"ListItem","position":5,"name":"Clear Creek at FM 1959","url":"https://gulfcoastgauges.com/harris-county/clear-creek-at-fm-1959.html"},{"@type":"ListItem","position":6,"name":"Clear Creek at FM 2234","url":"https://gulfcoastgauges.com/harris-county/clear-creek-at-fm-2234.html"},{"@type":"ListItem","position":7,"name":"Clear Creek at FM 2351","url":"https://gulfcoastgauges.com/harris-county/clear-creek-at-fm-2351.html"},{"@type":"ListItem","position":8,"name":"Clear Creek at FM 528","url":"https://gulfcoastgauges.com/harris-county/clear-creek-at-fm-528.html"},{"@type":"ListItem","position":9,"name":"Clear Creek at I-45","url":"https://gulfcoastgauges.com/harris-county/clear-creek-at-i-45.html"},{"@type":"ListItem","position":10,"name":"Clear Creek at Mykawa Road","url":"https://gulfcoastgauges.com/harris-county/clear-creek-at-mykawa-road.html"},{"@type":"ListItem","position":11,"name":"Clear Creek at Pearland Pkwy","url":"https://gulfcoastgauges.com/harris-county/clear-creek-at-pearland-pkwy.html"},{"@type":"ListItem","position":12,"name":"Clear Creek at SH 288","url":"https://gulfcoastgauges.com/harris-county/clear-creek-at-sh-288.html"},{"@type":"ListItem","position":13,"name":"Cowart Creek at Baker Road","url":"https://gulfcoastgauges.com/harris-county/cowart-creek-at-baker-road.html"},{"@type":"ListItem","position":14,"name":"Mary's Creek at Winding Road","url":"https://gulfcoastgauges.com/harris-county/marys-creek-at-winding-road.html"},{"@type":"ListItem","position":15,"name":"Taylor Lake at Nasa Road 1","url":"https://gulfcoastgauges.com/harris-county/taylor-lake-at-nasa-road-1.html"},{"@type":"ListItem","position":16,"name":"Taylor Lake at Port Road","url":"https://gulfcoastgauges.com/harris-county/taylor-lake-at-port-road.html"},{"@type":"ListItem","position":17,"name":"Taylor's Bayou at Shoreacres Boulevard","url":"https://gulfcoastgauges.com/harris-county/taylors-bayou-at-shoreacres-boulevard.html"},{"@type":"ListItem","position":18,"name":"Turkey Creek at FM 1959","url":"https://gulfcoastgauges.com/harris-county/turkey-creek-at-fm-1959.html"}]}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Gulf Coast Gauges","item":"https://gulfcoastgauges.com/"},{"@type":"ListItem","position":2,"name":"Texas coast","item":"https://gulfcoastgauges.com/texas-coast/"},{"@type":"ListItem","position":3,"name":"Houston\u2013Galveston","item":"https://gulfcoastgauges.com/texas-coast/houston-galveston/"},{"@type":"ListItem","position":4,"name":"Clear Creek watershed"}]}]</script><script src="/assets/find.js" defer></script></head><body><div class="wrap"><header class="top"><a class="brand" href="/"><picture><source srcset="/assets/logo-dark.png" media="(prefers-color-scheme: dark)"><img src="/assets/logo.png" width="192" height="30" alt="Gulf Coast Gauges"></picture></a><nav class="main" aria-label="Sections"><a href="/texas-coast/houston-galveston/">Houston</a><details class="states"><summary>States</summary><div class="menu"><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/" class="all">All regions</a></div></details><a href="/tides/">Tides</a><a href="/storms/">Storms</a></nav><form class="find" action="/gauges/" role="search"><input type="search" name="q" placeholder="Find a gauge, creek or road" aria-label="Find a gauge" autocomplete="off" spellcheck="false"><div class="results" role="listbox" hidden></div></form></header>
+<nav class="crumb"><a href="https://gulfcoastgauges.com/">Gulf Coast Gauges</a> &rsaquo; <a href="https://gulfcoastgauges.com/texas-coast/">Texas coast</a> &rsaquo; <a href="https://gulfcoastgauges.com/texas-coast/houston-galveston/">Houston–Galveston</a> &rsaquo; Clear Creek watershed</nav>
+<h1>Clear Creek watershed water levels</h1>
+<p class="sub">18 Harris County Flood Warning System gauges on 8 streams &middot; readings as published</p>
+<p>When this page was generated (Oct 23, 2026 at 11:24 PM CDT), the gauge in this watershed with the least distance to its top of bank was <a href="/harris-county/taylors-bayou-at-shoreacres-boulevard.html">Taylor's Bayou at Shoreacres Boulevard</a>, at 3.5 ft below top of bank.</p>
+<div class="note">No National Weather Service alert covering Harris County was active when this page was generated (Oct 23, 2026 at 11:24 PM CDT). Alerts are issued and expire at any time; the current list is at <a href="https://alerts.weather.gov/" rel="nofollow noopener">alerts.weather.gov</a>.</div>
+<h2>Clear Creek</h2>
+<p class="muted">Ordered by water surface elevation, highest first, which generally runs upstream to downstream.</p>
+<div class="scroll"><table><thead><tr><th>Crossing</th><th class="n">Level</th><th class="n">Below bank</th><th class="n">7-day closest</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/clear-creek-at-fm-2234.html">FM 2234</a></td><td class="n">53.11 ft</td><td class="n">6.9 ft</td><td class="n">6.9 ft</td><td class="nw">4 hours ago</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-sh-288.html">SH 288</a></td><td class="n">42.93 ft</td><td class="n">11.2 ft</td><td class="n">11.2 ft</td><td class="nw">10 minutes ago</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-mykawa-road.html">Mykawa Road</a></td><td class="n">31.05 ft</td><td class="n">12.5 ft</td><td class="n">12.4 ft</td><td class="nw">12 minutes ago</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-pearland-pkwy.html">Pearland Pkwy</a></td><td class="n">23.24 ft</td><td class="n">15.8 ft</td><td class="n">15.7 ft</td><td class="nw">3 hours ago</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-country-club-drive.html">Country Club Drive</a></td><td class="n">16.82 ft</td><td class="n">19.2 ft</td><td class="n">19.1 ft</td><td class="nw">13 minutes ago</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-fm-1959.html">FM 1959</a></td><td class="n">12.74 ft</td><td class="n">17.3 ft</td><td class="n">17.0 ft</td><td class="nw">4 hours ago</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-bay-area-boulevard.html">Bay Area Boulevard</a></td><td class="n">1.95 ft</td><td class="n">5.5 ft</td><td class="n">4.5 ft</td><td class="nw">13 minutes ago</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-fm-2351.html">FM 2351</a></td><td class="n">1.81 ft</td><td class="n">16.3 ft</td><td class="n">15.4 ft</td><td class="nw">10 minutes ago</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-fm-528.html">FM 528</a></td><td class="n">1.78 ft</td><td class="n">10.2 ft</td><td class="n">9.3 ft</td><td class="nw">19 minutes ago</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-i-45.html">I-45</a></td><td class="n">1.78 ft</td><td class="n">4.2 ft</td><td class="n">3.3 ft</td><td class="nw">20 minutes ago</td></tr>
+</tbody></table></div>
+<h2>Taylor Lake</h2>
+<p class="muted">Ordered by water surface elevation, highest first, which generally runs upstream to downstream.</p>
+<div class="scroll"><table><thead><tr><th>Crossing</th><th class="n">Level</th><th class="n">Below bank</th><th class="n">7-day closest</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/taylor-lake-at-nasa-road-1.html">Nasa Road 1</a></td><td class="n">1.82 ft</td><td class="n">3.9 ft</td><td class="n">3.0 ft</td><td class="nw">73 minutes ago</td></tr>
+<tr><td><a href="/harris-county/taylor-lake-at-port-road.html">Port Road</a></td><td class="n">1.72 ft</td><td class="n">4.8 ft</td><td class="n">3.9 ft</td><td class="nw">43 minutes ago</td></tr>
+</tbody></table></div>
+<h2>Beamer Ditch</h2>
+<div class="scroll"><table><thead><tr><th>Crossing</th><th class="n">Level</th><th class="n">Below bank</th><th class="n">7-day closest</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/beamer-ditch-at-hughes-road.html">Hughes Road</a></td><td class="n">18.97 ft</td><td class="n">12.3 ft</td><td class="n">12.3 ft</td><td class="nw">14 minutes ago</td></tr>
+</tbody></table></div>
+<h2>Chigger Creek</h2>
+<div class="scroll"><table><thead><tr><th>Crossing</th><th class="n">Level</th><th class="n">Below bank</th><th class="n">7-day closest</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/chigger-creek-at-windsong-lane.html">Windsong Lane</a></td><td class="n">19.49 ft</td><td class="n">8.5 ft</td><td class="n">8.4 ft</td><td class="nw">18 minutes ago</td></tr>
+</tbody></table></div>
+<h2>Cowart Creek</h2>
+<div class="scroll"><table><thead><tr><th>Crossing</th><th class="n">Level</th><th class="n">Below bank</th><th class="n">7-day closest</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/cowart-creek-at-baker-road.html">Baker Road</a></td><td class="n">13.75 ft</td><td class="n">13.3 ft</td><td class="n">13.4 ft</td><td class="nw">18 minutes ago</td></tr>
+</tbody></table></div>
+<h2>Mary's Creek</h2>
+<div class="scroll"><table><thead><tr><th>Crossing</th><th class="n">Level</th><th class="n">Below bank</th><th class="n">7-day closest</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/marys-creek-at-winding-road.html">Winding Road</a></td><td class="n">16.25 ft</td><td class="n">10.6 ft</td><td class="n">10.5 ft</td><td class="nw">22 minutes ago</td></tr>
+</tbody></table></div>
+<h2>Taylor's Bayou</h2>
+<div class="scroll"><table><thead><tr><th>Crossing</th><th class="n">Level</th><th class="n">Below bank</th><th class="n">7-day closest</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/taylors-bayou-at-shoreacres-boulevard.html">Shoreacres Boulevard</a></td><td class="n">1.54 ft</td><td class="n">3.5 ft</td><td class="n">2.6 ft</td><td class="nw">58 minutes ago</td></tr>
+</tbody></table></div>
+<h2>Turkey Creek</h2>
+<div class="scroll"><table><thead><tr><th>Crossing</th><th class="n">Level</th><th class="n">Below bank</th><th class="n">7-day closest</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/turkey-creek-at-fm-1959.html">FM 1959</a></td><td class="n">14.45 ft</td><td class="n">13.6 ft</td><td class="n">13.5 ft</td><td class="nw">15 minutes ago</td></tr>
+</tbody></table></div>
+<h2>USGS gauges in this watershed</h2><ul>
+<li><a href="/usgs/clear-creek-at-fm-865-near-pearland.html">Clear Creek at FM 865 near Pearland</a>: 38.63 ft gage height</li>
+<li><a href="/usgs/clear-creek-at-mykawa-st-near-pearland.html">Clear Creek at Mykawa St near Pearland</a>: 31.08 ft gage height, 12.4 ft below minor flood stage</li>
+<li><a href="/usgs/clear-creek-near-friendswood.html">Clear Creek near Friendswood</a>: 1.89 ft gage height, 10.1 ft below minor flood stage</li>
+<li><a href="/usgs/hickory-slough-at-fm-865-near-pearland.html">Hickory Slough at FM 865 near Pearland</a>: 44.85 ft gage height, 6.1 ft below minor flood stage</li>
+</ul>
+<h2>How to read these numbers</h2>
+<p><strong>Level</strong> is the water surface elevation above mean sea level, not a depth, so it is only comparable between readings at the same gauge. <strong>Below bank</strong> is the distance between that elevation and the top of the channel at that crossing, using the reference Harris County publishes with each reading. <strong>Closest in 7 days</strong> is the smallest that distance has been, from hourly averages over the last week. Each gauge page has the full history.</p>
+<footer>
+<p class="fnav"><a href="/">Home</a><a href="/texas-coast/houston-galveston/">Houston</a><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/storms/">Storms</a><a href="/tides/">Tide gauges</a><a href="/gauges/">All gauges</a><a href="/lakes/">Lakes</a><a href="/usgs/">USGS gauges</a><a href="/embed/">Embed a gauge</a><a href="/about/">How this site works</a> Contact: <a class="mail" href="/about/#contact" data-u="contact" data-d="gulfcoastgauges.com">contact [at] gulfcoastgauges.com</a></p>
+<p><strong>Source.</strong> Stage readings are republished from the <a href="https://www.harriscountyfws.org/" rel="nofollow noopener">Harris County Flood Warning System</a>. Flood watches, advisories and warnings are issued by <a href="https://www.weather.gov/hgx/" rel="nofollow noopener">NWS Houston/Galveston</a>. This site is not affiliated with either agency.</p>
+<p><strong>No guidance, no forecast.</strong> This page reports measurements and official alert text only. It does not predict water levels, assess whether any road, property or route is passable, or advise any action. For decisions about safety, use <a href="https://www.weather.gov/hgx/" rel="nofollow noopener">official sources</a> and local emergency management.</p>
+<p><strong>Accuracy.</strong> HCFCD makes no representations, guarantees or warranties as to the availability, accuracy, completeness, currency or suitability of Flood Warning System data, and disclaims liability for actions taken or not taken based on it. Gauges can fail, report late, or report in error. Nothing here is verified independently.</p>
+<p>Readings recorded continuously since Sep 11, 2026 at 11:13 AM CDT. 139,995 readings from 349 sensors stored to date.</p>
+</footer></div></body></html>

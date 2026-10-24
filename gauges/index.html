@@ -1,0 +1,1134 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>All 780 Stream Gauges on the Gulf Coast, Texas to Florida</title><meta name="description" content="Every Harris County Flood Warning System and USGS stream gauge on this site, grouped by watershed and region, with its latest reading."><link rel="canonical" href="https://gulfcoastgauges.com/gauges/"><meta property="og:title" content="All 780 Stream Gauges on the Gulf Coast, Texas to Florida"><meta property="og:description" content="Every Harris County Flood Warning System and USGS stream gauge on this site, grouped by watershed and region, with its latest reading."><meta property="og:type" content="website"><meta property="og:url" content="https://gulfcoastgauges.com/gauges/"><meta property="og:site_name" content="Gulf Coast Gauges"><link rel="icon" href="/assets/favicon.ico" sizes="any"><link rel="icon" href="/assets/favicon-32.png" type="image/png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><style>
+:root{--bg:#fff;--fg:#14181f;--muted:#5b6472;--line:#e3e7ee;--accent:#1d4ed8;--warn:#b45309;
+--card:#f7f9fc}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e8edf5;--muted:#9aa6b5;
+--line:#232b36;--accent:#7aa2ff;--card:#141b24}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-sans-serif,system-ui,
+-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:780px;margin:0 auto;padding:20px 18px 56px}
+a{color:var(--accent)}
+nav.crumb{font-size:13px;color:var(--muted);margin-bottom:14px}
+h1{font-size:27px;line-height:1.25;margin:.2em 0 .1em}
+h2{font-size:19px;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 18px}
+.now{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.big{font-size:38px;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+.now dl{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:14px 0 0}
+.now dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.now dd{margin:2px 0 0;font-size:16px;font-weight:550}
+table{border-collapse:collapse;width:100%;font-size:14px;margin-top:8px}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+.chart{width:100%;height:auto;display:block;margin:10px 0 4px}
+.grid{stroke:var(--line);stroke-width:1}
+.trace{fill:none;stroke:var(--accent);stroke-width:2}
+.bar{fill:var(--accent);opacity:.75}
+.band{fill:var(--accent);opacity:.1}
+.rain{fill:#0891b2;opacity:.7}
+.bank{stroke:var(--warn);stroke-width:1.5;stroke-dasharray:5 4}
+.banklab,.ylab,.xlab{font-size:10px;fill:var(--muted)}
+.banklab{fill:var(--warn)}
+.muted{color:var(--muted)}
+.note{background:var(--card);border-left:3px solid var(--warn);padding:12px 14px;
+border-radius:0 8px 8px 0;font-size:14px}
+footer{margin-top:2.5em;padding-top:1em;border-top:1px solid var(--line);font-size:13px;
+color:var(--muted)}
+footer p{margin:.5em 0}
+h3{font-size:16px;margin:1.6em 0 .2em}
+td.n,td.nw{white-space:nowrap}
+@media (max-width:560px){table{font-size:13px}th,td{padding:6px 5px}}
+.brand{display:inline-block;margin:0 0 14px}.brand img{display:block;height:30px;width:auto}
+.hero{display:block;width:100%;height:auto;border-radius:10px;margin:14px 0 18px}
+
+textarea.snip{width:100%;font:12px/1.5 ui-monospace,Consolas,monospace;padding:10px;
+border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);resize:vertical}
+button.copy{font:inherit;font-size:14px;padding:6px 14px;border-radius:8px;border:1px solid var(--line);
+background:var(--card);color:var(--fg);cursor:pointer;margin:6px 0 14px}
+iframe.preview{border:0;max-width:100%;display:block;margin:8px 0}
+
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:0 0 16px;
+padding-bottom:12px;border-bottom:1px solid var(--line)}
+.top .brand{margin:0}
+nav.main{display:flex;align-items:center;gap:16px;font-size:14px}
+nav.main a,nav.main summary{color:var(--fg);text-decoration:none;font-weight:550}
+nav.main a:hover,nav.main summary:hover{color:var(--accent);text-decoration:underline}
+details.states{position:relative}
+details.states summary{cursor:pointer;list-style:none;padding-right:13px;position:relative}
+details.states summary::-webkit-details-marker{display:none}
+details.states summary::after{content:"";position:absolute;right:0;top:45%;border:4px solid transparent;
+border-top-color:currentColor}
+details.states[open] summary::after{top:15%;border-top-color:transparent;border-bottom-color:currentColor}
+details.states .menu{position:absolute;z-index:30;top:calc(100% + 8px);left:-10px;min-width:150px;
+background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 0;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+details.states .menu a{display:block;padding:8px 14px;font-weight:500}
+details.states .menu a:hover{background:var(--card);text-decoration:none}
+details.states .menu a.all{border-top:1px solid var(--line);margin-top:4px;padding-top:9px;
+color:var(--muted);font-size:13px}
+form.find{position:relative;flex:1 1 220px;max-width:280px;margin-left:auto}
+form.find input{width:100%;font:inherit;font-size:14px;padding:7px 10px;color:var(--fg);
+background:var(--card);border:1px solid var(--line);border-radius:8px}
+form.find input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.results{position:absolute;z-index:20;top:calc(100% + 4px);left:0;right:0;max-height:340px;
+overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:8px;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.results a{display:block;padding:7px 10px;color:var(--fg);text-decoration:none;font-size:14px}
+.results a small{display:block;color:var(--muted);font-size:12px}
+.results a.on,.results a:hover{background:var(--card)}
+.results p{margin:0;padding:8px 10px;font-size:13px;color:var(--muted)}
+.fnav{font-size:13px}
+.fnav a{margin-right:12px}
+ul.cols{columns:2;column-gap:28px;padding-left:18px;margin:.4em 0}
+ul.cols li{break-inside:avoid;margin:0 0 4px}
+@media (max-width:560px){form.find{max-width:none;flex-basis:100%;order:3}
+nav.main{gap:12px}ul.cols{columns:1}}
+
+.multi{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin:12px 0 6px}
+.panel h3{font-size:14px;margin:0;line-height:1.35}
+.panel p{margin:0 0 2px;font-size:12.5px;color:var(--muted)}
+.panel svg{width:100%;height:auto;display:block;overflow:visible}
+.wash{fill:var(--accent);opacity:.12}
+.alertband{fill:var(--muted);opacity:.12}
+.peak{fill:var(--accent);stroke:var(--bg);stroke-width:2}
+.panel{position:relative}
+.hov{cursor:crosshair;touch-action:pan-y}
+.xh{stroke:var(--muted);stroke-width:1}
+.tip{position:absolute;pointer-events:none;background:var(--bg);border:1px solid var(--line);
+border-radius:6px;padding:4px 7px;font-size:12px;line-height:1.35;white-space:nowrap;
+box-shadow:0 4px 12px rgba(0,0,0,.12);z-index:5}
+.stem{stroke:var(--line);stroke-width:1.5}
+.hollow{fill:var(--bg);stroke:var(--accent);stroke-width:2}
+.feature{border:1px solid var(--line);border-radius:10px;padding:14px 16px 10px;margin:18px 0}
+.feature h2{border:0;margin:0 0 .2em;padding:0}
+@media (max-width:560px){.multi{grid-template-columns:1fr}}
+
+.regions{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:6px 0 4px}
+.regions a{display:block;border:1px solid var(--line);border-radius:8px;padding:8px 10px;
+text-decoration:none;color:var(--fg);font-weight:550;font-size:14px;line-height:1.3}
+.regions a:hover{border-color:var(--accent)}
+.regions small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:2px}
+h3.state{margin:1.1em 0 .1em;font-size:15px}
+h3.state a{color:var(--fg)}
+@media (max-width:760px){.regions{grid-template-columns:1fr 1fr}}
+</style><script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Gulf Coast Gauges","item":"https://gulfcoastgauges.com/"},{"@type":"ListItem","position":2,"name":"All gauges"}]}]</script><script src="/assets/find.js" defer></script></head><body><div class="wrap"><header class="top"><a class="brand" href="/"><picture><source srcset="/assets/logo-dark.png" media="(prefers-color-scheme: dark)"><img src="/assets/logo.png" width="192" height="30" alt="Gulf Coast Gauges"></picture></a><nav class="main" aria-label="Sections"><a href="/texas-coast/houston-galveston/">Houston</a><details class="states"><summary>States</summary><div class="menu"><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/" class="all">All regions</a></div></details><a href="/tides/">Tides</a><a href="/storms/">Storms</a></nav><form class="find" action="/gauges/" role="search"><input type="search" name="q" placeholder="Find a gauge, creek or road" aria-label="Find a gauge" autocomplete="off" spellcheck="false"><div class="results" role="listbox" hidden></div></form></header>
+<nav class="crumb"><a href="https://gulfcoastgauges.com/">Gulf Coast Gauges</a> &rsaquo; All gauges</nav>
+<h1>All gauges</h1>
+<p class="sub">191 Harris County Flood Warning System gauges and 117 USGS gauges by watershed, then 131 gauges from other agencies on the same system, then 341 USGS gauges elsewhere on the Gulf Coast. Use the search box above to jump straight to one.</p>
+<p class="fnav"><strong>Regions:</strong> <a href="#houston-galveston">Houston–Galveston</a> <a href="#beaumont-port-arthur">Beaumont–Port Arthur</a> <a href="#victoria-matagorda-bay">Victoria and Matagorda Bay</a> <a href="#corpus-christi-coastal-bend">Corpus Christi and the Coastal Bend</a> <a href="#rio-grande-valley">Rio Grande Valley</a> <a href="#lake-charles">Lake Charles and Southwest Louisiana</a> <a href="#lafayette-acadiana">Lafayette and Acadiana</a> <a href="#baton-rouge">Baton Rouge</a> <a href="#houma-thibodaux">Houma–Thibodaux</a> <a href="#new-orleans">New Orleans and the Northshore</a> <a href="#mississippi-gulf-coast">Mississippi Gulf Coast</a> <a href="#mobile-bay">Mobile Bay</a> <a href="#pensacola-emerald-coast">Pensacola and the Emerald Coast</a> <a href="#panama-city">Panama City</a> <a href="#apalachicola-tallahassee">Apalachicola and Tallahassee</a></p>
+<p class="fnav"><strong>Houston–Galveston:</strong> <a href="#addicks-reservoir">Addicks Reservoir</a> <a href="#armand-bayou">Armand Bayou</a> <a href="#barker-reservoir">Barker Reservoir</a> <a href="#brays-bayou">Brays Bayou</a> <a href="#brazoria-county-outside-harris-county-watersheds">Brazoria County (outside Harris County watersheds)</a> <a href="#buffalo-bayou">Buffalo Bayou</a> <a href="#carpenters-bayou">Carpenters Bayou</a> <a href="#cedar-bayou">Cedar Bayou</a> <a href="#chambers-county-outside-harris-county-watersheds">Chambers County (outside Harris County watersheds)</a> <a href="#clear-creek">Clear Creek</a> <a href="#cypress-creek">Cypress Creek</a> <a href="#fort-bend-county-outside-harris-county-watersheds">Fort Bend County (outside Harris County watersheds)</a> <a href="#galveston-county-outside-harris-county-watersheds">Galveston County (outside Harris County watersheds)</a> <a href="#greens-bayou">Greens Bayou</a> <a href="#halls-bayou">Halls Bayou</a> <a href="#hunting-bayou">Hunting Bayou</a> <a href="#jackson-bayou">Jackson Bayou</a> <a href="#liberty-county-outside-harris-county-watersheds">Liberty County (outside Harris County watersheds)</a> <a href="#little-cypress-creek">Little Cypress Creek</a> <a href="#luce-bayou">Luce Bayou</a> <a href="#san-jacinto-galveston-bay">San Jacinto &amp; Galveston Bay</a> <a href="#san-jacinto-river">San Jacinto River</a> <a href="#sims-bayou">Sims Bayou</a> <a href="#spring-creek">Spring Creek</a> <a href="#spring-gully-goose-creek">Spring Gully &amp; Goose Creek</a> <a href="#vince-bayou">Vince Bayou</a> <a href="#waller-county-outside-harris-county-watersheds">Waller County (outside Harris County watersheds)</a> <a href="#white-oak-bayou">White Oak Bayou</a> <a href="#willow-creek">Willow Creek</a> <a href="#brazoria-drainage-district-4">Brazoria Drainage District 4</a> <a href="#friendswood">City of Friendswood</a> <a href="#league-city">City of League City</a> <a href="#missouri-city">City of Missouri City</a> <a href="#mont-belvieu">City of Mont Belvieu</a> <a href="#sugar-land">City of Sugar Land</a> <a href="#fort-bend-county">Fort Bend County</a> <a href="#galveston-county-drainage-district-1">Galveston County Drainage District 1</a> <a href="#san-jacinto-river-authority">San Jacinto River Authority</a> <a href="#the-woodlands">The Woodlands</a> <a href="#waller-county">Waller County</a></p>
+<h2 id="houston-galveston">Houston–Galveston: by watershed</h2>
+<p><a href="/texas-coast/houston-galveston/">Houston–Galveston: every gauge, lakes and storms</a></p>
+<h3 id="addicks-reservoir">Addicks Reservoir</h3>
+<p><a href="/harris-county/watershed/addicks-reservoir.html">Addicks Reservoir watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/bear-creek-at-clay-road.html">Bear Creek at Clay Road</a> <span class="muted">15.9 ft below bank</span></li>
+<li><a href="/harris-county/bear-creek-at-fm-529.html">Bear Creek at FM 529</a> <span class="muted">9.2 ft below bank</span></li>
+<li><a href="/harris-county/horsepen-creek-at-trailside-drive.html">Horsepen Creek at Trailside Drive</a> <span class="muted">15.1 ft below bank</span></li>
+<li><a href="/harris-county/langham-creek-at-clay-rd.html">Langham Creek at Clay Rd</a> <span class="muted">8.4 ft below bank</span></li>
+<li><a href="/harris-county/langham-creek-at-longenbaugh-road.html">Langham Creek at Longenbaugh Road</a> <span class="muted">13.7 ft below bank</span></li>
+<li><a href="/harris-county/langham-creek-at-west-little-york-road.html">Langham Creek at West Little York Road</a> <span class="muted">13.3 ft below bank</span></li>
+<li><a href="/harris-county/south-mayde-at-greenhouse-road.html">South Mayde at Greenhouse Road</a> <span class="muted">6.9 ft below bank</span></li>
+<li><a href="/harris-county/south-mayde-creek-at-morton-road.html">South Mayde Creek at Morton Road</a> <span class="muted">15.1 ft below bank</span></li>
+<li><a href="/harris-county/south-mayde-creek-at-peek-road.html">South Mayde Creek at Peek Road</a> <span class="muted">8.8 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/bear-creek-near-barker.html">Bear Creek near Barker</a> <span class="muted">13.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/langham-creek-at-w-little-york-rd-near-addicks.html">Langham Creek at W Little York Rd near Addicks</a> <span class="muted">12.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/langham-creek-near-addicks.html">Langham Creek near Addicks</a> <span class="muted">88.63 ft</span></li>
+<li><a href="/usgs/south-mayde-creek-at-heathergold-dr-near-addicks.html">South Mayde Creek at Heathergold Dr near Addicks</a> <span class="muted">97.41 ft</span></li>
+</ul>
+<h3 id="armand-bayou">Armand Bayou</h3>
+<p><a href="/harris-county/watershed/armand-bayou.html">Armand Bayou watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/armand-bayou-at-genoa-red-bluff-road.html">Armand Bayou at Genoa-Red Bluff Road</a> <span class="muted">13.1 ft below bank</span></li>
+<li><a href="/harris-county/armand-bayou-at-pasadena-lake-nasa-road-1.html">Armand Bayou at Pasadena Lake (Nasa Road 1)</a> <span class="muted">5.1 ft below bank</span></li>
+<li><a href="/harris-county/armand-bayou-at-space-center-boulevard.html">Armand Bayou at Space Center Boulevard</a> <span class="muted">6.5 ft below bank</span></li>
+<li><a href="/harris-county/big-island-slough-at-fairmont-parkway.html">Big Island Slough at Fairmont Parkway</a> <span class="muted">15.3 ft below bank</span></li>
+<li><a href="/harris-county/horsepen-creek-at-bay-area-boulevard.html">Horsepen Creek at Bay Area Boulevard</a> <span class="muted">11.3 ft below bank</span></li>
+<li><a href="/harris-county/willow-spring-bayou-at-fairmont-parkway.html">Willow Spring Bayou at Fairmont Parkway</a> <span class="muted">15.1 ft below bank</span></li>
+</ul>
+<h3 id="barker-reservoir">Barker Reservoir</h3>
+<p><a href="/harris-county/watershed/barker-reservoir.html">Barker Reservoir watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/brookshire-drainage-at-morrison.html">Brookshire Drainage at Morrison</a> <span class="muted">4.3 ft below bank</span></li>
+<li><a href="/harris-county/buffalo-bayou-at-greenbusch-road.html">Buffalo Bayou at Greenbusch Road</a> <span class="muted">18.2 ft below bank</span></li>
+<li><a href="/harris-county/buffalo-bayou-at-peek-road.html">Buffalo Bayou at Peek Road</a> <span class="muted">13.7 ft below bank</span></li>
+<li><a href="/harris-county/buffalo-bayou-at-us-90.html">Buffalo Bayou at US 90</a> <span class="muted">11.7 ft below bank</span></li>
+<li><a href="/harris-county/cane-island-parkway-at-clay-road.html">Cane Island Parkway at Clay Road</a> <span class="muted">5.6 ft below bank</span></li>
+<li><a href="/harris-county/mason-creek-at-prince-creek-drive.html">Mason Creek at Prince Creek Drive</a> <span class="muted">15.2 ft below bank</span></li>
+<li><a href="/harris-county/willow-creek-at-pederson.html">Willow Creek at Pederson</a> <span class="muted">13.3 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/buffalo-bayou-near-fulshear.html">Buffalo Bayou near Fulshear</a> <span class="muted">88.30 ft</span></li>
+<li><a href="/usgs/buffalo-bayou-near-katy.html">Buffalo Bayou near Katy</a> <span class="muted">97.12 ft</span></li>
+<li><a href="/usgs/mason-creek-at-prince-creek-court-near-houston.html">Mason Creek at Prince Creek Court near Houston</a> <span class="muted">93.57 ft</span></li>
+</ul>
+<h3 id="brays-bayou">Brays Bayou</h3>
+<p><a href="/harris-county/watershed/brays-bayou.html">Brays Bayou watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/brays-bayou-at-bellaire-boulevard.html">Brays Bayou at Bellaire Boulevard</a> <span class="muted">20.9 ft below bank</span></li>
+<li><a href="/harris-county/brays-bayou-at-belle-park-drive.html">Brays Bayou at Belle Park Drive</a> <span class="muted">20.1 ft below bank</span></li>
+<li><a href="/harris-county/brays-bayou-at-beltway-8.html">Brays Bayou at Beltway 8</a> <span class="muted">20.7 ft below bank</span></li>
+<li><a href="/harris-county/brays-bayou-at-gessner-road.html">Brays Bayou at Gessner Road</a> <span class="muted">18.4 ft below bank</span></li>
+<li><a href="/harris-county/brays-bayou-at-lawndale-street.html">Brays Bayou at Lawndale Street</a> <span class="muted">12.6 ft below bank</span></li>
+<li><a href="/harris-county/brays-bayou-at-martin-luther-king-blvd.html">Brays Bayou at Martin Luther King Blvd</a> <span class="muted">33.9 ft below bank</span></li>
+<li><a href="/harris-county/brays-bayou-at-rice-avenue.html">Brays Bayou at Rice Avenue</a> <span class="muted">23.1 ft below bank</span></li>
+<li><a href="/harris-county/brays-bayou-at-sh-6.html">Brays Bayou at SH 6</a> <span class="muted">13.3 ft below bank</span></li>
+<li><a href="/harris-county/brays-bayou-at-south-main-street.html">Brays Bayou at South Main Street</a> <span class="muted">24.4 ft below bank</span></li>
+<li><a href="/harris-county/brays-bayou-at-stella-link-road.html">Brays Bayou at Stella Link Road</a> <span class="muted">26.1 ft below bank</span></li>
+<li><a href="/harris-county/harris-gully-at-south-mcgregor-way.html">Harris Gully at South McGregor Way</a> <span class="muted">18.4 ft below bank</span></li>
+<li><a href="/harris-county/keegans-bayou-at-keegan-road.html">Keegans Bayou at Keegan Road</a> <span class="muted">12.8 ft below bank</span></li>
+<li><a href="/harris-county/keegans-bayou-at-roark-road.html">Keegans Bayou at Roark Road</a> <span class="muted">11.4 ft below bank</span></li>
+<li><a href="/harris-county/keegans-bayou-at-rocky-valley.html">Keegans Bayou at Rocky Valley</a> <span class="muted">11.8 ft below bank</span></li>
+<li><a href="/harris-county/willow-water-hole-at-landsdowne-drive.html">Willow Water Hole at Landsdowne Drive</a> <span class="muted">9.7 ft below bank</span></li>
+<li><a href="/harris-county/willow-water-hole-at-willowbend-boulevard.html">Willow Water Hole at Willowbend Boulevard</a> <span class="muted">16.5 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/brays-bayou-at-alief.html">Brays Bayou at Alief</a> <span class="muted">52.30 ft</span></li>
+<li><a href="/usgs/brays-bayou-at-gessner-dr-houston.html">Brays Bayou at Gessner Dr, Houston</a> <span class="muted">18.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/brays-bayou-at-houston.html">Brays Bayou at Houston</a> <span class="muted">24.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/brays-bayou-at-mlk-jr-blvd-houston.html">Brays Bayou at MLK Jr Blvd, Houston</a> <span class="muted">2.07 ft</span></li>
+<li><a href="/usgs/keegans-bayou-at-roark-rd-near-houston.html">Keegans Bayou at Roark Rd near Houston</a> <span class="muted">60.15 ft</span></li>
+</ul>
+<h3 id="brazoria-county-outside-harris-county-watersheds">Brazoria County (outside Harris County watersheds)</h3>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/austin-bayou-at-sh-35-near-liverpool.html">Austin Bayou at SH 35 near Liverpool</a> <span class="muted">14.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/bastrop-bayou-at-cr-288-near-lake-jackson.html">Bastrop Bayou at CR 288 near Lake Jackson</a> <span class="muted">2.09 ft</span></li>
+<li><a href="/usgs/brazos-river-near-west-columbia.html">Brazos River near West Columbia</a> <span class="muted">1.52 ft</span></li>
+<li><a href="/usgs/chocolate-bayou-near-alvin.html">Chocolate Bayou near Alvin</a> <span class="muted">11.26 ft</span></li>
+<li><a href="/usgs/linnville-bayou-at-sh-35-near-van-vleck.html">Linnville Bayou at SH 35 near Van Vleck</a> <span class="muted">21.13 ft</span></li>
+<li><a href="/usgs/mustang-bayou-at-sh-6-near-alvin.html">Mustang Bayou at SH 6 near Alvin</a> <span class="muted">7.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/oyster-creek-at-cr-290-near-angleton.html">Oyster Creek at CR 290 near Angleton</a> <span class="muted">5.27 ft</span></li>
+<li><a href="/usgs/oyster-creek-at-cr-34-near-angleton.html">Oyster Creek at CR 34 near Angleton</a> <span class="muted">16.01 ft</span></li>
+<li><a href="/usgs/oyster-creek-at-cr-42-near-rosharon.html">Oyster Creek at CR 42 near Rosharon</a> <span class="muted">32.32 ft</span></li>
+<li><a href="/usgs/oyster-creek-at-fm-1462-near-rosharon.html">Oyster Creek at FM 1462 near Rosharon</a> <span class="muted">31.93 ft</span></li>
+<li><a href="/usgs/oyster-creek-at-fm-2004-near-lake-jackson.html">Oyster Creek at FM 2004 near Lake Jackson</a> <span class="muted">1.89 ft</span></li>
+<li><a href="/usgs/san-bernard-river-at-fm-521-near-cedar-lane.html">San Bernard River at FM 521 near Cedar Lane</a> <span class="muted">1.44 ft</span></li>
+<li><a href="/usgs/san-bernard-river-near-sweeny.html">San Bernard River near Sweeny</a> <span class="muted">5.5 ft below minor flood stage</span></li>
+</ul>
+<h3 id="buffalo-bayou">Buffalo Bayou</h3>
+<p><a href="/harris-county/watershed/buffalo-bayou.html">Buffalo Bayou watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/briar-branch-at-campbell-road.html">Briar Branch at Campbell Road</a> <span class="muted">11.3 ft below bank</span></li>
+<li><a href="/harris-county/buffalo-bayou-at-dairy-ashford-road.html">Buffalo Bayou at Dairy Ashford Road</a> <span class="muted">27.0 ft below bank</span></li>
+<li><a href="/harris-county/buffalo-bayou-at-milam-street.html">Buffalo Bayou at Milam Street</a> <span class="muted">20.0 ft below bank</span></li>
+<li><a href="/harris-county/buffalo-bayou-at-piney-point-rd.html">Buffalo Bayou at Piney Point Rd</a> <span class="muted">23.9 ft below bank</span></li>
+<li><a href="/harris-county/buffalo-bayou-at-san-felipe-drive.html">Buffalo Bayou at San Felipe Drive</a> <span class="muted">31.1 ft below bank</span></li>
+<li><a href="/harris-county/buffalo-bayou-at-shepherd-drive.html">Buffalo Bayou at Shepherd Drive</a> <span class="muted">25.8 ft below bank</span></li>
+<li><a href="/harris-county/buffalo-bayou-at-west-beltway-8.html">Buffalo Bayou at West Beltway 8</a> <span class="muted">27.1 ft below bank</span></li>
+<li><a href="/harris-county/buffalo-bayou-at-woodway-drive.html">Buffalo Bayou at Woodway Drive</a> <span class="muted">33.8 ft below bank</span></li>
+<li><a href="/harris-county/buttermilk-creek-at-moorberry-lane.html">Buttermilk Creek at Moorberry Lane</a> <span class="muted">6.2 ft below bank</span></li>
+<li><a href="/harris-county/clodine-ditch-at-grand-mission.html">Clodine Ditch at Grand Mission</a> <span class="muted">11.9 ft below bank</span></li>
+<li><a href="/harris-county/rummel-creek-at-brittmoore-road.html">Rummel Creek at Brittmoore Road</a> <span class="muted">11.0 ft below bank</span></li>
+<li><a href="/harris-county/spring-branch-at-bingle-road.html">Spring Branch at Bingle Road</a> <span class="muted">14.2 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/buffalo-bayou-at-houston.html">Buffalo Bayou at Houston</a> <span class="muted">2.33 ft</span></li>
+<li><a href="/usgs/buffalo-bayou-at-piney-point.html">Buffalo Bayou at Piney Point</a> <span class="muted">23.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/buffalo-bayou-at-state-highway-6-near-addicks.html">Buffalo Bayou at State Highway 6 near Addicks</a> <span class="muted">56.53 ft</span></li>
+<li><a href="/usgs/buffalo-bayou-at-w-belt-dr-houston.html">Buffalo Bayou at W Belt Dr, Houston</a> <span class="muted">27.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/buffalo-bayou-near-addicks.html">Buffalo Bayou near Addicks</a> <span class="muted">46.19 ft</span></li>
+<li><a href="/usgs/clodine-ditch-at-noble-rd-near-addicks.html">Clodine Ditch at Noble Rd near Addicks</a> <span class="muted">68.28 ft</span></li>
+<li><a href="/usgs/langham-creek-at-addicks-reservoir-outflow-near-addicks.html">Langham Creek at Addicks Reservoir Outflow near Addicks</a> <span class="muted">56.13 ft</span></li>
+</ul>
+<h3 id="carpenters-bayou">Carpenters Bayou</h3>
+<p><a href="/harris-county/watershed/carpenters-bayou.html">Carpenters Bayou watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/carpenters-bayou-at-i-10.html">Carpenters Bayou at I-10</a> <span class="muted">13.6 ft below bank</span></li>
+<li><a href="/harris-county/carpenters-bayou-at-us-90.html">Carpenters Bayou at US 90</a> <span class="muted">12.7 ft below bank</span></li>
+<li><a href="/harris-county/carpenters-bayou-at-wallisville-road.html">Carpenters Bayou at Wallisville Road</a> <span class="muted">16.3 ft below bank</span></li>
+<li><a href="/harris-county/sheldon-reservoir-at-garrett-road.html">Sheldon Reservoir at Garrett Road</a> <span class="muted">5.1 ft below bank</span></li>
+</ul>
+<h3 id="cedar-bayou">Cedar Bayou</h3>
+<p><a href="/harris-county/watershed/cedar-bayou.html">Cedar Bayou watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/cedar-bayou-at-fm-1960.html">Cedar Bayou at FM 1960</a> <span class="muted">14.7 ft below bank</span></li>
+<li><a href="/harris-county/cedar-bayou-at-fm1942.html">Cedar Bayou at FM1942</a> <span class="muted">23.6 ft below bank</span></li>
+<li><a href="/harris-county/cedar-bayou-at-sh-146.html">Cedar Bayou at SH 146</a> <span class="muted">4.1 ft below bank</span></li>
+<li><a href="/harris-county/cedar-bayou-at-sh-99.html">Cedar Bayou at SH 99</a> <span class="muted">3.3 ft below bank</span></li>
+<li><a href="/harris-county/cedar-bayou-at-us-90.html">Cedar Bayou at US 90</a> <span class="muted">16.9 ft below bank</span></li>
+<li><a href="/harris-county/smith-gully-at-sh146.html">Smith Gully at SH146</a> <span class="muted">16.9 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/cedar-bayou-at-i-10-near-mont-belvieu.html">Cedar Bayou at I-10 near Mont Belvieu</a> <span class="muted">11.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/cedar-bayou-near-crosby.html">Cedar Bayou near Crosby</a> <span class="muted">16.9 ft below minor flood stage</span></li>
+</ul>
+<h3 id="chambers-county-outside-harris-county-watersheds">Chambers County (outside Harris County watersheds)</h3>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/lake-charlotte-near-anahuac.html">Lake Charlotte near Anahuac</a> <span class="muted">2.69 ft</span></li>
+<li><a href="/usgs/spindletop-bayou-at-sh-65-near-stowell.html">Spindletop Bayou at SH 65 near Stowell</a> <span class="muted">3.28 ft</span></li>
+<li><a href="/usgs/trinity-river-at-ih-10-near-wallisville.html">Trinity River at IH 10 near Wallisville</a> <span class="muted">2.59 ft</span></li>
+<li><a href="/usgs/turtle-bayou-at-i-10-near-hankamer.html">Turtle Bayou at I-10 near Hankamer</a> <span class="muted">0.88 ft</span></li>
+<li><a href="/usgs/west-fork-double-bayou-at-eagle-ferry-rd-near-anahuac.html">West Fork Double Bayou at Eagle Ferry Rd near Anahuac</a> <span class="muted">1.41 ft</span></li>
+</ul>
+<h3 id="clear-creek">Clear Creek</h3>
+<p><a href="/harris-county/watershed/clear-creek.html">Clear Creek watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/beamer-ditch-at-hughes-road.html">Beamer Ditch at Hughes Road</a> <span class="muted">12.3 ft below bank</span></li>
+<li><a href="/harris-county/chigger-creek-at-windsong-lane.html">Chigger Creek at Windsong Lane</a> <span class="muted">8.5 ft below bank</span></li>
+<li><a href="/harris-county/clear-creek-at-bay-area-boulevard.html">Clear Creek at Bay Area Boulevard</a> <span class="muted">5.5 ft below bank</span></li>
+<li><a href="/harris-county/clear-creek-at-country-club-drive.html">Clear Creek at Country Club Drive</a> <span class="muted">19.2 ft below bank</span></li>
+<li><a href="/harris-county/clear-creek-at-fm-1959.html">Clear Creek at FM 1959</a> <span class="muted">17.3 ft below bank</span></li>
+<li><a href="/harris-county/clear-creek-at-fm-2234.html">Clear Creek at FM 2234</a> <span class="muted">6.9 ft below bank</span></li>
+<li><a href="/harris-county/clear-creek-at-fm-2351.html">Clear Creek at FM 2351</a> <span class="muted">16.3 ft below bank</span></li>
+<li><a href="/harris-county/clear-creek-at-fm-528.html">Clear Creek at FM 528</a> <span class="muted">10.2 ft below bank</span></li>
+<li><a href="/harris-county/clear-creek-at-i-45.html">Clear Creek at I-45</a> <span class="muted">4.2 ft below bank</span></li>
+<li><a href="/harris-county/clear-creek-at-mykawa-road.html">Clear Creek at Mykawa Road</a> <span class="muted">12.5 ft below bank</span></li>
+<li><a href="/harris-county/clear-creek-at-pearland-pkwy.html">Clear Creek at Pearland Pkwy</a> <span class="muted">15.8 ft below bank</span></li>
+<li><a href="/harris-county/clear-creek-at-sh-288.html">Clear Creek at SH 288</a> <span class="muted">11.2 ft below bank</span></li>
+<li><a href="/harris-county/cowart-creek-at-baker-road.html">Cowart Creek at Baker Road</a> <span class="muted">13.3 ft below bank</span></li>
+<li><a href="/harris-county/marys-creek-at-winding-road.html">Mary's Creek at Winding Road</a> <span class="muted">10.6 ft below bank</span></li>
+<li><a href="/harris-county/taylor-lake-at-nasa-road-1.html">Taylor Lake at Nasa Road 1</a> <span class="muted">3.9 ft below bank</span></li>
+<li><a href="/harris-county/taylor-lake-at-port-road.html">Taylor Lake at Port Road</a> <span class="muted">4.8 ft below bank</span></li>
+<li><a href="/harris-county/taylors-bayou-at-shoreacres-boulevard.html">Taylor's Bayou at Shoreacres Boulevard</a> <span class="muted">3.5 ft below bank</span></li>
+<li><a href="/harris-county/turkey-creek-at-fm-1959.html">Turkey Creek at FM 1959</a> <span class="muted">13.6 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/clear-creek-at-fm-865-near-pearland.html">Clear Creek at FM 865 near Pearland</a> <span class="muted">38.63 ft</span></li>
+<li><a href="/usgs/clear-creek-at-mykawa-st-near-pearland.html">Clear Creek at Mykawa St near Pearland</a> <span class="muted">12.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/clear-creek-near-friendswood.html">Clear Creek near Friendswood</a> <span class="muted">10.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/hickory-slough-at-fm-865-near-pearland.html">Hickory Slough at FM 865 near Pearland</a> <span class="muted">6.1 ft below minor flood stage</span></li>
+</ul>
+<h3 id="cypress-creek">Cypress Creek</h3>
+<p><a href="/harris-county/watershed/cypress-creek.html">Cypress Creek watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/cypress-creek-at-cypresswood-drive.html">Cypress Creek at Cypresswood Drive</a> <span class="muted">21.0 ft below bank</span></li>
+<li><a href="/harris-county/cypress-creek-at-eldridge-parkway-n.html">Cypress Creek at Eldridge Parkway N.</a> <span class="muted">19.9 ft below bank</span></li>
+<li><a href="/harris-county/cypress-creek-at-grant-road.html">Cypress Creek at Grant Road</a> <span class="muted">19.9 ft below bank</span></li>
+<li><a href="/harris-county/cypress-creek-at-huffmeister-road.html">Cypress Creek at Huffmeister Road</a> <span class="muted">17.2 ft below bank</span></li>
+<li><a href="/harris-county/cypress-creek-at-i-45.html">Cypress Creek at I-45</a> <span class="muted">21.4 ft below bank</span></li>
+<li><a href="/harris-county/cypress-creek-at-katy-hockley-road.html">Cypress Creek at Katy-Hockley Road</a> <span class="muted">11.7 ft below bank</span></li>
+<li><a href="/harris-county/cypress-creek-at-kuykendahl-road.html">Cypress Creek at Kuykendahl Road</a> <span class="muted">26.4 ft below bank</span></li>
+<li><a href="/harris-county/cypress-creek-at-sh-249.html">Cypress Creek at SH 249</a> <span class="muted">24.6 ft below bank</span></li>
+<li><a href="/harris-county/cypress-creek-at-sharp-road.html">Cypress Creek at Sharp Road</a> <span class="muted">10.0 ft below bank</span></li>
+<li><a href="/harris-county/cypress-creek-at-stuebner-airline-road.html">Cypress Creek at Stuebner-Airline Road</a> <span class="muted">22.8 ft below bank</span></li>
+<li><a href="/harris-county/cypress-creek-at-us-290.html">Cypress Creek at US 290</a> <span class="muted">15.8 ft below bank</span></li>
+<li><a href="/harris-county/little-mound-creek-at-mathis-road.html">Little Mound Creek at Mathis Road</a> <span class="muted">8.9 ft below bank</span></li>
+<li><a href="/harris-county/live-oak-at-penick-road.html">Live Oak at Penick Road</a> <span class="muted">5.2 ft below bank</span></li>
+<li><a href="/harris-county/mound-creek-at-fm-362.html">Mound Creek at FM 362</a> <span class="muted">6.1 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/cypress-creek-at-grant-rd-near-cypress.html">Cypress Creek at Grant Rd near Cypress</a> <span class="muted">19.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/cypress-creek-at-house-hahl-rd-near-cypress.html">Cypress Creek at House-Hahl Rd near Cypress</a> <span class="muted">129.46 ft</span></li>
+<li><a href="/usgs/cypress-creek-at-katy-hockley-rd-near-hockley.html">Cypress Creek at Katy-Hockley Rd near Hockley</a> <span class="muted">11.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/cypress-creek-at-sharp-rd-near-hockley.html">Cypress Creek at Sharp Rd near Hockley</a> <span class="muted">154.18 ft</span></li>
+<li><a href="/usgs/cypress-creek-at-stuebner-airline-rd-near-westfield.html">Cypress Creek at Stuebner-Airline Rd near Westfield</a> <span class="muted">79.97 ft</span></li>
+<li><a href="/usgs/cypress-creek-near-westfield.html">Cypress Creek near Westfield</a> <span class="muted">21.4 ft below minor flood stage</span></li>
+</ul>
+<h3 id="fort-bend-county-outside-harris-county-watersheds">Fort Bend County (outside Harris County watersheds)</h3>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/big-creek-near-needville.html">Big Creek near Needville</a> <span class="muted">17.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/brazos-river-at-richmond.html">Brazos River at Richmond</a> <span class="muted">36.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/brazos-river-near-rosharon.html">Brazos River near Rosharon</a> <span class="muted">38.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/brazos-river-near-sugar-land.html">Brazos River near Sugar Land</a> <span class="muted">38.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/dry-creek-near-rosenberg.html">Dry Creek near Rosenberg</a> <span class="muted">66.70 ft</span></li>
+<li><a href="/usgs/oyster-creek-at-fm-1092-near-missouri-city.html">Oyster Creek at FM 1092 near Missouri City</a> <span class="muted">47.65 ft</span></li>
+<li><a href="/usgs/oyster-creek-at-fm-1464-near-sugar-land.html">Oyster Creek at FM 1464 near Sugar Land</a> <span class="muted">70.99 ft</span></li>
+<li><a href="/usgs/san-bernard-river-near-boling.html">San Bernard River near Boling</a> <span class="muted">14.3 ft below minor flood stage</span></li>
+</ul>
+<h3 id="galveston-county-outside-harris-county-watersheds">Galveston County (outside Harris County watersheds)</h3>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/dickinson-bayou-at-fm-517-near-alvin.html">Dickinson Bayou at FM 517 near Alvin</a> <span class="muted">8.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/highland-bayou-at-fm-646-near-santa-fe.html">Highland Bayou at FM 646 near Santa Fe</a> <span class="muted">5.2 ft below minor flood stage</span></li>
+</ul>
+<h3 id="greens-bayou">Greens Bayou</h3>
+<p><a href="/harris-county/watershed/greens-bayou.html">Greens Bayou watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/garners-bayou-at-beltway-8.html">Garners Bayou at Beltway 8</a> <span class="muted">19.0 ft below bank</span></li>
+<li><a href="/harris-county/garners-bayou-at-rankin-road.html">Garners Bayou at Rankin Road</a> <span class="muted">13.8 ft below bank</span></li>
+<li><a href="/harris-county/greens-bayou-at-bammel-n-houston-road.html">Greens Bayou at Bammel N Houston Road</a> <span class="muted">15.4 ft below bank</span></li>
+<li><a href="/harris-county/greens-bayou-at-beltway-8.html">Greens Bayou at Beltway 8</a> <span class="muted">23.8 ft below bank</span></li>
+<li><a href="/harris-county/greens-bayou-at-cutten-road.html">Greens Bayou at Cutten Road</a> <span class="muted">11.3 ft below bank</span></li>
+<li><a href="/harris-county/greens-bayou-at-knobcrest-drive.html">Greens Bayou at Knobcrest Drive</a> <span class="muted">19.1 ft below bank</span></li>
+<li><a href="/harris-county/greens-bayou-at-ley-road.html">Greens Bayou at Ley Road</a> <span class="muted">28.0 ft below bank</span></li>
+<li><a href="/harris-county/greens-bayou-at-mount-houston-parkway.html">Greens Bayou at Mount Houston Parkway</a> <span class="muted">27.6 ft below bank</span></li>
+<li><a href="/harris-county/greens-bayou-at-normandy-street.html">Greens Bayou at Normandy Street</a> <span class="muted">8.8 ft below bank</span></li>
+<li><a href="/harris-county/greens-bayou-at-tidwell-road.html">Greens Bayou at Tidwell Road</a> <span class="muted">30.8 ft below bank</span></li>
+<li><a href="/harris-county/greens-bayou-at-us-59.html">Greens Bayou at US 59</a> <span class="muted">16.0 ft below bank</span></li>
+<li><a href="/harris-county/north-fork-greens-bayou-at-ella.html">North Fork Greens Bayou at Ella</a> <span class="muted">16.5 ft below bank</span></li>
+<li><a href="/harris-county/p138-at-aldine-westfield-road.html">P138 at Aldine Westfield Road</a> <span class="muted">9.2 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/garners-bayou-near-humble.html">Garners Bayou near Humble</a> <span class="muted">33.64 ft</span></li>
+<li><a href="/usgs/greens-bayou-at-cutten-rd-near-houston.html">Greens Bayou at Cutten Rd near Houston</a> <span class="muted">101.10 ft</span></li>
+<li><a href="/usgs/greens-bayou-at-ley-rd-houston.html">Greens Bayou at Ley Rd, Houston</a> <span class="muted">2.12 ft</span></li>
+<li><a href="/usgs/greens-bayou-near-houston.html">Greens Bayou near Houston</a> <span class="muted">16.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/greens-bayou-near-us-highway-75-near-houston.html">Greens Bayou near US Highway 75 near Houston</a> <span class="muted">19.1 ft below minor flood stage</span></li>
+</ul>
+<h3 id="halls-bayou">Halls Bayou</h3>
+<p><a href="/harris-county/watershed/halls-bayou.html">Halls Bayou watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/halls-bayou-at-airline-drive.html">Halls Bayou at Airline Drive</a> <span class="muted">12.3 ft below bank</span></li>
+<li><a href="/harris-county/halls-bayou-at-jensen-drive.html">Halls Bayou at Jensen Drive</a> <span class="muted">14.0 ft below bank</span></li>
+<li><a href="/harris-county/halls-bayou-at-tidwell-road.html">Halls Bayou at Tidwell Road</a> <span class="muted">20.8 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/halls-bayou-at-houston.html">Halls Bayou at Houston</a> <span class="muted">39.59 ft</span></li>
+</ul>
+<h3 id="hunting-bayou">Hunting Bayou</h3>
+<p><a href="/harris-county/watershed/hunting-bayou.html">Hunting Bayou watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/hunting-bayou-at-i-10.html">Hunting Bayou at I-10</a> <span class="muted">16.8 ft below bank</span></li>
+<li><a href="/harris-county/hunting-bayou-at-lockwood-drive.html">Hunting Bayou at Lockwood Drive</a> <span class="muted">15.1 ft below bank</span></li>
+<li><a href="/harris-county/hunting-bayou-at-loop-610-east.html">Hunting Bayou at Loop 610 East</a> <span class="muted">17.5 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/hunting-bayou-at-hoffman-st-houston.html">Hunting Bayou at Hoffman St, Houston</a> <span class="muted">25.47 ft</span></li>
+<li><a href="/usgs/hunting-bayou-at-ih-610-houston.html">Hunting Bayou at IH 610, Houston</a> <span class="muted">17.21 ft</span></li>
+</ul>
+<h3 id="jackson-bayou">Jackson Bayou</h3>
+<p><a href="/harris-county/watershed/jackson-bayou.html">Jackson Bayou watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/gum-gully-at-diamond-head-boulevard.html">Gum Gully at Diamond Head Boulevard</a> <span class="muted">18.7 ft below bank</span></li>
+</ul>
+<h3 id="liberty-county-outside-harris-county-watersheds">Liberty County (outside Harris County watersheds)</h3>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/cwa-canal-near-dayton.html">CWA Canal near Dayton</a> <span class="muted">3.01 ft</span></li>
+<li><a href="/usgs/menard-creek-near-rye.html">Menard Creek near Rye</a> <span class="muted">11.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/trinity-river-at-liberty.html">Trinity River at Liberty</a> <span class="muted">19.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/trinity-river-at-romayor.html">Trinity River at Romayor</a> <span class="muted">29.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/trinity-river-near-moss-bluff.html">Trinity River near Moss Bluff</a> <span class="muted">9.4 ft below minor flood stage</span></li>
+</ul>
+<h3 id="little-cypress-creek">Little Cypress Creek</h3>
+<p><a href="/harris-county/watershed/little-cypress-creek.html">Little Cypress Creek watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/little-cypress-creek-at-becker-road.html">Little Cypress Creek at Becker Road</a> <span class="muted">8.2 ft below bank</span></li>
+<li><a href="/harris-county/little-cypress-creek-at-cypress-rosehill-road.html">Little Cypress Creek at Cypress Rosehill Road</a> <span class="muted">16.8 ft below bank</span></li>
+<li><a href="/harris-county/little-cypress-creek-at-kluge-road.html">Little Cypress Creek at Kluge Road</a> <span class="muted">18.3 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/little-cypress-creek-near-cypress.html">Little Cypress Creek near Cypress</a> <span class="muted">143.42 ft</span></li>
+</ul>
+<h3 id="luce-bayou">Luce Bayou</h3>
+<p><a href="/harris-county/watershed/luce-bayou.html">Luce Bayou watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/luce-bayou-at-fm.html">Luce Bayou at FM</a> <span class="muted">7.7 ft below bank</span></li>
+<li><a href="/harris-county/luce-bayou-at-sh-321.html">Luce Bayou at SH 321</a> <span class="muted">10.7 ft below bank</span></li>
+<li><a href="/harris-county/luce-bayou-at-sh-99.html">Luce Bayou at SH 99</a> <span class="muted">15.6 ft below bank</span></li>
+<li><a href="/harris-county/tarkington-bayou-at-sh-105.html">Tarkington Bayou at SH 105</a> <span class="muted">11.2 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/luce-bayou-itp-canal-at-capers-ridge-near-hardin.html">Luce Bayou ITP Canal at Capers Ridge near Hardin</a> <span class="muted">103.22 ft</span></li>
+<li><a href="/usgs/luce-bayou-at-sh-99-near-huffman.html">Luce Bayou at SH-99 near Huffman</a> <span class="muted">16.1 ft below minor flood stage</span></li>
+</ul>
+<h3 id="san-jacinto-galveston-bay">San Jacinto &amp; Galveston Bay</h3>
+<p><a href="/harris-county/watershed/san-jacinto-galveston-bay.html">San Jacinto &amp; Galveston Bay watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/lateral-at-sens-road.html">Lateral at Sens Road</a> <span class="muted">9.0 ft below bank</span></li>
+<li><a href="/harris-county/little-cedar-bayou-at-8th-street.html">Little Cedar Bayou at 8th Street</a> <span class="muted">10.4 ft below bank</span></li>
+</ul>
+<h3 id="san-jacinto-river">San Jacinto River</h3>
+<p><a href="/harris-county/watershed/san-jacinto-river.html">San Jacinto River watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/bens-branch-at-woodland-hills-drive.html">Bens Branch at Woodland Hills Drive</a> <span class="muted">8.8 ft below bank</span></li>
+<li><a href="/harris-county/boggy-bayou-at-san-augustine-street.html">Boggy Bayou at San Augustine Street</a> <span class="muted">11.0 ft below bank</span></li>
+<li><a href="/harris-county/buffalo-bayou-at-turning-basin.html">Buffalo Bayou at Turning Basin</a> <span class="muted">7.2 ft below bank</span></li>
+<li><a href="/harris-county/caney-creek-at-fm-2090.html">Caney Creek at FM 2090</a> <span class="muted">11.9 ft below bank</span></li>
+<li><a href="/harris-county/caney-creek-at-firetower-road.html">Caney Creek at Firetower Road</a> <span class="muted">12.4 ft below bank</span></li>
+<li><a href="/harris-county/caney-creek-at-sh-105.html">Caney Creek at SH 105</a> <span class="muted">20.8 ft below bank</span></li>
+<li><a href="/harris-county/caney-creek-at-us-59.html">Caney Creek at US 59</a> <span class="muted">20.8 ft below bank</span></li>
+<li><a href="/harris-county/east-fork-san-jacinto-at-fm-1485.html">East Fork San Jacinto at FM 1485</a> <span class="muted">14.0 ft below bank</span></li>
+<li><a href="/harris-county/east-fork-san-jacinto-at-fm-2090.html">East Fork San Jacinto at FM 2090</a> <span class="muted">15.7 ft below bank</span></li>
+<li><a href="/harris-county/east-fork-san-jacinto-at-sh-105.html">East Fork San Jacinto at SH 105</a> <span class="muted">14.8 ft below bank</span></li>
+<li><a href="/harris-county/houston-ship-channel-at-juan-seguin-park.html">Houston Ship Channel at Juan Seguin Park</a> <span class="muted">2.5 ft below bank</span></li>
+<li><a href="/harris-county/lake-creek-at-sh-149.html">Lake Creek at SH 149</a> <span class="muted">17.7 ft below bank</span></li>
+<li><a href="/harris-county/lake-creek-at-sendera-ranch-drive.html">Lake Creek at Sendera Ranch Drive</a> <span class="muted">17.0 ft below bank</span></li>
+<li><a href="/harris-county/lake-houston-at-fm-1960.html">Lake Houston at FM 1960</a> <span class="muted">2.5 ft below bank</span></li>
+<li><a href="/harris-county/patricks-bayou-at-east-8th-street.html">Patricks Bayou at East 8th Street</a> <span class="muted">10.0 ft below bank</span></li>
+<li><a href="/harris-county/peach-creek-at-fm-2090.html">Peach Creek at FM 2090</a> <span class="muted">12.3 ft below bank</span></li>
+<li><a href="/harris-county/peach-creek-at-roman-forest-boulevard.html">Peach Creek at Roman Forest Boulevard</a> <span class="muted">19.1 ft below bank</span></li>
+<li><a href="/harris-county/peach-creek-at-sh-99.html">Peach Creek at SH 99</a> <span class="muted">18.5 ft below bank</span></li>
+<li><a href="/harris-county/san-jacinto-at-sh-99.html">San Jacinto at SH 99</a> <span class="muted">24.5 ft below bank</span></li>
+<li><a href="/harris-county/san-jacinto-river-at-kingwood-country-club.html">San Jacinto River at Kingwood Country Club</a> <span class="muted">4.9 ft below bank</span></li>
+<li><a href="/harris-county/san-jacinto-river-at-rio-villa.html">San Jacinto River at Rio Villa</a> <span class="muted">3.7 ft below bank</span></li>
+<li><a href="/harris-county/san-jacinto-river-at-sh-242.html">San Jacinto River at SH 242</a> <span class="muted">20.9 ft below bank</span></li>
+<li><a href="/harris-county/san-jacinto-river-at-us-59.html">San Jacinto River at US 59</a> <span class="muted">6.8 ft below bank</span></li>
+<li><a href="/harris-county/san-jacinto-river-at-us-90.html">San Jacinto River at US 90</a> <span class="muted">7.9 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/buffalo-bayou-at-turning-basin-houston.html">Buffalo Bayou at Turning Basin, Houston</a> <span class="muted">2.03 ft</span></li>
+<li><a href="/usgs/caney-creek-at-fm-1097-near-willis.html">Caney Creek at FM 1097 near Willis</a> <span class="muted">214.23 ft</span></li>
+<li><a href="/usgs/caney-creek-at-fm-1375-near-richards.html">Caney Creek at FM 1375 near Richards</a> <span class="muted">220.87 ft</span></li>
+<li><a href="/usgs/caney-creek-near-splendora.html">Caney Creek near Splendora</a> <span class="muted">14.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/crystal-creek-at-fm-1314-near-conroe.html">Crystal Creek at FM 1314 near Conroe</a> <span class="muted">20.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/east-fork-san-jacinto-river-near-cleveland.html">East Fork San Jacinto River near Cleveland</a> <span class="muted">14.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/east-fork-san-jacinto-river-near-new-caney.html">East Fork San Jacinto River near New Caney</a> <span class="muted">12.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/lake-creek-at-sendera-ranch-rd-near-conroe.html">Lake Creek at Sendera Ranch Rd near Conroe</a> <span class="muted">17.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/lake-creek-near-dobbin.html">Lake Creek near Dobbin</a> <span class="muted">196.33 ft</span></li>
+<li><a href="/usgs/lake-houston-near-sheldon.html">Lake Houston near Sheldon</a> <span class="muted">42.15 ft</span></li>
+<li><a href="/usgs/little-lake-creek-at-fm-149-near-montgomery.html">Little Lake Creek at FM 149 near Montgomery</a> <span class="muted">207.53 ft</span></li>
+<li><a href="/usgs/peach-creek-at-splendora.html">Peach Creek at Splendora</a> <span class="muted">10.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/peach-creek-near-cleveland.html">Peach Creek near Cleveland</a> <span class="muted">134.25 ft</span></li>
+<li><a href="/usgs/san-jacinto-river-at-lynchburg-ferry-near-highlands.html">San Jacinto River at Lynchburg Ferry near Highlands</a> <span class="muted">3.82 ft</span></li>
+<li><a href="/usgs/san-jacinto-river-near-sheldon.html">San Jacinto River near Sheldon</a> <span class="muted">7.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/spring-branch-at-sh-242-near-splendora.html">Spring Branch at SH 242 near Splendora</a> <span class="muted">13.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/stewarts-creek-at-silverdale-dr-near-conroe.html">Stewarts Creek at Silverdale Dr near Conroe</a> <span class="muted">147.96 ft</span></li>
+<li><a href="/usgs/west-fork-san-jacinto-river-above-lake-houston-near-porter.html">West Fork San Jacinto River above Lake Houston near Porter</a> <span class="muted">24.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/west-fork-san-jacinto-river-at-fm-2854-conroe.html">West Fork San Jacinto River at FM 2854, Conroe</a> <span class="muted">118.44 ft</span></li>
+<li><a href="/usgs/west-fork-san-jacinto-river-below-lake-conroe-near-conroe.html">West Fork San Jacinto River below Lake Conroe near Conroe</a> <span class="muted">14.08 ft</span></li>
+<li><a href="/usgs/west-fork-san-jacinto-river-near-conroe.html">West Fork San Jacinto River near Conroe</a> <span class="muted">22.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/west-fork-san-jacinto-river-near-humble.html">West Fork San Jacinto River near Humble</a> <span class="muted">6.8 ft below minor flood stage</span></li>
+</ul>
+<h3 id="sims-bayou">Sims Bayou</h3>
+<p><a href="/harris-county/watershed/sims-bayou.html">Sims Bayou watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/berry-bayou-at-forest-oaks-boulevard.html">Berry Bayou at Forest Oaks Boulevard</a> <span class="muted">23.2 ft below bank</span></li>
+<li><a href="/harris-county/berry-bayou-at-nevada-avenue.html">Berry Bayou at Nevada Avenue</a> <span class="muted">13.5 ft below bank</span></li>
+<li><a href="/harris-county/sims-bayou-at-hiram-clarke-road.html">Sims Bayou at Hiram-Clarke Road</a> <span class="muted">23.9 ft below bank</span></li>
+<li><a href="/harris-county/sims-bayou-at-martin-luther-king-road.html">Sims Bayou at Martin Luther King Road</a> <span class="muted">29.4 ft below bank</span></li>
+<li><a href="/harris-county/sims-bayou-at-sh-288.html">Sims Bayou at SH 288</a> <span class="muted">29.8 ft below bank</span></li>
+<li><a href="/harris-county/sims-bayou-at-telephone-road.html">Sims Bayou at Telephone Road</a> <span class="muted">24.3 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/berry-bayou-at-nevada-st-houston.html">Berry Bayou at Nevada St, Houston</a> <span class="muted">15.49 ft</span></li>
+<li><a href="/usgs/sims-bayou-at-hiram-clarke-st-houston.html">Sims Bayou at Hiram Clarke St, Houston</a> <span class="muted">26.41 ft</span></li>
+<li><a href="/usgs/sims-bayou-at-houston.html">Sims Bayou at Houston</a> <span class="muted">2.05 ft</span></li>
+</ul>
+<h3 id="spring-creek">Spring Creek</h3>
+<p><a href="/harris-county/watershed/spring-creek.html">Spring Creek watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/bear-branch-at-kuykendahl.html">Bear Branch at Kuykendahl</a> <span class="muted">7.1 ft below bank</span></li>
+<li><a href="/harris-county/birch-creek-at-riley-road.html">Birch Creek at Riley Road</a> <span class="muted">7.9 ft below bank</span></li>
+<li><a href="/harris-county/dry-creek-at-fm-2978.html">Dry Creek at FM 2978</a> <span class="muted">16.9 ft below bank</span></li>
+<li><a href="/harris-county/mill-creek-at-fm-1486.html">Mill Creek at FM 1486</a> <span class="muted">10.2 ft below bank</span></li>
+<li><a href="/harris-county/mill-creek-at-fm-149.html">Mill Creek at FM 149</a> <span class="muted">11.8 ft below bank</span></li>
+<li><a href="/harris-county/mill-creek-at-fm-1774.html">Mill Creek at FM 1774</a> <span class="muted">18.2 ft below bank</span></li>
+<li><a href="/harris-county/spring-creek-at-cypress-rosehill.html">Spring Creek at Cypress Rosehill</a> <span class="muted">12.3 ft below bank</span></li>
+<li><a href="/harris-county/spring-creek-at-fm-2978.html">Spring Creek at FM 2978</a> <span class="muted">19.3 ft below bank</span></li>
+<li><a href="/harris-county/spring-creek-at-hegar-road.html">Spring Creek at Hegar Road</a> <span class="muted">10.3 ft below bank</span></li>
+<li><a href="/harris-county/spring-creek-at-i-45.html">Spring Creek at I-45</a> <span class="muted">18.1 ft below bank</span></li>
+<li><a href="/harris-county/spring-creek-at-kuykendahl-road.html">Spring Creek at Kuykendahl Road</a> <span class="muted">18.5 ft below bank</span></li>
+<li><a href="/harris-county/spring-creek-at-sh-249.html">Spring Creek at SH 249</a> <span class="muted">16.1 ft below bank</span></li>
+<li><a href="/harris-county/three-mile-creek-at-fm-362.html">Three Mile Creek at FM 362</a> <span class="muted">8.0 ft below bank</span></li>
+<li><a href="/harris-county/three-mile-creek-at-joseph-road.html">Three Mile Creek at Joseph Road</a> <span class="muted">7.4 ft below bank</span></li>
+<li><a href="/harris-county/walnut-creek-at-joseph-road.html">Walnut Creek at Joseph Road</a> <span class="muted">10.7 ft below bank</span></li>
+<li><a href="/harris-county/walnut-creek-at-nichols-sawmill.html">Walnut Creek at Nichols Sawmill</a> <span class="muted">16.1 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/bear-branch-at-research-blvd-the-woodlands.html">Bear Branch at Research Blvd, The Woodlands</a> <span class="muted">130.05 ft</span></li>
+<li><a href="/usgs/panther-branch-at-gosling-rd-the-woodlands.html">Panther Branch at Gosling Rd, The Woodlands</a> <span class="muted">126.32 ft</span></li>
+<li><a href="/usgs/panther-branch-near-spring.html">Panther Branch near Spring</a> <span class="muted">97.38 ft</span></li>
+<li><a href="/usgs/spring-creek-at-kuykendahl-rd-the-woodlands.html">Spring Creek at Kuykendahl Rd, The Woodlands</a> <span class="muted">109.39 ft</span></li>
+<li><a href="/usgs/spring-creek-near-spring.html">Spring Creek near Spring</a> <span class="muted">18.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/spring-creek-near-tomball.html">Spring Creek near Tomball</a> <span class="muted">16.1 ft below minor flood stage</span></li>
+</ul>
+<h3 id="spring-gully-goose-creek">Spring Gully &amp; Goose Creek</h3>
+<p><a href="/harris-county/watershed/spring-gully-goose-creek.html">Spring Gully &amp; Goose Creek watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/goose-creek-at-baker-road.html">Goose Creek at Baker Road</a> <span class="muted">13.5 ft below bank</span></li>
+<li><a href="/harris-county/goose-creek-at-i-10.html">Goose Creek at I-10</a> <span class="muted">11.2 ft below bank</span></li>
+<li><a href="/harris-county/goose-creek-at-sh-146.html">Goose Creek at SH 146</a> <span class="muted">8.1 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/goose-creek-at-baytown.html">Goose Creek at Baytown</a> <span class="muted">4.90 ft</span></li>
+<li><a href="/usgs/goose-creek-near-mcnair.html">Goose Creek near McNair</a> <span class="muted">10.8 ft below minor flood stage</span></li>
+</ul>
+<h3 id="vince-bayou">Vince Bayou</h3>
+<p><a href="/harris-county/watershed/vince-bayou.html">Vince Bayou watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/little-vince-bayou-at-burke-road.html">Little Vince Bayou at Burke Road</a> <span class="muted">12.2 ft below bank</span></li>
+<li><a href="/harris-county/little-vince-bayou-at-jackson-avenue.html">Little Vince Bayou at Jackson Avenue</a> <span class="muted">16.7 ft below bank</span></li>
+<li><a href="/harris-county/vince-bayou-at-fairmont-parkway.html">Vince Bayou at Fairmont Parkway</a> <span class="muted">14.1 ft below bank</span></li>
+<li><a href="/harris-county/vince-bayou-at-west-ellaine-down-stream.html">Vince Bayou at West Ellaine Down Stream</a> <span class="muted">14.5 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/vince-bayou-at-pasadena.html">Vince Bayou at Pasadena</a> <span class="muted">4.81 ft</span></li>
+</ul>
+<h3 id="waller-county-outside-harris-county-watersheds">Waller County (outside Harris County watersheds)</h3>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/brazos-river-at-san-felipe.html">Brazos River at San Felipe</a> <span class="muted">29.4 ft below minor flood stage</span></li>
+</ul>
+<h3 id="white-oak-bayou">White Oak Bayou</h3>
+<p><a href="/harris-county/watershed/white-oak-bayou.html">White Oak Bayou watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/brickhouse-gully-at-costa-rica-road.html">Brickhouse Gully at Costa Rica Road</a> <span class="muted">15.5 ft below bank</span></li>
+<li><a href="/harris-county/brickhouse-gully-at-hollister.html">Brickhouse Gully at Hollister</a> <span class="muted">12.1 ft below bank</span></li>
+<li><a href="/harris-county/cole-creek-at-deihl-road.html">Cole Creek at Deihl Road</a> <span class="muted">16.8 ft below bank</span></li>
+<li><a href="/harris-county/little-white-oak-bayou-at-tidwell-road.html">Little White Oak Bayou at Tidwell Road</a> <span class="muted">11.9 ft below bank</span></li>
+<li><a href="/harris-county/little-white-oak-bayou-at-trimble-street.html">Little White Oak Bayou at Trimble Street</a> <span class="muted">23.1 ft below bank</span></li>
+<li><a href="/harris-county/vogel-creek-at-gulf-bank-road.html">Vogel Creek at Gulf Bank Road</a> <span class="muted">12.0 ft below bank</span></li>
+<li><a href="/harris-county/vogel-creek-at-victory-drive.html">Vogel Creek at Victory Drive</a> <span class="muted">15.8 ft below bank</span></li>
+<li><a href="/harris-county/white-oak-bayou-at-alabonson-road.html">White Oak Bayou at Alabonson Road</a> <span class="muted">16.0 ft below bank</span></li>
+<li><a href="/harris-county/white-oak-bayou-at-ella-boulevard.html">White Oak Bayou at Ella Boulevard</a> <span class="muted">29.6 ft below bank</span></li>
+<li><a href="/harris-county/white-oak-bayou-at-fairbanks-north-houston-road.html">White Oak Bayou at Fairbanks North Houston Road</a> <span class="muted">21.5 ft below bank</span></li>
+<li><a href="/harris-county/white-oak-bayou-at-heights-boulevard.html">White Oak Bayou at Heights Boulevard</a> <span class="muted">24.2 ft below bank</span></li>
+<li><a href="/harris-county/white-oak-bayou-at-jones-road.html">White Oak Bayou at Jones Road</a> <span class="muted">12.6 ft below bank</span></li>
+<li><a href="/harris-county/white-oak-bayou-at-lakeview-drive.html">White Oak Bayou at Lakeview Drive</a> <span class="muted">15.9 ft below bank</span></li>
+<li><a href="/harris-county/white-oak-bayou-at-pinemont-drive.html">White Oak Bayou at Pinemont Drive</a> <span class="muted">24.4 ft below bank</span></li>
+<li><a href="/harris-county/white-oak-bayou-at-tidwell-road.html">White Oak Bayou at Tidwell Road</a> <span class="muted">24.0 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/brickhouse-gully-at-costa-rica-st-houston.html">Brickhouse Gully at Costa Rica St, Houston</a> <span class="muted">47.44 ft</span></li>
+<li><a href="/usgs/cole-creek-at-deihl-rd-houston.html">Cole Creek at Deihl Rd, Houston</a> <span class="muted">61.70 ft</span></li>
+<li><a href="/usgs/little-white-oak-bayou-at-trimble-st-houston.html">Little White Oak Bayou at Trimble St, Houston</a> <span class="muted">19.31 ft</span></li>
+<li><a href="/usgs/white-oak-bayou-at-alabonson-rd-houston.html">White Oak Bayou at Alabonson Rd, Houston</a> <span class="muted">59.95 ft</span></li>
+<li><a href="/usgs/white-oak-bayou-at-houston.html">White Oak Bayou at Houston</a> <span class="muted">24.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/white-oak-bayou-at-main-st-houston.html">White Oak Bayou at Main St, Houston</a> <span class="muted">2.25 ft</span></li>
+</ul>
+<h3 id="willow-creek">Willow Creek</h3>
+<p><a href="/harris-county/watershed/willow-creek.html">Willow Creek watershed: current readings</a></p>
+<ul class="cols">
+<li><a href="/harris-county/willow-creek-at-kuykendahl-road.html">Willow Creek at Kuykendahl Road</a> <span class="muted">18.2 ft below bank</span></li>
+<li><a href="/harris-county/willow-creek-at-sh-249.html">Willow Creek at SH 249</a> <span class="muted">11.5 ft below bank</span></li>
+</ul>
+<p class="muted" style="margin-bottom:0">USGS gauges</p><ul class="cols">
+<li><a href="/usgs/willow-creek-near-tomball.html">Willow Creek near Tomball</a> <span class="muted">18.2 ft below minor flood stage</span></li>
+</ul>
+<h2 id="agencies">Houston–Galveston: other agencies</h2>
+<h3 id="brazoria-drainage-district-4">Brazoria Drainage District 4</h3>
+<p><a href="/brazoria-drainage-district-4/">Brazoria Drainage District 4 gauges: current readings</a></p><ul class="cols">
+<li><a href="/brazoria-drainage-district-4/country-place-ditch-at-mchard-road.html">Country Place Ditch at McHard Road</a> <span class="muted">15.6 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/cowart-creek-diversion-at-veterans.html">Cowart Creek Diversion at Veterans</a> <span class="muted">6.6 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/cowarts-creek-at-cloverfield-road.html">Cowarts Creek at Cloverfield Road</a> <span class="muted">8.0 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/cowarts-creek-at-dixie-farm-road.html">Cowarts Creek at Dixie Farm Road</a> <span class="muted">11.6 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/hickory-slough-at-max-road.html">Hickory Slough at Max Road</a> <span class="muted">9.6 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/hickory-slough-at-mykawa.html">Hickory Slough at Mykawa</a> <span class="muted">9.6 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/hickory-slough-at-sh-288.html">Hickory Slough at SH 288</a> <span class="muted">7.5 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/leclaire-ditch-at-hwy-35.html">LeClaire Ditch at HWY 35</a> <span class="muted">10.0 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/marys-creek-at-fm-1128.html">Marys Creek at FM 1128</a> <span class="muted">9.1 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/marys-creek-at-longherridge.html">Marys Creek at Longherridge</a> <span class="muted">9.2 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/marys-creek-at-veterans-drive.html">Marys Creek at Veterans Drive</a> <span class="muted">8.0 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/mustang-bayou-at-cr-48.html">Mustang Bayou at CR 48</a> <span class="muted">6.3 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/mustang-bayou-at-sh-288.html">Mustang Bayou at SH 288</a> <span class="muted">7.2 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/old-chigger-creek-at-sh-35.html">Old Chigger Creek at SH 35</a> <span class="muted">2.9 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/resoft-park-ditch-at-sh-35.html">Resoft Park Ditch at SH 35</a> <span class="muted">3.0 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/rodeo-palms-ditch-at-sh-6.html">Rodeo Palms Ditch at SH 6</a> <span class="muted">6.2 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/veterans-at-hastings-cannon-road.html">Veterans at Hastings-Cannon Road</a> <span class="muted">6.2 ft below bank</span></li>
+<li><a href="/brazoria-drainage-district-4/west-fork-chocolate-bayou-at-cr-383.html">West Fork Chocolate Bayou at CR 383</a> <span class="muted">6.4 ft below bank</span></li>
+</ul>
+<h3 id="friendswood">City of Friendswood</h3>
+<p><a href="/friendswood/">City of Friendswood gauges: current readings</a></p><ul class="cols">
+<li><a href="/friendswood/chigger-creek-at-south-friendswood-drive.html">Chigger Creek at South Friendswood Drive</a> <span class="muted">15.2 ft below bank</span></li>
+<li><a href="/friendswood/cowarts-creek-at-west-castlewood-drive.html">Cowarts Creek at West Castlewood Drive</a> <span class="muted">19.1 ft below bank</span></li>
+</ul>
+<h3 id="league-city">City of League City</h3>
+<p><a href="/league-city/">City of League City gauges: current readings</a></p><ul class="cols">
+<li><a href="/league-city/benson-bayou-at-fm-646.html">Benson Bayou at FM 646</a> <span class="muted">11.4 ft below bank</span></li>
+<li><a href="/league-city/bordens-gully-at-hughes-lane.html">Bordens Gully at Hughes Lane</a> <span class="muted">7.8 ft below bank</span></li>
+<li><a href="/league-city/dickinson-bayou-at-hwy-3.html">Dickinson Bayou at HWY 3</a> <span class="muted">1.9 ft below bank</span></li>
+<li><a href="/league-city/gum-bayou-at-bishops-bridge.html">Gum Bayou at Bishops Bridge</a> <span class="muted">8.0 ft below bank</span></li>
+<li><a href="/league-city/gum-bayou-at-fm-646.html">Gum Bayou at FM 646</a> <span class="muted">9.9 ft below bank</span></li>
+<li><a href="/league-city/landing-ditch-at-west-main-fm-518.html">Landing Ditch at West Main (FM 518)</a> <span class="muted">12.9 ft below bank</span></li>
+<li><a href="/league-city/magnolia-creek-at-bay-area-boulevard.html">Magnolia Creek at Bay Area Boulevard</a> <span class="muted">12.9 ft below bank</span></li>
+<li><a href="/league-city/robinson-bayou-at-egret-bay-boulevard.html">Robinson Bayou at Egret Bay Boulevard</a> <span class="muted">5.7 ft below bank</span></li>
+</ul>
+<h3 id="missouri-city">City of Missouri City</h3>
+<p><a href="/missouri-city/">City of Missouri City gauges: current readings</a></p><ul class="cols">
+<li><a href="/missouri-city/cangelosi-at-buffalo-run-park.html">Cangelosi at Buffalo Run Park</a> <span class="muted">10.9 ft below bank</span></li>
+<li><a href="/missouri-city/ditch-b-1.html">Ditch B-1</a> <span class="muted">13.4 ft below bank</span></li>
+<li><a href="/missouri-city/lexington-at-hunter-s-trail.html">Lexington at Hunter’s Trail</a> <span class="muted">12.9 ft below bank</span></li>
+<li><a href="/missouri-city/north-ditch.html">North Ditch</a> <span class="muted">10.8 ft below bank</span></li>
+<li><a href="/missouri-city/stafford-run-at-court-road.html">Stafford Run at Court Road</a> <span class="muted">12.1 ft below bank</span></li>
+<li><a href="/missouri-city/txdot-channel.html">TxDOT Channel</a> <span class="muted">5.8 ft below bank</span></li>
+<li><a href="/missouri-city/willow-at-cravens.html">Willow at Cravens</a> <span class="muted">13.2 ft below bank</span></li>
+<li><a href="/missouri-city/willow-at-gessner.html">Willow at Gessner</a> <span class="muted">10.9 ft below bank</span></li>
+</ul>
+<h3 id="mont-belvieu">City of Mont Belvieu</h3>
+<p><a href="/mont-belvieu/">City of Mont Belvieu gauges: current readings</a></p><ul class="cols">
+<li><a href="/mont-belvieu/cotton-bayou-at-lakes-of-champions-boulevard.html">Cotton Bayou at Lakes of Champions Boulevard</a> <span class="muted">9.2 ft below bank</span></li>
+<li><a href="/mont-belvieu/hackberry-gully-at-i-10.html">Hackberry Gully at I-10</a> <span class="muted">7.0 ft below bank</span></li>
+</ul>
+<h3 id="sugar-land">City of Sugar Land</h3>
+<p><a href="/sugar-land/">City of Sugar Land gauges: current readings</a></p><ul class="cols">
+<li><a href="/sugar-land/amherst-court.html">Amherst Court</a> <span class="muted">17.8 ft below bank</span></li>
+<li><a href="/sugar-land/amil-gates-at-sh-6.html">Amil Gates at SH 6</a> <span class="muted">2.3 ft below bank</span></li>
+<li><a href="/sugar-land/brazos-river-at-us-59.html">Brazos River at US 59</a> <span class="muted">42.4 ft below bank</span></li>
+<li><a href="/sugar-land/bullhead-slough-at-easton-ave.html">Bullhead Slough at Easton Ave</a> <span class="muted">13.8 ft below bank</span></li>
+<li><a href="/sugar-land/covington-ditch-at-jess-pirtle.html">Covington Ditch at Jess Pirtle</a> <span class="muted">10.0 ft below bank</span></li>
+<li><a href="/sugar-land/dawnington-place.html">Dawnington Place</a> <span class="muted">13.3 ft below bank</span></li>
+<li><a href="/sugar-land/ditch-90-a-at-eldridge-road.html">Ditch 90 A at Eldridge Road</a> <span class="muted">3.9 ft below bank</span></li>
+<li><a href="/sugar-land/ditch-a-22-at-bournwood.html">Ditch A 22 at Bournwood</a> <span class="muted">9.9 ft below bank</span></li>
+<li><a href="/sugar-land/ditch-a-22-at-burney-road.html">Ditch A 22 at Burney Road</a> <span class="muted">11.4 ft below bank</span></li>
+<li><a href="/sugar-land/ditch-a-22-at-jess-pirtle.html">Ditch A-22 at Jess Pirtle</a> <span class="muted">8.2 ft below bank</span></li>
+<li><a href="/sugar-land/ditch-b-at-dulles-road.html">Ditch B at Dulles Road</a> <span class="muted">20.1 ft below bank</span></li>
+<li><a href="/sugar-land/ditch-c-at-austin-parkway.html">Ditch C at Austin Parkway</a> <span class="muted">16.3 ft below bank</span></li>
+<li><a href="/sugar-land/ditch-c-at-ditch-c1.html">Ditch C at Ditch C1</a> <span class="muted">16.2 ft below bank</span></li>
+<li><a href="/sugar-land/ditch-e-at-austin-parkway.html">Ditch E at Austin Parkway</a> <span class="muted">17.0 ft below bank</span></li>
+<li><a href="/sugar-land/ditch-h-at-university-blvd.html">Ditch H at University Blvd</a> <span class="muted">28.4 ft below bank</span></li>
+<li><a href="/sugar-land/east-sugar-creek-ditch-at-sugar-creek.html">East Sugar Creek Ditch at Sugar Creek</a> <span class="muted">10.8 ft below bank</span></li>
+<li><a href="/sugar-land/greatwood-parkway.html">Greatwood Parkway</a> <span class="muted">18.6 ft below bank</span></li>
+<li><a href="/sugar-land/jane-long-lake-at-country-club-boulevard.html">Jane Long lake at Country Club Boulevard</a> <span class="muted">6.1 ft below bank</span></li>
+<li><a href="/sugar-land/lakes-of-austin-park.html">Lakes of Austin Park</a> <span class="muted">4.9 ft below bank</span></li>
+<li><a href="/sugar-land/new-territory-blvd.html">New Territory Blvd</a> <span class="muted">15.6 ft below bank</span></li>
+<li><a href="/sugar-land/new-territory-pump-station.html">New Territory Pump Station</a> <span class="muted">20.8 ft below bank</span></li>
+<li><a href="/sugar-land/new-territory-treatment-plant.html">New Territory Treatment Plant</a> <span class="muted">23.9 ft below bank</span></li>
+<li><a href="/sugar-land/northwest-detention-pond-inlet.html">Northwest Detention Pond Inlet</a> <span class="muted">12.6 ft below bank</span></li>
+<li><a href="/sugar-land/northwest-detention-pond-outlet.html">Northwest Detention Pond Outlet</a> <span class="muted">8.4 ft below bank</span></li>
+<li><a href="/sugar-land/oyster-creek-at-dam-number-2.html">Oyster Creek at Dam Number 2</a> <span class="muted">4.0 ft below bank</span></li>
+<li><a href="/sugar-land/oyster-creek-at-dulles-avenue.html">Oyster Creek at Dulles Avenue</a> <span class="muted">12.2 ft below bank</span></li>
+<li><a href="/sugar-land/oyster-creek-at-lexington-boulevard.html">Oyster Creek at Lexington Boulevard</a> <span class="muted">13.3 ft below bank</span></li>
+<li><a href="/sugar-land/oyster-creek-at-sh-6.html">Oyster Creek at SH 6</a> <span class="muted">4.3 ft below bank</span></li>
+<li><a href="/sugar-land/oyster-creek-at-williams-trace.html">Oyster Creek at Williams Trace</a> <span class="muted">6.4 ft below bank</span></li>
+<li><a href="/sugar-land/siphon-b-at-ditch-b.html">Siphon B at Ditch B</a> <span class="muted">11.1 ft below bank</span></li>
+<li><a href="/sugar-land/telfair-north-pump-station.html">Telfair North Pump Station</a> <span class="muted">9.3 ft below bank</span></li>
+<li><a href="/sugar-land/telfair-south-pump-station.html">Telfair South Pump Station</a> <span class="muted">12.7 ft below bank</span></li>
+<li><a href="/sugar-land/upper-ditch-a-at-first-colony-athletic-facility.html">Upper Ditch A at First Colony Athletic Facility</a> <span class="muted">15.8 ft below bank</span></li>
+<li><a href="/sugar-land/winding-brook-dr.html">Winding Brook Dr</a> <span class="muted">14.2 ft below bank</span></li>
+</ul>
+<h3 id="fort-bend-county">Fort Bend County</h3>
+<p><a href="/fort-bend-county/">Fort Bend County gauges: current readings</a></p><ul class="cols">
+<li><a href="/fort-bend-county/bessies-creek-at-fm-1093.html">Bessies Creek at FM 1093</a> <span class="muted">17.5 ft below bank</span></li>
+<li><a href="/fort-bend-county/big-creek-at-fm-1994.html">Big Creek at FM 1994</a> <span class="muted">26.0 ft below bank</span></li>
+<li><a href="/fort-bend-county/big-creek-lat-ii-b-7-at-fm-2977.html">Big Creek Lat II- B-7 at FM 2977</a> <span class="muted">8.3 ft below bank</span></li>
+<li><a href="/fort-bend-county/brazos-river-at-fm-1489.html">Brazos River at FM 1489</a> <span class="muted">43.5 ft below bank</span></li>
+<li><a href="/fort-bend-county/brazos-river-at-fm-723.html">Brazos River at FM 723</a> <span class="muted">40.5 ft below bank</span></li>
+<li><a href="/fort-bend-county/brookshire-creek-at-fm-359.html">Brookshire Creek at FM 359</a> <span class="muted">6.0 ft below bank</span></li>
+<li><a href="/fort-bend-county/buffalo-creek-at-fm-1236.html">Buffalo Creek at FM 1236</a> <span class="muted">11.8 ft below bank</span></li>
+<li><a href="/fort-bend-county/bullhead-slough-at-fm-1464.html">Bullhead Slough at FM 1464</a> <span class="muted">7.8 ft below bank</span></li>
+<li><a href="/fort-bend-county/coon-creek-at-kroesche-road.html">Coon Creek at Kroesche Road</a> <span class="muted">8.2 ft below bank</span></li>
+<li><a href="/fort-bend-county/cottonwood-creek-at-spur-10.html">Cottonwood Creek at Spur 10</a> <span class="muted">11.2 ft below bank</span></li>
+<li><a href="/fort-bend-county/cottonwood-creek-at-us-59.html">Cottonwood Creek at US 59</a> <span class="muted">11.7 ft below bank</span></li>
+<li><a href="/fort-bend-county/deer-creek-at-fm-361.html">Deer Creek at FM 361</a> <span class="muted">11.9 ft below bank</span></li>
+<li><a href="/fort-bend-county/dry-creek-at-fm-2218.html">Dry Creek at FM 2218</a> <span class="muted">14.8 ft below bank</span></li>
+<li><a href="/fort-bend-county/dutch-john-creek-at-brazos-lake-drive.html">Dutch John Creek at Brazos Lake Drive</a> <span class="muted">9.2 ft below bank</span></li>
+<li><a href="/fort-bend-county/duval-ditch-at-sh-36.html">Duval Ditch at SH 36</a> <span class="muted">16.0 ft below bank</span></li>
+<li><a href="/fort-bend-county/fairchilds-creek-at-fm-360.html">Fairchilds Creek at FM 360</a> <span class="muted">4.6 ft below bank</span></li>
+<li><a href="/fort-bend-county/fairchilds-creek-at-fairchilds-road.html">Fairchilds Creek at Fairchilds Road</a> <span class="muted">14.4 ft below bank</span></li>
+<li><a href="/fort-bend-county/flat-bank-diversion-at-sienna-springs-drive.html">Flat Bank Diversion at Sienna Springs Drive</a> <span class="muted">34.9 ft below bank</span></li>
+<li><a href="/fort-bend-county/flewellen-creek-at-fm-1093.html">Flewellen Creek at FM 1093</a> <span class="muted">17.5 ft below bank</span></li>
+<li><a href="/fort-bend-county/gapps-slough-at-fm-762.html">Gapps Slough at FM 762</a> <span class="muted">7.8 ft below bank</span></li>
+<li><a href="/fort-bend-county/guy-creek-at-sh-36.html">Guy Creek at SH 36</a> <span class="muted">4.0 ft below bank</span></li>
+<li><a href="/fort-bend-county/jones-creek-at-fm-359.html">Jones Creek at FM 359</a> <span class="muted">26.1 ft below bank</span></li>
+<li><a href="/fort-bend-county/little-prong-at-gaston-road.html">Little Prong at Gaston Road</a> <span class="muted">15.1 ft below bank</span></li>
+<li><a href="/fort-bend-county/long-point-creek-at-sh-6.html">Long Point Creek at SH 6</a> <span class="muted">8.3 ft below bank</span></li>
+<li><a href="/fort-bend-county/lower-dry-creek-at-y-u-jones-road.html">Lower Dry Creek at Y. U. Jones Road</a> <span class="muted">10.7 ft below bank</span></li>
+<li><a href="/fort-bend-county/mustang-bayou-at-fm-521.html">Mustang Bayou at FM 521</a> <span class="muted">6.0 ft below bank</span></li>
+<li><a href="/fort-bend-county/oyster-creek-at-harlem-rd.html">Oyster Creek at Harlem Rd</a> <span class="muted">10.7 ft below bank</span></li>
+<li><a href="/fort-bend-county/oyster-creek-at-mason-road.html">Oyster Creek at Mason Road</a> <span class="muted">11.1 ft below bank</span></li>
+<li><a href="/fort-bend-county/rabbs-bayou-at-del-webb-boulevard.html">Rabbs Bayou at Del Webb Boulevard</a> <span class="muted">13.1 ft below bank</span></li>
+<li><a href="/fort-bend-county/red-gully-at-west-airport.html">Red Gully at West Airport</a> <span class="muted">10.2 ft below bank</span></li>
+<li><a href="/fort-bend-county/robinowitz-ditch-at-sh-36.html">Robinowitz Ditch at SH 36</a> <span class="muted">8.8 ft below bank</span></li>
+<li><a href="/fort-bend-county/san-bernard-river-at-us-59.html">San Bernard River at US 59</a> <span class="muted">9.1 ft below bank</span></li>
+<li><a href="/fort-bend-county/snake-creek-at-fm-1952.html">Snake Creek at FM 1952</a> <span class="muted">6.8 ft below bank</span></li>
+<li><a href="/fort-bend-county/snake-creek-at-tierra-grande-drive.html">Snake Creek at Tierra Grande Drive</a> <span class="muted">16.5 ft below bank</span></li>
+<li><a href="/fort-bend-county/turkey-creek-at-rycade-school-road.html">Turkey Creek at Rycade School Road</a> <span class="muted">15.1 ft below bank</span></li>
+<li><a href="/fort-bend-county/turkey-creek-at-us-59.html">Turkey Creek at US 59</a> <span class="muted">10.6 ft below bank</span></li>
+<li><a href="/fort-bend-county/west-simonton-ditch-at-fort-bend-drive.html">West Simonton Ditch at Fort Bend Drive</a> <span class="muted">10.8 ft below bank</span></li>
+<li><a href="/fort-bend-county/willow-fork-diversion-at-mason-road.html">Willow Fork Diversion at Mason Road</a> <span class="muted">12.0 ft below bank</span></li>
+</ul>
+<h3 id="galveston-county-drainage-district-1">Galveston County Drainage District 1</h3>
+<p><a href="/galveston-county-drainage-district-1/">Galveston County Drainage District 1 gauges: current readings</a></p><ul class="cols">
+<li><a href="/galveston-county-drainage-district-1/cloud-bayou-at-highland-road.html">Cloud Bayou at Highland Road</a> <span class="muted">5.0 ft below bank</span></li>
+<li><a href="/galveston-county-drainage-district-1/dickinson-bayou-at-fm-646.html">Dickinson Bayou at FM 646</a> <span class="muted">9.1 ft below bank</span></li>
+<li><a href="/galveston-county-drainage-district-1/ditch-6-at-cowan-road.html">Ditch 6 at Cowan Road</a> <span class="muted">5.9 ft below bank</span></li>
+<li><a href="/galveston-county-drainage-district-1/highland-bayou-at-avenue-j.html">Highland Bayou at Avenue J</a> <span class="muted">9.4 ft below bank</span></li>
+<li><a href="/galveston-county-drainage-district-1/willow-bayou-at-baker-street.html">Willow Bayou at Baker Street</a> <span class="muted">6.3 ft below bank</span></li>
+</ul>
+<h3 id="san-jacinto-river-authority">San Jacinto River Authority</h3>
+<p><a href="/san-jacinto-river-authority/">San Jacinto River Authority gauges: current readings</a></p><ul class="cols">
+<li><a href="/san-jacinto-river-authority/east-fork-san-jacinto-river-at-fm-945.html">East Fork San Jacinto River at FM 945</a> <span class="muted">12.3 ft below bank</span></li>
+<li><a href="/san-jacinto-river-authority/east-sandy-creek.html">East Sandy Creek</a> <span class="muted">13.9 ft below bank</span></li>
+<li><a href="/san-jacinto-river-authority/lake-conroe-at-1375.html">Lake Conroe at 1375</a> <span class="muted">19.6 ft below bank</span></li>
+<li><a href="/san-jacinto-river-authority/lake-creek-at-dobbin.html">Lake Creek at Dobbin</a> <span class="muted">21.2 ft below bank</span></li>
+<li><a href="/san-jacinto-river-authority/west-caney-creek-at-1375.html">West Caney Creek at 1375</a> <span class="muted">16.1 ft below bank</span></li>
+<li><a href="/san-jacinto-river-authority/west-fork-san-jacinto-at-hwy-30.html">West Fork San Jacinto at HWY 30</a> <span class="muted">12.6 ft below bank</span></li>
+<li><a href="/san-jacinto-river-authority/west-sandy-creek.html">West Sandy Creek</a> <span class="muted">7.4 ft below bank</span></li>
+<li><a href="/san-jacinto-river-authority/winters-bayou-at-tx150.html">Winters Bayou at TX150</a> <span class="muted">18.2 ft below bank</span></li>
+</ul>
+<h3 id="the-woodlands">The Woodlands</h3>
+<p><a href="/the-woodlands/">The Woodlands gauges: current readings</a></p><ul class="cols">
+<li><a href="/the-woodlands/alden-branch-at-alden-bridge.html">Alden Branch at Alden Bridge</a> <span class="muted">4.1 ft below bank</span></li>
+<li><a href="/the-woodlands/bear-branch-at-fm-2978.html">Bear Branch at FM 2978</a> <span class="muted">4.5 ft below bank</span></li>
+<li><a href="/the-woodlands/panther-branch-at-1488.html">Panther Branch at 1488</a> <span class="muted">4.9 ft below bank</span></li>
+</ul>
+<h3 id="waller-county">Waller County</h3>
+<p><a href="/waller-county/">Waller County gauges: current readings</a></p><ul class="cols">
+<li><a href="/waller-county/bessie-creek-at-fm-359.html">Bessie Creek at FM 359</a> <span class="muted">10.6 ft below bank</span></li>
+<li><a href="/waller-county/brookshire-creek-at-us-90.html">Brookshire Creek at US 90</a> <span class="muted">14.9 ft below bank</span></li>
+<li><a href="/waller-county/clear-creek-at-fm-1887.html">Clear Creek at FM 1887</a> <span class="muted">41.5 ft below bank</span></li>
+<li><a href="/waller-county/clear-creek-at-us-290-business.html">Clear Creek at US 290 Business</a> <span class="muted">15.6 ft below bank</span></li>
+<li><a href="/waller-county/irons-creek-at-fm-529.html">Irons Creek at FM 529</a> <span class="muted">8.3 ft below bank</span></li>
+</ul>
+<h2 id="beaumont-port-arthur">Beaumont–Port Arthur</h2>
+<p><a href="/texas-coast/beaumont-port-arthur/">Beaumont–Port Arthur: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/adams-bayou-at-fm-3247-near-orange.html">Adams Bayou at FM 3247 near Orange</a> <span class="muted">5.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/adams-bayou-at-sh87-near-orange.html">Adams Bayou at SH87 near Orange</a> <span class="muted">2.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/bairds-bayou-at-i-10-near-beaumont.html">Bairds Bayou at I-10 near Beaumont</a> <span class="muted">1.08 ft</span></li>
+<li><a href="/usgs/big-cow-creek-at-fm-1416-near-call.html">Big Cow Creek at FM 1416 near Call</a> <span class="muted">19.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/big-cow-creek-near-newton.html">Big Cow Creek near Newton</a> <span class="muted">9.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/cole-creek-at-i-10-near-orange.html">Cole Creek at I-10 near Orange</a> <span class="muted">8.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/cow-bayou-at-fm-1442-near-orangefield.html">Cow Bayou at FM 1442 near Orangefield</a> <span class="muted">5.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/cow-bayou-at-ih-10-near-vidor.html">Cow Bayou at IH 10 near Vidor</a> <span class="muted">1.21 ft</span></li>
+<li><a href="/usgs/cow-bayou-at-sh-87-near-bridge-city.html">Cow Bayou at SH 87 near Bridge City</a> <span class="muted">3.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/cow-bayou-near-mauriceville.html">Cow Bayou near Mauriceville</a> <span class="muted">13.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/green-pond-gully-at-fm-365-near-china.html">Green Pond Gully at FM 365 near China</a> <span class="muted">2.66 ft</span></li>
+<li><a href="/usgs/mayhaw-bayou-at-sh-73-near-hamshire.html">Mayhaw Bayou at SH 73 near Hamshire</a> <span class="muted">1.21 ft</span></li>
+<li><a href="/usgs/neches-river-saltwater-barrier-at-beaumont.html">Neches River Saltwater Barrier at Beaumont</a> <span class="muted">1.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/neches-river-at-beaumont.html">Neches River at Beaumont</a> <span class="muted">1.37 ft</span></li>
+<li><a href="/usgs/neches-river-at-evadale.html">Neches River at Evadale</a> <span class="muted">10.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/neches-river-near-town-bluff.html">Neches River near Town Bluff</a> <span class="muted">20.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/pine-island-bayou-above-bi-pump-plant-beaumont.html">Pine Island Bayou above BI Pump Plant, Beaumont</a> <span class="muted">7.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/pine-island-bayou-near-sour-lake.html">Pine Island Bayou near Sour Lake</a> <span class="muted">13.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/rhodair-gully-at-us-69-near-nederland.html">Rhodair Gully at US 69 near Nederland</a> <span class="muted">1.25 ft</span></li>
+<li><a href="/usgs/sabine-river-at-navy-pier-at-orange.html">Sabine River (at Navy Pier) at Orange</a> <span class="muted">3.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/sabine-river-at-i-10-near-orange.html">Sabine River at I-10 near Orange</a> <span class="muted">1.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/sabine-river-at-international-paper-near-orange.html">Sabine River at International Paper near Orange</a> <span class="muted">5.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/sabine-river-at-toledo-bend-powerhouse-near-burkeville.html">Sabine River at Toledo Bend Powerhouse near Burkeville</a> <span class="muted">84.26 ft</span></li>
+<li><a href="/usgs/sabine-river-near-bon-wier.html">Sabine River near Bon Wier</a> <span class="muted">18.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/sabine-river-near-burkeville.html">Sabine River near Burkeville</a> <span class="muted">25.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/sabine-river-near-ruliff.html">Sabine River near Ruliff</a> <span class="muted">10.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/taylor-alligator-bayou-pump-station-near-port-arthur.html">Taylor-Alligator Bayou Pump Station near Port Arthur</a> <span class="muted">2.10 ft</span></li>
+<li><a href="/usgs/village-creek-at-us-highway-69-near-village-mills.html">Village Creek at US Highway 69 near Village Mills</a> <span class="muted">7.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/village-creek-near-kountze.html">Village Creek near Kountze</a> <span class="muted">14.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/willow-marsh-bayou-at-i-10-near-beaumont.html">Willow Marsh Bayou at I-10 near Beaumont</a> <span class="muted">0.70 ft</span></li>
+<li><a href="/usgs/willow-marsh-bayou-at-us-90-near-beaumont.html">Willow Marsh Bayou at US 90 near Beaumont</a> <span class="muted">14.90 ft</span></li>
+</ul>
+<h2 id="victoria-matagorda-bay">Victoria and Matagorda Bay</h2>
+<p><a href="/texas-coast/victoria-matagorda-bay/">Victoria and Matagorda Bay: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/caney-creek-at-sh-35-near-van-vleck.html">Caney Creek at SH 35 near Van Vleck</a> <span class="muted">22.54 ft</span></li>
+<li><a href="/usgs/chicolette-creek-at-us-77-near-yoakum.html">Chicolette Creek at US 77 near Yoakum</a> <span class="muted">134.71 ft</span></li>
+<li><a href="/usgs/clarks-creek-at-us-77-near-sweet-home.html">Clarks Creek at US 77 near Sweet Home</a> <span class="muted">149.11 ft</span></li>
+<li><a href="/usgs/coleto-creek-at-arnold-rd-crossing-near-schroeder.html">Coleto Creek at Arnold Rd Crossing near Schroeder</a> <span class="muted">13.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/coleto-creek-near-victoria.html">Coleto Creek near Victoria</a> <span class="muted">21.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/colorado-river-at-wharton.html">Colorado River at Wharton</a> <span class="muted">31.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/colorado-river-near-bay-city.html">Colorado River near Bay City</a> <span class="muted">41.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/colorado-river-near-wadsworth.html">Colorado River near Wadsworth</a> <span class="muted">1.67 ft</span></li>
+<li><a href="/usgs/e-mustang-creek-near-louise.html">E Mustang Creek near Louise</a> <span class="muted">16.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/fifteenmile-creek-near-weser.html">Fifteenmile Creek near Weser</a> <span class="muted">6.09 ft</span></li>
+<li><a href="/usgs/garcitas-creek-near-inez.html">Garcitas Creek near Inez</a> <span class="muted">14.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/guadalupe-river-at-cuero.html">Guadalupe River at Cuero</a> <span class="muted">16.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/guadalupe-river-at-highway-183-near-hochheim.html">Guadalupe River at Highway 183 near Hochheim</a> <span class="muted">17.1 ft below action stage</span></li>
+<li><a href="/usgs/guadalupe-river-at-sh-35-near-tivoli.html">Guadalupe River at SH 35 near Tivoli</a> <span class="muted">11.05 ft</span></li>
+<li><a href="/usgs/guadalupe-river-at-victoria.html">Guadalupe River at Victoria</a> <span class="muted">5.19 ft</span></li>
+<li><a href="/usgs/guadalupe-river-near-bloomington.html">Guadalupe River near Bloomington</a> <span class="muted">11.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/juanita-creek-at-sh-71-near-midfield.html">Juanita Creek at SH 71 near Midfield</a> <span class="muted">12.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/lavaca-river-at-hallettsville.html">Lavaca River at Hallettsville</a> <span class="muted">23.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/lavaca-river-near-edna.html">Lavaca River near Edna</a> <span class="muted">16.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/linnville-bayou-at-fm-521-near-cedar-lane.html">Linnville Bayou at FM 521 near Cedar Lane</a> <span class="muted">20.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/little-brushy-creek-at-us-77-near-yoakum.html">Little Brushy Creek at US 77 near Yoakum</a> <span class="muted">126.52 ft</span></li>
+<li><a href="/usgs/navidad-river-at-morales.html">Navidad River at Morales</a> <span class="muted">22.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/navidad-river-at-strane-park-near-edna.html">Navidad River at Strane Park near Edna</a> <span class="muted">19.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/navidad-river-near-hallettsville.html">Navidad River near Hallettsville</a> <span class="muted">19.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/navidad-river-near-speaks.html">Navidad River near Speaks</a> <span class="muted">22.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/north-end-of-gbra-calhoun-canal-near-long-mott.html">North end of GBRA Calhoun Canal near Long Mott</a> <span class="muted">14.75 ft</span></li>
+<li><a href="/usgs/perdido-creek-at-fm-622-near-fannin.html">Perdido Creek at FM 622 near Fannin</a> <span class="muted">1.05 ft</span></li>
+<li><a href="/usgs/placedo-creek-near-placedo.html">Placedo Creek near Placedo</a> <span class="muted">4.19 ft</span></li>
+<li><a href="/usgs/san-antonio-river-at-goliad.html">San Antonio River at Goliad</a> <span class="muted">21.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/sandies-creek-near-westhoff.html">Sandies Creek near Westhoff</a> <span class="muted">18.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/sandy-creek-near-ganado.html">Sandy Creek near Ganado</a> <span class="muted">12.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/tres-palacios-river-near-midfield.html">Tres Palacios River near Midfield</a> <span class="muted">20.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/w-mustang-creek-near-ganado.html">W Mustang Creek near Ganado</a> <span class="muted">15.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/w-sandy-creek-at-fm-2437-near-sheridan.html">W Sandy Creek at FM 2437 near Sheridan</a> <span class="muted">193.14 ft</span></li>
+<li><a href="/usgs/west-bernard-creek-at-us-59-near-hungerford.html">West Bernard Creek at US 59 near Hungerford</a> <span class="muted">74.03 ft</span></li>
+</ul>
+<h2 id="corpus-christi-coastal-bend">Corpus Christi and the Coastal Bend</h2>
+<p><a href="/texas-coast/corpus-christi-coastal-bend/">Corpus Christi and the Coastal Bend: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/aransas-river-near-skidmore.html">Aransas River near Skidmore</a> <span class="muted">12.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/atascosa-river-at-whitsett.html">Atascosa River at Whitsett</a> <span class="muted">18.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/chiltipin-creek-at-us-77-near-sinton.html">Chiltipin Creek at US 77 near Sinton</a> <span class="muted">23.92 ft</span></li>
+<li><a href="/usgs/choke-canyon-reservoir-owc-near-three-rivers.html">Choke Canyon Reservoir OWC near Three Rivers</a> <span class="muted">4.07 ft</span></li>
+<li><a href="/usgs/copano-creek-near-refugio.html">Copano Creek near Refugio</a> <span class="muted">9.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/devils-run-creek-at-us-77-near-woodsboro.html">Devils Run Creek at US 77 near Woodsboro</a> <span class="muted">15.94 ft</span></li>
+<li><a href="/usgs/lagarto-creek-near-george-west.html">Lagarto Creek near George West</a> <span class="muted">3.84 ft</span></li>
+<li><a href="/usgs/los-olmos-creek-near-falfurrias.html">Los Olmos Creek near Falfurrias</a> <span class="muted">9.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/medio-creek-at-sh-202-near-beeville.html">Medio Creek at SH 202 near Beeville</a> <span class="muted">113.64 ft</span></li>
+<li><a href="/usgs/medio-creek-near-beeville.html">Medio Creek near Beeville</a> <span class="muted">3.91 ft</span></li>
+<li><a href="/usgs/medio-creek-near-normanna.html">Medio Creek near Normanna</a> <span class="muted">214.10 ft</span></li>
+<li><a href="/usgs/mission-river-at-refugio.html">Mission River at Refugio</a> <span class="muted">21.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/nueces-river-at-bluntzer.html">Nueces River at Bluntzer</a> <span class="muted">10.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/nueces-river-at-calallen.html">Nueces River at Calallen</a> <span class="muted">3.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/nueces-river-near-mathis.html">Nueces River near Mathis</a> <span class="muted">23.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/nueces-river-near-odem.html">Nueces River near Odem</a> <span class="muted">1.85 ft</span></li>
+<li><a href="/usgs/nueces-river-near-three-rivers.html">Nueces River near Three Rivers</a> <span class="muted">23.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/oso-creek-at-corpus-christi.html">Oso Creek at Corpus Christi</a> <span class="muted">14.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/petronila-creek-at-fm-665-near-driscoll.html">Petronila Creek at FM 665 near Driscoll</a> <span class="muted">4.52 ft</span></li>
+<li><a href="/usgs/poesta-creek-at-beeville.html">Poesta Creek at Beeville</a> <span class="muted">191.03 ft</span></li>
+<li><a href="/usgs/poesta-creek-at-fm-351-near-beeville.html">Poesta Creek at FM 351 near Beeville</a> <span class="muted">215.39 ft</span></li>
+<li><a href="/usgs/san-antonio-river-near-mcfaddin.html">San Antonio River near McFaddin</a> <span class="muted">14.36 ft</span></li>
+<li><a href="/usgs/san-diego-creek-at-alice.html">San Diego Creek at Alice</a> <span class="muted">3.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/san-fernando-creek-at-alice.html">San Fernando Creek at Alice</a> <span class="muted">11.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/tranquitas-creek-at-kingsville.html">Tranquitas Creek at Kingsville</a> <span class="muted">1.18 ft</span></li>
+</ul>
+<h2 id="rio-grande-valley">Rio Grande Valley</h2>
+<p><a href="/texas-coast/rio-grande-valley/">Rio Grande Valley: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/brazos-santiago-pass-at-south-padre-island.html">Brazos Santiago Pass at South Padre Island</a> <span class="muted">0.64 ft</span></li>
+<li><a href="/usgs/cameron-county-ditch-1-at-fm-802-brownsville.html">Cameron County Ditch 1 at FM 802, Brownsville</a> <span class="muted">1.44 ft</span></li>
+<li><a href="/usgs/cameron-county-ditch-2-at-fm-1847-near-los-fresnos.html">Cameron County Ditch 2 at FM 1847 near Los Fresnos</a> <span class="muted">1.56 ft</span></li>
+<li><a href="/usgs/donna-id-canal-at-e-levee-rd-near-donna.html">Donna ID Canal at E Levee Rd near Donna</a> <span class="muted">84.60 ft</span></li>
+<li><a href="/usgs/n-main-drain-at-boca-chica-hwy-brownsville.html">N Main Drain at Boca Chica Hwy, Brownsville</a> <span class="muted">16.66 ft</span></li>
+<li><a href="/usgs/n-main-drain-at-manzano-st-brownsville.html">N Main Drain at Manzano St, Brownsville</a> <span class="muted">13.26 ft</span></li>
+<li><a href="/usgs/north-main-drain-at-ostos-rd-brownsville.html">North Main Drain at Ostos Rd, Brownsville</a> <span class="muted">0.53 ft</span></li>
+<li><a href="/usgs/old-main-drain-no-2-at-sh-4-brownsville.html">Old Main Drain No 2 at SH 4, Brownsville</a> <span class="muted">1.47 ft</span></li>
+<li><a href="/usgs/resaca-del-rancho-viejo-brownsville.html">Resaca del Rancho Viejo, Brownsville</a> <span class="muted">17.00 ft</span></li>
+<li><a href="/usgs/town-resaca-at-e-6th-st-brownsville.html">Town Resaca at E 6th St, Brownsville</a> <span class="muted">20.28 ft</span></li>
+</ul>
+<h2 id="lake-charles">Lake Charles and Southwest Louisiana</h2>
+<p><a href="/louisiana/lake-charles/">Lake Charles and Southwest Louisiana: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/bayou-lacassine-near-lake-arthur.html">Bayou Lacassine near Lake Arthur</a> <span class="muted">10.06 ft</span></li>
+<li><a href="/usgs/bayou-nezpique-near-basile.html">Bayou Nezpique near Basile</a> <span class="muted">20.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/bundick-creek-near-deridder.html">Bundick Creek near DeRidder</a> <span class="muted">17.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/bundick-lake-at-spillway-near-deridder.html">Bundick Lake at Spillway near DeRidder</a> <span class="muted">5.98 ft</span></li>
+<li><a href="/usgs/buxton-creek-at-highway-27-near-dequincy.html">Buxton Creek at Highway 27 near DeQuincy</a> <span class="muted">16.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/calcasieu-river-at-cameron.html">Calcasieu River at Cameron</a> <span class="muted">6.37 ft</span></li>
+<li><a href="/usgs/calcasieu-river-at-highway-171-at-moss-bluff.html">Calcasieu River at Highway 171 at Moss Bluff</a> <span class="muted">25.90 ft</span></li>
+<li><a href="/usgs/calcasieu-river-at-i-10-at-lake-charles.html">Calcasieu River at I-10 at Lake Charles</a> <span class="muted">1.75 ft</span></li>
+<li><a href="/usgs/calcasieu-river-near-kinder.html">Calcasieu River near Kinder</a> <span class="muted">14.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/calcasieu-river-near-oakdale.html">Calcasieu River near Oakdale</a> <span class="muted">9.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/calcasieu-river-near-oberlin.html">Calcasieu River near Oberlin</a> <span class="muted">12.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/hickory-branch-near-kernan.html">Hickory Branch near Kernan</a> <span class="muted">0.22 ft</span></li>
+<li><a href="/usgs/intracoastal-canal-at-creole-ferry-at-gibbstown.html">Intracoastal Canal at Creole Ferry at Gibbstown</a> <span class="muted">3.67 ft</span></li>
+<li><a href="/usgs/mermentau-river-at-lake-arthur.html">Mermentau River at Lake Arthur</a> <span class="muted">22.29 ft</span></li>
+<li><a href="/usgs/mermentau-river-at-mermentau.html">Mermentau River at Mermentau</a> <span class="muted">2.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/north-calcasieu-lake-near-hackberry.html">North Calcasieu Lake near Hackberry</a> <span class="muted">3.68 ft</span></li>
+<li><a href="/usgs/ouiska-chitto-creek-near-oberlin.html">Ouiska Chitto Creek near Oberlin</a> <span class="muted">12.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/west-fork-calcasieu-river-at-moss-bluff.html">West Fork Calcasieu River at Moss Bluff</a> <span class="muted">16.71 ft</span></li>
+</ul>
+<h2 id="lafayette-acadiana">Lafayette and Acadiana</h2>
+<p><a href="/louisiana/lafayette-acadiana/">Lafayette and Acadiana: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/arm-of-grand-lake-near-crook-chene-cove.html">Arm of Grand Lake near Crook Chene Cove</a> <span class="muted">2.89 ft</span></li>
+<li><a href="/usgs/atchafalaya-river-at-butte-la-rose.html">Atchafalaya River at Butte La Rose</a> <span class="muted">15.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/atchafalaya-river-at-krotz-springs.html">Atchafalaya River at Krotz Springs</a> <span class="muted">2.51 ft</span></li>
+<li><a href="/usgs/bayou-courtableau-at-washington.html">Bayou Courtableau at Washington</a> <span class="muted">9.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/bayou-darby-near-lake-fausse-point-cut.html">Bayou Darby near Lake Fausse Point Cut</a> <span class="muted">9.02 ft</span></li>
+<li><a href="/usgs/bayou-des-cannes-near-eunice.html">Bayou Des Cannes near Eunice</a> <span class="muted">16.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/bayou-des-cannes-west-of-iota.html">Bayou Des Cannes west of Iota</a> <span class="muted">11.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/bayou-fusilier-abv-weir-at-arnaudville.html">Bayou Fusilier Abv Weir at Arnaudville</a> <span class="muted">5.58 ft</span></li>
+<li><a href="/usgs/bayou-mallet-at-highway-91-north-of-iota.html">Bayou Mallet at Highway 91 north of Iota</a> <span class="muted">9.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/bayou-milhomme-near-stephensville.html">Bayou Milhomme near Stephensville</a> <span class="muted">1.10 ft</span></li>
+<li><a href="/usgs/bayou-plaquemine-brule-at-esterwood.html">Bayou Plaquemine Brule at Esterwood</a> <span class="muted">4.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/bayou-queue-de-tortue-at-riceville.html">Bayou Queue De Tortue at Riceville</a> <span class="muted">6.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/bayou-teche-at-adeline-bridge-near-jeanerette.html">Bayou Teche at Adeline Bridge near Jeanerette</a> <span class="muted">1.87 ft</span></li>
+<li><a href="/usgs/bayou-teche-at-arnaudville.html">Bayou Teche at Arnaudville</a> <span class="muted">13.34 ft</span></li>
+<li><a href="/usgs/bayou-teche-at-keystone-lock-and-dam-near-st-martinville.html">Bayou Teche at Keystone Lock and Dam near St. Martinville</a> <span class="muted">9.98 ft</span></li>
+<li><a href="/usgs/bayou-teche-at-port-barre.html">Bayou Teche at Port Barre</a> <span class="muted">17.29 ft</span></li>
+<li><a href="/usgs/bayou-teche-below-keystone-lock-and-dam-near-st-martinville.html">Bayou Teche below Keystone Lock and Dam near St. Martinville</a> <span class="muted">3.45 ft</span></li>
+<li><a href="/usgs/bayou-teche-east-of-calumet-flood-gate-at-calumet.html">Bayou Teche east of Calumet Flood Gate at Calumet</a> <span class="muted">3.08 ft</span></li>
+<li><a href="/usgs/bayou-teche-west-of-calumet-flood-gate-at-calumet.html">Bayou Teche west of Calumet Flood Gate at Calumet</a> <span class="muted">2.86 ft</span></li>
+<li><a href="/usgs/buffalo-cove-at-round-island-near-charenton.html">Buffalo Cove at Round Island near Charenton</a> <span class="muted">2.85 ft</span></li>
+<li><a href="/usgs/chicot-pass-near-myette-point-near-charenton.html">Chicot Pass near Myette Point near Charenton</a> <span class="muted">2.48 ft</span></li>
+<li><a href="/usgs/giww-at-bayou-sale-ridge-near-franklin.html">GIWW at Bayou Sale Ridge near Franklin</a> <span class="muted">2.42 ft</span></li>
+<li><a href="/usgs/lake-pelba-at-i-10-near-henderson.html">Lake Pelba at I-10 near Henderson</a> <span class="muted">6.38 ft</span></li>
+<li><a href="/usgs/little-bayou-long-north-of-duck-lake.html">Little Bayou Long North of Duck Lake</a> <span class="muted">3.00 ft</span></li>
+<li><a href="/usgs/lower-atchafalaya-river-at-morgan-city.html">Lower Atchafalaya River at Morgan City</a> <span class="muted">2.74 ft</span></li>
+<li><a href="/usgs/middle-fork-bayou-long-at-bayou-long.html">Middle Fork Bayou Long at Bayou Long</a> <span class="muted">2.96 ft</span></li>
+<li><a href="/usgs/mouth-of-atchafalaya-river-at-atchafalaya-bay.html">Mouth of Atchafalaya River at Atchafalaya Bay</a> <span class="muted">5.48 ft</span></li>
+<li><a href="/usgs/murphy-lake-near-bayou-sorrel.html">Murphy Lake near Bayou Sorrel</a> <span class="muted">9.21 ft</span></li>
+<li><a href="/usgs/pontoon-bridge-canal-near-butte-larose.html">Pontoon Bridge Canal near Butte Larose</a> <span class="muted">5.46 ft</span></li>
+<li><a href="/usgs/ruth-canal-near-ruth.html">Ruth Canal near Ruth</a> <span class="muted">8.60 ft</span></li>
+<li><a href="/usgs/state-canal-near-krotz-springs.html">State Canal near Krotz Springs</a> <span class="muted">10.06 ft</span></li>
+<li><a href="/usgs/vermilion-bay-near-cypremort-point.html">Vermilion Bay near Cypremort Point</a> <span class="muted">1.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/vermilion-bay-b-fearman-near-intracoastal-city.html">Vermilion Bay(B. Fearman) near Intracoastal City</a> <span class="muted">6.42 ft</span></li>
+<li><a href="/usgs/vermilion-river-b-vermilion-near-carencro.html">Vermilion River (B. Vermilion) near Carencro</a> <span class="muted">11.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/vermilion-river-at-highway-733-near-lafayette.html">Vermilion River at Highway 733 near Lafayette</a> <span class="muted">4.77 ft</span></li>
+<li><a href="/usgs/vermilion-river-at-highway-92-at-milton.html">Vermilion River at Highway 92 at Milton</a> <span class="muted">10.95 ft</span></li>
+<li><a href="/usgs/vermilion-river-at-surrey-st-at-lafayette.html">Vermilion River at Surrey St. at Lafayette</a> <span class="muted">4.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/vermilion-river-at-woodlawn.html">Vermilion River at Woodlawn</a> <span class="muted">4.88 ft</span></li>
+<li><a href="/usgs/vermilion-river-near-lafayette.html">Vermilion River near Lafayette</a> <span class="muted">7.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/vermillion-river-north-of-i-10-at-lafayette.html">Vermillion River north of I-10 at Lafayette</a> <span class="muted">9.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/wax-lake-outlet-at-calumet.html">Wax Lake Outlet at Calumet</a> <span class="muted">2.77 ft</span></li>
+</ul>
+<h2 id="baton-rouge">Baton Rouge</h2>
+<p><a href="/louisiana/baton-rouge/">Baton Rouge: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/alligator-bayou-near-kleinpeter.html">Alligator Bayou near Kleinpeter</a> <span class="muted">1.71 ft</span></li>
+<li><a href="/usgs/amite-river-diversion-south-of-whitehall.html">Amite River Diversion south of Whitehall</a> <span class="muted">6.79 ft</span></li>
+<li><a href="/usgs/amite-river-at-highway-22-near-maurepas.html">Amite River at Highway 22 near Maurepas</a> <span class="muted">1.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/amite-river-at-magnolia.html">Amite River at Magnolia</a> <span class="muted">21.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/amite-river-at-port-vincent.html">Amite River at Port Vincent</a> <span class="muted">5.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/amite-river-near-darlington.html">Amite River near Darlington</a> <span class="muted">19.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/amite-river-near-denham-springs.html">Amite River near Denham Springs</a> <span class="muted">19.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/amite-river-near-french-settlement.html">Amite River near French Settlement</a> <span class="muted">2.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/bayou-fountain-at-bluebonnet-blvd-near-b-r.html">Bayou Fountain at Bluebonnet Blvd near B.R.</a> <span class="muted">4.50 ft</span></li>
+<li><a href="/usgs/bayou-francois-at-highway-61-near-gonzales.html">Bayou Francois at Highway 61 near Gonzales</a> <span class="muted">1.50 ft</span></li>
+<li><a href="/usgs/bayou-grosse-tete-south-of-i-10-at-grosse-tete.html">Bayou Grosse Tete south of I-10 at Grosse Tete</a> <span class="muted">4.71 ft</span></li>
+<li><a href="/usgs/bayou-lafourche-southwest-of-donaldsonville.html">Bayou Lafourche southwest of Donaldsonville</a> <span class="muted">6.61 ft</span></li>
+<li><a href="/usgs/bayou-manchac-at-alligator-bayou-near-kleinpeter.html">Bayou Manchac at Alligator Bayou near Kleinpeter</a> <span class="muted">1.80 ft</span></li>
+<li><a href="/usgs/bayou-manchac-near-little-prairie.html">Bayou Manchac near Little Prairie</a> <span class="muted">7.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/beaver-bayou-at-denham-road-near-baton-rouge.html">Beaver Bayou at Denham Road near Baton Rouge</a> <span class="muted">61.24 ft</span></li>
+<li><a href="/usgs/beaver-bayou-at-hooper-road-near-baton-rouge.html">Beaver Bayou at Hooper Road near Baton Rouge</a> <span class="muted">0.69 ft</span></li>
+<li><a href="/usgs/beaver-bayou-at-wax-road-near-baton-rouge.html">Beaver Bayou at Wax Road near Baton Rouge</a> <span class="muted">27.31 ft</span></li>
+<li><a href="/usgs/black-bayou-at-highway-621-near-prairieville.html">Black Bayou at Highway 621 near Prairieville</a> <span class="muted">1.73 ft</span></li>
+<li><a href="/usgs/black-bayou-east-of-gonzales.html">Black Bayou east of Gonzales</a> <span class="muted">1.64 ft</span></li>
+<li><a href="/usgs/bluff-swamp-near-kleinpeter.html">Bluff Swamp near Kleinpeter</a> <span class="muted">1.76 ft</span></li>
+<li><a href="/usgs/choctaw-bayou-at-highway-404-west-of-white-castle.html">Choctaw Bayou at Highway 404 west of White Castle</a> <span class="muted">9.05 ft</span></li>
+<li><a href="/usgs/choctaw-bayou-at-i-10-east-of-grosse-tete.html">Choctaw Bayou at I-10 east of Grosse Tete</a> <span class="muted">12.49 ft</span></li>
+<li><a href="/usgs/claycut-bayou-at-antioch-road-near-baton-rouge.html">Claycut Bayou at Antioch Road near Baton Rouge</a> <span class="muted">8.66 ft</span></li>
+<li><a href="/usgs/comite-river-at-comite-dr-near-baton-rouge.html">Comite River at Comite Dr near Baton Rouge</a> <span class="muted">1.39 ft</span></li>
+<li><a href="/usgs/comite-river-at-greenwell-springs-road-near-baton-rouge.html">Comite River at Greenwell Springs Road near Baton Rouge</a> <span class="muted">17.87 ft</span></li>
+<li><a href="/usgs/comite-river-at-point-hudson-pride-road-near-milldale.html">Comite River at Point Hudson-Pride Road near Milldale</a> <span class="muted">12.89 ft</span></li>
+<li><a href="/usgs/comite-river-near-comite.html">Comite River near Comite</a> <span class="muted">19.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/comite-river-near-zachary.html">Comite River near Zachary</a> <span class="muted">2.12 ft</span></li>
+<li><a href="/usgs/corporation-canal-at-east-roosevelt-street-at-baton-rouge.html">Corporation Canal at East Roosevelt Street at Baton Rouge</a> <span class="muted">16.39 ft</span></li>
+<li><a href="/usgs/dawson-creek-at-bluebonnet-blvd-near-baton-rouge.html">Dawson Creek at Bluebonnet Blvd near Baton Rouge</a> <span class="muted">6.60 ft</span></li>
+<li><a href="/usgs/grand-goudine-at-babin-road-near-duplessis.html">Grand Goudine at Babin Road near Duplessis</a> <span class="muted">1.50 ft</span></li>
+<li><a href="/usgs/henderson-bayou-near-port-vincent.html">Henderson Bayou near Port Vincent</a> <span class="muted">1.65 ft</span></li>
+<li><a href="/usgs/hurricane-creek-at-baton-rouge.html">Hurricane Creek at Baton Rouge</a> <span class="muted">32.95 ft</span></li>
+<li><a href="/usgs/jones-creek-at-old-hammond-highway-near-baton-rouge.html">Jones Creek at Old Hammond Highway near Baton Rouge</a> <span class="muted">22.31 ft</span></li>
+<li><a href="/usgs/lower-grand-river-at-bayou-sorrel.html">Lower Grand River at Bayou Sorrel</a> <span class="muted">5.54 ft</span></li>
+<li><a href="/usgs/muddy-creek-at-highway-42-near-oak-grove.html">Muddy Creek at Highway 42 near Oak Grove</a> <span class="muted">2.81 ft</span></li>
+<li><a href="/usgs/new-river-canal-east-of-sorrento.html">New River Canal east of Sorrento</a> <span class="muted">1.74 ft</span></li>
+<li><a href="/usgs/new-river-north-of-sorrento.html">New River north of Sorrento</a> <span class="muted">1.65 ft</span></li>
+<li><a href="/usgs/north-branch-ward-creek-at-baton-rouge.html">North Branch Ward Creek at Baton Rouge</a> <span class="muted">13.85 ft</span></li>
+<li><a href="/usgs/old-ward-creek-diversion-at-highland-road-near-baton-rouge.html">Old Ward Creek Diversion at Highland Road near Baton Rouge</a> <span class="muted">1.26 ft</span></li>
+<li><a href="/usgs/panama-canal-at-highway-44-near-gonzales.html">Panama Canal at Highway 44 near Gonzales</a> <span class="muted">1.55 ft</span></li>
+<li><a href="/usgs/tickfaw-river-at-holden.html">Tickfaw River at Holden</a> <span class="muted">14.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/tickfaw-river-at-liverpool.html">Tickfaw River at Liverpool</a> <span class="muted">7.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/tickfaw-river-at-montpelier.html">Tickfaw River at Montpelier</a> <span class="muted">10.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/ward-creek-at-essen-lane-near-baton-rouge.html">Ward Creek at Essen Lane near Baton Rouge</a> <span class="muted">7.87 ft</span></li>
+<li><a href="/usgs/ward-creek-at-government-st-at-baton-rouge.html">Ward Creek at Government St at Baton Rouge</a> <span class="muted">31.66 ft</span></li>
+<li><a href="/usgs/welsh-gully-at-j-broussard-road-near-prairieville.html">Welsh Gully at J. Broussard Road near Prairieville</a> <span class="muted">0.35 ft</span></li>
+<li><a href="/usgs/white-bayou-at-state-highway-64-near-zachary.html">White Bayou at State Highway 64 near Zachary</a> <span class="muted">27.59 ft</span></li>
+</ul>
+<h2 id="houma-thibodaux">Houma–Thibodaux</h2>
+<p><a href="/louisiana/houma-thibodaux/">Houma–Thibodaux: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/bayou-lafourche-at-lockport.html">Bayou Lafourche at Lockport</a> <span class="muted">5.29 ft</span></li>
+<li><a href="/usgs/bayou-lafourche-at-napoleonville.html">Bayou Lafourche at Napoleonville</a> <span class="muted">4.51 ft</span></li>
+<li><a href="/usgs/bayou-lafourche-at-thibodaux.html">Bayou Lafourche at Thibodaux</a> <span class="muted">3.10 ft</span></li>
+<li><a href="/usgs/bayou-perot-at-point-legard-near-cutoff.html">Bayou Perot at Point Legard near Cutoff</a> <span class="muted">2.86 ft</span></li>
+<li><a href="/usgs/belle-river-at-highway-70-near-pierre-part.html">Belle River at Highway 70 near Pierre Part</a> <span class="muted">1.13 ft</span></li>
+<li><a href="/usgs/caillou-bay-southwest-of-cocodrie.html">Caillou Bay southwest of Cocodrie</a> <span class="muted">1.85 ft</span></li>
+<li><a href="/usgs/caillou-lake-sister-lake-southwest-of-dulac.html">Caillou Lake (Sister Lake) southwest of Dulac</a> <span class="muted">1.97 ft</span></li>
+<li><a href="/usgs/company-canal-at-highway-1-at-lockport.html">Company Canal at Highway 1 at Lockport</a> <span class="muted">2.04 ft</span></li>
+<li><a href="/usgs/company-canal-at-salt-barrier-near-lockport.html">Company Canal at Salt Barrier near Lockport</a> <span class="muted">2.53 ft</span></li>
+</ul>
+<h2 id="new-orleans">New Orleans and the Northshore</h2>
+<p><a href="/louisiana/new-orleans/">New Orleans and the Northshore: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/abita-river-north-of-abita-springs.html">Abita River north of Abita Springs</a> <span class="muted">6.89 ft</span></li>
+<li><a href="/usgs/airline-canal-at-blind-river-near-gramercy.html">Airline Canal at Blind River near Gramercy</a> <span class="muted">1.15 ft</span></li>
+<li><a href="/usgs/barataria-bay-near-grand-terre-island.html">Barataria Bay near Grand Terre Island</a> <span class="muted">3.18 ft</span></li>
+<li><a href="/usgs/barataria-pass-at-grand-isle.html">Barataria Pass at Grand Isle</a> <span class="muted">8.01 ft</span></li>
+<li><a href="/usgs/barataria-waterway-at-mud-lake-south-of-lafitte.html">Barataria Waterway at Mud Lake south of Lafitte</a> <span class="muted">7.06 ft</span></li>
+<li><a href="/usgs/bayou-liberty-near-slidell.html">Bayou Liberty near Slidell</a> <span class="muted">5.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/bogue-chitto-river-at-franklinton.html">Bogue Chitto River at Franklinton</a> <span class="muted">11.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/bogue-chitto-river-near-bush.html">Bogue Chitto River near Bush</a> <span class="muted">8.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/bogue-falaya-river-at-boston-st-at-covington.html">Bogue Falaya River at Boston St. at Covington</a> <span class="muted">4.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/bogue-falaya-river-near-camp-covington.html">Bogue Falaya River near Camp Covington</a> <span class="muted">10.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/bogue-falaya-at-covington.html">Bogue Falaya at Covington</a> <span class="muted">3.86 ft</span></li>
+<li><a href="/usgs/caernarvon-outfall-channel-at-caernarvon.html">Caernarvon Outfall Channel at Caernarvon</a> <span class="muted">1.83 ft</span></li>
+<li><a href="/usgs/caminada-pass-northwest-of-grand-isle.html">Caminada Pass northwest of Grand Isle</a> <span class="muted">3.04 ft</span></li>
+<li><a href="/usgs/crooked-bayou-northwest-of-lake-cuatro-caballo-near-delacroix.html">Crooked Bayou northwest of Lake Cuatro Caballo near Delacroix</a> <span class="muted">6.11 ft</span></li>
+<li><a href="/usgs/davis-pond-freshwater-diversion-near-boutte.html">Davis Pond Freshwater Diversion near Boutte</a> <span class="muted">10.06 ft</span></li>
+<li><a href="/usgs/delacroix-canal-near-caernarvon.html">Delacroix Canal near Caernarvon</a> <span class="muted">6.04 ft</span></li>
+<li><a href="/usgs/east-pearl-river-at-i-59-near-nicholson.html">East Pearl River at I-59 near Nicholson</a> <span class="muted">9.42 ft</span></li>
+<li><a href="/usgs/empire-waterway-south-of-empire.html">Empire Waterway south of Empire</a> <span class="muted">6.09 ft</span></li>
+<li><a href="/usgs/hackberry-bay-northwest-of-grand-isle.html">Hackberry Bay northwest of Grand Isle</a> <span class="muted">4.07 ft</span></li>
+<li><a href="/usgs/l-pontchartrain-at-crossover-4-near-mandeville.html">L Pontchartrain at Crossover 4 near Mandeville</a> <span class="muted">1.09 ft</span></li>
+<li><a href="/usgs/lake-cataouatche-at-whiskey-canal-south-of-waggaman.html">Lake Cataouatche at Whiskey Canal south of Waggaman</a> <span class="muted">7.03 ft</span></li>
+<li><a href="/usgs/lake-pontchartrain-at-mandeville.html">Lake Pontchartrain at Mandeville</a> <span class="muted">1.49 ft</span></li>
+<li><a href="/usgs/little-lake-near-bay-dosgris-east-of-galliano.html">Little Lake near Bay Dosgris east of Galliano</a> <span class="muted">5.42 ft</span></li>
+<li><a href="/usgs/maurepas-swamp-near-hope-canal-north-of-garyville.html">Maurepas Swamp near Hope Canal, north of Garyville</a> <span class="muted">1.49 ft</span></li>
+<li><a href="/usgs/mississippi-river-at-belle-chasse.html">Mississippi River at Belle Chasse</a> <span class="muted">9.04 ft</span></li>
+<li><a href="/usgs/naomi-diversion-canal-near-naomi.html">Naomi Diversion Canal near Naomi</a> <span class="muted">1.96 ft</span></li>
+<li><a href="/usgs/natalbany-river-at-baptist.html">Natalbany River at Baptist</a> <span class="muted">12.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/northeast-bay-gardene-near-point-a-la-hache.html">Northeast Bay Gardene near Point-A-LA-Hache</a> <span class="muted">1.73 ft</span></li>
+<li><a href="/usgs/pass-manchac-near-lake-maurepas.html">Pass Manchac near Lake Maurepas</a> <span class="muted">1.35 ft</span></li>
+<li><a href="/usgs/pearl-river-at-i-10-near-slidell.html">Pearl River at I-10 near Slidell</a> <span class="muted">7.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/pearl-river-at-pearl-river.html">Pearl River at Pearl River</a> <span class="muted">9.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/pearl-river-at-pools-bluff-near-bogalusa.html">Pearl River at Pools Bluff near Bogalusa</a> <span class="muted">56.14 ft</span></li>
+<li><a href="/usgs/pearl-river-near-bogalusa.html">Pearl River near Bogalusa</a> <span class="muted">12.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/reggio-canal-near-wills-point.html">Reggio Canal near Wills Point</a> <span class="muted">1.56 ft</span></li>
+<li><a href="/usgs/rigolets-at-highway-90-near-slidell.html">Rigolets at Highway 90 near Slidell</a> <span class="muted">2.33 ft</span></li>
+<li><a href="/usgs/tangipahoa-river-at-robert.html">Tangipahoa River at Robert</a> <span class="muted">8.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/tangipahoa-river-near-amite.html">Tangipahoa River near Amite</a> <span class="muted">16.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/tangipahoa-river-near-kentwood.html">Tangipahoa River near Kentwood</a> <span class="muted">11.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/tangipahoa-river-near-ponchatoula.html">Tangipahoa River near Ponchatoula</a> <span class="muted">5.03 ft</span></li>
+<li><a href="/usgs/tchefuncte-river-at-madisonville.html">Tchefuncte River at Madisonville</a> <span class="muted">1.48 ft</span></li>
+<li><a href="/usgs/tchefuncte-river-near-covington.html">Tchefuncte River near Covington</a> <span class="muted">10.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/tchefuncte-river-near-folsom.html">Tchefuncte River near Folsom</a> <span class="muted">11.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/wilkinson-bayou-cutoff-north-of-wilkinson-bay.html">Wilkinson Bayou cutoff north of Wilkinson Bay</a> <span class="muted">5.70 ft</span></li>
+<li><a href="/usgs/y-pipeline-canal-in-bayou-sauvage-nwr-at-new-orleans-east.html">Y-Pipeline Canal in Bayou Sauvage NWR at New Orleans East</a> <span class="muted">5.11 ft</span></li>
+</ul>
+<h2 id="mississippi-gulf-coast">Mississippi Gulf Coast</h2>
+<p><a href="/mississippi/">Mississippi Gulf Coast: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/biloxi-bay-at-point-cadet-harbor-at-biloxi.html">Biloxi Bay at Point Cadet Harbor at Biloxi</a> <span class="muted">1.41 ft</span></li>
+<li><a href="/usgs/biloxi-river-at-wortham.html">Biloxi River at Wortham</a> <span class="muted">16.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/biloxi-river-near-lyman.html">Biloxi River near Lyman</a> <span class="muted">5.85 ft</span></li>
+<li><a href="/usgs/east-hobolochitto-creek-near-caesar.html">East Hobolochitto Creek near Caesar</a> <span class="muted">11.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/east-pearl-river-at-csx-railroad-near-claiborne.html">East Pearl River at Csx Railroad near Claiborne</a> <span class="muted">1.79 ft</span></li>
+<li><a href="/usgs/escatawpa-river-at-i-10-near-orange-grove.html">Escatawpa River at I-10 near Orange Grove</a> <span class="muted">5.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/jourdan-river-near-bay-st-louis.html">Jourdan River near Bay St Louis</a> <span class="muted">3.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/mississippi-sound-at-usgs-merrill-shell-bank-light.html">Mississippi Sound at USGS Merrill Shell Bank Light</a> <span class="muted">4.06 ft</span></li>
+<li><a href="/usgs/mississippi-sound-at-usgs-round-island-light.html">Mississippi Sound at USGS Round Island Light</a> <span class="muted">3.10 ft</span></li>
+<li><a href="/usgs/old-fort-bayou-at-ocean-springs.html">Old Fort Bayou at Ocean Springs</a> <span class="muted">1.55 ft</span></li>
+<li><a href="/usgs/pascagoula-river-at-graham-ferry.html">Pascagoula River at Graham Ferry</a> <span class="muted">13.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/pascagoula-river-at-merrill.html">Pascagoula River at Merrill</a> <span class="muted">20.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/red-creek-at-vestry.html">Red Creek at Vestry</a> <span class="muted">4.37 ft</span></li>
+<li><a href="/usgs/tchoutacabouffa-river-near-diberville.html">Tchoutacabouffa River near D'iberville</a> <span class="muted">5.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/west-hobolochitto-creek-near-mcneill.html">West Hobolochitto Creek near Mcneill</a> <span class="muted">9.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/wolf-river-at-belle-ferry-road-near-long-beach.html">Wolf River at Belle Ferry Road near Long Beach</a> <span class="muted">4.7 ft below minor flood stage</span></li>
+<li><a href="/usgs/wolf-river-near-landon.html">Wolf River near Landon</a> <span class="muted">22.9 ft below minor flood stage</span></li>
+</ul>
+<h2 id="mobile-bay">Mobile Bay</h2>
+<p><a href="/alabama/">Mobile Bay: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/alabama-river-at-choctaw-bluff.html">Alabama River at Choctaw Bluff</a> <span class="muted">-3.66 ft</span></li>
+<li><a href="/usgs/alabama-river-at-claiborne-lock-and-dam-near-monroeville.html">Alabama River at Claiborne Lock and Dam near Monroeville</a> <span class="muted">35.07 ft</span></li>
+<li><a href="/usgs/alabama-river-below-claiborne-lock-and-dam-near-monroeville.html">Alabama River below Claiborne Lock and Dam near Monroeville</a> <span class="muted">6.18 ft</span></li>
+<li><a href="/usgs/bassett-creek-at-us-highway-43-near-thomasville.html">Bassett Creek at US Highway 43 near Thomasville</a> <span class="muted">2.92 ft</span></li>
+<li><a href="/usgs/bayou-sara-at-saraland.html">Bayou Sara at Saraland</a> <span class="muted">4.10 ft</span></li>
+<li><a href="/usgs/big-creek-at-county-road-63-near-wilmer.html">Big Creek at County Road 63 near Wilmer</a> <span class="muted">1.49 ft</span></li>
+<li><a href="/usgs/big-creek-near-seven-hills.html">Big Creek near Seven Hills</a> <span class="muted">6.65 ft</span></li>
+<li><a href="/usgs/big-escambia-creek-at-flomaton.html">Big Escambia Creek at Flomaton</a> <span class="muted">11.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/big-escambia-creek-at-sardine-br-near-stanley-crossroad.html">Big Escambia Creek at Sardine Br near Stanley Crossroad</a> <span class="muted">11.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/blackwater-river-near-bradley.html">Blackwater River near Bradley</a> <span class="muted">0.80 ft</span></li>
+<li><a href="/usgs/burnt-corn-creek-at-state-highway-41-near-brewton.html">Burnt Corn Creek at State Highway 41 near Brewton</a> <span class="muted">13.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/chickasaw-creek-near-kushla.html">Chickasaw Creek near Kushla</a> <span class="muted">3.06 ft</span></li>
+<li><a href="/usgs/conecuh-river-at-state-highway-41-near-brewton.html">Conecuh River at State Highway 41 near Brewton</a> <span class="muted">18.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/crooked-creek-near-fairview.html">Crooked Creek near Fairview</a> <span class="muted">0.42 ft</span></li>
+<li><a href="/usgs/escatawpa-river-near-wilmer.html">Escatawpa River near Wilmer</a> <span class="muted">15.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/fish-river-near-marlow.html">Fish River near Marlow</a> <span class="muted">2.01 ft</span></li>
+<li><a href="/usgs/fish-river-near-silver-hill.html">Fish River near Silver Hill</a> <span class="muted">10.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/fowl-river-at-half-mile-road-near-laurendine.html">Fowl River at Half-Mile Road near Laurendine</a> <span class="muted">1.51 ft</span></li>
+<li><a href="/usgs/hamilton-creek-at-snow-road-near-semmes.html">Hamilton Creek at Snow Road near Semmes</a> <span class="muted">3.42 ft</span></li>
+<li><a href="/usgs/intracoastal-waterway-gulf-shores.html">Intracoastal Waterway - Gulf Shores</a> <span class="muted">1.59 ft</span></li>
+<li><a href="/usgs/limestone-creek-near-monroeville.html">Limestone Creek near Monroeville</a> <span class="muted">6.56 ft</span></li>
+<li><a href="/usgs/magnolia-river-at-us-98-near-foley.html">Magnolia River at US 98 near Foley</a> <span class="muted">2.50 ft</span></li>
+<li><a href="/usgs/mobile-river-at-barry-steamplant-near-bucks-intake.html">Mobile River at Barry Steamplant near Bucks (intake)</a> <span class="muted">8.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/mobile-river-at-river-mile-31-0-at-bucks.html">Mobile River at River Mile 31.0 at Bucks</a> <span class="muted">1.67 ft</span></li>
+<li><a href="/usgs/murder-creek-at-state-highway-41-at-brewton.html">Murder Creek at State Highway 41 at Brewton</a> <span class="muted">12.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/satilpa-creek-near-coffeeville.html">Satilpa Creek near Coffeeville</a> <span class="muted">2.64 ft</span></li>
+<li><a href="/usgs/styx-river-at-seminole.html">Styx River at Seminole</a> <span class="muted">9.83 ft</span></li>
+<li><a href="/usgs/styx-river-near-elsanor.html">Styx River near Elsanor</a> <span class="muted">10.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/styx-river-near-loxley-at-smiths-siding.html">Styx River near Loxley at Smiths Siding</a> <span class="muted">10.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/threemile-creek-at-fillingim-street-at-mobile.html">Threemile Creek at Fillingim Street at Mobile</a> <span class="muted">9.09 ft</span></li>
+<li><a href="/usgs/tombigbee-river-at-steamplant-near-leroy.html">Tombigbee River at Steamplant near Leroy</a> <span class="muted">21.7 ft below minor flood stage</span></li>
+</ul>
+<h2 id="pensacola-emerald-coast">Pensacola and the Emerald Coast</h2>
+<p><a href="/florida/pensacola-emerald-coast/">Pensacola and the Emerald Coast: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/big-coldwater-creek-near-milton.html">Big Coldwater Creek near Milton</a> <span class="muted">7.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/blackwater-river-near-baker.html">Blackwater River near Baker</a> <span class="muted">9.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/blackwater-river-near-harold.html">Blackwater River near Harold</a> <span class="muted">2.83 ft</span></li>
+<li><a href="/usgs/bruce-creek-at-sh-81-near-redbay.html">Bruce Creek at SH 81 near Redbay</a> <span class="muted">7.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/choctawhatchee-river-near-bruce.html">Choctawhatchee River near Bruce</a> <span class="muted">5.2 ft below minor flood stage</span></li>
+<li><a href="/usgs/elevenmile-creek-near-west-pensacola.html">Elevenmile Creek near West Pensacola</a> <span class="muted">5.34 ft</span></li>
+<li><a href="/usgs/escambia-river-near-century.html">Escambia River near Century</a> <span class="muted">13.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/escambia-river-near-molino.html">Escambia River near Molino</a> <span class="muted">1.98 ft</span></li>
+<li><a href="/usgs/perdido-river-at-barrineau-park.html">Perdido River at Barrineau Park</a> <span class="muted">11.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/shoal-river-near-crestview.html">Shoal River near Crestview</a> <span class="muted">2.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/shoal-river-near-mossy-head.html">Shoal River near Mossy Head</a> <span class="muted">6.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/yellow-river-at-milligan.html">Yellow River at Milligan</a> <span class="muted">10.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/yellow-river-near-milton.html">Yellow River near Milton</a> <span class="muted">38.52 ft</span></li>
+<li><a href="/usgs/yellow-river-near-oak-grove.html">Yellow River near Oak Grove</a> <span class="muted">80.63 ft</span></li>
+</ul>
+<h2 id="panama-city">Panama City</h2>
+<p><a href="/florida/panama-city/">Panama City: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/apalachicola-r-ab-chipola-cutoff-near-wewahitchka.html">Apalachicola R.ab Chipola Cutoff near Wewahitchka</a> <span class="muted">14.41 ft</span></li>
+<li><a href="/usgs/apalachicola-river-near-blountstown.html">Apalachicola River near Blountstown</a> <span class="muted">13.3 ft below minor flood stage</span></li>
+<li><a href="/usgs/chipola-river-near-altha.html">Chipola River near Altha</a> <span class="muted">12.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/choctawhatchee-river-at-caryville.html">Choctawhatchee River at Caryville</a> <span class="muted">10.0 ft below minor flood stage</span></li>
+<li><a href="/usgs/choctawhatchee-river-near-pittman.html">Choctawhatchee River near Pittman</a> <span class="muted">14.6 ft below minor flood stage</span></li>
+<li><a href="/usgs/econfina-creek-near-bennett.html">Econfina Creek near Bennett</a> <span class="muted">3.8 ft below minor flood stage</span></li>
+<li><a href="/usgs/holmes-creek-at-vernon.html">Holmes Creek at Vernon</a> <span class="muted">12.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/iww-east-of-gulf-county-canal-near-port-st-joe.html">IWW East of Gulf County Canal near Port St Joe</a> <span class="muted">1.30 ft</span></li>
+<li><a href="/usgs/iww-west-of-gulf-county-canal-near-port-st-joe.html">IWW West of Gulf County Canal near Port St Joe</a> <span class="muted">1.36 ft</span></li>
+</ul>
+<h2 id="apalachicola-tallahassee">Apalachicola and Tallahassee</h2>
+<p><a href="/florida/apalachicola-tallahassee/">Apalachicola and Tallahassee: current readings and storms</a></p><ul class="cols">
+<li><a href="/usgs/apalachicola-river-near-sumatra.html">Apalachicola River near Sumatra</a> <span class="muted">5.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/ochlockonee-river-near-bloxham.html">Ochlockonee River near Bloxham</a> <span class="muted">14.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/ochlockonee-river-near-concord.html">Ochlockonee River near Concord</a> <span class="muted">8.9 ft below minor flood stage</span></li>
+<li><a href="/usgs/ochlockonee-river-near-havana.html">Ochlockonee River near Havana</a> <span class="muted">10.1 ft below minor flood stage</span></li>
+<li><a href="/usgs/sopchoppy-river-near-sopchoppy.html">Sopchoppy River near Sopchoppy</a> <span class="muted">18.5 ft below minor flood stage</span></li>
+<li><a href="/usgs/spring-creek-near-spring-creek.html">Spring Creek near Spring Creek</a> <span class="muted">1.43 ft</span></li>
+<li><a href="/usgs/st-marks-river-near-newport.html">St. Marks River near Newport</a> <span class="muted">1.4 ft below minor flood stage</span></li>
+<li><a href="/usgs/wakulla-river-near-crawfordville.html">Wakulla River near Crawfordville</a> <span class="muted">4.34 ft</span></li>
+<li><a href="/usgs/wakulla-spring-near-crawfordville.html">Wakulla Spring near Crawfordville</a> <span class="muted">5.74 ft</span></li>
+</ul>
+<footer>
+<p class="fnav"><a href="/">Home</a><a href="/texas-coast/houston-galveston/">Houston</a><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/storms/">Storms</a><a href="/tides/">Tide gauges</a><a href="/gauges/">All gauges</a><a href="/lakes/">Lakes</a><a href="/usgs/">USGS gauges</a><a href="/embed/">Embed a gauge</a><a href="/about/">How this site works</a> Contact: <a class="mail" href="/about/#contact" data-u="contact" data-d="gulfcoastgauges.com">contact [at] gulfcoastgauges.com</a></p>
+<p><strong>Sources.</strong> Gage height from the <a href="https://waterdata.usgs.gov/" rel="nofollow noopener">U.S. Geological Survey</a>; tide gauge water levels from NOAA Tides &amp; Currents; in the Houston area, stage readings from the <a href="https://www.harriscountyfws.org/" rel="nofollow noopener">Harris County Flood Warning System</a>; flood stages, crests, watches, advisories and warnings from the National Weather Service. This site is not affiliated with any of them.</p>
+<p><strong>No guidance, no forecast.</strong> This site reports measurements and official alert text only. It does not predict water levels, assess whether any road, property or route is passable, or advise any action. For decisions about safety, use <a href="https://alerts.weather.gov/" rel="nofollow noopener">official sources</a> and local emergency management.</p>
+<p><strong>Accuracy.</strong> Gauges can fail, report late, or report in error, and recent USGS readings are provisional. HCFCD makes no representations, guarantees or warranties as to the availability, accuracy, completeness, currency or suitability of Flood Warning System data, and disclaims liability for actions taken or not taken based on it. Nothing here is verified independently.</p>
+<p>Page generated Oct 23, 2026 at 11:24 PM CDT.</p>
+</footer></div></body></html>
