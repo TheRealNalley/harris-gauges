@@ -1,13 +1,13 @@
 gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
-Guadalupe River near Bloomington,08177520,Victoria County,https://gulfcoastgauges.com/usgs/guadalupe-river-near-bloomington.html,8.47,8.77,2026-10-31T12:00:00Z,2026-10-31 07:00:00 CDT,0.3,20
+Guadalupe River near Bloomington,08177520,Victoria County,https://gulfcoastgauges.com/usgs/guadalupe-river-near-bloomington.html,8.47,8.78,2026-10-31T13:00:00Z,2026-10-31 08:00:00 CDT,0.31,20
 Juanita Creek at SH 71 near Midfield,08162580,Matagorda County,https://gulfcoastgauges.com/usgs/juanita-creek-at-sh-71-near-midfield.html,32.8,32.96,2026-10-30T22:55:00Z,2026-10-30 17:55:00 CDT,0.16,45
 Sandy Creek near Ganado,08164450,Jackson County,https://gulfcoastgauges.com/usgs/sandy-creek-near-ganado.html,5.06,5.1,2026-10-27T07:15:00Z,2026-10-27 02:15:00 CDT,0.04,18
 Coleto Creek at Arnold Rd Crossing near Schroeder,08176900,Goliad County,https://gulfcoastgauges.com/usgs/coleto-creek-at-arnold-rd-crossing-near-schroeder.html,1.87,1.88,2026-10-25T19:15:00Z,2026-10-25 14:15:00 CDT,0.01,15
 Garcitas Creek near Inez,08164600,Victoria County,https://gulfcoastgauges.com/usgs/garcitas-creek-near-inez.html,5.21,5.36,2026-10-31T04:15:00Z,2026-10-30 23:15:00 CDT,0.15,20
 W Mustang Creek near Ganado,08164503,Jackson County,https://gulfcoastgauges.com/usgs/w-mustang-creek-near-ganado.html,4.42,4.73,2026-10-31T12:45:00Z,2026-10-31 07:45:00 CDT,0.31,20
 E Mustang Creek near Louise,08164504,Wharton County,https://gulfcoastgauges.com/usgs/e-mustang-creek-near-louise.html,2.92,3.04,2026-10-30T23:30:00Z,2026-10-30 18:30:00 CDT,0.12,19
+Guadalupe River at Highway 183 near Hochheim,08174700,DeWitt County,https://gulfcoastgauges.com/usgs/guadalupe-river-at-highway-183-near-hochheim.html,5.89,6.32,2026-10-31T13:00:00Z,2026-10-31 08:00:00 CDT,0.43,
 Guadalupe River at Cuero,08175800,DeWitt County,https://gulfcoastgauges.com/usgs/guadalupe-river-at-cuero.html,7.09,7.3,2026-10-31T05:30:00Z,2026-10-31 00:30:00 CDT,0.21,24
-Guadalupe River at Highway 183 near Hochheim,08174700,DeWitt County,https://gulfcoastgauges.com/usgs/guadalupe-river-at-highway-183-near-hochheim.html,5.89,6.29,2026-10-31T12:00:00Z,2026-10-31 07:00:00 CDT,0.4,
 Lavaca River near Edna,08164000,Jackson County,https://gulfcoastgauges.com/usgs/lavaca-river-near-edna.html,4.13,4.26,2026-10-30T19:15:00Z,2026-10-30 14:15:00 CDT,0.13,21
 Sandies Creek near Westhoff,08175000,DeWitt County,https://gulfcoastgauges.com/usgs/sandies-creek-near-westhoff.html,2.08,2.75,2026-10-31T12:00:00Z,2026-10-31 07:00:00 CDT,0.67,21
 Navidad River at Strane Park near Edna,08164390,Jackson County,https://gulfcoastgauges.com/usgs/navidad-river-at-strane-park-near-edna.html,5.02,5.11,2026-10-27T15:15:00Z,2026-10-27 10:15:00 CDT,0.09,24
