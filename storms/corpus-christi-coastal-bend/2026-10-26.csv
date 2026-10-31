@@ -1,5 +1,5 @@
 gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
-Nueces River at Calallen,08211500,Nueces County,https://gulfcoastgauges.com/usgs/nueces-river-at-calallen.html,3.29,4.35,2026-10-31T13:30:00Z,2026-10-31 08:30:00 CDT,1.06,7
+Nueces River at Calallen,08211500,Nueces County,https://gulfcoastgauges.com/usgs/nueces-river-at-calallen.html,3.29,4.37,2026-10-31T14:30:00Z,2026-10-31 09:30:00 CDT,1.08,7
 San Diego Creek at Alice,08211800,Jim Wells County,https://gulfcoastgauges.com/usgs/san-diego-creek-at-alice.html,7.08,7.09,2026-10-25T19:00:00Z,2026-10-25 14:00:00 CDT,0.01,11
 Copano Creek near Refugio,08189200,Refugio County,https://gulfcoastgauges.com/usgs/copano-creek-near-refugio.html,2.34,3.21,2026-10-30T18:30:00Z,2026-10-30 13:30:00 CDT,0.87,12
 Nueces River at Bluntzer,08211200,Nueces County,https://gulfcoastgauges.com/usgs/nueces-river-at-bluntzer.html,7.65,8.29,2026-10-31T04:00:00Z,2026-10-30 23:00:00 CDT,0.64,18
@@ -12,7 +12,7 @@ Mission River at Refugio,08189500,Refugio County,https://gulfcoastgauges.com/usg
 Nueces River near Mathis,08211000,San Patricio County,https://gulfcoastgauges.com/usgs/nueces-river-near-mathis.html,1.59,1.86,2026-10-29T17:00:00Z,2026-10-29 12:00:00 CDT,0.27,25
 Nueces River near Three Rivers,08210000,Live Oak County,https://gulfcoastgauges.com/usgs/nueces-river-near-three-rivers.html,1.78,1.79,2026-10-25T17:45:00Z,2026-10-25 12:45:00 CDT,0.01,25
 San Antonio River near McFaddin,08188570,Refugio County,https://gulfcoastgauges.com/usgs/san-antonio-river-near-mcfaddin.html,14.21,15.28,2026-10-28T10:15:00Z,2026-10-28 05:15:00 CDT,1.07,
-Medio Creek near Normanna,08189298,Bee County,https://gulfcoastgauges.com/usgs/medio-creek-near-normanna.html,214.16,215.13,2026-10-31T14:00:00Z,2026-10-31 09:00:00 CDT,0.97,
+Medio Creek near Normanna,08189298,Bee County,https://gulfcoastgauges.com/usgs/medio-creek-near-normanna.html,214.16,215.21,2026-10-31T14:45:00Z,2026-10-31 09:45:00 CDT,1.05,
 Medio Creek near Beeville,08189300,Bee County,https://gulfcoastgauges.com/usgs/medio-creek-near-beeville.html,3.91,3.92,2026-10-26T11:15:00Z,2026-10-26 06:15:00 CDT,0.01,
 Medio Creek at SH 202 near Beeville,08189320,Bee County,https://gulfcoastgauges.com/usgs/medio-creek-at-sh-202-near-beeville.html,113.41,113.72,2026-10-28T16:05:00Z,2026-10-28 11:05:00 CDT,0.31,
 Devils Run Creek at US 77 near Woodsboro,08189520,Refugio County,https://gulfcoastgauges.com/usgs/devils-run-creek-at-us-77-near-woodsboro.html,15.85,16.47,2026-10-30T16:15:00Z,2026-10-30 11:15:00 CDT,0.62,
