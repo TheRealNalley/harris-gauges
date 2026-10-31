@@ -1,6 +1,6 @@
 gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
 Guadalupe River near Bloomington,08177520,Victoria County,https://gulfcoastgauges.com/usgs/guadalupe-river-near-bloomington.html,8.47,8.89,2026-10-31T17:00:00Z,2026-10-31 12:00:00 CDT,0.42,20
-Juanita Creek at SH 71 near Midfield,08162580,Matagorda County,https://gulfcoastgauges.com/usgs/juanita-creek-at-sh-71-near-midfield.html,32.8,33.24,2026-10-31T18:05:00Z,2026-10-31 13:05:00 CDT,0.44,45
+Juanita Creek at SH 71 near Midfield,08162580,Matagorda County,https://gulfcoastgauges.com/usgs/juanita-creek-at-sh-71-near-midfield.html,32.8,33.3,2026-10-31T18:20:00Z,2026-10-31 13:20:00 CDT,0.5,45
 Sandy Creek near Ganado,08164450,Jackson County,https://gulfcoastgauges.com/usgs/sandy-creek-near-ganado.html,5.06,5.1,2026-10-27T07:15:00Z,2026-10-27 02:15:00 CDT,0.04,18
 Coleto Creek at Arnold Rd Crossing near Schroeder,08176900,Goliad County,https://gulfcoastgauges.com/usgs/coleto-creek-at-arnold-rd-crossing-near-schroeder.html,1.87,1.88,2026-10-25T19:15:00Z,2026-10-25 14:15:00 CDT,0.01,15
 Garcitas Creek near Inez,08164600,Victoria County,https://gulfcoastgauges.com/usgs/garcitas-creek-near-inez.html,5.21,5.36,2026-10-31T04:15:00Z,2026-10-30 23:15:00 CDT,0.15,20
@@ -32,5 +32,5 @@ Placedo Creek near Placedo,08164800,Victoria County,https://gulfcoastgauges.com/
 Guadalupe River at Victoria,08176500,Victoria County,https://gulfcoastgauges.com/usgs/guadalupe-river-at-victoria.html,5.52,5.49,2026-10-26T02:15:00Z,2026-10-25 21:15:00 CDT,-0.03,
 Fifteenmile Creek near Weser,08176550,DeWitt County,https://gulfcoastgauges.com/usgs/fifteenmile-creek-near-weser.html,6.09,6.12,2026-10-28T21:00:00Z,2026-10-28 16:00:00 CDT,0.03,
 Perdido Creek at FM 622 near Fannin,08177300,Goliad County,https://gulfcoastgauges.com/usgs/perdido-creek-at-fm-622-near-fannin.html,1.07,1.63,2026-10-30T20:15:00Z,2026-10-30 15:15:00 CDT,0.56,
-North end of GBRA Calhoun Canal near Long Mott,08188590,Calhoun County,https://gulfcoastgauges.com/usgs/north-end-of-gbra-calhoun-canal-near-long-mott.html,14.36,14.38,2026-10-31T17:00:00Z,2026-10-31 12:00:00 CDT,0.02,
+North end of GBRA Calhoun Canal near Long Mott,08188590,Calhoun County,https://gulfcoastgauges.com/usgs/north-end-of-gbra-calhoun-canal-near-long-mott.html,14.36,14.39,2026-10-31T18:00:00Z,2026-10-31 13:00:00 CDT,0.03,
 Guadalupe River at SH 35 near Tivoli,08188810,Calhoun County,https://gulfcoastgauges.com/usgs/guadalupe-river-at-sh-35-near-tivoli.html,11.33,12.16,2026-10-30T18:45:00Z,2026-10-30 13:45:00 CDT,0.83,
