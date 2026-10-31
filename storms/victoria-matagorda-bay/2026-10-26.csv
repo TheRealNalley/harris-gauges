@@ -1,6 +1,6 @@
 gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
 Guadalupe River near Bloomington,08177520,Victoria County,https://gulfcoastgauges.com/usgs/guadalupe-river-near-bloomington.html,8.47,8.89,2026-10-31T17:00:00Z,2026-10-31 12:00:00 CDT,0.42,20
-Juanita Creek at SH 71 near Midfield,08162580,Matagorda County,https://gulfcoastgauges.com/usgs/juanita-creek-at-sh-71-near-midfield.html,32.8,33.59,2026-10-31T19:35:00Z,2026-10-31 14:35:00 CDT,0.79,45
+Juanita Creek at SH 71 near Midfield,08162580,Matagorda County,https://gulfcoastgauges.com/usgs/juanita-creek-at-sh-71-near-midfield.html,32.8,33.64,2026-10-31T19:55:00Z,2026-10-31 14:55:00 CDT,0.84,45
 Sandy Creek near Ganado,08164450,Jackson County,https://gulfcoastgauges.com/usgs/sandy-creek-near-ganado.html,5.06,5.1,2026-10-27T07:15:00Z,2026-10-27 02:15:00 CDT,0.04,18
 Coleto Creek at Arnold Rd Crossing near Schroeder,08176900,Goliad County,https://gulfcoastgauges.com/usgs/coleto-creek-at-arnold-rd-crossing-near-schroeder.html,1.87,1.88,2026-10-25T19:15:00Z,2026-10-25 14:15:00 CDT,0.01,15
 Garcitas Creek near Inez,08164600,Victoria County,https://gulfcoastgauges.com/usgs/garcitas-creek-near-inez.html,5.21,5.36,2026-10-31T04:15:00Z,2026-10-30 23:15:00 CDT,0.15,20
@@ -24,7 +24,7 @@ Colorado River near Bay City,08162500,Matagorda County,https://gulfcoastgauges.c
 West Bernard Creek at US 59 near Hungerford,08117403,Wharton County,https://gulfcoastgauges.com/usgs/west-bernard-creek-at-us-59-near-hungerford.html,73.57,73.56,2026-10-25T17:15:00Z,2026-10-25 12:15:00 CDT,-0.01,
 Caney Creek at SH 35 near Van Vleck,08117855,Matagorda County,https://gulfcoastgauges.com/usgs/caney-creek-at-sh-35-near-van-vleck.html,22.53,22.6,2026-10-30T21:20:00Z,2026-10-30 16:20:00 CDT,0.07,
 Colorado River near Wadsworth,08162501,Matagorda County,https://gulfcoastgauges.com/usgs/colorado-river-near-wadsworth.html,1.42,2.98,2026-10-31T11:15:00Z,2026-10-31 06:15:00 CDT,1.56,
-Clarks Creek at US 77 near Sweet Home,08163720,Lavaca County,https://gulfcoastgauges.com/usgs/clarks-creek-at-us-77-near-sweet-home.html,150.16,150.27,2026-10-31T16:35:00Z,2026-10-31 11:35:00 CDT,0.11,
+Clarks Creek at US 77 near Sweet Home,08163720,Lavaca County,https://gulfcoastgauges.com/usgs/clarks-creek-at-us-77-near-sweet-home.html,150.16,150.28,2026-10-31T19:55:00Z,2026-10-31 14:55:00 CDT,0.12,
 Chicolette Creek at US 77 near Yoakum,08163880,Victoria County,https://gulfcoastgauges.com/usgs/chicolette-creek-at-us-77-near-yoakum.html,134.71,134.71,2026-10-25T17:15:00Z,2026-10-25 12:15:00 CDT,0.0,
 Little Brushy Creek at US 77 near Yoakum,08163900,Lavaca County,https://gulfcoastgauges.com/usgs/little-brushy-creek-at-us-77-near-yoakum.html,126.52,126.54,2026-10-29T00:55:00Z,2026-10-28 19:55:00 CDT,0.02,
 W Sandy Creek at FM 2437 near Sheridan,08164410,Lavaca County,https://gulfcoastgauges.com/usgs/w-sandy-creek-at-fm-2437-near-sheridan.html,193.24,193.28,2026-10-25T20:00:00Z,2026-10-25 15:00:00 CDT,0.04,
