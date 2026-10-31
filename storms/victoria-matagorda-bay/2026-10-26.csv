@@ -1,6 +1,6 @@
 gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
 Guadalupe River near Bloomington,08177520,Victoria County,https://gulfcoastgauges.com/usgs/guadalupe-river-near-bloomington.html,8.47,8.89,2026-10-31T17:00:00Z,2026-10-31 12:00:00 CDT,0.42,20
-Juanita Creek at SH 71 near Midfield,08162580,Matagorda County,https://gulfcoastgauges.com/usgs/juanita-creek-at-sh-71-near-midfield.html,32.8,33.38,2026-10-31T18:40:00Z,2026-10-31 13:40:00 CDT,0.58,45
+Juanita Creek at SH 71 near Midfield,08162580,Matagorda County,https://gulfcoastgauges.com/usgs/juanita-creek-at-sh-71-near-midfield.html,32.8,33.42,2026-10-31T18:50:00Z,2026-10-31 13:50:00 CDT,0.62,45
 Sandy Creek near Ganado,08164450,Jackson County,https://gulfcoastgauges.com/usgs/sandy-creek-near-ganado.html,5.06,5.1,2026-10-27T07:15:00Z,2026-10-27 02:15:00 CDT,0.04,18
 Coleto Creek at Arnold Rd Crossing near Schroeder,08176900,Goliad County,https://gulfcoastgauges.com/usgs/coleto-creek-at-arnold-rd-crossing-near-schroeder.html,1.87,1.88,2026-10-25T19:15:00Z,2026-10-25 14:15:00 CDT,0.01,15
 Garcitas Creek near Inez,08164600,Victoria County,https://gulfcoastgauges.com/usgs/garcitas-creek-near-inez.html,5.21,5.36,2026-10-31T04:15:00Z,2026-10-30 23:15:00 CDT,0.15,20
