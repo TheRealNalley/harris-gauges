@@ -2,7 +2,7 @@ gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_loca
 Nueces River at Calallen,08211500,Nueces County,https://gulfcoastgauges.com/usgs/nueces-river-at-calallen.html,3.29,4.17,2026-10-30T18:30:00Z,2026-10-30 13:30:00 CDT,0.88,7
 San Diego Creek at Alice,08211800,Jim Wells County,https://gulfcoastgauges.com/usgs/san-diego-creek-at-alice.html,7.08,7.09,2026-10-25T19:00:00Z,2026-10-25 14:00:00 CDT,0.01,11
 Copano Creek near Refugio,08189200,Refugio County,https://gulfcoastgauges.com/usgs/copano-creek-near-refugio.html,2.34,3.21,2026-10-30T18:30:00Z,2026-10-30 13:30:00 CDT,0.87,12
-Nueces River at Bluntzer,08211200,Nueces County,https://gulfcoastgauges.com/usgs/nueces-river-at-bluntzer.html,7.65,8.28,2026-10-31T02:00:00Z,2026-10-30 21:00:00 CDT,0.63,18
+Nueces River at Bluntzer,08211200,Nueces County,https://gulfcoastgauges.com/usgs/nueces-river-at-bluntzer.html,7.65,8.29,2026-10-31T04:00:00Z,2026-10-30 23:00:00 CDT,0.64,18
 Los Olmos Creek near Falfurrias,08212400,Brooks County,https://gulfcoastgauges.com/usgs/los-olmos-creek-near-falfurrias.html,1.19,1.19,2026-10-25T17:15:00Z,2026-10-25 12:15:00 CDT,0.0,11
 San Fernando Creek at Alice,08211900,Jim Wells County,https://gulfcoastgauges.com/usgs/san-fernando-creek-at-alice.html,0.69,0.72,2026-10-25T20:00:00Z,2026-10-25 15:00:00 CDT,0.03,12
 Aransas River near Skidmore,08189700,Bee County,https://gulfcoastgauges.com/usgs/aransas-river-near-skidmore.html,0.39,0.46,2026-10-30T20:15:00Z,2026-10-30 15:15:00 CDT,0.07,13
