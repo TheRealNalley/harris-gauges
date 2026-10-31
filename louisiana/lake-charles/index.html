@@ -1,0 +1,203 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Lake Charles and Southwest Louisiana Water Levels – 22 Stream Gauges and Flood Stages</title><meta name="description" content="Current water levels at 18 USGS and 4 Army Corps of Engineers gauges in Allen, Beauregard, Calcasieu, Cameron and Jefferson Davis parishes, with National Weather Service flood stages, record crests and storm history."><link rel="canonical" href="https://gulfcoastgauges.com/louisiana/lake-charles/"><meta property="og:title" content="Lake Charles and Southwest Louisiana Water Levels – 22 Stream Gauges and Flood Stages"><meta property="og:description" content="Current water levels at 18 USGS and 4 Army Corps of Engineers gauges in Allen, Beauregard, Calcasieu, Cameron and Jefferson Davis parishes, with National Weather Service flood stages, record crests and storm history."><meta property="og:type" content="website"><meta property="og:url" content="https://gulfcoastgauges.com/louisiana/lake-charles/"><meta property="og:site_name" content="Gulf Coast Gauges"><link rel="icon" href="/assets/favicon.ico" sizes="any"><link rel="icon" href="/assets/favicon-32.png" type="image/png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><style>
+:root{--bg:#fff;--fg:#14181f;--muted:#5b6472;--line:#e3e7ee;--accent:#1d4ed8;--warn:#b45309;
+--card:#f7f9fc}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e8edf5;--muted:#9aa6b5;
+--line:#232b36;--accent:#7aa2ff;--card:#141b24}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-sans-serif,system-ui,
+-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:780px;margin:0 auto;padding:20px 18px 56px}
+a{color:var(--accent)}
+nav.crumb{font-size:13px;color:var(--muted);margin-bottom:14px}
+h1{font-size:27px;line-height:1.25;margin:.2em 0 .1em}
+h2{font-size:19px;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 18px}
+.now{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.big{font-size:38px;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+.now dl{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:14px 0 0}
+.now dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.now dd{margin:2px 0 0;font-size:16px;font-weight:550}
+table{border-collapse:collapse;width:100%;font-size:14px;margin-top:8px}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+.chart{width:100%;height:auto;display:block;margin:10px 0 4px}
+.grid{stroke:var(--line);stroke-width:1}
+.trace{fill:none;stroke:var(--accent);stroke-width:2}
+.bar{fill:var(--accent);opacity:.75}
+.band{fill:var(--accent);opacity:.1}
+.rain{fill:#0891b2;opacity:.7}
+.bank{stroke:var(--warn);stroke-width:1.5;stroke-dasharray:5 4}
+.banklab,.ylab,.xlab{font-size:10px;fill:var(--muted)}
+.banklab{fill:var(--warn)}
+.muted{color:var(--muted)}
+.note{background:var(--card);border-left:3px solid var(--warn);padding:12px 14px;
+border-radius:0 8px 8px 0;font-size:14px}
+footer{margin-top:2.5em;padding-top:1em;border-top:1px solid var(--line);font-size:13px;
+color:var(--muted)}
+footer p{margin:.5em 0}
+h3{font-size:16px;margin:1.6em 0 .2em}
+td.n,td.nw{white-space:nowrap}
+@media (max-width:560px){table{font-size:13px}th,td{padding:6px 5px}}
+.brand{display:inline-block;margin:0 0 14px}.brand img{display:block;height:30px;width:auto}
+.hero{display:block;width:100%;height:auto;border-radius:10px;margin:14px 0 18px}
+
+textarea.snip{width:100%;font:12px/1.5 ui-monospace,Consolas,monospace;padding:10px;
+border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);resize:vertical}
+button.copy{font:inherit;font-size:14px;padding:6px 14px;border-radius:8px;border:1px solid var(--line);
+background:var(--card);color:var(--fg);cursor:pointer;margin:6px 0 14px}
+iframe.preview{border:0;max-width:100%;display:block;margin:8px 0}
+
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:0 0 16px;
+padding-bottom:12px;border-bottom:1px solid var(--line)}
+.top .brand{margin:0}
+nav.main{display:flex;align-items:center;gap:16px;font-size:14px}
+nav.main a,nav.main summary{color:var(--fg);text-decoration:none;font-weight:550}
+nav.main a:hover,nav.main summary:hover{color:var(--accent);text-decoration:underline}
+details.states{position:relative}
+details.states summary{cursor:pointer;list-style:none;padding-right:13px;position:relative}
+details.states summary::-webkit-details-marker{display:none}
+details.states summary::after{content:"";position:absolute;right:0;top:45%;border:4px solid transparent;
+border-top-color:currentColor}
+details.states[open] summary::after{top:15%;border-top-color:transparent;border-bottom-color:currentColor}
+details.states .menu{position:absolute;z-index:30;top:calc(100% + 8px);left:-10px;min-width:150px;
+background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 0;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+details.states .menu a{display:block;padding:8px 14px;font-weight:500}
+details.states .menu a:hover{background:var(--card);text-decoration:none}
+details.states .menu a.all{border-top:1px solid var(--line);margin-top:4px;padding-top:9px;
+color:var(--muted);font-size:13px}
+form.find{position:relative;flex:1 1 220px;max-width:280px;margin-left:auto}
+form.find input{width:100%;font:inherit;font-size:14px;padding:7px 10px;color:var(--fg);
+background:var(--card);border:1px solid var(--line);border-radius:8px}
+form.find input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.results{position:absolute;z-index:20;top:calc(100% + 4px);left:0;right:0;max-height:340px;
+overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:8px;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.results a{display:block;padding:7px 10px;color:var(--fg);text-decoration:none;font-size:14px}
+.results a small{display:block;color:var(--muted);font-size:12px}
+.results a.on,.results a:hover{background:var(--card)}
+.results p{margin:0;padding:8px 10px;font-size:13px;color:var(--muted)}
+.fnav{font-size:13px}
+.fnav a{margin-right:12px}
+nav.jump{margin:12px 0 4px;line-height:2.2}
+nav.jump a{white-space:nowrap}
+ul.cols{columns:2;column-gap:28px;padding-left:18px;margin:.4em 0}
+ul.cols li{break-inside:avoid;margin:0 0 4px}
+@media (max-width:560px){form.find{max-width:none;flex-basis:100%;order:3}
+nav.main{gap:12px}ul.cols{columns:1}}
+
+.multi{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin:12px 0 6px}
+.panel h3{font-size:14px;margin:0;line-height:1.35}
+.panel p{margin:0 0 2px;font-size:12.5px;color:var(--muted)}
+.panel svg{width:100%;height:auto;display:block;overflow:visible}
+.wash{fill:var(--accent);opacity:.12}
+.alertband{fill:var(--muted);opacity:.12}
+.peak{fill:var(--accent);stroke:var(--bg);stroke-width:2}
+.panel{position:relative}
+.hov{cursor:crosshair;touch-action:pan-y}
+.xh{stroke:var(--muted);stroke-width:1}
+.tip{position:absolute;pointer-events:none;background:var(--bg);border:1px solid var(--line);
+border-radius:6px;padding:4px 7px;font-size:12px;line-height:1.35;white-space:nowrap;
+box-shadow:0 4px 12px rgba(0,0,0,.12);z-index:5}
+.stem{stroke:var(--line);stroke-width:1.5}
+.hollow{fill:var(--bg);stroke:var(--accent);stroke-width:2}
+.feature{border:1px solid var(--line);border-radius:10px;padding:14px 16px 10px;margin:18px 0}
+.feature h2{border:0;margin:0 0 .2em;padding:0}
+@media (max-width:560px){.multi{grid-template-columns:1fr}}
+
+.regions{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:6px 0 4px}
+.regions a{display:block;border:1px solid var(--line);border-radius:8px;padding:8px 10px;
+text-decoration:none;color:var(--fg);font-weight:550;font-size:14px;line-height:1.3}
+.regions a:hover{border-color:var(--accent)}
+.regions small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:2px}
+h3.state{margin:1.1em 0 .1em;font-size:15px}
+h3.state a{color:var(--fg)}
+@media (max-width:760px){.regions{grid-template-columns:1fr 1fr}}
+</style><script type="application/ld+json">[{"@context":"https://schema.org","@type":"CollectionPage","name":"Lake Charles and Southwest Louisiana Water Levels \u2013 22 Stream Gauges and Flood Stages","url":"https://gulfcoastgauges.com/louisiana/lake-charles/","description":"Current water levels at 18 USGS and 4 Army Corps of Engineers gauges in Allen, Beauregard, Calcasieu, Cameron and Jefferson Davis parishes, with National Weather Service flood stages, record crests and storm history.","dateModified":"2026-10-31T02:35:02.668564+00:00","mainEntity":{"@type":"ItemList","numberOfItems":18,"itemListElement":[{"@type":"ListItem","position":1,"name":"Bayou Lacassine near Lake Arthur","url":"https://gulfcoastgauges.com/usgs/bayou-lacassine-near-lake-arthur.html"},{"@type":"ListItem","position":2,"name":"Bayou Nezpique near Basile","url":"https://gulfcoastgauges.com/usgs/bayou-nezpique-near-basile.html"},{"@type":"ListItem","position":3,"name":"Bundick Creek near DeRidder","url":"https://gulfcoastgauges.com/usgs/bundick-creek-near-deridder.html"},{"@type":"ListItem","position":4,"name":"Bundick Lake at Spillway near DeRidder","url":"https://gulfcoastgauges.com/usgs/bundick-lake-at-spillway-near-deridder.html"},{"@type":"ListItem","position":5,"name":"Buxton Creek at Highway 27 near DeQuincy","url":"https://gulfcoastgauges.com/usgs/buxton-creek-at-highway-27-near-dequincy.html"},{"@type":"ListItem","position":6,"name":"Calcasieu River at Cameron","url":"https://gulfcoastgauges.com/usgs/calcasieu-river-at-cameron.html"},{"@type":"ListItem","position":7,"name":"Calcasieu River at Highway 171 at Moss Bluff","url":"https://gulfcoastgauges.com/usgs/calcasieu-river-at-highway-171-at-moss-bluff.html"},{"@type":"ListItem","position":8,"name":"Calcasieu River at I-10 at Lake Charles","url":"https://gulfcoastgauges.com/usgs/calcasieu-river-at-i-10-at-lake-charles.html"},{"@type":"ListItem","position":9,"name":"Calcasieu River near Kinder","url":"https://gulfcoastgauges.com/usgs/calcasieu-river-near-kinder.html"},{"@type":"ListItem","position":10,"name":"Calcasieu River near Oakdale","url":"https://gulfcoastgauges.com/usgs/calcasieu-river-near-oakdale.html"},{"@type":"ListItem","position":11,"name":"Calcasieu River near Oberlin","url":"https://gulfcoastgauges.com/usgs/calcasieu-river-near-oberlin.html"},{"@type":"ListItem","position":12,"name":"Hickory Branch near Kernan","url":"https://gulfcoastgauges.com/usgs/hickory-branch-near-kernan.html"},{"@type":"ListItem","position":13,"name":"Intracoastal Canal at Creole Ferry at Gibbstown","url":"https://gulfcoastgauges.com/usgs/intracoastal-canal-at-creole-ferry-at-gibbstown.html"},{"@type":"ListItem","position":14,"name":"Mermentau River at Lake Arthur","url":"https://gulfcoastgauges.com/usgs/mermentau-river-at-lake-arthur.html"},{"@type":"ListItem","position":15,"name":"Mermentau River at Mermentau","url":"https://gulfcoastgauges.com/usgs/mermentau-river-at-mermentau.html"},{"@type":"ListItem","position":16,"name":"North Calcasieu Lake near Hackberry","url":"https://gulfcoastgauges.com/usgs/north-calcasieu-lake-near-hackberry.html"},{"@type":"ListItem","position":17,"name":"Ouiska Chitto Creek near Oberlin","url":"https://gulfcoastgauges.com/usgs/ouiska-chitto-creek-near-oberlin.html"},{"@type":"ListItem","position":18,"name":"West Fork Calcasieu River at Moss Bluff","url":"https://gulfcoastgauges.com/usgs/west-fork-calcasieu-river-at-moss-bluff.html"}]}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Gulf Coast Gauges","item":"https://gulfcoastgauges.com/"},{"@type":"ListItem","position":2,"name":"Louisiana coast","item":"https://gulfcoastgauges.com/louisiana/"},{"@type":"ListItem","position":3,"name":"Lake Charles and Southwest Louisiana"}]}]</script><script src="/assets/find.js" defer></script></head><body><div class="wrap"><header class="top"><a class="brand" href="/"><picture><source srcset="/assets/logo-dark.png" media="(prefers-color-scheme: dark)"><img src="/assets/logo.png" width="192" height="30" alt="Gulf Coast Gauges"></picture></a><nav class="main" aria-label="Sections"><a href="/texas-coast/houston-galveston/">Houston</a><details class="states"><summary>States</summary><div class="menu"><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/" class="all">All regions</a></div></details><a href="/tides/">Tides</a><a href="/storms/">Storms</a><a href="/alerts/">Alerts</a></nav><form class="find" action="/gauges/" role="search"><input type="search" name="q" placeholder="Find a gauge, creek or road" aria-label="Find a gauge" autocomplete="off" spellcheck="false"><div class="results" role="listbox" hidden></div></form></header>
+<nav class="crumb"><a href="https://gulfcoastgauges.com/">Gulf Coast Gauges</a> &rsaquo; <a href="https://gulfcoastgauges.com/louisiana/">Louisiana coast</a> &rsaquo; Lake Charles and Southwest Louisiana</nav>
+<h1>Lake Charles and Southwest Louisiana water levels</h1>
+<p class="sub">22 stream gauges (18 USGS, 4 Army Corps) in Allen, Beauregard, Calcasieu, Cameron and Jefferson Davis parishes &middot; with NWS flood stages where published &middot; <a href="#army-corps">Army Corps gauges</a></p>
+<div class="note">No National Weather Service alert covering Lake Charles and Southwest Louisiana was active when this page was generated (Oct 30, 2026 at 9:35 PM CDT). Alerts are issued and expire at any time; the current list is at <a href="https://alerts.weather.gov/" rel="nofollow noopener">alerts.weather.gov</a>.</div>
+<h2>Nearest an NWS flood stage</h2>
+<p class="muted">The 8 gauges whose latest reading is closest to the next NWS flood stage above it (or at or above one), out of 8 with flood stages on the same scale as the USGS reading. Gauges that haven't reported in 24 hours are left out.</p>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th>Parish</th><th class="n">Gage height</th><th>NWS flood stage</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/usgs/mermentau-river-at-mermentau.html">Mermentau River at Mermentau</a></td><td>Jefferson Davis Parish</td><td class="n">1.94 ft</td><td>2.1 ft below minor flood stage</td><td class="nw">20 minutes ago</td></tr>
+<tr><td><a href="/usgs/calcasieu-river-near-oakdale.html">Calcasieu River near Oakdale</a></td><td>Allen Parish</td><td class="n">7.99 ft</td><td>9.0 ft below minor flood stage</td><td class="nw">65 minutes ago</td></tr>
+<tr><td><a href="/usgs/calcasieu-river-near-oberlin.html">Calcasieu River near Oberlin</a></td><td>Allen Parish</td><td class="n">0.99 ft</td><td>12.0 ft below minor flood stage</td><td class="nw">20 minutes ago</td></tr>
+<tr><td><a href="/usgs/ouiska-chitto-creek-near-oberlin.html">Ouiska Chitto Creek near Oberlin</a></td><td>Allen Parish</td><td class="n">2.71 ft</td><td>12.3 ft below minor flood stage</td><td class="nw">20 minutes ago</td></tr>
+<tr><td><a href="/usgs/calcasieu-river-near-kinder.html">Calcasieu River near Kinder</a></td><td>Allen Parish</td><td class="n">1.43 ft</td><td>14.6 ft below minor flood stage</td><td class="nw">20 minutes ago</td></tr>
+<tr><td><a href="/usgs/buxton-creek-at-highway-27-near-dequincy.html">Buxton Creek at Highway 27 near DeQuincy</a></td><td>Calcasieu Parish</td><td class="n">1.50 ft</td><td>16.5 ft below minor flood stage</td><td class="nw">35 minutes ago</td></tr>
+<tr><td><a href="/usgs/bundick-creek-near-deridder.html">Bundick Creek near DeRidder</a></td><td>Beauregard Parish</td><td class="n">2.21 ft</td><td>17.8 ft below minor flood stage</td><td class="nw">20 minutes ago</td></tr>
+<tr><td><a href="/usgs/bayou-nezpique-near-basile.html">Bayou Nezpique near Basile</a></td><td>Jefferson Davis Parish</td><td class="n">1.46 ft</td><td>20.5 ft below minor flood stage</td><td class="nw">20 minutes ago</td></tr>
+</tbody></table></div>
+<h2>By parish</h2>
+<p class="fnav"><a href="#allen-parish">Allen Parish</a> <a href="#beauregard-parish">Beauregard Parish</a> <a href="#calcasieu-parish">Calcasieu Parish</a> <a href="#cameron-parish">Cameron Parish</a> <a href="#jefferson-davis-parish">Jefferson Davis Parish</a></p>
+<h3 id="allen-parish">Allen Parish</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Gage height</th><th>NWS flood stage</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/usgs/calcasieu-river-near-kinder.html">Calcasieu River near Kinder</a></td><td class="n">1.43 ft</td><td>14.6 ft below minor flood stage</td><td class="nw">20 minutes ago</td></tr>
+<tr><td><a href="/usgs/calcasieu-river-near-oakdale.html">Calcasieu River near Oakdale</a></td><td class="n">7.99 ft</td><td>9.0 ft below minor flood stage</td><td class="nw">65 minutes ago</td></tr>
+<tr><td><a href="/usgs/calcasieu-river-near-oberlin.html">Calcasieu River near Oberlin</a></td><td class="n">0.99 ft</td><td>12.0 ft below minor flood stage</td><td class="nw">20 minutes ago</td></tr>
+<tr><td><a href="/usgs/ouiska-chitto-creek-near-oberlin.html">Ouiska Chitto Creek near Oberlin</a></td><td class="n">2.71 ft</td><td>12.3 ft below minor flood stage</td><td class="nw">20 minutes ago</td></tr>
+</tbody></table></div>
+<h3 id="beauregard-parish">Beauregard Parish</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Gage height</th><th>NWS flood stage</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/usgs/bundick-creek-near-deridder.html">Bundick Creek near DeRidder</a></td><td class="n">2.21 ft</td><td>17.8 ft below minor flood stage</td><td class="nw">20 minutes ago</td></tr>
+<tr><td><a href="/usgs/bundick-lake-at-spillway-near-deridder.html">Bundick Lake at Spillway near DeRidder</a></td><td class="n">6.01 ft</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/usgs/hickory-branch-near-kernan.html">Hickory Branch near Kernan</a></td><td class="n">0.46 ft</td><td>—</td><td class="nw">50 minutes ago</td></tr>
+</tbody></table></div>
+<h3 id="calcasieu-parish">Calcasieu Parish</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Gage height</th><th>NWS flood stage</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/usgs/buxton-creek-at-highway-27-near-dequincy.html">Buxton Creek at Highway 27 near DeQuincy</a></td><td class="n">1.50 ft</td><td>16.5 ft below minor flood stage</td><td class="nw">35 minutes ago</td></tr>
+<tr><td><a href="/usgs/calcasieu-river-at-highway-171-at-moss-bluff.html">Calcasieu River at Highway 171 at Moss Bluff</a></td><td class="n">25.46 ft</td><td>—</td><td class="nw">65 minutes ago</td></tr>
+<tr><td><a href="/usgs/calcasieu-river-at-i-10-at-lake-charles.html">Calcasieu River at I-10 at Lake Charles</a></td><td class="n">1.83 ft</td><td>—</td><td class="nw">20 minutes ago</td></tr>
+<tr><td><a href="/usgs/west-fork-calcasieu-river-at-moss-bluff.html">West Fork Calcasieu River at Moss Bluff</a></td><td class="n">16.23 ft</td><td>—</td><td class="nw">65 minutes ago</td></tr>
+</tbody></table></div>
+<h3 id="cameron-parish">Cameron Parish</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Gage height</th><th>NWS flood stage</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/usgs/calcasieu-river-at-cameron.html">Calcasieu River at Cameron</a></td><td class="n">6.92 ft</td><td>—</td><td class="nw">35 minutes ago</td></tr>
+<tr><td><a href="/usgs/intracoastal-canal-at-creole-ferry-at-gibbstown.html">Intracoastal Canal at Creole Ferry at Gibbstown</a></td><td class="n">3.89 ft</td><td>—</td><td class="nw">50 minutes ago</td></tr>
+<tr><td><a href="/usgs/north-calcasieu-lake-near-hackberry.html">North Calcasieu Lake near Hackberry</a></td><td class="n">4.31 ft</td><td>—</td><td class="nw">20 minutes ago</td></tr>
+</tbody></table></div>
+<h3 id="jefferson-davis-parish">Jefferson Davis Parish</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Gage height</th><th>NWS flood stage</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/usgs/bayou-lacassine-near-lake-arthur.html">Bayou Lacassine near Lake Arthur</a></td><td class="n">10.02 ft</td><td>—</td><td class="nw">35 minutes ago</td></tr>
+<tr><td><a href="/usgs/bayou-nezpique-near-basile.html">Bayou Nezpique near Basile</a></td><td class="n">1.46 ft</td><td>20.5 ft below minor flood stage</td><td class="nw">20 minutes ago</td></tr>
+<tr><td><a href="/usgs/mermentau-river-at-lake-arthur.html">Mermentau River at Lake Arthur</a></td><td class="n">22.25 ft</td><td>—</td><td class="nw">20 minutes ago</td></tr>
+<tr><td><a href="/usgs/mermentau-river-at-mermentau.html">Mermentau River at Mermentau</a></td><td class="n">1.94 ft</td><td>2.1 ft below minor flood stage</td><td class="nw">20 minutes ago</td></tr>
+</tbody></table></div>
+<h2 id="army-corps">Army Corps of Engineers gauges</h2>
+<p class="muted">U.S. Army Corps of Engineers gauges in the region: the river, locks and floodgates, each on its own datum, with NWS flood stages where published. <a href="/army-corps/">Every Corps gauge</a></p>
+<div class="scroll"><table><thead><tr><th>Corps gauge</th><th class="n">Stage</th><th>Datum</th><th>NWS flood stage</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/army-corps/calcasieu-river-at-hackberry.html">Calcasieu River at Hackberry</a></td><td class="n">0.88 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/calcasieu-river-at-lake-charles.html">Calcasieu River at Lake Charles</a></td><td class="n">0.45 ft</td><td>NAVD88</td><td>3.5 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/calcasieu-river-near-cameron.html">Calcasieu River near Cameron</a></td><td class="n">2.18 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mermentau-river-at-grand-chenier.html">Mermentau River at Grand Chenier</a></td><td class="n">4.80 ft</td><td>local</td><td>—</td><td class="nw">2 hours ago</td></tr>
+</tbody></table></div>
+<h2 id="tides">Tide gauges</h2>
+<p class="muted">NOAA tide and water-level gauges in the region: water level relative to an ordinary high tide (MHHW), against coastal flood thresholds.</p>
+<div class="scroll"><table><thead><tr><th>Tide gauge</th><th class="n">Water level</th><th>Against flood thresholds</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/tides/bulk-terminal.html">Bulk Terminal</a></td><td class="n">+0.36 ft</td><td>1.3 ft below NOAA minor HTF</td><td class="nw">11 minutes ago</td></tr>
+<tr><td><a href="/tides/calcasieu-pass.html">Calcasieu Pass</a></td><td class="n">+1.63 ft</td><td>0.5 ft below NWS minor</td><td class="nw">11 minutes ago</td></tr>
+<tr><td><a href="/tides/lake-charles.html">Lake Charles</a></td><td class="n">+0.18 ft</td><td>1.5 ft below NWS minor</td><td class="nw">11 minutes ago</td></tr>
+</tbody></table></div>
+
+<h2 id="rain">Rainfall</h2>
+<p>1 of the region's 12 USGS rain gauges recorded rain in the last 24 hours. The wettest:</p>
+<div class="scroll"><table><thead><tr><th>Rain gauge</th><th class="n">Last 24 hours</th><th class="n">3 days</th><th class="n">7 days</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/usgs/west-fork-calcasieu-river-at-moss-bluff.html">W Fork Calcasieu River at Moss Bluff</a></td><td class="n">0.12 in</td><td class="n">0.20 in</td><td class="n">0.28 in</td><td class="nw">65 minutes ago</td></tr>
+</tbody></table></div>
+<p class="muted"><a href="/rainfall/gulf-coast/#lake-charles">Every rain gauge in the region</a>, and rainfall along the whole coast.</p>
+<h2 id="storms">Storms</h2>
+<p>No National Weather Service flood alert has named any of Allen, Beauregard, Calcasieu, Cameron and Jefferson Davis parishes since this site began recording alerts here on October 23, 2026. Each new event gets its own page, with every gauge's peak, automatically.</p>
+<h2>Historic floods</h2><p><a href="/floods/hurricane-laura-2020.html">Hurricane Laura (2020)</a>, <a href="/floods/tropical-storm-imelda-2019.html">Tropical Storm Imelda (2019)</a>, <a href="/floods/hurricane-harvey-2017.html">Hurricane Harvey (2017)</a>, <a href="/floods/louisiana-flood-2016.html">August 2016 Louisiana Flood</a>, <a href="/floods/hurricane-ike-2008.html">Hurricane Ike (2008)</a></p>
+<h2>Reading these gauges</h2>
+<p>USGS gauges report <strong>gage height</strong>: the water surface above each gauge's own zero, not a depth. Where that zero is set at 0 ft on a vertical datum the gage height is also an elevation; each gauge page says which. The NWS flood stages (action, minor, moderate and major) are the National Weather Service's references for each location, shown only where the NWS reads the same scale as USGS. <a href="/about/">How this site works</a>.</p>
+<footer>
+<p class="fnav"><a href="/">Home</a><a href="/texas-coast/houston-galveston/">Houston</a><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/storms/">Storms</a><a href="/tides/">Tide gauges</a><a href="/gauges/">All gauges</a><a href="/army-corps/">Army Corps gauges</a><a href="/lakes/">Lakes</a><a href="/alerts/">Active alerts</a><a href="/rainfall/">Houston rainfall</a><a href="/rainfall/gulf-coast/">Gulf Coast rainfall</a><a href="/water-temperature/">Water temperature</a><a href="/floods/">Historic floods</a><a href="/usgs/">USGS gauges</a><a href="/embed/">Embed a gauge</a><a href="/about/">How this site works</a> Contact: <a class="mail" href="/about/#contact" data-u="contact" data-d="gulfcoastgauges.com">contact [at] gulfcoastgauges.com</a></p>
+<p><strong>Sources.</strong> Gage height from the <a href="https://waterdata.usgs.gov/" rel="nofollow noopener">U.S. Geological Survey</a>; tide gauge water levels from NOAA Tides &amp; Currents; stage at locks, floodgates and the lower Mississippi from the U.S. Army Corps of Engineers; in the Houston area, stage readings from the <a href="https://www.harriscountyfws.org/" rel="nofollow noopener">Harris County Flood Warning System</a>; flood stages, crests, watches, advisories and warnings from the National Weather Service. This site is not affiliated with any of them.</p>
+<p><strong>No guidance, no forecast.</strong> This site reports measurements and official alert text only. It does not predict water levels, assess whether any road, property or route is passable, or advise any action. For decisions about safety, use <a href="https://alerts.weather.gov/" rel="nofollow noopener">official sources</a> and local emergency management.</p>
+<p><strong>Accuracy.</strong> Gauges can fail, report late, or report in error, and recent USGS readings are provisional. HCFCD makes no representations, guarantees or warranties as to the availability, accuracy, completeness, currency or suitability of Flood Warning System data, and disclaims liability for actions taken or not taken based on it. Nothing here is verified independently.</p>
+<p>Page generated Oct 30, 2026 at 9:35 PM CDT.</p>
+</footer></div></body></html>

@@ -1,0 +1,208 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Army Corps of Engineers Gauges, South Louisiana – Mississippi River, Locks and Floodgates</title><meta name="description" content="Current stage at 53 U.S. Army Corps of Engineers gauges in south Louisiana: the Mississippi at Baton Rouge and New Orleans, the Atchafalaya, locks, floodgates and the IHNC surge barrier, with NWS flood stages."><link rel="canonical" href="https://gulfcoastgauges.com/army-corps/"><meta property="og:title" content="Army Corps of Engineers Gauges, South Louisiana – Mississippi River, Locks and Floodgates"><meta property="og:description" content="Current stage at 53 U.S. Army Corps of Engineers gauges in south Louisiana: the Mississippi at Baton Rouge and New Orleans, the Atchafalaya, locks, floodgates and the IHNC surge barrier, with NWS flood stages."><meta property="og:type" content="website"><meta property="og:url" content="https://gulfcoastgauges.com/army-corps/"><meta property="og:site_name" content="Gulf Coast Gauges"><link rel="icon" href="/assets/favicon.ico" sizes="any"><link rel="icon" href="/assets/favicon-32.png" type="image/png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><style>
+:root{--bg:#fff;--fg:#14181f;--muted:#5b6472;--line:#e3e7ee;--accent:#1d4ed8;--warn:#b45309;
+--card:#f7f9fc}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e8edf5;--muted:#9aa6b5;
+--line:#232b36;--accent:#7aa2ff;--card:#141b24}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-sans-serif,system-ui,
+-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:780px;margin:0 auto;padding:20px 18px 56px}
+a{color:var(--accent)}
+nav.crumb{font-size:13px;color:var(--muted);margin-bottom:14px}
+h1{font-size:27px;line-height:1.25;margin:.2em 0 .1em}
+h2{font-size:19px;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 18px}
+.now{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.big{font-size:38px;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+.now dl{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:14px 0 0}
+.now dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.now dd{margin:2px 0 0;font-size:16px;font-weight:550}
+table{border-collapse:collapse;width:100%;font-size:14px;margin-top:8px}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+.chart{width:100%;height:auto;display:block;margin:10px 0 4px}
+.grid{stroke:var(--line);stroke-width:1}
+.trace{fill:none;stroke:var(--accent);stroke-width:2}
+.bar{fill:var(--accent);opacity:.75}
+.band{fill:var(--accent);opacity:.1}
+.rain{fill:#0891b2;opacity:.7}
+.bank{stroke:var(--warn);stroke-width:1.5;stroke-dasharray:5 4}
+.banklab,.ylab,.xlab{font-size:10px;fill:var(--muted)}
+.banklab{fill:var(--warn)}
+.muted{color:var(--muted)}
+.note{background:var(--card);border-left:3px solid var(--warn);padding:12px 14px;
+border-radius:0 8px 8px 0;font-size:14px}
+footer{margin-top:2.5em;padding-top:1em;border-top:1px solid var(--line);font-size:13px;
+color:var(--muted)}
+footer p{margin:.5em 0}
+h3{font-size:16px;margin:1.6em 0 .2em}
+td.n,td.nw{white-space:nowrap}
+@media (max-width:560px){table{font-size:13px}th,td{padding:6px 5px}}
+.brand{display:inline-block;margin:0 0 14px}.brand img{display:block;height:30px;width:auto}
+.hero{display:block;width:100%;height:auto;border-radius:10px;margin:14px 0 18px}
+
+textarea.snip{width:100%;font:12px/1.5 ui-monospace,Consolas,monospace;padding:10px;
+border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);resize:vertical}
+button.copy{font:inherit;font-size:14px;padding:6px 14px;border-radius:8px;border:1px solid var(--line);
+background:var(--card);color:var(--fg);cursor:pointer;margin:6px 0 14px}
+iframe.preview{border:0;max-width:100%;display:block;margin:8px 0}
+
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:0 0 16px;
+padding-bottom:12px;border-bottom:1px solid var(--line)}
+.top .brand{margin:0}
+nav.main{display:flex;align-items:center;gap:16px;font-size:14px}
+nav.main a,nav.main summary{color:var(--fg);text-decoration:none;font-weight:550}
+nav.main a:hover,nav.main summary:hover{color:var(--accent);text-decoration:underline}
+details.states{position:relative}
+details.states summary{cursor:pointer;list-style:none;padding-right:13px;position:relative}
+details.states summary::-webkit-details-marker{display:none}
+details.states summary::after{content:"";position:absolute;right:0;top:45%;border:4px solid transparent;
+border-top-color:currentColor}
+details.states[open] summary::after{top:15%;border-top-color:transparent;border-bottom-color:currentColor}
+details.states .menu{position:absolute;z-index:30;top:calc(100% + 8px);left:-10px;min-width:150px;
+background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 0;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+details.states .menu a{display:block;padding:8px 14px;font-weight:500}
+details.states .menu a:hover{background:var(--card);text-decoration:none}
+details.states .menu a.all{border-top:1px solid var(--line);margin-top:4px;padding-top:9px;
+color:var(--muted);font-size:13px}
+form.find{position:relative;flex:1 1 220px;max-width:280px;margin-left:auto}
+form.find input{width:100%;font:inherit;font-size:14px;padding:7px 10px;color:var(--fg);
+background:var(--card);border:1px solid var(--line);border-radius:8px}
+form.find input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.results{position:absolute;z-index:20;top:calc(100% + 4px);left:0;right:0;max-height:340px;
+overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:8px;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.results a{display:block;padding:7px 10px;color:var(--fg);text-decoration:none;font-size:14px}
+.results a small{display:block;color:var(--muted);font-size:12px}
+.results a.on,.results a:hover{background:var(--card)}
+.results p{margin:0;padding:8px 10px;font-size:13px;color:var(--muted)}
+.fnav{font-size:13px}
+.fnav a{margin-right:12px}
+nav.jump{margin:12px 0 4px;line-height:2.2}
+nav.jump a{white-space:nowrap}
+ul.cols{columns:2;column-gap:28px;padding-left:18px;margin:.4em 0}
+ul.cols li{break-inside:avoid;margin:0 0 4px}
+@media (max-width:560px){form.find{max-width:none;flex-basis:100%;order:3}
+nav.main{gap:12px}ul.cols{columns:1}}
+
+.multi{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin:12px 0 6px}
+.panel h3{font-size:14px;margin:0;line-height:1.35}
+.panel p{margin:0 0 2px;font-size:12.5px;color:var(--muted)}
+.panel svg{width:100%;height:auto;display:block;overflow:visible}
+.wash{fill:var(--accent);opacity:.12}
+.alertband{fill:var(--muted);opacity:.12}
+.peak{fill:var(--accent);stroke:var(--bg);stroke-width:2}
+.panel{position:relative}
+.hov{cursor:crosshair;touch-action:pan-y}
+.xh{stroke:var(--muted);stroke-width:1}
+.tip{position:absolute;pointer-events:none;background:var(--bg);border:1px solid var(--line);
+border-radius:6px;padding:4px 7px;font-size:12px;line-height:1.35;white-space:nowrap;
+box-shadow:0 4px 12px rgba(0,0,0,.12);z-index:5}
+.stem{stroke:var(--line);stroke-width:1.5}
+.hollow{fill:var(--bg);stroke:var(--accent);stroke-width:2}
+.feature{border:1px solid var(--line);border-radius:10px;padding:14px 16px 10px;margin:18px 0}
+.feature h2{border:0;margin:0 0 .2em;padding:0}
+@media (max-width:560px){.multi{grid-template-columns:1fr}}
+
+.regions{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:6px 0 4px}
+.regions a{display:block;border:1px solid var(--line);border-radius:8px;padding:8px 10px;
+text-decoration:none;color:var(--fg);font-weight:550;font-size:14px;line-height:1.3}
+.regions a:hover{border-color:var(--accent)}
+.regions small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:2px}
+h3.state{margin:1.1em 0 .1em;font-size:15px}
+h3.state a{color:var(--fg)}
+@media (max-width:760px){.regions{grid-template-columns:1fr 1fr}}
+</style><script type="application/ld+json">[{"@context":"https://schema.org","@type":"CollectionPage","name":"Army Corps of Engineers Gauges, South Louisiana \u2013 Mississippi River, Locks and Floodgates","url":"https://gulfcoastgauges.com/army-corps/","description":"Current stage at 53 U.S. Army Corps of Engineers gauges in south Louisiana: the Mississippi at Baton Rouge and New Orleans, the Atchafalaya, locks, floodgates and the IHNC surge barrier, with NWS flood stages.","mainEntity":{"@type":"ItemList","numberOfItems":53,"itemListElement":[{"@type":"ListItem","position":1,"name":"Atchafalaya River at Krotz Springs","url":"https://gulfcoastgauges.com/army-corps/atchafalaya-river-at-krotz-springs.html"},{"@type":"ListItem","position":2,"name":"Atchafalaya River at Melville","url":"https://gulfcoastgauges.com/army-corps/atchafalaya-river-at-melville.html"},{"@type":"ListItem","position":3,"name":"Avoca Island Cutoff South of Morgan City","url":"https://gulfcoastgauges.com/army-corps/avoca-island-cutoff-south-of-morgan-city.html"},{"@type":"ListItem","position":4,"name":"Bayou Courtableau Above Drainage Structure","url":"https://gulfcoastgauges.com/army-corps/bayou-courtableau-above-drainage-structure.html"},{"@type":"ListItem","position":5,"name":"Bayou Des Allemands at Des Allemands","url":"https://gulfcoastgauges.com/army-corps/bayou-des-allemands-at-des-allemands.html"},{"@type":"ListItem","position":6,"name":"Bayou Fordoche near Krotz Springs","url":"https://gulfcoastgauges.com/army-corps/bayou-fordoche-near-krotz-springs.html"},{"@type":"ListItem","position":7,"name":"Bayou La Rompe at Lake Long","url":"https://gulfcoastgauges.com/army-corps/bayou-la-rompe-at-lake-long.html"},{"@type":"ListItem","position":8,"name":"Bayou Petit Caillou at Cocodrie","url":"https://gulfcoastgauges.com/army-corps/bayou-petit-caillou-at-cocodrie.html"},{"@type":"ListItem","position":9,"name":"Bayou Segnette Sector Gate \u2013 Flood Side","url":"https://gulfcoastgauges.com/army-corps/bayou-segnette-sector-gate-flood-side.html"},{"@type":"ListItem","position":10,"name":"Bayou Segnette Sector Gate \u2013 Protected Side","url":"https://gulfcoastgauges.com/army-corps/bayou-segnette-sector-gate-protected-side.html"},{"@type":"ListItem","position":11,"name":"Big Alabama Bayou (FWS) at Sherburne","url":"https://gulfcoastgauges.com/army-corps/big-alabama-bayou-fws-at-sherburne.html"},{"@type":"ListItem","position":12,"name":"Blind Tensas Cut near Little Tensas Bayou","url":"https://gulfcoastgauges.com/army-corps/blind-tensas-cut-near-little-tensas-bayou.html"},{"@type":"ListItem","position":13,"name":"Calcasieu River at Hackberry","url":"https://gulfcoastgauges.com/army-corps/calcasieu-river-at-hackberry.html"},{"@type":"ListItem","position":14,"name":"Calcasieu River at Lake Charles","url":"https://gulfcoastgauges.com/army-corps/calcasieu-river-at-lake-charles.html"},{"@type":"ListItem","position":15,"name":"Calcasieu River near Cameron","url":"https://gulfcoastgauges.com/army-corps/calcasieu-river-near-cameron.html"},{"@type":"ListItem","position":16,"name":"Chicot Pass near West Fork","url":"https://gulfcoastgauges.com/army-corps/chicot-pass-near-west-fork.html"},{"@type":"ListItem","position":17,"name":"EABPL Borrow Pit (FWS) near Ramah","url":"https://gulfcoastgauges.com/army-corps/eabpl-borrow-pit-fws-near-ramah.html"},{"@type":"ListItem","position":18,"name":"GIWW near Paris Road Bridge","url":"https://gulfcoastgauges.com/army-corps/giww-near-paris-road-bridge.html"},{"@type":"ListItem","position":19,"name":"Harvey Canal at Lapalco Blvd","url":"https://gulfcoastgauges.com/army-corps/harvey-canal-at-lapalco-blvd.html"},{"@type":"ListItem","position":20,"name":"IHNC Surge Barrier East / Flood Side","url":"https://gulfcoastgauges.com/army-corps/ihnc-surge-barrier-east-flood-side.html"},{"@type":"ListItem","position":21,"name":"IHNC Surge Barrier West / Protected Side","url":"https://gulfcoastgauges.com/army-corps/ihnc-surge-barrier-west-protected-side.html"},{"@type":"ListItem","position":22,"name":"Inner Harbor Navigation Canal at New Orleans","url":"https://gulfcoastgauges.com/army-corps/inner-harbor-navigation-canal-at-new-orleans.html"},{"@type":"ListItem","position":23,"name":"Keelboat Pass below Lake Chicot","url":"https://gulfcoastgauges.com/army-corps/keelboat-pass-below-lake-chicot.html"},{"@type":"ListItem","position":24,"name":"Lake Palourde near Morgan City","url":"https://gulfcoastgauges.com/army-corps/lake-palourde-near-morgan-city.html"},{"@type":"ListItem","position":25,"name":"Lake Pontchartrain at Lakefront Airport","url":"https://gulfcoastgauges.com/army-corps/lake-pontchartrain-at-lakefront-airport.html"},{"@type":"ListItem","position":26,"name":"Little Bayou Sorrel at Junction with GIWW","url":"https://gulfcoastgauges.com/army-corps/little-bayou-sorrel-at-junction-with-giww.html"},{"@type":"ListItem","position":27,"name":"Lower Grand River at Lake Fausse","url":"https://gulfcoastgauges.com/army-corps/lower-grand-river-at-lake-fausse.html"},{"@type":"ListItem","position":28,"name":"Mermentau River at Grand Chenier","url":"https://gulfcoastgauges.com/army-corps/mermentau-river-at-grand-chenier.html"},{"@type":"ListItem","position":29,"name":"Mississippi River South Pass at Port Eads","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-south-pass-at-port-eads.html"},{"@type":"ListItem","position":30,"name":"Mississippi River Southwest Pass Mile 7.5 BHP","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-southwest-pass-mile-7-5-bhp.html"},{"@type":"ListItem","position":31,"name":"Mississippi River Southwest Pass at East Jetty","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-southwest-pass-at-east-jetty.html"},{"@type":"ListItem","position":32,"name":"Mississippi River at Alliance","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-at-alliance.html"},{"@type":"ListItem","position":33,"name":"Mississippi River at Baton Rouge","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-at-baton-rouge.html"},{"@type":"ListItem","position":34,"name":"Mississippi River at Bonnet Carre","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-at-bonnet-carre.html"},{"@type":"ListItem","position":35,"name":"Mississippi River at Donaldsonville","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-at-donaldsonville.html"},{"@type":"ListItem","position":36,"name":"Mississippi River at Empire","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-at-empire.html"},{"@type":"ListItem","position":37,"name":"Mississippi River at Harvey Lock","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-at-harvey-lock.html"},{"@type":"ListItem","position":38,"name":"Mississippi River at IHNC Lock","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-at-ihnc-lock.html"},{"@type":"ListItem","position":39,"name":"Mississippi River at New Orleans (Carrollton)","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-at-new-orleans-carrollton.html"},{"@type":"ListItem","position":40,"name":"Mississippi River at Reserve","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-at-reserve.html"},{"@type":"ListItem","position":41,"name":"Mississippi River at Venice","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-at-venice.html"},{"@type":"ListItem","position":42,"name":"Mississippi River at West Bay","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-at-west-bay.html"},{"@type":"ListItem","position":43,"name":"Mississippi River at West Pointe a la Hache","url":"https://gulfcoastgauges.com/army-corps/mississippi-river-at-west-pointe-a-la-hache.html"},{"@type":"ListItem","position":44,"name":"Seabrook Bridge \u2013 Inner Harbor Navigation Canal","url":"https://gulfcoastgauges.com/army-corps/seabrook-bridge-inner-harbor-navigation-canal.html"},{"@type":"ListItem","position":45,"name":"Sellers Canal at Hwy 90","url":"https://gulfcoastgauges.com/army-corps/sellers-canal-at-hwy-90.html"},{"@type":"ListItem","position":46,"name":"Six Mile Lake NE of Verdunville","url":"https://gulfcoastgauges.com/army-corps/six-mile-lake-ne-of-verdunville.html"},{"@type":"ListItem","position":47,"name":"Upper Grand River (LS) at Dike","url":"https://gulfcoastgauges.com/army-corps/upper-grand-river-ls-at-dike.html"},{"@type":"ListItem","position":48,"name":"Walker Drainage Structure \u2013 Protected Side","url":"https://gulfcoastgauges.com/army-corps/walker-drainage-structure-protected-side.html"},{"@type":"ListItem","position":49,"name":"Wax Lake East Drainage Area at Control Structure","url":"https://gulfcoastgauges.com/army-corps/wax-lake-east-drainage-area-at-control-structure.html"},{"@type":"ListItem","position":50,"name":"Western Tie-In Sector Gate \u2013 Flood Side","url":"https://gulfcoastgauges.com/army-corps/western-tie-in-sector-gate-flood-side.html"},{"@type":"ListItem","position":51,"name":"Western Tie-In Sector Gate \u2013 Protected Side","url":"https://gulfcoastgauges.com/army-corps/western-tie-in-sector-gate-protected-side.html"},{"@type":"ListItem","position":52,"name":"Whiskey Bay Pilot Channel Below Head","url":"https://gulfcoastgauges.com/army-corps/whiskey-bay-pilot-channel-below-head.html"},{"@type":"ListItem","position":53,"name":"Workman Canal near I-10","url":"https://gulfcoastgauges.com/army-corps/workman-canal-near-i-10.html"}]}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Gulf Coast Gauges","item":"https://gulfcoastgauges.com/"},{"@type":"ListItem","position":2,"name":"Army Corps gauges"}]}]</script><script src="/assets/find.js" defer></script></head><body><div class="wrap"><header class="top"><a class="brand" href="/"><picture><source srcset="/assets/logo-dark.png" media="(prefers-color-scheme: dark)"><img src="/assets/logo.png" width="192" height="30" alt="Gulf Coast Gauges"></picture></a><nav class="main" aria-label="Sections"><a href="/texas-coast/houston-galveston/">Houston</a><details class="states"><summary>States</summary><div class="menu"><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/" class="all">All regions</a></div></details><a href="/tides/">Tides</a><a href="/storms/">Storms</a><a href="/alerts/">Alerts</a></nav><form class="find" action="/gauges/" role="search"><input type="search" name="q" placeholder="Find a gauge, creek or road" aria-label="Find a gauge" autocomplete="off" spellcheck="false"><div class="results" role="listbox" hidden></div></form></header>
+<nav class="crumb"><a href="https://gulfcoastgauges.com/">Gulf Coast Gauges</a> &rsaquo; Army Corps gauges</nav>
+<h1>Army Corps of Engineers gauges</h1>
+<p class="sub">53 U.S. Army Corps of Engineers, New Orleans District gauges in south Louisiana &middot; stage on each gauge's own datum</p>
+<h2>With NWS flood stages</h2>
+<p class="muted">Nearest the next flood stage first. Gauges that haven't reported recently are left out.</p>
+<div class="scroll"><table><thead><tr><th>Corps gauge</th><th>Region</th><th class="n">Stage</th><th>Datum</th><th>NWS flood stage</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/army-corps/lake-palourde-near-morgan-city.html">Lake Palourde near Morgan City</a></td><td><a href="/louisiana/lafayette-acadiana/">Lafayette</a></td><td class="n">3.47 ft</td><td>NGVD29</td><td>1.5 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/calcasieu-river-at-lake-charles.html">Calcasieu River at Lake Charles</a></td><td><a href="/louisiana/lake-charles/">Lake Charles</a></td><td class="n">0.45 ft</td><td>NAVD88</td><td>3.5 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-new-orleans-carrollton.html">Mississippi River at New Orleans (Carrollton)</a></td><td><a href="/louisiana/new-orleans/">New Orleans</a></td><td class="n">3.11 ft</td><td>local</td><td>13.9 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-donaldsonville.html">Mississippi River at Donaldsonville</a></td><td><a href="/louisiana/baton-rouge/">Baton Rouge</a></td><td class="n">4.91 ft</td><td>NGVD29</td><td>22.1 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/atchafalaya-river-at-krotz-springs.html">Atchafalaya River at Krotz Springs</a></td><td><a href="/louisiana/lafayette-acadiana/">Lafayette</a></td><td class="n">3.65 ft</td><td>NAVD88</td><td>25.4 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-baton-rouge.html">Mississippi River at Baton Rouge</a></td><td><a href="/louisiana/baton-rouge/">Baton Rouge</a></td><td class="n">8.52 ft</td><td>NGVD29</td><td>26.5 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/atchafalaya-river-at-melville.html">Atchafalaya River at Melville</a></td><td><a href="/louisiana/lafayette-acadiana/">Lafayette</a></td><td class="n">5.13 ft</td><td>NGVD29</td><td>28.9 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+</tbody></table></div>
+<h2><a href="/louisiana/lake-charles/">Lake Charles and Southwest Louisiana</a></h2>
+<div class="scroll"><table><thead><tr><th>Corps gauge</th><th class="n">Stage</th><th>Datum</th><th>NWS flood stage</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/army-corps/calcasieu-river-at-hackberry.html">Calcasieu River at Hackberry</a></td><td class="n">0.88 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/calcasieu-river-at-lake-charles.html">Calcasieu River at Lake Charles</a></td><td class="n">0.45 ft</td><td>NAVD88</td><td>3.5 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/calcasieu-river-near-cameron.html">Calcasieu River near Cameron</a></td><td class="n">2.18 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mermentau-river-at-grand-chenier.html">Mermentau River at Grand Chenier</a></td><td class="n">4.80 ft</td><td>local</td><td>—</td><td class="nw">2 hours ago</td></tr>
+</tbody></table></div>
+<h2><a href="/louisiana/lafayette-acadiana/">Lafayette and Acadiana</a></h2>
+<div class="scroll"><table><thead><tr><th>Corps gauge</th><th class="n">Stage</th><th>Datum</th><th>NWS flood stage</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/army-corps/atchafalaya-river-at-krotz-springs.html">Atchafalaya River at Krotz Springs</a></td><td class="n">3.65 ft</td><td>NAVD88</td><td>25.4 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/atchafalaya-river-at-melville.html">Atchafalaya River at Melville</a></td><td class="n">5.13 ft</td><td>NGVD29</td><td>28.9 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/bayou-courtableau-above-drainage-structure.html">Bayou Courtableau Above Drainage Structure</a></td><td class="n">17.80 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/bayou-fordoche-near-krotz-springs.html">Bayou Fordoche near Krotz Springs</a></td><td class="n">13.42 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/bayou-la-rompe-at-lake-long.html">Bayou La Rompe at Lake Long</a></td><td class="n">4.79 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/blind-tensas-cut-near-little-tensas-bayou.html">Blind Tensas Cut near Little Tensas Bayou</a></td><td class="n">4.65 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/chicot-pass-near-west-fork.html">Chicot Pass near West Fork</a></td><td class="n">5.53 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/keelboat-pass-below-lake-chicot.html">Keelboat Pass below Lake Chicot</a></td><td class="n">3.36 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/lake-palourde-near-morgan-city.html">Lake Palourde near Morgan City</a></td><td class="n">3.47 ft</td><td>NGVD29</td><td>1.5 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/little-bayou-sorrel-at-junction-with-giww.html">Little Bayou Sorrel at Junction with GIWW</a></td><td class="n">1.47 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/lower-grand-river-at-lake-fausse.html">Lower Grand River at Lake Fausse</a></td><td class="n">1.99 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/six-mile-lake-ne-of-verdunville.html">Six Mile Lake NE of Verdunville</a></td><td class="n">3.49 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/wax-lake-east-drainage-area-at-control-structure.html">Wax Lake East Drainage Area at Control Structure</a></td><td class="n">-2.48 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/whiskey-bay-pilot-channel-below-head.html">Whiskey Bay Pilot Channel Below Head</a></td><td class="n">4.40 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+</tbody></table></div>
+<h2><a href="/louisiana/baton-rouge/">Baton Rouge</a></h2>
+<div class="scroll"><table><thead><tr><th>Corps gauge</th><th class="n">Stage</th><th>Datum</th><th>NWS flood stage</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/army-corps/big-alabama-bayou-fws-at-sherburne.html">Big Alabama Bayou (FWS) at Sherburne</a></td><td class="n">9.75 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/eabpl-borrow-pit-fws-near-ramah.html">EABPL Borrow Pit (FWS) near Ramah</a></td><td class="n">4.10 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-baton-rouge.html">Mississippi River at Baton Rouge</a></td><td class="n">8.52 ft</td><td>NGVD29</td><td>26.5 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-donaldsonville.html">Mississippi River at Donaldsonville</a></td><td class="n">4.91 ft</td><td>NGVD29</td><td>22.1 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/upper-grand-river-ls-at-dike.html">Upper Grand River (LS) at Dike</a></td><td class="n">2.76 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/workman-canal-near-i-10.html">Workman Canal near I-10</a></td><td class="n">6.42 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+</tbody></table></div>
+<h2><a href="/louisiana/houma-thibodaux/">Houma–Thibodaux</a></h2>
+<div class="scroll"><table><thead><tr><th>Corps gauge</th><th class="n">Stage</th><th>Datum</th><th>NWS flood stage</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/army-corps/avoca-island-cutoff-south-of-morgan-city.html">Avoca Island Cutoff South of Morgan City</a></td><td class="n">21.90 ft</td><td>NGVD29</td><td>—</td><td class="nw">14 hours ago</td></tr>
+<tr><td><a href="/army-corps/bayou-des-allemands-at-des-allemands.html">Bayou Des Allemands at Des Allemands</a></td><td class="n">2.63 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/bayou-petit-caillou-at-cocodrie.html">Bayou Petit Caillou at Cocodrie</a></td><td class="n">1.94 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+</tbody></table></div>
+<h2><a href="/louisiana/new-orleans/">New Orleans and the Northshore</a></h2>
+<div class="scroll"><table><thead><tr><th>Corps gauge</th><th class="n">Stage</th><th>Datum</th><th>NWS flood stage</th><th>Updated</th></tr></thead><tbody>
+<tr><td><a href="/army-corps/bayou-segnette-sector-gate-flood-side.html">Bayou Segnette Sector Gate – Flood Side</a></td><td class="n">1.72 ft</td><td>NAVD88</td><td>—</td><td class="nw">13 hours ago</td></tr>
+<tr><td><a href="/army-corps/bayou-segnette-sector-gate-protected-side.html">Bayou Segnette Sector Gate – Protected Side</a></td><td class="n">1.62 ft</td><td>NAVD88</td><td>—</td><td class="nw">13 hours ago</td></tr>
+<tr><td><a href="/army-corps/giww-near-paris-road-bridge.html">GIWW near Paris Road Bridge</a></td><td class="n">1.05 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/harvey-canal-at-lapalco-blvd.html">Harvey Canal at Lapalco Blvd</a></td><td class="n">1.44 ft</td><td>NAVD88</td><td>—</td><td class="nw">14 hours ago</td></tr>
+<tr><td><a href="/army-corps/ihnc-surge-barrier-east-flood-side.html">IHNC Surge Barrier East / Flood Side</a></td><td class="n">2.57 ft</td><td>NAVD88</td><td>—</td><td class="nw">14 hours ago</td></tr>
+<tr><td><a href="/army-corps/ihnc-surge-barrier-west-protected-side.html">IHNC Surge Barrier West / Protected Side</a></td><td class="n">2.22 ft</td><td>NAVD88</td><td>—</td><td class="nw">14 hours ago</td></tr>
+<tr><td><a href="/army-corps/inner-harbor-navigation-canal-at-new-orleans.html">Inner Harbor Navigation Canal at New Orleans</a></td><td class="n">1.24 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/lake-pontchartrain-at-lakefront-airport.html">Lake Pontchartrain at Lakefront Airport</a></td><td class="n">1.68 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-south-pass-at-port-eads.html">Mississippi River South Pass at Port Eads</a></td><td class="n">2.42 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-southwest-pass-mile-7-5-bhp.html">Mississippi River Southwest Pass Mile 7.5 BHP</a></td><td class="n">2.69 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-southwest-pass-at-east-jetty.html">Mississippi River Southwest Pass at East Jetty</a></td><td class="n">2.78 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-alliance.html">Mississippi River at Alliance</a></td><td class="n">1.98 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-bonnet-carre.html">Mississippi River at Bonnet Carre</a></td><td class="n">4.72 ft</td><td>NGVD29</td><td>—</td><td class="nw">18 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-empire.html">Mississippi River at Empire</a></td><td class="n">2.07 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-harvey-lock.html">Mississippi River at Harvey Lock</a></td><td class="n">3.03 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-ihnc-lock.html">Mississippi River at IHNC Lock</a></td><td class="n">2.14 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-new-orleans-carrollton.html">Mississippi River at New Orleans (Carrollton)</a></td><td class="n">3.11 ft</td><td>local</td><td>13.9 ft below minor flood stage</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-reserve.html">Mississippi River at Reserve</a></td><td class="n">3.88 ft</td><td>NGVD29</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-venice.html">Mississippi River at Venice</a></td><td class="n">2.13 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-west-bay.html">Mississippi River at West Bay</a></td><td class="n">1.93 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/mississippi-river-at-west-pointe-a-la-hache.html">Mississippi River at West Pointe a la Hache</a></td><td class="n">1.69 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/seabrook-bridge-inner-harbor-navigation-canal.html">Seabrook Bridge – Inner Harbor Navigation Canal</a></td><td class="n">1.23 ft</td><td>NAVD88</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/sellers-canal-at-hwy-90.html">Sellers Canal at Hwy 90</a></td><td class="n">2.01 ft</td><td>local</td><td>—</td><td class="nw">2 hours ago</td></tr>
+<tr><td><a href="/army-corps/walker-drainage-structure-protected-side.html">Walker Drainage Structure – Protected Side</a></td><td class="n">-0.92 ft</td><td>local</td><td>—</td><td class="nw">14 hours ago</td></tr>
+<tr><td><a href="/army-corps/western-tie-in-sector-gate-flood-side.html">Western Tie-In Sector Gate – Flood Side</a></td><td class="n">1.16 ft</td><td>NAVD88</td><td>—</td><td class="nw">13 hours ago</td></tr>
+<tr><td><a href="/army-corps/western-tie-in-sector-gate-protected-side.html">Western Tie-In Sector Gate – Protected Side</a></td><td class="n">1.36 ft</td><td>NAVD88</td><td>—</td><td class="nw">13 hours ago</td></tr>
+</tbody></table></div>
+<p class="muted">The Corps reads stage where USGS and NOAA don't: on the lower Mississippi, in the Atchafalaya basin, at locks, and on both sides of floodgates. Each gauge reads on its own datum (NAVD88, the older NGVD29, or a local zero), so readings can't be compared from one gauge to the next. Corps gauges within 1 km of a USGS gauge already on this site are left out. <a href="/about/">How this site works</a></p>
+<footer>
+<p class="fnav"><a href="/">Home</a><a href="/texas-coast/houston-galveston/">Houston</a><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/storms/">Storms</a><a href="/tides/">Tide gauges</a><a href="/gauges/">All gauges</a><a href="/army-corps/">Army Corps gauges</a><a href="/lakes/">Lakes</a><a href="/alerts/">Active alerts</a><a href="/rainfall/">Houston rainfall</a><a href="/rainfall/gulf-coast/">Gulf Coast rainfall</a><a href="/water-temperature/">Water temperature</a><a href="/floods/">Historic floods</a><a href="/usgs/">USGS gauges</a><a href="/embed/">Embed a gauge</a><a href="/about/">How this site works</a> Contact: <a class="mail" href="/about/#contact" data-u="contact" data-d="gulfcoastgauges.com">contact [at] gulfcoastgauges.com</a></p>
+<p><strong>Sources.</strong> Gage height from the <a href="https://waterdata.usgs.gov/" rel="nofollow noopener">U.S. Geological Survey</a>; tide gauge water levels from NOAA Tides &amp; Currents; stage at locks, floodgates and the lower Mississippi from the U.S. Army Corps of Engineers; in the Houston area, stage readings from the <a href="https://www.harriscountyfws.org/" rel="nofollow noopener">Harris County Flood Warning System</a>; flood stages, crests, watches, advisories and warnings from the National Weather Service. This site is not affiliated with any of them.</p>
+<p><strong>No guidance, no forecast.</strong> This site reports measurements and official alert text only. It does not predict water levels, assess whether any road, property or route is passable, or advise any action. For decisions about safety, use <a href="https://alerts.weather.gov/" rel="nofollow noopener">official sources</a> and local emergency management.</p>
+<p><strong>Accuracy.</strong> Gauges can fail, report late, or report in error, and recent USGS readings are provisional. HCFCD makes no representations, guarantees or warranties as to the availability, accuracy, completeness, currency or suitability of Flood Warning System data, and disclaims liability for actions taken or not taken based on it. Nothing here is verified independently.</p>
+<p>Page generated Oct 30, 2026 at 9:35 PM CDT.</p>
+</footer></div></body></html>

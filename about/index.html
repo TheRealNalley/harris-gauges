@@ -1,0 +1,192 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>How Gulf Coast Gauges Works – Sources, Definitions and Limits</title><meta name="description" content="Where the water levels on Gulf Coast Gauges come from, what top of bank, gage height, usual range and flood stage mean, how storms and records are defined, and what the site does not do."><link rel="canonical" href="https://gulfcoastgauges.com/about/"><meta property="og:title" content="How Gulf Coast Gauges Works – Sources, Definitions and Limits"><meta property="og:description" content="Where the water levels on Gulf Coast Gauges come from, what top of bank, gage height, usual range and flood stage mean, how storms and records are defined, and what the site does not do."><meta property="og:type" content="website"><meta property="og:url" content="https://gulfcoastgauges.com/about/"><meta property="og:site_name" content="Gulf Coast Gauges"><link rel="icon" href="/assets/favicon.ico" sizes="any"><link rel="icon" href="/assets/favicon-32.png" type="image/png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><style>
+:root{--bg:#fff;--fg:#14181f;--muted:#5b6472;--line:#e3e7ee;--accent:#1d4ed8;--warn:#b45309;
+--card:#f7f9fc}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e8edf5;--muted:#9aa6b5;
+--line:#232b36;--accent:#7aa2ff;--card:#141b24}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-sans-serif,system-ui,
+-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:780px;margin:0 auto;padding:20px 18px 56px}
+a{color:var(--accent)}
+nav.crumb{font-size:13px;color:var(--muted);margin-bottom:14px}
+h1{font-size:27px;line-height:1.25;margin:.2em 0 .1em}
+h2{font-size:19px;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 18px}
+.now{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.big{font-size:38px;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+.now dl{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:14px 0 0}
+.now dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.now dd{margin:2px 0 0;font-size:16px;font-weight:550}
+table{border-collapse:collapse;width:100%;font-size:14px;margin-top:8px}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+.chart{width:100%;height:auto;display:block;margin:10px 0 4px}
+.grid{stroke:var(--line);stroke-width:1}
+.trace{fill:none;stroke:var(--accent);stroke-width:2}
+.bar{fill:var(--accent);opacity:.75}
+.band{fill:var(--accent);opacity:.1}
+.rain{fill:#0891b2;opacity:.7}
+.bank{stroke:var(--warn);stroke-width:1.5;stroke-dasharray:5 4}
+.banklab,.ylab,.xlab{font-size:10px;fill:var(--muted)}
+.banklab{fill:var(--warn)}
+.muted{color:var(--muted)}
+.note{background:var(--card);border-left:3px solid var(--warn);padding:12px 14px;
+border-radius:0 8px 8px 0;font-size:14px}
+footer{margin-top:2.5em;padding-top:1em;border-top:1px solid var(--line);font-size:13px;
+color:var(--muted)}
+footer p{margin:.5em 0}
+h3{font-size:16px;margin:1.6em 0 .2em}
+td.n,td.nw{white-space:nowrap}
+@media (max-width:560px){table{font-size:13px}th,td{padding:6px 5px}}
+.brand{display:inline-block;margin:0 0 14px}.brand img{display:block;height:30px;width:auto}
+.hero{display:block;width:100%;height:auto;border-radius:10px;margin:14px 0 18px}
+
+textarea.snip{width:100%;font:12px/1.5 ui-monospace,Consolas,monospace;padding:10px;
+border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);resize:vertical}
+button.copy{font:inherit;font-size:14px;padding:6px 14px;border-radius:8px;border:1px solid var(--line);
+background:var(--card);color:var(--fg);cursor:pointer;margin:6px 0 14px}
+iframe.preview{border:0;max-width:100%;display:block;margin:8px 0}
+
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:0 0 16px;
+padding-bottom:12px;border-bottom:1px solid var(--line)}
+.top .brand{margin:0}
+nav.main{display:flex;align-items:center;gap:16px;font-size:14px}
+nav.main a,nav.main summary{color:var(--fg);text-decoration:none;font-weight:550}
+nav.main a:hover,nav.main summary:hover{color:var(--accent);text-decoration:underline}
+details.states{position:relative}
+details.states summary{cursor:pointer;list-style:none;padding-right:13px;position:relative}
+details.states summary::-webkit-details-marker{display:none}
+details.states summary::after{content:"";position:absolute;right:0;top:45%;border:4px solid transparent;
+border-top-color:currentColor}
+details.states[open] summary::after{top:15%;border-top-color:transparent;border-bottom-color:currentColor}
+details.states .menu{position:absolute;z-index:30;top:calc(100% + 8px);left:-10px;min-width:150px;
+background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 0;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+details.states .menu a{display:block;padding:8px 14px;font-weight:500}
+details.states .menu a:hover{background:var(--card);text-decoration:none}
+details.states .menu a.all{border-top:1px solid var(--line);margin-top:4px;padding-top:9px;
+color:var(--muted);font-size:13px}
+form.find{position:relative;flex:1 1 220px;max-width:280px;margin-left:auto}
+form.find input{width:100%;font:inherit;font-size:14px;padding:7px 10px;color:var(--fg);
+background:var(--card);border:1px solid var(--line);border-radius:8px}
+form.find input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.results{position:absolute;z-index:20;top:calc(100% + 4px);left:0;right:0;max-height:340px;
+overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:8px;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.results a{display:block;padding:7px 10px;color:var(--fg);text-decoration:none;font-size:14px}
+.results a small{display:block;color:var(--muted);font-size:12px}
+.results a.on,.results a:hover{background:var(--card)}
+.results p{margin:0;padding:8px 10px;font-size:13px;color:var(--muted)}
+.fnav{font-size:13px}
+.fnav a{margin-right:12px}
+nav.jump{margin:12px 0 4px;line-height:2.2}
+nav.jump a{white-space:nowrap}
+ul.cols{columns:2;column-gap:28px;padding-left:18px;margin:.4em 0}
+ul.cols li{break-inside:avoid;margin:0 0 4px}
+@media (max-width:560px){form.find{max-width:none;flex-basis:100%;order:3}
+nav.main{gap:12px}ul.cols{columns:1}}
+
+.multi{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin:12px 0 6px}
+.panel h3{font-size:14px;margin:0;line-height:1.35}
+.panel p{margin:0 0 2px;font-size:12.5px;color:var(--muted)}
+.panel svg{width:100%;height:auto;display:block;overflow:visible}
+.wash{fill:var(--accent);opacity:.12}
+.alertband{fill:var(--muted);opacity:.12}
+.peak{fill:var(--accent);stroke:var(--bg);stroke-width:2}
+.panel{position:relative}
+.hov{cursor:crosshair;touch-action:pan-y}
+.xh{stroke:var(--muted);stroke-width:1}
+.tip{position:absolute;pointer-events:none;background:var(--bg);border:1px solid var(--line);
+border-radius:6px;padding:4px 7px;font-size:12px;line-height:1.35;white-space:nowrap;
+box-shadow:0 4px 12px rgba(0,0,0,.12);z-index:5}
+.stem{stroke:var(--line);stroke-width:1.5}
+.hollow{fill:var(--bg);stroke:var(--accent);stroke-width:2}
+.feature{border:1px solid var(--line);border-radius:10px;padding:14px 16px 10px;margin:18px 0}
+.feature h2{border:0;margin:0 0 .2em;padding:0}
+@media (max-width:560px){.multi{grid-template-columns:1fr}}
+
+.regions{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:6px 0 4px}
+.regions a{display:block;border:1px solid var(--line);border-radius:8px;padding:8px 10px;
+text-decoration:none;color:var(--fg);font-weight:550;font-size:14px;line-height:1.3}
+.regions a:hover{border-color:var(--accent)}
+.regions small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:2px}
+h3.state{margin:1.1em 0 .1em;font-size:15px}
+h3.state a{color:var(--fg)}
+@media (max-width:760px){.regions{grid-template-columns:1fr 1fr}}
+</style><script type="application/ld+json">[{"@context":"https://schema.org","@type":"AboutPage","name":"How Gulf Coast Gauges Works \u2013 Sources, Definitions and Limits","url":"https://gulfcoastgauges.com/about/","description":"Where the water levels on Gulf Coast Gauges come from, what top of bank, gage height, usual range and flood stage mean, how storms and records are defined, and what the site does not do.","dateModified":"2026-10-31T02:35:02.668564+00:00","isPartOf":{"@type":"WebSite","name":"Gulf Coast Gauges","url":"https://gulfcoastgauges.com/"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Gulf Coast Gauges","item":"https://gulfcoastgauges.com/"},{"@type":"ListItem","position":2,"name":"How this site works"}]}]</script><script src="/assets/find.js" defer></script></head><body><div class="wrap"><header class="top"><a class="brand" href="/"><picture><source srcset="/assets/logo-dark.png" media="(prefers-color-scheme: dark)"><img src="/assets/logo.png" width="192" height="30" alt="Gulf Coast Gauges"></picture></a><nav class="main" aria-label="Sections"><a href="/texas-coast/houston-galveston/">Houston</a><details class="states"><summary>States</summary><div class="menu"><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/" class="all">All regions</a></div></details><a href="/tides/">Tides</a><a href="/storms/">Storms</a><a href="/alerts/">Alerts</a></nav><form class="find" action="/gauges/" role="search"><input type="search" name="q" placeholder="Find a gauge, creek or road" aria-label="Find a gauge" autocomplete="off" spellcheck="false"><div class="results" role="listbox" hidden></div></form></header>
+<nav class="crumb"><a href="https://gulfcoastgauges.com/">Gulf Coast Gauges</a> &rsaquo; How this site works</nav>
+<h1>How this site works</h1>
+<p class="sub">Sources, definitions and limits &middot; figures below as of Oct 30, 2026 at 9:35 PM CDT</p>
+<p>Gulf Coast Gauges republishes stream gauge readings for the Gulf Coast, from the Rio Grande to Apalachicola, as ordinary web pages, one per gauge, and keeps the history the original feeds do not. Every reading since September 11, 2026 is stored: 171,992 so far from 349 sensors on the Harris County Flood Warning System feed, alongside 458 USGS gauges in five states. The pages are rebuilt from those stored readings every 15 minutes. No page is written individually: every number on every page is filled in from a stored reading or an official reference, by the same rules on every page.</p>
+<h2>Where the numbers come from</h2>
+<div class="scroll"><table><thead><tr><th>Source</th><th>What is taken</th><th>How often</th></tr></thead><tbody>
+<tr><td><a href="https://www.harriscountyfws.org/" rel="nofollow noopener">Harris County Flood Warning System</a> (Harris County Flood Control District)</td><td>Water level and top of bank at 191 Harris County stream gauges, and at 132 <a href="/gauges/#agencies">gauges run by 11 other agencies</a> on the same system (Fort Bend County, Sugar Land, League City and others); rainfall at the same sites</td><td>Every 15 minutes</td></tr>
+<tr><td><a href="https://waterdata.usgs.gov/" rel="nofollow noopener">U.S. Geological Survey</a></td><td>Gage height at 458 <a href="/usgs/">USGS gauges</a> in 89 Gulf Coast counties and parishes; annual peaks back to 1885; elevation and storage at 10 lakes and reservoirs; rainfall at 137 <a href="/rainfall/gulf-coast/">rain gauges</a>, 15 minutes at a time</td><td>Every 15 minutes; annual peaks once a year</td></tr>
+<tr><td><a href="https://tidesandcurrents.noaa.gov/" rel="nofollow noopener">NOAA Tides &amp; Currents</a> (CO-OPS)</td><td>Water level at 65 <a href="/tides/">tide gauges</a> every six minutes, relative to mean higher high water; the NWS coastal flood thresholds and NOAA high tide flooding thresholds for each, and NOAA's highest observed water level there</td><td>Every 15 minutes</td></tr>
+<tr><td><a href="https://water.usace.army.mil/" rel="nofollow noopener">U.S. Army Corps of Engineers</a>, New Orleans District</td><td>Stage at 53 <a href="/army-corps/">Corps gauges</a> in south Louisiana (the lower Mississippi, the Atchafalaya basin, locks and floodgates), each on its own datum, with the NWS flood stages and the Corps' flood-fight phases it publishes</td><td>Every 15 minutes (floodgate gauges publish about a day late)</td></tr>
+<tr><td><a href="https://water.noaa.gov/" rel="nofollow noopener">NWS National Water Prediction Service</a></td><td>Flood stages for 282 USGS gauges, and historic crests for 238</td><td>When the site list is refreshed</td></tr>
+<tr><td><a href="https://alerts.weather.gov/" rel="nofollow noopener">National Weather Service</a> (NWS Houston/Galveston and the neighbouring offices)</td><td>Watches, warnings and advisories naming any of those counties and parishes, text as issued</td><td>Every 15 minutes</td></tr>
+</tbody></table></div>
+<p>This site is not affiliated with any of these agencies, and their numbers are republished as they publish them. When a page shows a reading, it also shows the time that reading was taken, which is not the same as the time the page was built.</p>
+<h2>What the numbers mean</h2>
+<h3>Flood Warning System gauges: elevation and top of bank</h3>
+<p>A Flood Warning System gauge, whether Harris County's or another agency's, reports the <strong>elevation of the water surface</strong> in feet: its height above a fixed reference level, not the depth of the water. That is why a creek can read 102 ft. The number that matters is the <strong>distance below top of bank</strong>: the gap between the water and the top of the channel at that crossing, using the top-of-bank elevation the gauge's agency publishes with each reading. Top of bank is the agency's reference, not an estimate made here, and it describes the channel at the gauge, not any street or house nearby. Gauges from the other agencies have been recorded here since October 2026, so their history is short; their usual range appears after 14 days.</p>
+<h3>USGS gauges: gage height and datum</h3>
+<p>A USGS gauge reports <strong>gage height</strong>: the water surface above the gauge's own zero point, its datum. For 187 of the 458 USGS gauges here that zero is set at 0 ft NAVD88, so the gage height is also an elevation. The others sit on a local zero; each gauge page says which. None of these numbers is a water depth.</p>
+<h3>Tide gauges: water level above an ordinary high tide</h3>
+<p>NOAA tide gauges report the water level relative to <strong>mean higher high water (MHHW)</strong>: the average of the higher of each day's two high tides. 0 ft is an ordinary high tide. The reading is the tide plus whatever is on top of it, such as storm surge or wind pushing water in, and it is set against the NWS's coastal flood thresholds for the station (NOAA's high tide flooding thresholds where the NWS publishes none). The site never shows tide predictions. A few river stations publish no tidal datum and are shown on their own scale.</p>
+<h3>Usual range</h3>
+<p>Each gauge's <strong>usual range</strong> is the middle 80% of its own stored readings (from the 10th to the 90th percentile). It is shaded on the charts so a reading can be read against what is normal for that gauge: tidal and lake gauges sit close to their banks every day, while some creeks are many feet below theirs even after rain. It reflects only the readings stored since September 11, 2026, so it will change as the record grows.</p>
+<h3>NWS flood stages</h3>
+<p>For 282 USGS gauges the National Weather Service publishes <strong>flood stages</strong>: action, minor, moderate and major, in the same feet as the gage height. They are shown only where the NWS's own current reading matched the USGS reading within half a foot when they were fetched, so the two are known to be on the same scale. They are the NWS's references for that location.</p>
+<h3>Records and annual peaks</h3>
+<p>USGS keeps the highest gage height of every water year (October to September). The site holds 16,355 such years, but compares today's readings with only 12,970 of them. Many gauges had their datum changed over the years, which moves every reading after it by a fixed amount; years from before a gauge's last datum change, or that USGS marks as measured at another site or datum, are shown on the charts but never ranked against today. "Record" on this site means the highest of the comparable years. The NWS keeps its own list of historic crests, which can differ, and the pages label which is which.</p>
+<h2>The area covered</h2>
+<p>The site covers 89 counties and parishes in five states: each state's coastal counties (parishes in Louisiana) and their neighbours, in 15 regions. Florida runs to Apalachicola and Tallahassee.</p>
+<h3><a href="/texas-coast/">Texas coast</a></h3><ul>
+<li><a href="/texas-coast/houston-galveston/">Houston–Galveston</a>: Brazoria, Chambers, Fort Bend, Galveston, Harris, Liberty, Montgomery and Waller counties</li>
+<li><a href="/texas-coast/beaumont-port-arthur/">Beaumont–Port Arthur</a>: Hardin, Jasper, Jefferson, Newton and Orange counties</li>
+<li><a href="/texas-coast/victoria-matagorda-bay/">Victoria and Matagorda Bay</a>: Calhoun, DeWitt, Goliad, Jackson, Lavaca, Matagorda, Victoria and Wharton counties</li>
+<li><a href="/texas-coast/corpus-christi-coastal-bend/">Corpus Christi and the Coastal Bend</a>: Aransas, Bee, Brooks, Jim Wells, Kenedy, Kleberg, Live Oak, Nueces, Refugio and San Patricio counties</li>
+<li><a href="/texas-coast/rio-grande-valley/">Rio Grande Valley</a>: Cameron, Hidalgo and Willacy counties</li>
+</ul>
+<h3><a href="/louisiana/">Louisiana coast</a></h3><ul>
+<li><a href="/louisiana/lake-charles/">Lake Charles and Southwest Louisiana</a>: Allen, Beauregard, Calcasieu, Cameron and Jefferson Davis parishes</li>
+<li><a href="/louisiana/lafayette-acadiana/">Lafayette and Acadiana</a>: Acadia, Iberia, Lafayette, St. Landry, St. Martin, St. Mary and Vermilion parishes</li>
+<li><a href="/louisiana/baton-rouge/">Baton Rouge</a>: Ascension, East Baton Rouge, Iberville, Livingston and St. Helena parishes</li>
+<li><a href="/louisiana/houma-thibodaux/">Houma–Thibodaux</a>: Assumption, Lafourche and Terrebonne parishes</li>
+<li><a href="/louisiana/new-orleans/">New Orleans and the Northshore</a>: Jefferson, Orleans, Plaquemines, St. Bernard, St. Charles, St. James, St. John the Baptist, St. Tammany, Tangipahoa and Washington parishes</li>
+</ul>
+<h3><a href="/mississippi/">Mississippi Gulf Coast</a></h3><ul>
+<li><a href="/mississippi/">Mississippi Gulf Coast</a>: George, Hancock, Harrison, Jackson, Pearl River and Stone counties</li>
+</ul>
+<h3><a href="/alabama/">Alabama Gulf Coast</a></h3><ul>
+<li><a href="/alabama/">Mobile Bay</a>: Baldwin, Clarke, Escambia, Mobile, Monroe and Washington counties</li>
+</ul>
+<h3><a href="/florida/">Florida Panhandle</a></h3><ul>
+<li><a href="/florida/pensacola-emerald-coast/">Pensacola and the Emerald Coast</a>: Escambia, Okaloosa, Santa Rosa and Walton counties</li>
+<li><a href="/florida/panama-city/">Panama City</a>: Bay, Calhoun, Gulf, Holmes and Washington counties</li>
+<li><a href="/florida/apalachicola-tallahassee/">Apalachicola and Tallahassee</a>: Franklin, Leon, Liberty and Wakulla counties</li>
+</ul>
+<p>Every gauge in that area that USGS runs and that reports gage height has a page, with one exception. About one site in ten reports two gage heights at once (above and below a structure, or a second sensor on a different zero), and the two can differ by feet. The site stores only the one USGS marks as the primary sensor; where USGS marks more than one, the gauge is left out rather than guessed. Readings at the gauges added in October 2026 start on September 11, 2026, the same day as the rest, filled in from USGS's published 15-minute record.</p>
+<h2>How a storm is defined</h2>
+<p>A storm is whatever the National Weather Service declared, not a judgement made here. For Houston–Galveston, every flood alert naming Harris County counts, and since October 24, 2026 so does every coastal flood, storm surge, tropical storm or hurricane watch, warning or advisory; alerts that start within 24 hours of the previous one ending are one event. On a storm with coastal or tropical alerts, the tide gauges are listed first. Each gauge's peak is its highest reading from 12 hours before the first alert to 48 hours after the last one ends, because large channels crest a day or more after the rain. "Came within 2 ft of top of bank" is a fixed threshold, the same for every storm. The <a href="/storms/">storm archive</a> lists 1 event so far, and each new one appears automatically.</p>
+<p>Elsewhere on the coast the same rule runs region by region: every flood alert naming any of a region's counties or parishes counts, and each USGS gauge's peak is taken over the same window. NWS alerts there have been recorded in full since October 23, 2026 in Texas and October 23, 2026 in the other states; before that only alerts that also named Harris County were stored, so earlier events appear only when they did.</p>
+<p>Peak times are listed as recorded. Their order along a creek reflects where and when rain fell as well as water moving downstream, so the site does not present them as a travel time.</p>
+<h2>What this site does not do</h2>
+<ul><li><strong>No forecasts.</strong> Nothing here predicts where water will go or how high it will get.</li><li><strong>No safety guidance.</strong> The site does not say whether any road, property or route is safe or passable, and a reading below top of bank is not an all-clear.</li><li><strong>No interpretation of alerts.</strong> NWS alerts are shown as issued; for the current list go to <a href="https://alerts.weather.gov/" rel="nofollow noopener">alerts.weather.gov</a>, and for decisions about safety use official sources and local emergency management.</li></ul>
+<h2>Limits worth knowing</h2>
+<ul><li><strong>Gauges fail.</strong> A sensor can report late, stop, or report in error, and nothing here verifies readings independently. Pages say when a gauge's latest reading is more than a day old.</li><li><strong>County gauges report when the water changes,</strong> not on a timer: anywhere from every 15 minutes to every few hours. A gap in a chart is normal.</li><li><strong>Some sites are left out.</strong> Spillway, dam, gate and levee sites are not shown, because their top-of-bank figure is not a channel bank.</li><li><strong>History is short for county gauges.</strong> Their record here starts on September 11, 2026; USGS gauges carry decades.</li><li><strong>Recent USGS readings are provisional</strong> and can be revised after review.</li><li><strong>Times are local</strong>: Central everywhere except the Apalachicola and Tallahassee region of Florida, which is Eastern. Every time is labelled (CDT, CST, EDT or EST).</li></ul>
+<h2 id="contact">Contact</h2>
+<p>To report a reading that looks wrong, a page that is broken, or a question about the data or how it is shown: <a class="mail" href="/about/#contact" data-u="contact" data-d="gulfcoastgauges.com">contact [at] gulfcoastgauges.com</a>. This site can't answer questions about conditions at a particular property or road; for those, use the official sources above and local emergency management.</p>
+<h2 id="using-the-data">Using the data</h2>
+<p>Every gauge page has two CSV downloads: every reading from the last 90 days, and the daily low and high for the gauge's whole record here. Every storm page has a CSV of each gauge's peak. The site stores every reading it has collected; the downloads stop at 90 days to keep the site within its hosting limits. Any gauge can be put on another website with the <a href="/embed/">embed widget</a>. If you use the numbers, credit the agency that measured them (Harris County Flood Control District, USGS or NWS) and check its terms; this site only republishes them.</p>
+<footer>
+<p class="fnav"><a href="/">Home</a><a href="/texas-coast/houston-galveston/">Houston</a><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/storms/">Storms</a><a href="/tides/">Tide gauges</a><a href="/gauges/">All gauges</a><a href="/army-corps/">Army Corps gauges</a><a href="/lakes/">Lakes</a><a href="/alerts/">Active alerts</a><a href="/rainfall/">Houston rainfall</a><a href="/rainfall/gulf-coast/">Gulf Coast rainfall</a><a href="/water-temperature/">Water temperature</a><a href="/floods/">Historic floods</a><a href="/usgs/">USGS gauges</a><a href="/embed/">Embed a gauge</a><a href="/about/">How this site works</a> Contact: <a class="mail" href="/about/#contact" data-u="contact" data-d="gulfcoastgauges.com">contact [at] gulfcoastgauges.com</a></p>
+<p><strong>Source.</strong> Stage readings are republished from the <a href="https://www.harriscountyfws.org/" rel="nofollow noopener">Harris County Flood Warning System</a>. Flood watches, advisories and warnings are issued by <a href="https://www.weather.gov/hgx/" rel="nofollow noopener">NWS Houston/Galveston</a>. This site is not affiliated with either agency.</p>
+<p><strong>No guidance, no forecast.</strong> This page reports measurements and official alert text only. It does not predict water levels, assess whether any road, property or route is passable, or advise any action. For decisions about safety, use <a href="https://www.weather.gov/hgx/" rel="nofollow noopener">official sources</a> and local emergency management.</p>
+<p><strong>Accuracy.</strong> HCFCD makes no representations, guarantees or warranties as to the availability, accuracy, completeness, currency or suitability of Flood Warning System data, and disclaims liability for actions taken or not taken based on it. Gauges can fail, report late, or report in error. Nothing here is verified independently.</p>
+<p>Readings recorded continuously since Sep 11, 2026 at 11:13 AM CDT. 171,992 readings from 349 sensors stored to date.</p>
+</footer></div></body></html>

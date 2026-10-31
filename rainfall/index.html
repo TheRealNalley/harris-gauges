@@ -1,0 +1,721 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Harris County Rain Gauges – 24-Hour Rainfall at 398 Houston-Area Sites</title><meta name="description" content="Rainfall in the last 24 hours at 398 rain gauges on the Harris County Flood Warning System, with each day's totals for two weeks and the wettest days recorded since September 11, 2026."><link rel="canonical" href="https://gulfcoastgauges.com/rainfall/"><meta property="og:title" content="Harris County Rain Gauges – 24-Hour Rainfall at 398 Houston-Area Sites"><meta property="og:description" content="Rainfall in the last 24 hours at 398 rain gauges on the Harris County Flood Warning System, with each day's totals for two weeks and the wettest days recorded since September 11, 2026."><meta property="og:type" content="website"><meta property="og:url" content="https://gulfcoastgauges.com/rainfall/"><meta property="og:site_name" content="Gulf Coast Gauges"><link rel="icon" href="/assets/favicon.ico" sizes="any"><link rel="icon" href="/assets/favicon-32.png" type="image/png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><style>
+:root{--bg:#fff;--fg:#14181f;--muted:#5b6472;--line:#e3e7ee;--accent:#1d4ed8;--warn:#b45309;
+--card:#f7f9fc}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e8edf5;--muted:#9aa6b5;
+--line:#232b36;--accent:#7aa2ff;--card:#141b24}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-sans-serif,system-ui,
+-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:780px;margin:0 auto;padding:20px 18px 56px}
+a{color:var(--accent)}
+nav.crumb{font-size:13px;color:var(--muted);margin-bottom:14px}
+h1{font-size:27px;line-height:1.25;margin:.2em 0 .1em}
+h2{font-size:19px;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 18px}
+.now{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.big{font-size:38px;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+.now dl{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:14px 0 0}
+.now dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.now dd{margin:2px 0 0;font-size:16px;font-weight:550}
+table{border-collapse:collapse;width:100%;font-size:14px;margin-top:8px}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+.chart{width:100%;height:auto;display:block;margin:10px 0 4px}
+.grid{stroke:var(--line);stroke-width:1}
+.trace{fill:none;stroke:var(--accent);stroke-width:2}
+.bar{fill:var(--accent);opacity:.75}
+.band{fill:var(--accent);opacity:.1}
+.rain{fill:#0891b2;opacity:.7}
+.bank{stroke:var(--warn);stroke-width:1.5;stroke-dasharray:5 4}
+.banklab,.ylab,.xlab{font-size:10px;fill:var(--muted)}
+.banklab{fill:var(--warn)}
+.muted{color:var(--muted)}
+.note{background:var(--card);border-left:3px solid var(--warn);padding:12px 14px;
+border-radius:0 8px 8px 0;font-size:14px}
+footer{margin-top:2.5em;padding-top:1em;border-top:1px solid var(--line);font-size:13px;
+color:var(--muted)}
+footer p{margin:.5em 0}
+h3{font-size:16px;margin:1.6em 0 .2em}
+td.n,td.nw{white-space:nowrap}
+@media (max-width:560px){table{font-size:13px}th,td{padding:6px 5px}}
+.brand{display:inline-block;margin:0 0 14px}.brand img{display:block;height:30px;width:auto}
+.hero{display:block;width:100%;height:auto;border-radius:10px;margin:14px 0 18px}
+
+textarea.snip{width:100%;font:12px/1.5 ui-monospace,Consolas,monospace;padding:10px;
+border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);resize:vertical}
+button.copy{font:inherit;font-size:14px;padding:6px 14px;border-radius:8px;border:1px solid var(--line);
+background:var(--card);color:var(--fg);cursor:pointer;margin:6px 0 14px}
+iframe.preview{border:0;max-width:100%;display:block;margin:8px 0}
+
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:0 0 16px;
+padding-bottom:12px;border-bottom:1px solid var(--line)}
+.top .brand{margin:0}
+nav.main{display:flex;align-items:center;gap:16px;font-size:14px}
+nav.main a,nav.main summary{color:var(--fg);text-decoration:none;font-weight:550}
+nav.main a:hover,nav.main summary:hover{color:var(--accent);text-decoration:underline}
+details.states{position:relative}
+details.states summary{cursor:pointer;list-style:none;padding-right:13px;position:relative}
+details.states summary::-webkit-details-marker{display:none}
+details.states summary::after{content:"";position:absolute;right:0;top:45%;border:4px solid transparent;
+border-top-color:currentColor}
+details.states[open] summary::after{top:15%;border-top-color:transparent;border-bottom-color:currentColor}
+details.states .menu{position:absolute;z-index:30;top:calc(100% + 8px);left:-10px;min-width:150px;
+background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 0;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+details.states .menu a{display:block;padding:8px 14px;font-weight:500}
+details.states .menu a:hover{background:var(--card);text-decoration:none}
+details.states .menu a.all{border-top:1px solid var(--line);margin-top:4px;padding-top:9px;
+color:var(--muted);font-size:13px}
+form.find{position:relative;flex:1 1 220px;max-width:280px;margin-left:auto}
+form.find input{width:100%;font:inherit;font-size:14px;padding:7px 10px;color:var(--fg);
+background:var(--card);border:1px solid var(--line);border-radius:8px}
+form.find input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.results{position:absolute;z-index:20;top:calc(100% + 4px);left:0;right:0;max-height:340px;
+overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:8px;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.results a{display:block;padding:7px 10px;color:var(--fg);text-decoration:none;font-size:14px}
+.results a small{display:block;color:var(--muted);font-size:12px}
+.results a.on,.results a:hover{background:var(--card)}
+.results p{margin:0;padding:8px 10px;font-size:13px;color:var(--muted)}
+.fnav{font-size:13px}
+.fnav a{margin-right:12px}
+nav.jump{margin:12px 0 4px;line-height:2.2}
+nav.jump a{white-space:nowrap}
+ul.cols{columns:2;column-gap:28px;padding-left:18px;margin:.4em 0}
+ul.cols li{break-inside:avoid;margin:0 0 4px}
+@media (max-width:560px){form.find{max-width:none;flex-basis:100%;order:3}
+nav.main{gap:12px}ul.cols{columns:1}}
+
+.multi{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin:12px 0 6px}
+.panel h3{font-size:14px;margin:0;line-height:1.35}
+.panel p{margin:0 0 2px;font-size:12.5px;color:var(--muted)}
+.panel svg{width:100%;height:auto;display:block;overflow:visible}
+.wash{fill:var(--accent);opacity:.12}
+.alertband{fill:var(--muted);opacity:.12}
+.peak{fill:var(--accent);stroke:var(--bg);stroke-width:2}
+.panel{position:relative}
+.hov{cursor:crosshair;touch-action:pan-y}
+.xh{stroke:var(--muted);stroke-width:1}
+.tip{position:absolute;pointer-events:none;background:var(--bg);border:1px solid var(--line);
+border-radius:6px;padding:4px 7px;font-size:12px;line-height:1.35;white-space:nowrap;
+box-shadow:0 4px 12px rgba(0,0,0,.12);z-index:5}
+.stem{stroke:var(--line);stroke-width:1.5}
+.hollow{fill:var(--bg);stroke:var(--accent);stroke-width:2}
+.feature{border:1px solid var(--line);border-radius:10px;padding:14px 16px 10px;margin:18px 0}
+.feature h2{border:0;margin:0 0 .2em;padding:0}
+@media (max-width:560px){.multi{grid-template-columns:1fr}}
+
+.regions{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:6px 0 4px}
+.regions a{display:block;border:1px solid var(--line);border-radius:8px;padding:8px 10px;
+text-decoration:none;color:var(--fg);font-weight:550;font-size:14px;line-height:1.3}
+.regions a:hover{border-color:var(--accent)}
+.regions small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:2px}
+h3.state{margin:1.1em 0 .1em;font-size:15px}
+h3.state a{color:var(--fg)}
+@media (max-width:760px){.regions{grid-template-columns:1fr 1fr}}
+</style><script type="application/ld+json">[{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Gulf Coast Gauges","item":"https://gulfcoastgauges.com/"},{"@type":"ListItem","position":2,"name":"Texas coast","item":"https://gulfcoastgauges.com/texas-coast/"},{"@type":"ListItem","position":3,"name":"Houston\u2013Galveston","item":"https://gulfcoastgauges.com/texas-coast/houston-galveston/"},{"@type":"ListItem","position":4,"name":"Rainfall"}]}]</script><script src="/assets/find.js" defer></script></head><body><div class="wrap"><header class="top"><a class="brand" href="/"><picture><source srcset="/assets/logo-dark.png" media="(prefers-color-scheme: dark)"><img src="/assets/logo.png" width="192" height="30" alt="Gulf Coast Gauges"></picture></a><nav class="main" aria-label="Sections"><a href="/texas-coast/houston-galveston/">Houston</a><details class="states"><summary>States</summary><div class="menu"><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/" class="all">All regions</a></div></details><a href="/tides/">Tides</a><a href="/storms/">Storms</a><a href="/alerts/">Alerts</a></nav><form class="find" action="/gauges/" role="search"><input type="search" name="q" placeholder="Find a gauge, creek or road" aria-label="Find a gauge" autocomplete="off" spellcheck="false"><div class="results" role="listbox" hidden></div></form></header>
+<nav class="crumb"><a href="https://gulfcoastgauges.com/">Gulf Coast Gauges</a> &rsaquo; <a href="https://gulfcoastgauges.com/texas-coast/">Texas coast</a> &rsaquo; <a href="https://gulfcoastgauges.com/texas-coast/houston-galveston/">Houston–Galveston</a> &rsaquo; Rainfall</nav>
+<h1>Houston-area rainfall</h1>
+<p class="sub">398 rain gauges on the Harris County Flood Warning System &middot; the 24 hours to Oct 30, 2026 at 9:30 PM CDT</p>
+<div class="note">No National Weather Service alert covering Harris County was active when this page was generated (Oct 30, 2026 at 9:35 PM CDT). Alerts are issued and expire at any time; the current list is at <a href="https://alerts.weather.gov/" rel="nofollow noopener">alerts.weather.gov</a>.</div>
+<p>Along the rest of the coast: <a href="/rainfall/gulf-coast/">rainfall at 137 USGS rain gauges from Texas to Florida</a>.</p>
+<h2>The last 24 hours</h2>
+<p>258 of 398 gauges recorded rain in the 24 hours to Oct 30, 2026 at 9:30 PM CDT; the most was 0.48 in at 21st Street at Harborside.</p>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th>Agency</th><th class="n">Last 24 hours</th></tr></thead><tbody>
+<tr><td>21st Street at Harborside</td><td>TxDOT</td><td class="n">0.48 in</td></tr>
+<tr><td><a href="/fort-bend-county/snake-creek-at-tierra-grande-drive.html">Snake Creek at Tierra Grande Drive</a></td><td>Fort Bend County</td><td class="n">0.44 in</td></tr>
+<tr><td><a href="/league-city/bordens-gully-at-hughes-lane.html">Bordens Gully at Hughes Lane</a></td><td>City of League City</td><td class="n">0.36 in</td></tr>
+<tr><td><a href="/fort-bend-county/buffalo-creek-at-fm-1236.html">Buffalo Creek at FM 1236</a></td><td>Fort Bend County</td><td class="n">0.36 in</td></tr>
+<tr><td><a href="/galveston-county-drainage-district-1/dickinson-bayou-at-fm-646.html">Dickinson Bayou at FM 646</a></td><td>Galveston County Drainage District 1</td><td class="n">0.36 in</td></tr>
+<tr><td><a href="/league-city/dickinson-bayou-at-hwy-3.html">Dickinson Bayou at HWY 3</a></td><td>City of League City</td><td class="n">0.36 in</td></tr>
+<tr><td><a href="/galveston-county-drainage-district-1/ditch-6-at-cowan-road.html">Ditch 6 at Cowan Road</a></td><td>Galveston County Drainage District 1</td><td class="n">0.36 in</td></tr>
+<tr><td><a href="/galveston-county-drainage-district-1/highland-bayou-at-avenue-j.html">Highland Bayou at Avenue J</a></td><td>Galveston County Drainage District 1</td><td class="n">0.36 in</td></tr>
+<tr><td><a href="/fort-bend-county/san-bernard-river-at-us-59.html">San Bernard River at US 59</a></td><td>Fort Bend County</td><td class="n">0.36 in</td></tr>
+<tr><td><a href="/galveston-county-drainage-district-1/cloud-bayou-at-highland-road.html">Cloud Bayou at Highland Road</a></td><td>Galveston County Drainage District 1</td><td class="n">0.32 in</td></tr>
+<tr><td><a href="/fort-bend-county/fairchilds-creek-at-fm-360.html">Fairchilds Creek at FM 360</a></td><td>Fort Bend County</td><td class="n">0.32 in</td></tr>
+<tr><td><a href="/fort-bend-county/turkey-creek-at-rycade-school-road.html">Turkey Creek at Rycade School Road</a></td><td>Fort Bend County</td><td class="n">0.32 in</td></tr>
+<tr><td><a href="/galveston-county-drainage-district-1/willow-bayou-at-baker-street.html">Willow Bayou at Baker Street</a></td><td>Galveston County Drainage District 1</td><td class="n">0.32 in</td></tr>
+<tr><td><a href="/league-city/benson-bayou-at-fm-646.html">Benson Bayou at FM 646</a></td><td>City of League City</td><td class="n">0.28 in</td></tr>
+<tr><td><a href="/league-city/gum-bayou-at-bishops-bridge.html">Gum Bayou at Bishops Bridge</a></td><td>City of League City</td><td class="n">0.28 in</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/rodeo-palms-ditch-at-sh-6.html">Rodeo Palms Ditch at SH 6</a></td><td>Brazoria Drainage District 4</td><td class="n">0.28 in</td></tr>
+<tr><td><a href="/fort-bend-county/turkey-creek-at-us-59.html">Turkey Creek at US 59</a></td><td>Fort Bend County</td><td class="n">0.28 in</td></tr>
+<tr><td><a href="/friendswood/chigger-creek-at-south-friendswood-drive.html">Chigger Creek at South Friendswood Drive</a></td><td>City of Friendswood</td><td class="n">0.24 in</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-bay-area-boulevard.html">Clear Creek at Bay Area Boulevard</a></td><td>Harris County Flood Control District</td><td class="n">0.24 in</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-fm-528.html">Clear Creek at FM 528</a></td><td>Harris County Flood Control District</td><td class="n">0.24 in</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-i-45.html">Clear Creek at I-45</a></td><td>Harris County Flood Control District</td><td class="n">0.24 in</td></tr>
+<tr><td>Clear Lake 2nd Outlet at SH 146</td><td>Harris County Flood Control District</td><td class="n">0.24 in</td></tr>
+<tr><td><a href="/fort-bend-county/guy-creek-at-sh-36.html">Guy Creek at SH 36</a></td><td>Fort Bend County</td><td class="n">0.24 in</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/hickory-slough-at-max-road.html">Hickory Slough at Max Road</a></td><td>Brazoria Drainage District 4</td><td class="n">0.24 in</td></tr>
+<tr><td><a href="/league-city/landing-ditch-at-west-main-fm-518.html">Landing Ditch at West Main (FM 518)</a></td><td>City of League City</td><td class="n">0.24 in</td></tr>
+<tr><td><a href="/league-city/magnolia-creek-at-bay-area-boulevard.html">Magnolia Creek at Bay Area Boulevard</a></td><td>City of League City</td><td class="n">0.24 in</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/marys-creek-at-fm-1128.html">Marys Creek at FM 1128</a></td><td>Brazoria Drainage District 4</td><td class="n">0.24 in</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/mustang-bayou-at-sh-288.html">Mustang Bayou at SH 288</a></td><td>Brazoria Drainage District 4</td><td class="n">0.24 in</td></tr>
+<tr><td><a href="/league-city/robinson-bayou-at-egret-bay-boulevard.html">Robinson Bayou at Egret Bay Boulevard</a></td><td>City of League City</td><td class="n">0.24 in</td></tr>
+<tr><td><a href="/fort-bend-county/seabourne-creek-at-sh-36.html">Seabourne Creek at SH 36</a></td><td>Fort Bend County</td><td class="n">0.24 in</td></tr>
+<tr><td><a href="/harris-county/armand-bayou-at-pasadena-lake-nasa-road-1.html">Armand Bayou at Pasadena Lake (Nasa Road 1)</a></td><td>Harris County Flood Control District</td><td class="n">0.20 in</td></tr>
+<tr><td><a href="/fort-bend-county/big-creek-at-fm-1994.html">Big Creek at FM 1994</a></td><td>Fort Bend County</td><td class="n">0.20 in</td></tr>
+<tr><td><a href="/fort-bend-county/big-creek-lat-ii-b-7-at-fm-2977.html">Big Creek Lat II- B-7 at FM 2977</a></td><td>Fort Bend County</td><td class="n">0.20 in</td></tr>
+<tr><td><a href="/harris-county/boggy-bayou-at-san-augustine-street.html">Boggy Bayou at San Augustine Street</a></td><td>Harris County Flood Control District</td><td class="n">0.20 in</td></tr>
+<tr><td>Brazoria Drainage District Office</td><td>Brazoria Drainage District 4</td><td class="n">0.20 in</td></tr>
+<tr><td><a href="/fort-bend-county/brazos-river-at-fm-1489.html">Brazos River at FM 1489</a></td><td>Fort Bend County</td><td class="n">0.20 in</td></tr>
+<tr><td><a href="/sugar-land/brazos-river-at-us-59.html">Brazos River at US 59</a></td><td>City of Sugar Land</td><td class="n">0.20 in</td></tr>
+<tr><td><a href="/fort-bend-county/brookshire-creek-at-fm-359.html">Brookshire Creek at FM 359</a></td><td>Fort Bend County</td><td class="n">0.20 in</td></tr>
+<tr><td><a href="/harris-county/chigger-creek-at-windsong-lane.html">Chigger Creek at Windsong Lane</a></td><td>Harris County Flood Control District</td><td class="n">0.20 in</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-mykawa-road.html">Clear Creek at Mykawa Road</a></td><td>Harris County Flood Control District</td><td class="n">0.20 in</td></tr>
+</tbody></table></div>
+<p class="muted">The 40 wettest; every gauge is listed below.</p>
+<h2>The last two weeks</h2>
+<div class="scroll"><table><thead><tr><th>Day</th><th>Wettest gauge</th><th class="n">Most in 24 hours</th><th class="n">Gauges with 1 in or more</th></tr></thead><tbody>
+<tr><td class="nw">Oct 30, 2026</td><td>21st Street at Harborside</td><td class="n">0.48 in</td><td class="n">0</td></tr>
+<tr><td class="nw">Oct 29, 2026</td><td><a href="/waller-county/clear-creek-at-fm-1887.html">Clear Creek at FM 1887</a></td><td class="n">0.40 in</td><td class="n">0</td></tr>
+<tr><td class="nw">Oct 28, 2026</td><td><a href="/waller-county/clear-creek-at-fm-1887.html">Clear Creek at FM 1887</a></td><td class="n">0.40 in</td><td class="n">0</td></tr>
+<tr><td class="nw">Oct 27, 2026</td><td><a href="/harris-county/harris-gully-at-south-mcgregor-way.html">Harris Gully at South McGregor Way</a></td><td class="n">0.20 in</td><td class="n">0</td></tr>
+<tr><td class="nw">Oct 26, 2026</td><td><a href="/fort-bend-county/bullhead-slough-at-fm-1464.html">Bullhead Slough at FM 1464</a></td><td class="n">0.04 in</td><td class="n">0</td></tr>
+<tr><td class="nw">Oct 25, 2026</td><td>&mdash;</td><td class="n">0.00 in</td><td class="n">0</td></tr>
+<tr><td class="nw">Oct 24, 2026</td><td><a href="/harris-county/horsepen-creek-at-trailside-drive.html">Horsepen Creek at Trailside Drive</a></td><td class="n">0.16 in</td><td class="n">0</td></tr>
+<tr><td class="nw">Oct 23, 2026</td><td><a href="/fort-bend-county/seabourne-creek-at-sh-36.html">Seabourne Creek at SH 36</a></td><td class="n">0.04 in</td><td class="n">0</td></tr>
+<tr><td class="nw">Oct 22, 2026</td><td>&mdash;</td><td class="n">0.00 in</td><td class="n">0</td></tr>
+<tr><td class="nw">Oct 21, 2026</td><td>&mdash;</td><td class="n">0.00 in</td><td class="n">0</td></tr>
+<tr><td class="nw">Oct 20, 2026</td><td>&mdash;</td><td class="n">0.00 in</td><td class="n">0</td></tr>
+<tr><td class="nw">Oct 19, 2026</td><td>&mdash;</td><td class="n">0.00 in</td><td class="n">0</td></tr>
+<tr><td class="nw">Oct 18, 2026</td><td>&mdash;</td><td class="n">0.00 in</td><td class="n">0</td></tr>
+<tr><td class="nw">Oct 17, 2026</td><td><a href="/harris-county/white-oak-bayou-at-ella-boulevard.html">White Oak Bayou at Ella Boulevard</a></td><td class="n">0.24 in</td><td class="n">0</td></tr>
+</tbody></table></div>
+<h2>Wettest days recorded here</h2>
+<p class="muted">The highest 24-hour totals at any gauge since September 11, 2026, one row per gauge and day.</p>
+<div class="scroll"><table><thead><tr><th>Day</th><th>Gauge</th><th class="n">Most in 24 hours</th></tr></thead><tbody>
+<tr><td class="nw">Oct 2, 2026</td><td><a href="/harris-county/langham-creek-at-longenbaugh-road.html">Langham Creek at Longenbaugh Road</a></td><td class="n">9.68 in</td></tr>
+<tr><td class="nw">Oct 2, 2026</td><td><a href="/harris-county/lake-creek-at-sh-149.html">Lake Creek at SH 149</a></td><td class="n">8.20 in</td></tr>
+<tr><td class="nw">Oct 2, 2026</td><td><a href="/harris-county/mill-creek-at-fm-1486.html">Mill Creek at FM 1486</a></td><td class="n">8.16 in</td></tr>
+<tr><td class="nw">Oct 2, 2026</td><td><a href="/harris-county/little-cypress-creek-at-becker-road.html">Little Cypress Creek at Becker Road</a></td><td class="n">7.88 in</td></tr>
+<tr><td class="nw">Oct 2, 2026</td><td><a href="/harris-county/cypress-creek-at-katy-hockley-road.html">Cypress Creek at Katy-Hockley Road</a></td><td class="n">7.64 in</td></tr>
+<tr><td class="nw">Oct 1, 2026</td><td><a href="/harris-county/mill-creek-at-fm-1486.html">Mill Creek at FM 1486</a></td><td class="n">7.52 in</td></tr>
+<tr><td class="nw">Oct 2, 2026</td><td><a href="/harris-county/spring-creek-at-hegar-road.html">Spring Creek at Hegar Road</a></td><td class="n">7.24 in</td></tr>
+<tr><td class="nw">Oct 1, 2026</td><td><a href="/harris-county/lake-creek-at-sh-149.html">Lake Creek at SH 149</a></td><td class="n">7.20 in</td></tr>
+<tr><td class="nw">Oct 2, 2026</td><td><a href="/harris-county/walnut-creek-at-nichols-sawmill.html">Walnut Creek at Nichols Sawmill</a></td><td class="n">7.20 in</td></tr>
+<tr><td class="nw">Oct 2, 2026</td><td><a href="/harris-county/cypress-creek-at-us-290.html">Cypress Creek at US 290</a></td><td class="n">7.20 in</td></tr>
+<tr><td class="nw">Oct 1, 2026</td><td><a href="/harris-county/cypress-creek-at-katy-hockley-road.html">Cypress Creek at Katy-Hockley Road</a></td><td class="n">7.00 in</td></tr>
+<tr><td class="nw">Oct 2, 2026</td><td><a href="/harris-county/cypress-creek-at-sharp-road.html">Cypress Creek at Sharp Road</a></td><td class="n">6.80 in</td></tr>
+<tr><td class="nw">Oct 1, 2026</td><td><a href="/harris-county/little-cypress-creek-at-becker-road.html">Little Cypress Creek at Becker Road</a></td><td class="n">6.76 in</td></tr>
+<tr><td class="nw">Oct 1, 2026</td><td><a href="/harris-county/walnut-creek-at-nichols-sawmill.html">Walnut Creek at Nichols Sawmill</a></td><td class="n">6.60 in</td></tr>
+<tr><td class="nw">Oct 2, 2026</td><td><a href="/harris-county/walnut-creek-at-joseph-road.html">Walnut Creek at Joseph Road</a></td><td class="n">6.60 in</td></tr>
+</tbody></table></div>
+<h2>Every rain gauge</h2>
+<p class="fnav"><a href="#addicks-reservoir-watershed">Addicks Reservoir watershed</a> <a href="#armand-bayou-watershed">Armand Bayou watershed</a> <a href="#barker-reservoir-watershed">Barker Reservoir watershed</a> <a href="#brays-bayou-watershed">Brays Bayou watershed</a> <a href="#buffalo-bayou-watershed">Buffalo Bayou watershed</a> <a href="#carpenters-bayou-watershed">Carpenters Bayou watershed</a> <a href="#cedar-bayou-watershed">Cedar Bayou watershed</a> <a href="#clear-creek-watershed">Clear Creek watershed</a> <a href="#cypress-creek-watershed">Cypress Creek watershed</a> <a href="#greens-bayou-watershed">Greens Bayou watershed</a> <a href="#halls-bayou-watershed">Halls Bayou watershed</a> <a href="#hunting-bayou-watershed">Hunting Bayou watershed</a> <a href="#jackson-bayou-watershed">Jackson Bayou watershed</a> <a href="#little-cypress-creek-watershed">Little Cypress Creek watershed</a> <a href="#luce-bayou-watershed">Luce Bayou watershed</a> <a href="#san-jacinto-galveston-bay-watershed">San Jacinto &amp; Galveston Bay watershed</a> <a href="#san-jacinto-river-watershed">San Jacinto River watershed</a> <a href="#sims-bayou-watershed">Sims Bayou watershed</a> <a href="#spring-creek-watershed">Spring Creek watershed</a> <a href="#spring-gully-goose-creek-watershed">Spring Gully &amp; Goose Creek watershed</a> <a href="#vince-bayou-watershed">Vince Bayou watershed</a> <a href="#white-oak-bayou-watershed">White Oak Bayou watershed</a> <a href="#willow-creek-watershed">Willow Creek watershed</a> <a href="#brazoria-drainage-district-4">Brazoria Drainage District 4</a> <a href="#city-of-friendswood">City of Friendswood</a> <a href="#city-of-league-city">City of League City</a> <a href="#city-of-missouri-city">City of Missouri City</a> <a href="#city-of-mont-belvieu">City of Mont Belvieu</a> <a href="#city-of-sugar-land">City of Sugar Land</a> <a href="#fort-bend-county">Fort Bend County</a> <a href="#galveston-county-drainage-district-1">Galveston County Drainage District 1</a> <a href="#san-jacinto-river-authority">San Jacinto River Authority</a> <a href="#the-woodlands">The Woodlands</a> <a href="#trinity-river-authority">Trinity River Authority</a> <a href="#txdot">TxDOT</a> <a href="#waller-county">Waller County</a></p>
+<h3 id="addicks-reservoir-watershed">Addicks Reservoir watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td>Addicks Dam</td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/bear-creek-at-clay-road.html">Bear Creek at Clay Road</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/bear-creek-at-fm-529.html">Bear Creek at FM 529</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/horsepen-creek-at-trailside-drive.html">Horsepen Creek at Trailside Drive</a></td><td class="n">0.00 in</td><td class="n">0.16 in (Oct 24, 2026)</td></tr>
+<tr><td>John Paul Landing</td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/langham-creek-at-clay-rd.html">Langham Creek at Clay Rd</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/langham-creek-at-longenbaugh-road.html">Langham Creek at Longenbaugh Road</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/langham-creek-at-west-little-york-road.html">Langham Creek at West Little York Road</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/south-mayde-at-greenhouse-road.html">South Mayde at Greenhouse Road</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/south-mayde-creek-at-morton-road.html">South Mayde Creek at Morton Road</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/south-mayde-creek-at-peek-road.html">South Mayde Creek at Peek Road</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="armand-bayou-watershed">Armand Bayou watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/armand-bayou-at-genoa-red-bluff-road.html">Armand Bayou at Genoa-Red Bluff Road</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/armand-bayou-at-pasadena-lake-nasa-road-1.html">Armand Bayou at Pasadena Lake (Nasa Road 1)</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/armand-bayou-at-space-center-boulevard.html">Armand Bayou at Space Center Boulevard</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/big-island-slough-at-fairmont-parkway.html">Big Island Slough at Fairmont Parkway</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/horsepen-creek-at-bay-area-boulevard.html">Horsepen Creek at Bay Area Boulevard</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/willow-spring-bayou-at-fairmont-parkway.html">Willow Spring Bayou at Fairmont Parkway</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="barker-reservoir-watershed">Barker Reservoir watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td>Barker Dam</td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/brookshire-drainage-at-morrison.html">Brookshire Drainage at Morrison</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/buffalo-bayou-at-greenbusch-road.html">Buffalo Bayou at Greenbusch Road</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/buffalo-bayou-at-peek-road.html">Buffalo Bayou at Peek Road</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/buffalo-bayou-at-us-90.html">Buffalo Bayou at US 90</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/cane-island-parkway-at-clay-road.html">Cane Island Parkway at Clay Road</a></td><td class="n">0.08 in</td><td class="n">0.16 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/mason-creek-at-prince-creek-drive.html">Mason Creek at Prince Creek Drive</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/willow-creek-at-pederson.html">Willow Creek at Pederson</a></td><td class="n">0.12 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="brays-bayou-watershed">Brays Bayou watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/brays-bayou-at-bellaire-boulevard.html">Brays Bayou at Bellaire Boulevard</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/brays-bayou-at-belle-park-drive.html">Brays Bayou at Belle Park Drive</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/brays-bayou-at-beltway-8.html">Brays Bayou at Beltway 8</a></td><td class="n">0.12 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/brays-bayou-at-gessner-road.html">Brays Bayou at Gessner Road</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/brays-bayou-at-lawndale-street.html">Brays Bayou at Lawndale Street</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/brays-bayou-at-martin-luther-king-blvd.html">Brays Bayou at Martin Luther King Blvd</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/brays-bayou-at-rice-avenue.html">Brays Bayou at Rice Avenue</a></td><td class="n">0.08 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/brays-bayou-at-sh-6.html">Brays Bayou at SH 6</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/brays-bayou-at-south-main-street.html">Brays Bayou at South Main Street</a></td><td class="n">0.04 in</td><td class="n">0.16 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/brays-bayou-at-stella-link-road.html">Brays Bayou at Stella Link Road</a></td><td class="n">0.04 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/harris-gully-at-south-mcgregor-way.html">Harris Gully at South McGregor Way</a></td><td class="n">0.08 in</td><td class="n">0.20 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/keegans-bayou-at-keegan-road.html">Keegans Bayou at Keegan Road</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/keegans-bayou-at-roark-road.html">Keegans Bayou at Roark Road</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/keegans-bayou-at-rocky-valley.html">Keegans Bayou at Rocky Valley</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 28, 2026)</td></tr>
+<tr><td>NRG Park</td><td class="n">0.08 in</td><td class="n">0.20 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/willow-water-hole-at-landsdowne-drive.html">Willow Water Hole at Landsdowne Drive</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/willow-water-hole-at-willowbend-boulevard.html">Willow Water Hole at Willowbend Boulevard</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="buffalo-bayou-watershed">Buffalo Bayou watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/briar-branch-at-campbell-road.html">Briar Branch at Campbell Road</a></td><td class="n">0.08 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/buffalo-bayou-at-dairy-ashford-road.html">Buffalo Bayou at Dairy Ashford Road</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/buffalo-bayou-at-milam-street.html">Buffalo Bayou at Milam Street</a></td><td class="n">0.04 in</td><td class="n">0.20 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/buffalo-bayou-at-piney-point-rd.html">Buffalo Bayou at Piney Point Rd</a></td><td class="n">0.08 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/buffalo-bayou-at-san-felipe-drive.html">Buffalo Bayou at San Felipe Drive</a></td><td class="n">0.08 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/buffalo-bayou-at-shepherd-drive.html">Buffalo Bayou at Shepherd Drive</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/buffalo-bayou-at-west-beltway-8.html">Buffalo Bayou at West Beltway 8</a></td><td class="n">0.08 in</td><td class="n">0.12 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/buffalo-bayou-at-woodway-drive.html">Buffalo Bayou at Woodway Drive</a></td><td class="n">0.08 in</td><td class="n">0.28 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/buttermilk-creek-at-moorberry-lane.html">Buttermilk Creek at Moorberry Lane</a></td><td class="n">0.04 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/clodine-ditch-at-grand-mission.html">Clodine Ditch at Grand Mission</a></td><td class="n">0.04 in</td><td class="n">0.08 in (Oct 28, 2026)</td></tr>
+<tr><td>Houston Transtar</td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/rummel-creek-at-brittmoore-road.html">Rummel Creek at Brittmoore Road</a></td><td class="n">0.04 in</td><td class="n">0.12 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/spring-branch-at-bingle-road.html">Spring Branch at Bingle Road</a></td><td class="n">0.08 in</td><td class="n">0.24 in (Oct 28, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="carpenters-bayou-watershed">Carpenters Bayou watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/carpenters-bayou-at-i-10.html">Carpenters Bayou at I-10</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/carpenters-bayou-at-us-90.html">Carpenters Bayou at US 90</a></td><td class="n">0.00 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/carpenters-bayou-at-wallisville-road.html">Carpenters Bayou at Wallisville Road</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/sheldon-reservoir-at-garrett-road.html">Sheldon Reservoir at Garrett Road</a></td><td class="n">0.00 in</td><td class="n">0.12 in (Oct 27, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="cedar-bayou-watershed">Cedar Bayou watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/cedar-bayou-at-fm-1960.html">Cedar Bayou at FM 1960</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/cedar-bayou-at-fm1942.html">Cedar Bayou at FM1942</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/cedar-bayou-at-sh-146.html">Cedar Bayou at SH 146</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/cedar-bayou-at-sh-99.html">Cedar Bayou at SH 99</a></td><td class="n">0.00 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/cedar-bayou-at-us-90.html">Cedar Bayou at US 90</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Huffman Repeater</td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/smith-gully-at-sh146.html">Smith Gully at SH146</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="clear-creek-watershed">Clear Creek watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/beamer-ditch-at-hughes-road.html">Beamer Ditch at Hughes Road</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/chigger-creek-at-windsong-lane.html">Chigger Creek at Windsong Lane</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-bay-area-boulevard.html">Clear Creek at Bay Area Boulevard</a></td><td class="n">0.24 in</td><td class="n">0.24 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-country-club-drive.html">Clear Creek at Country Club Drive</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-fm-1959.html">Clear Creek at FM 1959</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-fm-2234.html">Clear Creek at FM 2234</a></td><td class="n">0.12 in</td><td class="n">0.20 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-fm-2351.html">Clear Creek at FM 2351</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-fm-528.html">Clear Creek at FM 528</a></td><td class="n">0.24 in</td><td class="n">0.24 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-i-45.html">Clear Creek at I-45</a></td><td class="n">0.24 in</td><td class="n">0.24 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-mykawa-road.html">Clear Creek at Mykawa Road</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td>Clear Creek at Nassau Bay</td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-pearland-pkwy.html">Clear Creek at Pearland Pkwy</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/clear-creek-at-sh-288.html">Clear Creek at SH 288</a></td><td class="n">0.16 in</td><td class="n">0.28 in (Oct 28, 2026)</td></tr>
+<tr><td>Clear Lake 2nd Outlet at SH 146</td><td class="n">0.24 in</td><td class="n">0.24 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/cowart-creek-at-baker-road.html">Cowart Creek at Baker Road</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/marys-creek-at-winding-road.html">Mary's Creek at Winding Road</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/taylor-lake-at-nasa-road-1.html">Taylor Lake at Nasa Road 1</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/taylor-lake-at-port-road.html">Taylor Lake at Port Road</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/taylors-bayou-at-shoreacres-boulevard.html">Taylor's Bayou at Shoreacres Boulevard</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/turkey-creek-at-fm-1959.html">Turkey Creek at FM 1959</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="cypress-creek-watershed">Cypress Creek watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/cypress-creek-at-cypresswood-drive.html">Cypress Creek at Cypresswood Drive</a></td><td class="n">0.00 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/cypress-creek-at-eldridge-parkway-n.html">Cypress Creek at Eldridge Parkway N.</a></td><td class="n">0.00 in</td><td class="n">0.08 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/cypress-creek-at-grant-road.html">Cypress Creek at Grant Road</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/cypress-creek-at-huffmeister-road.html">Cypress Creek at Huffmeister Road</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/cypress-creek-at-i-45.html">Cypress Creek at I-45</a></td><td class="n">0.00 in</td><td class="n">0.20 in (Oct 28, 2026)</td></tr>
+<tr><td>Cypress Creek at Inverness Forest</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/cypress-creek-at-katy-hockley-road.html">Cypress Creek at Katy-Hockley Road</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/cypress-creek-at-kuykendahl-road.html">Cypress Creek at Kuykendahl Road</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/cypress-creek-at-sh-249.html">Cypress Creek at SH 249</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/cypress-creek-at-sharp-road.html">Cypress Creek at Sharp Road</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/cypress-creek-at-stuebner-airline-road.html">Cypress Creek at Stuebner-Airline Road</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/cypress-creek-at-us-290.html">Cypress Creek at US 290</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/little-mound-creek-at-mathis-road.html">Little Mound Creek at Mathis Road</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/live-oak-at-penick-road.html">Live Oak at Penick Road</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/mound-creek-at-fm-362.html">Mound Creek at FM 362</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+</tbody></table></div>
+<h3 id="greens-bayou-watershed">Greens Bayou watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/garners-bayou-at-beltway-8.html">Garners Bayou at Beltway 8</a></td><td class="n">0.00 in</td><td class="n">0.12 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/garners-bayou-at-rankin-road.html">Garners Bayou at Rankin Road</a></td><td class="n">0.00 in</td><td class="n">0.20 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/greens-bayou-at-bammel-n-houston-road.html">Greens Bayou at Bammel N Houston Road</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/greens-bayou-at-beltway-8.html">Greens Bayou at Beltway 8</a></td><td class="n">0.00 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/greens-bayou-at-cutten-road.html">Greens Bayou at Cutten Road</a></td><td class="n">0.00 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/greens-bayou-at-knobcrest-drive.html">Greens Bayou at Knobcrest Drive</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/greens-bayou-at-ley-road.html">Greens Bayou at Ley Road</a></td><td class="n">0.04 in</td><td class="n">0.20 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/greens-bayou-at-mount-houston-parkway.html">Greens Bayou at Mount Houston Parkway</a></td><td class="n">0.04 in</td><td class="n">0.12 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/greens-bayou-at-normandy-street.html">Greens Bayou at Normandy Street</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/greens-bayou-at-tidwell-road.html">Greens Bayou at Tidwell Road</a></td><td class="n">0.04 in</td><td class="n">0.12 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/greens-bayou-at-us-59.html">Greens Bayou at US 59</a></td><td class="n">0.04 in</td><td class="n">0.24 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/north-fork-greens-bayou-at-ella.html">North Fork Greens Bayou at Ella</a></td><td class="n">0.00 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/p138-at-aldine-westfield-road.html">P138 at Aldine Westfield Road</a></td><td class="n">0.00 in</td><td class="n">0.24 in (Oct 28, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="halls-bayou-watershed">Halls Bayou watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/halls-bayou-at-airline-drive.html">Halls Bayou at Airline Drive</a></td><td class="n">0.04 in</td><td class="n">0.20 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/halls-bayou-at-jensen-drive.html">Halls Bayou at Jensen Drive</a></td><td class="n">0.04 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/halls-bayou-at-tidwell-road.html">Halls Bayou at Tidwell Road</a></td><td class="n">0.00 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="hunting-bayou-watershed">Hunting Bayou watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/hunting-bayou-at-i-10.html">Hunting Bayou at I-10</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/hunting-bayou-at-lockwood-drive.html">Hunting Bayou at Lockwood Drive</a></td><td class="n">0.04 in</td><td class="n">0.20 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/hunting-bayou-at-loop-610-east.html">Hunting Bayou at Loop 610 East</a></td><td class="n">0.08 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="jackson-bayou-watershed">Jackson Bayou watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/gum-gully-at-diamond-head-boulevard.html">Gum Gully at Diamond Head Boulevard</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="little-cypress-creek-watershed">Little Cypress Creek watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/little-cypress-creek-at-becker-road.html">Little Cypress Creek at Becker Road</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/little-cypress-creek-at-cypress-rosehill-road.html">Little Cypress Creek at Cypress Rosehill Road</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/little-cypress-creek-at-kluge-road.html">Little Cypress Creek at Kluge Road</a></td><td class="n">0.00 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="luce-bayou-watershed">Luce Bayou watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/luce-bayou-at-fm.html">Luce Bayou at FM</a></td><td class="n">0.00 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/luce-bayou-at-sh-321.html">Luce Bayou at SH 321</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/luce-bayou-at-sh-99.html">Luce Bayou at SH 99</a></td><td class="n">0.00 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/tarkington-bayou-at-sh-105.html">Tarkington Bayou at SH 105</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+</tbody></table></div>
+<h3 id="san-jacinto-galveston-bay-watershed">San Jacinto &amp; Galveston Bay watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/lateral-at-sens-road.html">Lateral at Sens Road</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/little-cedar-bayou-at-8th-street.html">Little Cedar Bayou at 8th Street</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="san-jacinto-river-watershed">San Jacinto River watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/bens-branch-at-woodland-hills-drive.html">Bens Branch at Woodland Hills Drive</a></td><td class="n">0.00 in</td><td class="n">0.12 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/boggy-bayou-at-san-augustine-street.html">Boggy Bayou at San Augustine Street</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/buffalo-bayou-at-turning-basin.html">Buffalo Bayou at Turning Basin</a></td><td class="n">0.04 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/caney-creek-at-fm-2090.html">Caney Creek at FM 2090</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/caney-creek-at-firetower-road.html">Caney Creek at Firetower Road</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/caney-creek-at-sh-105.html">Caney Creek at SH 105</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/caney-creek-at-us-59.html">Caney Creek at US 59</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/east-fork-san-jacinto-at-fm-1485.html">East Fork San Jacinto at FM 1485</a></td><td class="n">0.00 in</td><td class="n">0.16 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/east-fork-san-jacinto-at-fm-2090.html">East Fork San Jacinto at FM 2090</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/east-fork-san-jacinto-at-sh-105.html">East Fork San Jacinto at SH 105</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/houston-ship-channel-at-juan-seguin-park.html">Houston Ship Channel at Juan Seguin Park</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/lake-creek-at-sh-149.html">Lake Creek at SH 149</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/lake-creek-at-sendera-ranch-drive.html">Lake Creek at Sendera Ranch Drive</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/lake-houston-at-fm-1960.html">Lake Houston at FM 1960</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td>Lake Houston Dam Spillway</td><td class="n">0.00 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/patricks-bayou-at-east-8th-street.html">Patricks Bayou at East 8th Street</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/peach-creek-at-fm-2090.html">Peach Creek at FM 2090</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/peach-creek-at-roman-forest-boulevard.html">Peach Creek at Roman Forest Boulevard</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/peach-creek-at-sh-99.html">Peach Creek at SH 99</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/san-jacinto-at-sh-99.html">San Jacinto at SH 99</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/san-jacinto-river-at-kingwood-country-club.html">San Jacinto River at Kingwood Country Club</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/san-jacinto-river-at-rio-villa.html">San Jacinto River at Rio Villa</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/san-jacinto-river-at-sh-242.html">San Jacinto River at SH 242</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/san-jacinto-river-at-us-59.html">San Jacinto River at US 59</a></td><td class="n">0.00 in</td><td class="n">0.20 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/san-jacinto-river-at-us-90.html">San Jacinto River at US 90</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td>W FK San Jacinto RV BL LK Conroe NR Conroe, TX</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+</tbody></table></div>
+<h3 id="sims-bayou-watershed">Sims Bayou watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/berry-bayou-at-forest-oaks-boulevard.html">Berry Bayou at Forest Oaks Boulevard</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/berry-bayou-at-nevada-avenue.html">Berry Bayou at Nevada Avenue</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/sims-bayou-at-hiram-clarke-road.html">Sims Bayou at Hiram-Clarke Road</a></td><td class="n">0.08 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/sims-bayou-at-martin-luther-king-road.html">Sims Bayou at Martin Luther King Road</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/sims-bayou-at-sh-288.html">Sims Bayou at SH 288</a></td><td class="n">0.12 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/sims-bayou-at-telephone-road.html">Sims Bayou at Telephone Road</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="spring-creek-watershed">Spring Creek watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/bear-branch-at-kuykendahl.html">Bear Branch at Kuykendahl</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/birch-creek-at-riley-road.html">Birch Creek at Riley Road</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/dry-creek-at-fm-2978.html">Dry Creek at FM 2978</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/mill-creek-at-fm-1486.html">Mill Creek at FM 1486</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/mill-creek-at-fm-149.html">Mill Creek at FM 149</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/mill-creek-at-fm-1774.html">Mill Creek at FM 1774</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/spring-creek-at-cypress-rosehill.html">Spring Creek at Cypress Rosehill</a></td><td class="n">0.04 in</td><td class="n">0.08 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/spring-creek-at-fm-2978.html">Spring Creek at FM 2978</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/spring-creek-at-hegar-road.html">Spring Creek at Hegar Road</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/spring-creek-at-i-45.html">Spring Creek at I-45</a></td><td class="n">0.00 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/spring-creek-at-kuykendahl-road.html">Spring Creek at Kuykendahl Road</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/spring-creek-at-sh-249.html">Spring Creek at SH 249</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/three-mile-creek-at-fm-362.html">Three Mile Creek at FM 362</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/three-mile-creek-at-joseph-road.html">Three Mile Creek at Joseph Road</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/walnut-creek-at-joseph-road.html">Walnut Creek at Joseph Road</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/walnut-creek-at-nichols-sawmill.html">Walnut Creek at Nichols Sawmill</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="spring-gully-goose-creek-watershed">Spring Gully &amp; Goose Creek watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/goose-creek-at-baker-road.html">Goose Creek at Baker Road</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/goose-creek-at-i-10.html">Goose Creek at I-10</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/goose-creek-at-sh-146.html">Goose Creek at SH 146</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="vince-bayou-watershed">Vince Bayou watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/little-vince-bayou-at-burke-road.html">Little Vince Bayou at Burke Road</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/little-vince-bayou-at-jackson-avenue.html">Little Vince Bayou at Jackson Avenue</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/vince-bayou-at-fairmont-parkway.html">Vince Bayou at Fairmont Parkway</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/harris-county/vince-bayou-at-west-ellaine-down-stream.html">Vince Bayou at West Ellaine Down Stream</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="white-oak-bayou-watershed">White Oak Bayou watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/harris-county/brickhouse-gully-at-costa-rica-road.html">Brickhouse Gully at Costa Rica Road</a></td><td class="n">0.04 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/brickhouse-gully-at-hollister.html">Brickhouse Gully at Hollister</a></td><td class="n">0.08 in</td><td class="n">0.24 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/cole-creek-at-deihl-road.html">Cole Creek at Deihl Road</a></td><td class="n">0.04 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+<tr><td>Harris County Flood Control at Brookhollow</td><td class="n">0.04 in</td><td class="n">0.08 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/little-white-oak-bayou-at-tidwell-road.html">Little White Oak Bayou at Tidwell Road</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/little-white-oak-bayou-at-trimble-street.html">Little White Oak Bayou at Trimble Street</a></td><td class="n">0.04 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/vogel-creek-at-gulf-bank-road.html">Vogel Creek at Gulf Bank Road</a></td><td class="n">0.04 in</td><td class="n">0.08 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/vogel-creek-at-victory-drive.html">Vogel Creek at Victory Drive</a></td><td class="n">0.04 in</td><td class="n">0.08 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/white-oak-bayou-at-alabonson-road.html">White Oak Bayou at Alabonson Road</a></td><td class="n">0.04 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/white-oak-bayou-at-ella-boulevard.html">White Oak Bayou at Ella Boulevard</a></td><td class="n">0.04 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/white-oak-bayou-at-fairbanks-north-houston-road.html">White Oak Bayou at Fairbanks North Houston Road</a></td><td class="n">0.04 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/white-oak-bayou-at-heights-boulevard.html">White Oak Bayou at Heights Boulevard</a></td><td class="n">0.04 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/white-oak-bayou-at-jones-road.html">White Oak Bayou at Jones Road</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/white-oak-bayou-at-lakeview-drive.html">White Oak Bayou at Lakeview Drive</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td><a href="/harris-county/white-oak-bayou-at-pinemont-drive.html">White Oak Bayou at Pinemont Drive</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/white-oak-bayou-at-tidwell-road.html">White Oak Bayou at Tidwell Road</a></td><td class="n">0.04 in</td><td class="n">0.08 in (Oct 28, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="willow-creek-watershed">Willow Creek watershed</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td>Tomball Repeater</td><td class="n">0.00 in</td><td class="n">0.08 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/harris-county/willow-creek-at-kuykendahl-road.html">Willow Creek at Kuykendahl Road</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/harris-county/willow-creek-at-sh-249.html">Willow Creek at SH 249</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+</tbody></table></div>
+<h3 id="brazoria-drainage-district-4">Brazoria Drainage District 4</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td>Brazoria Drainage District Office</td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/country-place-ditch-at-mchard-road.html">Country Place Ditch at McHard Road</a></td><td class="n">0.16 in</td><td class="n">0.20 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/cowart-creek-diversion-at-veterans.html">Cowart Creek Diversion at Veterans</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/cowarts-creek-at-cloverfield-road.html">Cowarts Creek at Cloverfield Road</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/cowarts-creek-at-dixie-farm-road.html">Cowarts Creek at Dixie Farm Road</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/hickory-slough-at-max-road.html">Hickory Slough at Max Road</a></td><td class="n">0.24 in</td><td class="n">0.24 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/hickory-slough-at-mykawa.html">Hickory Slough at Mykawa</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/hickory-slough-at-sh-288.html">Hickory Slough at SH 288</a></td><td class="n">0.16 in</td><td class="n">0.24 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/leclaire-ditch-at-hwy-35.html">LeClaire Ditch at HWY 35</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/marys-creek-at-fm-1128.html">Marys Creek at FM 1128</a></td><td class="n">0.24 in</td><td class="n">0.24 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/marys-creek-at-longherridge.html">Marys Creek at Longherridge</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/marys-creek-at-veterans-drive.html">Marys Creek at Veterans Drive</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/mustang-bayou-at-cr-48.html">Mustang Bayou at CR 48</a></td><td class="n">0.12 in</td><td class="n">0.20 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/mustang-bayou-at-sh-288.html">Mustang Bayou at SH 288</a></td><td class="n">0.24 in</td><td class="n">0.24 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/old-chigger-creek-at-sh-35.html">Old Chigger Creek at SH 35</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/resoft-park-ditch-at-sh-35.html">Resoft Park Ditch at SH 35</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/rodeo-palms-ditch-at-sh-6.html">Rodeo Palms Ditch at SH 6</a></td><td class="n">0.28 in</td><td class="n">0.28 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/veterans-at-hastings-cannon-road.html">Veterans at Hastings-Cannon Road</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/brazoria-drainage-district-4/west-fork-chocolate-bayou-at-cr-383.html">West Fork Chocolate Bayou at CR 383</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="city-of-friendswood">City of Friendswood</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/friendswood/chigger-creek-at-south-friendswood-drive.html">Chigger Creek at South Friendswood Drive</a></td><td class="n">0.24 in</td><td class="n">0.24 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/friendswood/cowarts-creek-at-west-castlewood-drive.html">Cowarts Creek at West Castlewood Drive</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td>Friendswood Public Safety</td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="city-of-league-city">City of League City</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/league-city/benson-bayou-at-fm-646.html">Benson Bayou at FM 646</a></td><td class="n">0.28 in</td><td class="n">0.28 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/league-city/bordens-gully-at-hughes-lane.html">Bordens Gully at Hughes Lane</a></td><td class="n">0.36 in</td><td class="n">0.36 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/league-city/dickinson-bayou-at-hwy-3.html">Dickinson Bayou at HWY 3</a></td><td class="n">0.36 in</td><td class="n">0.36 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/league-city/gum-bayou-at-bishops-bridge.html">Gum Bayou at Bishops Bridge</a></td><td class="n">0.28 in</td><td class="n">0.28 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/league-city/gum-bayou-at-fm-646.html">Gum Bayou at FM 646</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/league-city/landing-ditch-at-west-main-fm-518.html">Landing Ditch at West Main (FM 518)</a></td><td class="n">0.24 in</td><td class="n">0.24 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/league-city/magnolia-creek-at-bay-area-boulevard.html">Magnolia Creek at Bay Area Boulevard</a></td><td class="n">0.24 in</td><td class="n">0.24 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/league-city/robinson-bayou-at-egret-bay-boulevard.html">Robinson Bayou at Egret Bay Boulevard</a></td><td class="n">0.24 in</td><td class="n">0.24 in (Oct 30, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="city-of-missouri-city">City of Missouri City</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/missouri-city/cangelosi-at-buffalo-run-park.html">Cangelosi at Buffalo Run Park</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td>Cangelosi at Texas Parkway</td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/missouri-city/ditch-b-1.html">Ditch B-1</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/missouri-city/lexington-at-hunter-s-trail.html">Lexington at Hunter’s Trail</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/missouri-city/north-ditch.html">North Ditch</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/missouri-city/stafford-run-at-court-road.html">Stafford Run at Court Road</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/missouri-city/txdot-channel.html">TxDOT Channel</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/missouri-city/willow-at-cravens.html">Willow at Cravens</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/missouri-city/willow-at-gessner.html">Willow at Gessner</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="city-of-mont-belvieu">City of Mont Belvieu</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/mont-belvieu/cotton-bayou-at-lakes-of-champions-boulevard.html">Cotton Bayou at Lakes of Champions Boulevard</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/mont-belvieu/hackberry-gully-at-i-10.html">Hackberry Gully at I-10</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="city-of-sugar-land">City of Sugar Land</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td>Alcorn Lake Outfall at Avondale Drive</td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/amherst-court.html">Amherst Court</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/amil-gates-at-sh-6.html">Amil Gates at SH 6</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/brazos-river-at-us-59.html">Brazos River at US 59</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/bullhead-slough-at-easton-ave.html">Bullhead Slough at Easton Ave</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/covington-ditch-at-jess-pirtle.html">Covington Ditch at Jess Pirtle</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/dawnington-place.html">Dawnington Place</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/ditch-90-a-at-eldridge-road.html">Ditch 90 A at Eldridge Road</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/ditch-a-22-at-bournwood.html">Ditch A 22 at Bournwood</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/ditch-a-22-at-burney-road.html">Ditch A 22 at Burney Road</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td>Ditch A Outfall</td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/ditch-a-22-at-jess-pirtle.html">Ditch A-22 at Jess Pirtle</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/ditch-b-at-dulles-road.html">Ditch B at Dulles Road</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/ditch-c-at-austin-parkway.html">Ditch C at Austin Parkway</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/ditch-c-at-ditch-c1.html">Ditch C at Ditch C1</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/ditch-e-at-austin-parkway.html">Ditch E at Austin Parkway</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td>Ditch H at Ditch F</td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/ditch-h-at-university-blvd.html">Ditch H at University Blvd</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/east-sugar-creek-ditch-at-sugar-creek.html">East Sugar Creek Ditch at Sugar Creek</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td>Gates at Steep Bank Creek</td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/greatwood-parkway.html">Greatwood Parkway</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/jane-long-lake-at-country-club-boulevard.html">Jane Long lake at Country Club Boulevard</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/lakes-of-austin-park.html">Lakes of Austin Park</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/new-territory-blvd.html">New Territory Blvd</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/new-territory-pump-station.html">New Territory Pump Station</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/new-territory-treatment-plant.html">New Territory Treatment Plant</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/northwest-detention-pond-inlet.html">Northwest Detention Pond Inlet</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/northwest-detention-pond-outlet.html">Northwest Detention Pond Outlet</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/oyster-creek-at-dam-number-2.html">Oyster Creek at Dam Number 2</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/oyster-creek-at-dulles-avenue.html">Oyster Creek at Dulles Avenue</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/oyster-creek-at-lexington-boulevard.html">Oyster Creek at Lexington Boulevard</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/oyster-creek-at-sh-6.html">Oyster Creek at SH 6</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/oyster-creek-at-williams-trace.html">Oyster Creek at Williams Trace</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/siphon-b-at-ditch-b.html">Siphon B at Ditch B</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/telfair-north-pump-station.html">Telfair North Pump Station</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/telfair-south-pump-station.html">Telfair South Pump Station</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/upper-ditch-a-at-first-colony-athletic-facility.html">Upper Ditch A at First Colony Athletic Facility</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/sugar-land/winding-brook-dr.html">Winding Brook Dr</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="fort-bend-county">Fort Bend County</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/fort-bend-county/bessies-creek-at-fm-1093.html">Bessies Creek at FM 1093</a></td><td class="n">0.16 in</td><td class="n">0.20 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/big-creek-at-fm-1994.html">Big Creek at FM 1994</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/big-creek-lat-ii-b-7-at-fm-2977.html">Big Creek Lat II- B-7 at FM 2977</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/brazos-river-at-fm-1489.html">Brazos River at FM 1489</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/brazos-river-at-fm-723.html">Brazos River at FM 723</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td>Brazos River at Sienna South</td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/brookshire-creek-at-fm-359.html">Brookshire Creek at FM 359</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/buffalo-creek-at-fm-1236.html">Buffalo Creek at FM 1236</a></td><td class="n">0.36 in</td><td class="n">0.36 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/bullhead-slough-at-fm-1464.html">Bullhead Slough at FM 1464</a></td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 26, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/coon-creek-at-kroesche-road.html">Coon Creek at Kroesche Road</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/cottonwood-creek-at-spur-10.html">Cottonwood Creek at Spur 10</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/cottonwood-creek-at-us-59.html">Cottonwood Creek at US 59</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/deer-creek-at-fm-361.html">Deer Creek at FM 361</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/dry-creek-at-fm-2218.html">Dry Creek at FM 2218</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/dutch-john-creek-at-brazos-lake-drive.html">Dutch John Creek at Brazos Lake Drive</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/duval-ditch-at-sh-36.html">Duval Ditch at SH 36</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/fairchilds-creek-at-fm-360.html">Fairchilds Creek at FM 360</a></td><td class="n">0.32 in</td><td class="n">0.32 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/fairchilds-creek-at-fairchilds-road.html">Fairchilds Creek at Fairchilds Road</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/flat-bank-diversion-at-sienna-springs-drive.html">Flat Bank Diversion at Sienna Springs Drive</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/flewellen-creek-at-fm-1093.html">Flewellen Creek at FM 1093</a></td><td class="n">0.08 in</td><td class="n">0.20 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/gapps-slough-at-fm-762.html">Gapps Slough at FM 762</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/guy-creek-at-sh-36.html">Guy Creek at SH 36</a></td><td class="n">0.24 in</td><td class="n">0.24 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/jones-creek-at-fm-359.html">Jones Creek at FM 359</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td>Jones Creek at FM 723</td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/little-prong-at-gaston-road.html">Little Prong at Gaston Road</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/long-point-creek-at-sh-6.html">Long Point Creek at SH 6</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/lower-dry-creek-at-y-u-jones-road.html">Lower Dry Creek at Y. U. Jones Road</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/mustang-bayou-at-fm-521.html">Mustang Bayou at FM 521</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/oyster-creek-at-harlem-rd.html">Oyster Creek at Harlem Rd</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/oyster-creek-at-mason-road.html">Oyster Creek at Mason Road</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/rabbs-bayou-at-del-webb-boulevard.html">Rabbs Bayou at Del Webb Boulevard</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/red-gully-at-west-airport.html">Red Gully at West Airport</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/robinowitz-ditch-at-sh-36.html">Robinowitz Ditch at SH 36</a></td><td class="n">0.16 in</td><td class="n">0.16 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/san-bernard-river-at-us-59.html">San Bernard River at US 59</a></td><td class="n">0.36 in</td><td class="n">0.36 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/seabourne-creek-at-sh-36.html">Seabourne Creek at SH 36</a></td><td class="n">0.24 in</td><td class="n">0.24 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/snake-creek-at-fm-1952.html">Snake Creek at FM 1952</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/snake-creek-at-tierra-grande-drive.html">Snake Creek at Tierra Grande Drive</a></td><td class="n">0.44 in</td><td class="n">0.44 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/turkey-creek-at-rycade-school-road.html">Turkey Creek at Rycade School Road</a></td><td class="n">0.32 in</td><td class="n">0.32 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/turkey-creek-at-us-59.html">Turkey Creek at US 59</a></td><td class="n">0.28 in</td><td class="n">0.28 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/west-simonton-ditch-at-fort-bend-drive.html">West Simonton Ditch at Fort Bend Drive</a></td><td class="n">0.20 in</td><td class="n">0.20 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/fort-bend-county/willow-fork-diversion-at-mason-road.html">Willow Fork Diversion at Mason Road</a></td><td class="n">0.04 in</td><td class="n">0.04 in (Oct 28, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="galveston-county-drainage-district-1">Galveston County Drainage District 1</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/galveston-county-drainage-district-1/cloud-bayou-at-highland-road.html">Cloud Bayou at Highland Road</a></td><td class="n">0.32 in</td><td class="n">0.32 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/galveston-county-drainage-district-1/dickinson-bayou-at-fm-646.html">Dickinson Bayou at FM 646</a></td><td class="n">0.36 in</td><td class="n">0.36 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/galveston-county-drainage-district-1/ditch-6-at-cowan-road.html">Ditch 6 at Cowan Road</a></td><td class="n">0.36 in</td><td class="n">0.36 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/galveston-county-drainage-district-1/highland-bayou-at-avenue-j.html">Highland Bayou at Avenue J</a></td><td class="n">0.36 in</td><td class="n">0.36 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/galveston-county-drainage-district-1/willow-bayou-at-baker-street.html">Willow Bayou at Baker Street</a></td><td class="n">0.32 in</td><td class="n">0.32 in (Oct 30, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="san-jacinto-river-authority">San Jacinto River Authority</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/san-jacinto-river-authority/east-fork-san-jacinto-river-at-fm-945.html">East Fork San Jacinto River at FM 945</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/san-jacinto-river-authority/east-sandy-creek.html">East Sandy Creek</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Elkins Lake</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Flamingo Lake</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Lake Conroe</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/san-jacinto-river-authority/lake-conroe-at-1375.html">Lake Conroe at 1375</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/san-jacinto-river-authority/lake-creek-at-dobbin.html">Lake Creek at Dobbin</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Lake Creek at Egypt</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Lewis Creek</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Loma</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Peach Creek at FM 3081</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Union Grove</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>WCFG</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/san-jacinto-river-authority/west-caney-creek-at-1375.html">West Caney Creek at 1375</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/san-jacinto-river-authority/west-fork-san-jacinto-at-hwy-30.html">West Fork San Jacinto at HWY 30</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/san-jacinto-river-authority/west-sandy-creek.html">West Sandy Creek</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/san-jacinto-river-authority/winters-bayou-at-tx150.html">Winters Bayou at TX150</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+</tbody></table></div>
+<h3 id="the-woodlands">The Woodlands</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/the-woodlands/alden-branch-at-alden-bridge.html">Alden Branch at Alden Bridge</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td><a href="/the-woodlands/bear-branch-at-fm-2978.html">Bear Branch at FM 2978</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Cynthia Woods Pavilion</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Grogans Mill Road near Research Forest Drive</td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td>Grogans Point Rd near Red Sable Point</td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/the-woodlands/panther-branch-at-1488.html">Panther Branch at 1488</a></td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>WJPA Field Office near Research Forest Drive</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Woodlands Parkway near McBeth Way</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+</tbody></table></div>
+<h3 id="trinity-river-authority">Trinity River Authority</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td>TRA Caney Creek at Fryday</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>TRA Chita/Backup Repeater</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>TRA Harmon</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>TRA Kickapoo Creek at Onalaska</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>TRA Livingston Dam</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>TRA Midway</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>TRA Riverside</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>TRA Upper Kickapoo</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>TRA Waterwood</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>TRA White Rock Creek</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>TRA Wolf Creek Park</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>TRA Wyser</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+</tbody></table></div>
+<h3 id="txdot">TxDOT</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td>21st Street at Harborside</td><td class="n">0.48 in</td><td class="n">0.48 in (Oct 30, 2026)</td></tr>
+<tr><td>45 S at HWY 610 HOV</td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td>59 N at Peach Creek</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>610 at Ship Channel</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Brazos River at I-10</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Brazos River at SH 36</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Clinton</td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 27, 2026)</td></tr>
+<tr><td>FM 1097 at Lake Conroe</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>FM 529 at US 290</td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 27, 2026)</td></tr>
+<tr><td>Fred Hartman Bridge</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>HWY 6 at SH290 (WC)</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>I-10 at 610</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>I-10 at Wayside</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>I-10 Union Pacific Railroad East of 610</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>I-45 HOV Downtown Terminal</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>IH 10 at Eldridge</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>IH 10 at Normandy</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>IH 10 at SH 6</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>IH 10 at Silber</td><td class="n">0.08 in</td><td class="n">0.12 in (Oct 28, 2026)</td></tr>
+<tr><td>IH 10 East of Washington</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>IH 10 West at Addicks Park and Ride</td><td class="n">0.00 in</td><td class="n">0.04 in (Oct 28, 2026)</td></tr>
+<tr><td>IH 45 at HOV North Travis/Quitman</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>Jamaica Beach</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>SH 288 at Loop 610</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>SH 288 at MacGregor</td><td class="n">0.00 in</td><td class="n">0.00 in</td></tr>
+<tr><td>SH-59 at McGowen</td><td class="n">0.04 in</td><td class="n">0.20 in (Oct 27, 2026)</td></tr>
+<tr><td>Spur 5 at IH 45</td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 28, 2026)</td></tr>
+</tbody></table></div>
+<h3 id="waller-county">Waller County</h3>
+<div class="scroll"><table><thead><tr><th>Gauge</th><th class="n">Last 24 hours</th><th class="n">Most in 24 hours, past week</th></tr></thead><tbody>
+<tr><td><a href="/waller-county/bessie-creek-at-fm-359.html">Bessie Creek at FM 359</a></td><td class="n">0.08 in</td><td class="n">0.08 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/waller-county/brookshire-creek-at-us-90.html">Brookshire Creek at US 90</a></td><td class="n">0.12 in</td><td class="n">0.12 in (Oct 30, 2026)</td></tr>
+<tr><td><a href="/waller-county/clear-creek-at-fm-1887.html">Clear Creek at FM 1887</a></td><td class="n">0.04 in</td><td class="n">0.40 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/waller-county/clear-creek-at-us-290-business.html">Clear Creek at US 290 Business</a></td><td class="n">0.00 in</td><td class="n">0.16 in (Oct 28, 2026)</td></tr>
+<tr><td><a href="/waller-county/irons-creek-at-fm-529.html">Irons Creek at FM 529</a></td><td class="n">0.04 in</td><td class="n">0.08 in (Oct 28, 2026)</td></tr>
+</tbody></table></div>
+<h2>How to read these numbers</h2>
+<p>Each figure is the Flood Warning System's own rolling 24-hour rainfall total at the gauge, read every 15 minutes. A day's figure is the highest of those totals during that day (Central time), so a storm that straddles midnight can count toward two days. Rain gauges can clog, fail or over-read in wind; nothing here is verified independently, and a rainfall total says nothing about flooding at any street or property.</p>
+<footer>
+<p class="fnav"><a href="/">Home</a><a href="/texas-coast/houston-galveston/">Houston</a><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/storms/">Storms</a><a href="/tides/">Tide gauges</a><a href="/gauges/">All gauges</a><a href="/army-corps/">Army Corps gauges</a><a href="/lakes/">Lakes</a><a href="/alerts/">Active alerts</a><a href="/rainfall/">Houston rainfall</a><a href="/rainfall/gulf-coast/">Gulf Coast rainfall</a><a href="/water-temperature/">Water temperature</a><a href="/floods/">Historic floods</a><a href="/usgs/">USGS gauges</a><a href="/embed/">Embed a gauge</a><a href="/about/">How this site works</a> Contact: <a class="mail" href="/about/#contact" data-u="contact" data-d="gulfcoastgauges.com">contact [at] gulfcoastgauges.com</a></p>
+<p><strong>Source.</strong> Stage readings are republished from the <a href="https://www.harriscountyfws.org/" rel="nofollow noopener">Harris County Flood Warning System</a>. Flood watches, advisories and warnings are issued by <a href="https://www.weather.gov/hgx/" rel="nofollow noopener">NWS Houston/Galveston</a>. This site is not affiliated with either agency.</p>
+<p><strong>No guidance, no forecast.</strong> This page reports measurements and official alert text only. It does not predict water levels, assess whether any road, property or route is passable, or advise any action. For decisions about safety, use <a href="https://www.weather.gov/hgx/" rel="nofollow noopener">official sources</a> and local emergency management.</p>
+<p><strong>Accuracy.</strong> HCFCD makes no representations, guarantees or warranties as to the availability, accuracy, completeness, currency or suitability of Flood Warning System data, and disclaims liability for actions taken or not taken based on it. Gauges can fail, report late, or report in error. Nothing here is verified independently.</p>
+<p>Readings recorded continuously since Sep 11, 2026 at 11:13 AM CDT. 171,992 readings from 349 sensors stored to date.</p>
+</footer></div></body></html>

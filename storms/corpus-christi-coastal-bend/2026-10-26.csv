@@ -1,0 +1,26 @@
+gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
+Nueces River at Calallen,08211500,Nueces County,https://gulfcoastgauges.com/usgs/nueces-river-at-calallen.html,3.29,4.17,2026-10-30T18:30:00Z,2026-10-30 13:30:00 CDT,0.88,7
+San Diego Creek at Alice,08211800,Jim Wells County,https://gulfcoastgauges.com/usgs/san-diego-creek-at-alice.html,7.08,7.09,2026-10-25T19:00:00Z,2026-10-25 14:00:00 CDT,0.01,11
+Copano Creek near Refugio,08189200,Refugio County,https://gulfcoastgauges.com/usgs/copano-creek-near-refugio.html,2.34,3.21,2026-10-30T18:30:00Z,2026-10-30 13:30:00 CDT,0.87,12
+Nueces River at Bluntzer,08211200,Nueces County,https://gulfcoastgauges.com/usgs/nueces-river-at-bluntzer.html,7.65,8.28,2026-10-31T02:00:00Z,2026-10-30 21:00:00 CDT,0.63,18
+Los Olmos Creek near Falfurrias,08212400,Brooks County,https://gulfcoastgauges.com/usgs/los-olmos-creek-near-falfurrias.html,1.19,1.19,2026-10-25T17:15:00Z,2026-10-25 12:15:00 CDT,0.0,11
+San Fernando Creek at Alice,08211900,Jim Wells County,https://gulfcoastgauges.com/usgs/san-fernando-creek-at-alice.html,0.69,0.72,2026-10-25T20:00:00Z,2026-10-25 15:00:00 CDT,0.03,12
+Aransas River near Skidmore,08189700,Bee County,https://gulfcoastgauges.com/usgs/aransas-river-near-skidmore.html,0.39,0.46,2026-10-30T20:15:00Z,2026-10-30 15:15:00 CDT,0.07,13
+Oso Creek at Corpus Christi,08211520,Nueces County,https://gulfcoastgauges.com/usgs/oso-creek-at-corpus-christi.html,5.87,6.62,2026-10-30T16:15:00Z,2026-10-30 11:15:00 CDT,0.75,20
+Atascosa River at Whitsett,08208000,Live Oak County,https://gulfcoastgauges.com/usgs/atascosa-river-at-whitsett.html,1.78,1.78,2026-10-25T17:15:00Z,2026-10-25 12:15:00 CDT,0.0,20
+Mission River at Refugio,08189500,Refugio County,https://gulfcoastgauges.com/usgs/mission-river-at-refugio.html,1.55,2.4,2026-10-30T19:00:00Z,2026-10-30 14:00:00 CDT,0.85,23
+Nueces River near Mathis,08211000,San Patricio County,https://gulfcoastgauges.com/usgs/nueces-river-near-mathis.html,1.59,1.86,2026-10-29T17:00:00Z,2026-10-29 12:00:00 CDT,0.27,25
+Nueces River near Three Rivers,08210000,Live Oak County,https://gulfcoastgauges.com/usgs/nueces-river-near-three-rivers.html,1.78,1.79,2026-10-25T17:45:00Z,2026-10-25 12:45:00 CDT,0.01,25
+San Antonio River near McFaddin,08188570,Refugio County,https://gulfcoastgauges.com/usgs/san-antonio-river-near-mcfaddin.html,14.21,15.28,2026-10-28T10:15:00Z,2026-10-28 05:15:00 CDT,1.07,
+Medio Creek near Normanna,08189298,Bee County,https://gulfcoastgauges.com/usgs/medio-creek-near-normanna.html,214.16,214.95,2026-10-30T16:45:00Z,2026-10-30 11:45:00 CDT,0.79,
+Medio Creek near Beeville,08189300,Bee County,https://gulfcoastgauges.com/usgs/medio-creek-near-beeville.html,3.91,3.92,2026-10-26T11:15:00Z,2026-10-26 06:15:00 CDT,0.01,
+Medio Creek at SH 202 near Beeville,08189320,Bee County,https://gulfcoastgauges.com/usgs/medio-creek-at-sh-202-near-beeville.html,113.41,113.72,2026-10-28T16:05:00Z,2026-10-28 11:05:00 CDT,0.31,
+Devils Run Creek at US 77 near Woodsboro,08189520,Refugio County,https://gulfcoastgauges.com/usgs/devils-run-creek-at-us-77-near-woodsboro.html,15.85,16.47,2026-10-30T16:15:00Z,2026-10-30 11:15:00 CDT,0.62,
+Poesta Creek at FM 351 near Beeville,08189585,Bee County,https://gulfcoastgauges.com/usgs/poesta-creek-at-fm-351-near-beeville.html,215.57,216.43,2026-10-27T00:45:00Z,2026-10-26 19:45:00 CDT,0.86,
+Poesta Creek at Beeville,08189590,Bee County,https://gulfcoastgauges.com/usgs/poesta-creek-at-beeville.html,191.04,191.51,2026-10-30T15:45:00Z,2026-10-30 10:45:00 CDT,0.47,
+Chiltipin Creek at US 77 near Sinton,08189718,San Patricio County,https://gulfcoastgauges.com/usgs/chiltipin-creek-at-us-77-near-sinton.html,23.93,24.06,2026-10-30T16:30:00Z,2026-10-30 11:30:00 CDT,0.13,
+Choke Canyon Reservoir OWC near Three Rivers,08206910,Live Oak County,https://gulfcoastgauges.com/usgs/choke-canyon-reservoir-owc-near-three-rivers.html,4.04,4.05,2026-10-25T17:15:00Z,2026-10-25 12:15:00 CDT,0.01,
+Lagarto Creek near George West,08210400,Live Oak County,https://gulfcoastgauges.com/usgs/lagarto-creek-near-george-west.html,3.87,3.87,2026-10-25T17:15:00Z,2026-10-25 12:15:00 CDT,0.0,
+Nueces River near Odem,08211502,Nueces County,https://gulfcoastgauges.com/usgs/nueces-river-near-odem.html,1.51,2.82,2026-10-27T12:00:00Z,2026-10-27 07:00:00 CDT,1.31,
+Tranquitas Creek at Kingsville,08212300,Kleberg County,https://gulfcoastgauges.com/usgs/tranquitas-creek-at-kingsville.html,1.17,1.86,2026-10-30T15:30:00Z,2026-10-30 10:30:00 CDT,0.69,
+Petronila Creek at FM 665 near Driscoll,08212820,Nueces County,https://gulfcoastgauges.com/usgs/petronila-creek-at-fm-665-near-driscoll.html,4.45,4.47,2026-10-27T14:15:00Z,2026-10-27 09:15:00 CDT,0.02,

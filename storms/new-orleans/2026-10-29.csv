@@ -1,0 +1,45 @@
+gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
+Bogue Falaya River at Boston St. at Covington,07375175,St. Tammany Parish,https://gulfcoastgauges.com/usgs/bogue-falaya-river-at-boston-st-at-covington.html,1.73,2.55,2026-10-30T17:30:00Z,2026-10-30 12:30:00 CDT,0.82,6
+Bayou Liberty near Slidell,07374581,St. Tammany Parish,https://gulfcoastgauges.com/usgs/bayou-liberty-near-slidell.html,1.94,2.45,2026-10-30T16:45:00Z,2026-10-30 11:45:00 CDT,0.51,7
+Pearl River at I-10 near Slidell,02492700,St. Tammany Parish,https://gulfcoastgauges.com/usgs/pearl-river-at-i-10-near-slidell.html,2.69,3.05,2026-10-30T15:45:00Z,2026-10-30 10:45:00 CDT,0.36,10
+Bogue Chitto River near Bush,02492000,St. Tammany Parish,https://gulfcoastgauges.com/usgs/bogue-chitto-river-near-bush.html,2.64,2.64,2026-10-29T06:15:00Z,2026-10-29 01:15:00 CDT,0.0,11
+Tangipahoa River at Robert,07375500,Tangipahoa Parish,https://gulfcoastgauges.com/usgs/tangipahoa-river-at-robert.html,6.36,6.4,2026-10-29T16:45:00Z,2026-10-29 11:45:00 CDT,0.04,15
+Pearl River at Pearl River,02492600,St. Tammany Parish,https://gulfcoastgauges.com/usgs/pearl-river-at-pearl-river.html,4.86,5.03,2026-10-30T19:00:00Z,2026-10-30 14:00:00 CDT,0.17,14
+Bogue Falaya River near Camp Covington,07375105,St. Tammany Parish,https://gulfcoastgauges.com/usgs/bogue-falaya-river-near-camp-covington.html,34.55,34.56,2026-10-29T18:00:00Z,2026-10-29 13:00:00 CDT,0.01,45
+Tchefuncte River near Covington,07375050,St. Tammany Parish,https://gulfcoastgauges.com/usgs/tchefuncte-river-near-covington.html,9.06,9.07,2026-10-29T09:30:00Z,2026-10-29 04:30:00 CDT,0.01,20
+Tchefuncte River near Folsom,07375000,St. Tammany Parish,https://gulfcoastgauges.com/usgs/tchefuncte-river-near-folsom.html,4.81,4.82,2026-10-29T16:00:00Z,2026-10-29 11:00:00 CDT,0.01,16
+Tangipahoa River near Kentwood,07375300,Tangipahoa Parish,https://gulfcoastgauges.com/usgs/tangipahoa-river-near-kentwood.html,1.35,1.36,2026-10-29T07:00:00Z,2026-10-29 02:00:00 CDT,0.01,13
+Bogue Chitto River at Franklinton,02491500,Washington Parish,https://gulfcoastgauges.com/usgs/bogue-chitto-river-at-franklinton.html,0.31,0.31,2026-10-29T06:15:00Z,2026-10-29 01:15:00 CDT,0.0,12
+Pearl River near Bogalusa,02489500,Washington Parish,https://gulfcoastgauges.com/usgs/pearl-river-near-bogalusa.html,5.91,5.92,2026-10-29T23:15:00Z,2026-10-29 18:15:00 CDT,0.01,18
+Natalbany River at Baptist,07376500,Tangipahoa Parish,https://gulfcoastgauges.com/usgs/natalbany-river-at-baptist.html,3.71,3.72,2026-10-29T07:00:00Z,2026-10-29 02:00:00 CDT,0.01,16
+Tangipahoa River near Amite,07375430,Tangipahoa Parish,https://gulfcoastgauges.com/usgs/tangipahoa-river-near-amite.html,5.03,5.04,2026-10-29T15:00:00Z,2026-10-29 10:00:00 CDT,0.01,21
+Pearl River at Pools Bluff near Bogalusa,02490193,Washington Parish,https://gulfcoastgauges.com/usgs/pearl-river-at-pools-bluff-near-bogalusa.html,56.12,56.14,2026-10-30T18:00:00Z,2026-10-30 13:00:00 CDT,0.02,
+East Pearl River at I-59 near Nicholson,02492511,St. Tammany Parish,https://gulfcoastgauges.com/usgs/east-pearl-river-at-i-59-near-nicholson.html,9.41,9.41,2026-10-29T05:30:00Z,2026-10-29 00:30:00 CDT,0.0,
+Mississippi River at Belle Chasse,07374525,Plaquemines Parish,https://gulfcoastgauges.com/usgs/mississippi-river-at-belle-chasse.html,9.4,9.91,2026-10-30T08:30:00Z,2026-10-30 03:30:00 CDT,0.51,
+Reggio Canal near Wills Point,073745253,Plaquemines Parish,https://gulfcoastgauges.com/usgs/reggio-canal-near-wills-point.html,1.56,2.23,2026-10-30T18:00:00Z,2026-10-30 13:00:00 CDT,0.67,
+Crooked Bayou northwest of Lake Cuatro Caballo near Delacroix,073745257,Plaquemines Parish,https://gulfcoastgauges.com/usgs/crooked-bayou-northwest-of-lake-cuatro-caballo-near-delacroix.html,6.39,6.86,2026-10-30T12:15:00Z,2026-10-30 07:15:00 CDT,0.47,
+Northeast Bay Gardene near Point-A-LA-Hache,07374527,Plaquemines Parish,https://gulfcoastgauges.com/usgs/northeast-bay-gardene-near-point-a-la-hache.html,2.58,2.99,2026-10-30T08:15:00Z,2026-10-30 03:15:00 CDT,0.41,
+Bogue Falaya at Covington,07375170,St. Tammany Parish,https://gulfcoastgauges.com/usgs/bogue-falaya-at-covington.html,3.85,3.87,2026-10-29T12:30:00Z,2026-10-29 07:30:00 CDT,0.02,
+Abita River north of Abita Springs,07375222,St. Tammany Parish,https://gulfcoastgauges.com/usgs/abita-river-north-of-abita-springs.html,6.92,6.92,2026-10-29T05:30:00Z,2026-10-29 00:30:00 CDT,0.0,
+Tchefuncte River at Madisonville,07375230,St. Tammany Parish,https://gulfcoastgauges.com/usgs/tchefuncte-river-at-madisonville.html,1.26,2.02,2026-10-30T19:00:00Z,2026-10-30 14:00:00 CDT,0.76,
+Tangipahoa River near Ponchatoula,07375650,Tangipahoa Parish,https://gulfcoastgauges.com/usgs/tangipahoa-river-near-ponchatoula.html,5.06,5.26,2026-10-30T21:45:00Z,2026-10-30 16:45:00 CDT,0.2,
+Airline Canal at Blind River near Gramercy,07380212,St. James Parish,https://gulfcoastgauges.com/usgs/airline-canal-at-blind-river-near-gramercy.html,1.53,1.58,2026-10-31T01:15:00Z,2026-10-30 20:15:00 CDT,0.05,
+Pass Manchac near Lake Maurepas,073802302,St. John the Baptist Parish,https://gulfcoastgauges.com/usgs/pass-manchac-near-lake-maurepas.html,1.26,1.77,2026-10-31T00:30:00Z,2026-10-30 19:30:00 CDT,0.51,
+Naomi Diversion Canal near Naomi,07380238,Plaquemines Parish,https://gulfcoastgauges.com/usgs/naomi-diversion-canal-near-naomi.html,1.8,2.19,2026-10-29T14:30:00Z,2026-10-29 09:30:00 CDT,0.39,
+Caminada Pass northwest of Grand Isle,07380249,Jefferson Parish,https://gulfcoastgauges.com/usgs/caminada-pass-northwest-of-grand-isle.html,3.94,4.14,2026-10-30T07:00:00Z,2026-10-30 02:00:00 CDT,0.2,
+Barataria Waterway at Mud Lake south of Lafitte,073802511,Jefferson Parish,https://gulfcoastgauges.com/usgs/barataria-waterway-at-mud-lake-south-of-lafitte.html,7.66,7.87,2026-10-30T08:00:00Z,2026-10-30 03:00:00 CDT,0.21,
+Hackberry Bay northwest of Grand Isle,073802512,Jefferson Parish,https://gulfcoastgauges.com/usgs/hackberry-bay-northwest-of-grand-isle.html,4.85,5.07,2026-10-30T07:15:00Z,2026-10-30 02:15:00 CDT,0.22,
+Barataria Pass at Grand Isle,073802516,Jefferson Parish,https://gulfcoastgauges.com/usgs/barataria-pass-at-grand-isle.html,8.95,9.13,2026-10-30T06:15:00Z,2026-10-30 01:15:00 CDT,0.18,
+Empire Waterway south of Empire,07380260,Plaquemines Parish,https://gulfcoastgauges.com/usgs/empire-waterway-south-of-empire.html,7.22,7.37,2026-10-30T06:00:00Z,2026-10-30 01:00:00 CDT,0.15,
+Barataria Bay near Grand Terre Island,291929089562600,Jefferson Parish,https://gulfcoastgauges.com/usgs/barataria-bay-near-grand-terre-island.html,4.05,4.22,2026-10-30T06:00:00Z,2026-10-30 01:00:00 CDT,0.17,
+Little Lake near Bay Dosgris east of Galliano,292800090060000,Jefferson Parish,https://gulfcoastgauges.com/usgs/little-lake-near-bay-dosgris-east-of-galliano.html,5.76,6.02,2026-10-30T10:15:00Z,2026-10-30 05:15:00 CDT,0.26,
+Wilkinson Bayou cutoff north of Wilkinson Bay,292939089544400,Plaquemines Parish,https://gulfcoastgauges.com/usgs/wilkinson-bayou-cutoff-north-of-wilkinson-bay.html,4.95,5.57,2026-10-30T14:30:00Z,2026-10-30 09:30:00 CDT,0.62,
+Delacroix Canal near Caernarvon,294925089532101,Plaquemines Parish,https://gulfcoastgauges.com/usgs/delacroix-canal-near-caernarvon.html,6.02,6.57,2026-10-30T19:00:00Z,2026-10-30 14:00:00 CDT,0.55,
+Lake Cataouatche at Whiskey Canal south of Waggaman,2951190901217,Jefferson Parish,https://gulfcoastgauges.com/usgs/lake-cataouatche-at-whiskey-canal-south-of-waggaman.html,6.95,7.29,2026-10-30T18:15:00Z,2026-10-30 13:15:00 CDT,0.34,
+Caernarvon Outfall Channel at Caernarvon,295124089542100,Plaquemines Parish,https://gulfcoastgauges.com/usgs/caernarvon-outfall-channel-at-caernarvon.html,1.83,2.32,2026-10-30T18:30:00Z,2026-10-30 13:30:00 CDT,0.49,
+Davis Pond Freshwater Diversion near Boutte,295501090190400,St. Charles Parish,https://gulfcoastgauges.com/usgs/davis-pond-freshwater-diversion-near-boutte.html,9.89,10.09,2026-10-30T12:15:00Z,2026-10-30 07:15:00 CDT,0.2,
+Y-Pipeline Canal in Bayou Sauvage NWR at New Orleans East,300703089522700,Orleans Parish,https://gulfcoastgauges.com/usgs/y-pipeline-canal-in-bayou-sauvage-nwr-at-new-orleans-east.html,5.06,5.07,2026-10-29T08:00:00Z,2026-10-29 03:00:00 CDT,0.01,
+"Maurepas Swamp near Hope Canal, north of Garyville",300740090382500,St. John the Baptist Parish,https://gulfcoastgauges.com/usgs/maurepas-swamp-near-hope-canal-north-of-garyville.html,1.76,1.76,2026-10-29T05:45:00Z,2026-10-29 00:45:00 CDT,0.0,
+Rigolets at Highway 90 near Slidell,301001089442600,Orleans Parish,https://gulfcoastgauges.com/usgs/rigolets-at-highway-90-near-slidell.html,2.52,2.89,2026-10-30T11:30:00Z,2026-10-30 06:30:00 CDT,0.37,
+L Pontchartrain at Crossover 4 near Mandeville,301200090072400,St. Tammany Parish,https://gulfcoastgauges.com/usgs/l-pontchartrain-at-crossover-4-near-mandeville.html,0.99,1.55,2026-10-30T17:00:00Z,2026-10-30 12:00:00 CDT,0.56,
+Lake Pontchartrain at Mandeville,302144090052401,St. Tammany Parish,https://gulfcoastgauges.com/usgs/lake-pontchartrain-at-mandeville.html,1.27,1.96,2026-10-30T16:30:00Z,2026-10-30 11:30:00 CDT,0.69,

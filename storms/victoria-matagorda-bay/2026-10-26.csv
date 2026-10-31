@@ -1,0 +1,36 @@
+gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
+Guadalupe River near Bloomington,08177520,Victoria County,https://gulfcoastgauges.com/usgs/guadalupe-river-near-bloomington.html,8.47,8.69,2026-10-30T20:00:00Z,2026-10-30 15:00:00 CDT,0.22,20
+Juanita Creek at SH 71 near Midfield,08162580,Matagorda County,https://gulfcoastgauges.com/usgs/juanita-creek-at-sh-71-near-midfield.html,32.8,32.96,2026-10-30T22:55:00Z,2026-10-30 17:55:00 CDT,0.16,45
+Sandy Creek near Ganado,08164450,Jackson County,https://gulfcoastgauges.com/usgs/sandy-creek-near-ganado.html,5.06,5.1,2026-10-27T07:15:00Z,2026-10-27 02:15:00 CDT,0.04,18
+Coleto Creek at Arnold Rd Crossing near Schroeder,08176900,Goliad County,https://gulfcoastgauges.com/usgs/coleto-creek-at-arnold-rd-crossing-near-schroeder.html,1.87,1.88,2026-10-25T19:15:00Z,2026-10-25 14:15:00 CDT,0.01,15
+Garcitas Creek near Inez,08164600,Victoria County,https://gulfcoastgauges.com/usgs/garcitas-creek-near-inez.html,5.21,5.35,2026-10-31T02:15:00Z,2026-10-30 21:15:00 CDT,0.14,20
+W Mustang Creek near Ganado,08164503,Jackson County,https://gulfcoastgauges.com/usgs/w-mustang-creek-near-ganado.html,4.42,4.48,2026-10-26T07:45:00Z,2026-10-26 02:45:00 CDT,0.06,20
+E Mustang Creek near Louise,08164504,Wharton County,https://gulfcoastgauges.com/usgs/e-mustang-creek-near-louise.html,2.92,3.04,2026-10-30T23:30:00Z,2026-10-30 18:30:00 CDT,0.12,19
+Lavaca River near Edna,08164000,Jackson County,https://gulfcoastgauges.com/usgs/lavaca-river-near-edna.html,4.13,4.26,2026-10-30T19:15:00Z,2026-10-30 14:15:00 CDT,0.13,21
+Guadalupe River at Cuero,08175800,DeWitt County,https://gulfcoastgauges.com/usgs/guadalupe-river-at-cuero.html,7.09,7.17,2026-10-31T00:30:00Z,2026-10-30 19:30:00 CDT,0.08,24
+Guadalupe River at Highway 183 near Hochheim,08174700,DeWitt County,https://gulfcoastgauges.com/usgs/guadalupe-river-at-highway-183-near-hochheim.html,5.89,6.13,2026-10-31T02:00:00Z,2026-10-30 21:00:00 CDT,0.24,
+Sandies Creek near Westhoff,08175000,DeWitt County,https://gulfcoastgauges.com/usgs/sandies-creek-near-westhoff.html,2.08,2.56,2026-10-31T01:00:00Z,2026-10-30 20:00:00 CDT,0.48,21
+Navidad River at Strane Park near Edna,08164390,Jackson County,https://gulfcoastgauges.com/usgs/navidad-river-at-strane-park-near-edna.html,5.02,5.11,2026-10-27T15:15:00Z,2026-10-27 10:15:00 CDT,0.09,24
+Linnville Bayou at FM 521 near Cedar Lane,08117858,Matagorda County,https://gulfcoastgauges.com/usgs/linnville-bayou-at-fm-521-near-cedar-lane.html,1.46,2.74,2026-10-28T05:15:00Z,2026-10-28 00:15:00 CDT,1.28,22
+Navidad River near Hallettsville,08164300,Lavaca County,https://gulfcoastgauges.com/usgs/navidad-river-near-hallettsville.html,4.35,4.74,2026-10-30T20:00:00Z,2026-10-30 15:00:00 CDT,0.39,24
+Tres Palacios River near Midfield,08162600,Matagorda County,https://gulfcoastgauges.com/usgs/tres-palacios-river-near-midfield.html,3.22,3.36,2026-10-31T01:30:00Z,2026-10-30 20:30:00 CDT,0.14,24
+Coleto Creek near Victoria,08177500,Victoria County,https://gulfcoastgauges.com/usgs/coleto-creek-near-victoria.html,3.87,4.01,2026-10-30T21:30:00Z,2026-10-30 16:30:00 CDT,0.14,25
+San Antonio River at Goliad,08188500,Goliad County,https://gulfcoastgauges.com/usgs/san-antonio-river-at-goliad.html,3.85,3.86,2026-10-25T17:15:00Z,2026-10-25 12:15:00 CDT,0.01,25
+Navidad River near Speaks,08164350,Lavaca County,https://gulfcoastgauges.com/usgs/navidad-river-near-speaks.html,1.92,2.29,2026-10-28T12:00:00Z,2026-10-28 07:00:00 CDT,0.37,24
+Navidad River at Morales,08164370,Jackson County,https://gulfcoastgauges.com/usgs/navidad-river-at-morales.html,6.63,6.67,2026-10-28T22:00:00Z,2026-10-28 17:00:00 CDT,0.04,29
+Lavaca River at Hallettsville,08163500,Lavaca County,https://gulfcoastgauges.com/usgs/lavaca-river-at-hallettsville.html,3.25,3.6,2026-10-31T02:15:00Z,2026-10-30 21:15:00 CDT,0.35,27
+Colorado River at Wharton,08162000,Wharton County,https://gulfcoastgauges.com/usgs/colorado-river-at-wharton.html,7.85,8.11,2026-10-31T02:15:00Z,2026-10-30 21:15:00 CDT,0.26,39
+Colorado River near Bay City,08162500,Matagorda County,https://gulfcoastgauges.com/usgs/colorado-river-near-bay-city.html,2.66,3.91,2026-10-30T11:15:00Z,2026-10-30 06:15:00 CDT,1.25,44
+West Bernard Creek at US 59 near Hungerford,08117403,Wharton County,https://gulfcoastgauges.com/usgs/west-bernard-creek-at-us-59-near-hungerford.html,73.57,73.56,2026-10-25T17:15:00Z,2026-10-25 12:15:00 CDT,-0.01,
+Caney Creek at SH 35 near Van Vleck,08117855,Matagorda County,https://gulfcoastgauges.com/usgs/caney-creek-at-sh-35-near-van-vleck.html,22.53,22.6,2026-10-30T21:20:00Z,2026-10-30 16:20:00 CDT,0.07,
+Colorado River near Wadsworth,08162501,Matagorda County,https://gulfcoastgauges.com/usgs/colorado-river-near-wadsworth.html,1.42,2.74,2026-10-28T08:15:00Z,2026-10-28 03:15:00 CDT,1.32,
+Clarks Creek at US 77 near Sweet Home,08163720,Lavaca County,https://gulfcoastgauges.com/usgs/clarks-creek-at-us-77-near-sweet-home.html,150.16,150.24,2026-10-30T23:40:00Z,2026-10-30 18:40:00 CDT,0.08,
+Chicolette Creek at US 77 near Yoakum,08163880,Victoria County,https://gulfcoastgauges.com/usgs/chicolette-creek-at-us-77-near-yoakum.html,134.71,134.71,2026-10-25T17:15:00Z,2026-10-25 12:15:00 CDT,0.0,
+Little Brushy Creek at US 77 near Yoakum,08163900,Lavaca County,https://gulfcoastgauges.com/usgs/little-brushy-creek-at-us-77-near-yoakum.html,126.52,126.54,2026-10-29T00:55:00Z,2026-10-28 19:55:00 CDT,0.02,
+W Sandy Creek at FM 2437 near Sheridan,08164410,Lavaca County,https://gulfcoastgauges.com/usgs/w-sandy-creek-at-fm-2437-near-sheridan.html,193.24,193.28,2026-10-25T20:00:00Z,2026-10-25 15:00:00 CDT,0.04,
+Placedo Creek near Placedo,08164800,Victoria County,https://gulfcoastgauges.com/usgs/placedo-creek-near-placedo.html,4.2,4.38,2026-10-30T23:30:00Z,2026-10-30 18:30:00 CDT,0.18,
+Guadalupe River at Victoria,08176500,Victoria County,https://gulfcoastgauges.com/usgs/guadalupe-river-at-victoria.html,5.52,5.49,2026-10-26T02:15:00Z,2026-10-25 21:15:00 CDT,-0.03,
+Fifteenmile Creek near Weser,08176550,DeWitt County,https://gulfcoastgauges.com/usgs/fifteenmile-creek-near-weser.html,6.09,6.12,2026-10-28T21:00:00Z,2026-10-28 16:00:00 CDT,0.03,
+Perdido Creek at FM 622 near Fannin,08177300,Goliad County,https://gulfcoastgauges.com/usgs/perdido-creek-at-fm-622-near-fannin.html,1.07,1.63,2026-10-30T20:15:00Z,2026-10-30 15:15:00 CDT,0.56,
+North end of GBRA Calhoun Canal near Long Mott,08188590,Calhoun County,https://gulfcoastgauges.com/usgs/north-end-of-gbra-calhoun-canal-near-long-mott.html,14.36,14.3,2026-10-29T19:00:00Z,2026-10-29 14:00:00 CDT,-0.06,
+Guadalupe River at SH 35 near Tivoli,08188810,Calhoun County,https://gulfcoastgauges.com/usgs/guadalupe-river-at-sh-35-near-tivoli.html,11.33,12.16,2026-10-30T18:45:00Z,2026-10-30 13:45:00 CDT,0.83,

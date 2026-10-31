@@ -1,0 +1,227 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Barker Reservoir Water Level – Pool Elevation and Storage</title><meta name="description" content="Barker Reservoir was at 69.43 ft (NAVD88) on Oct 30, 2026 at 9:15 PM CDT, holding 1.9 acre-feet. Daily levels since 2008, the record of 101.59 ft, and NWS references."><link rel="canonical" href="https://gulfcoastgauges.com/lakes/barker-reservoir.html"><meta property="og:title" content="Barker Reservoir Water Level – Pool Elevation and Storage"><meta property="og:description" content="Barker Reservoir was at 69.43 ft (NAVD88) on Oct 30, 2026 at 9:15 PM CDT, holding 1.9 acre-feet. Daily levels since 2008, the record of 101.59 ft, and NWS references."><meta property="og:type" content="website"><meta property="og:url" content="https://gulfcoastgauges.com/lakes/barker-reservoir.html"><meta property="og:site_name" content="Gulf Coast Gauges"><link rel="icon" href="/assets/favicon.ico" sizes="any"><link rel="icon" href="/assets/favicon-32.png" type="image/png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><style>
+:root{--bg:#fff;--fg:#14181f;--muted:#5b6472;--line:#e3e7ee;--accent:#1d4ed8;--warn:#b45309;
+--card:#f7f9fc}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e8edf5;--muted:#9aa6b5;
+--line:#232b36;--accent:#7aa2ff;--card:#141b24}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-sans-serif,system-ui,
+-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:780px;margin:0 auto;padding:20px 18px 56px}
+a{color:var(--accent)}
+nav.crumb{font-size:13px;color:var(--muted);margin-bottom:14px}
+h1{font-size:27px;line-height:1.25;margin:.2em 0 .1em}
+h2{font-size:19px;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 18px}
+.now{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.big{font-size:38px;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+.now dl{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:14px 0 0}
+.now dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.now dd{margin:2px 0 0;font-size:16px;font-weight:550}
+table{border-collapse:collapse;width:100%;font-size:14px;margin-top:8px}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+.chart{width:100%;height:auto;display:block;margin:10px 0 4px}
+.grid{stroke:var(--line);stroke-width:1}
+.trace{fill:none;stroke:var(--accent);stroke-width:2}
+.bar{fill:var(--accent);opacity:.75}
+.band{fill:var(--accent);opacity:.1}
+.rain{fill:#0891b2;opacity:.7}
+.bank{stroke:var(--warn);stroke-width:1.5;stroke-dasharray:5 4}
+.banklab,.ylab,.xlab{font-size:10px;fill:var(--muted)}
+.banklab{fill:var(--warn)}
+.muted{color:var(--muted)}
+.note{background:var(--card);border-left:3px solid var(--warn);padding:12px 14px;
+border-radius:0 8px 8px 0;font-size:14px}
+footer{margin-top:2.5em;padding-top:1em;border-top:1px solid var(--line);font-size:13px;
+color:var(--muted)}
+footer p{margin:.5em 0}
+h3{font-size:16px;margin:1.6em 0 .2em}
+td.n,td.nw{white-space:nowrap}
+@media (max-width:560px){table{font-size:13px}th,td{padding:6px 5px}}
+.brand{display:inline-block;margin:0 0 14px}.brand img{display:block;height:30px;width:auto}
+.hero{display:block;width:100%;height:auto;border-radius:10px;margin:14px 0 18px}
+
+textarea.snip{width:100%;font:12px/1.5 ui-monospace,Consolas,monospace;padding:10px;
+border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);resize:vertical}
+button.copy{font:inherit;font-size:14px;padding:6px 14px;border-radius:8px;border:1px solid var(--line);
+background:var(--card);color:var(--fg);cursor:pointer;margin:6px 0 14px}
+iframe.preview{border:0;max-width:100%;display:block;margin:8px 0}
+
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:0 0 16px;
+padding-bottom:12px;border-bottom:1px solid var(--line)}
+.top .brand{margin:0}
+nav.main{display:flex;align-items:center;gap:16px;font-size:14px}
+nav.main a,nav.main summary{color:var(--fg);text-decoration:none;font-weight:550}
+nav.main a:hover,nav.main summary:hover{color:var(--accent);text-decoration:underline}
+details.states{position:relative}
+details.states summary{cursor:pointer;list-style:none;padding-right:13px;position:relative}
+details.states summary::-webkit-details-marker{display:none}
+details.states summary::after{content:"";position:absolute;right:0;top:45%;border:4px solid transparent;
+border-top-color:currentColor}
+details.states[open] summary::after{top:15%;border-top-color:transparent;border-bottom-color:currentColor}
+details.states .menu{position:absolute;z-index:30;top:calc(100% + 8px);left:-10px;min-width:150px;
+background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 0;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+details.states .menu a{display:block;padding:8px 14px;font-weight:500}
+details.states .menu a:hover{background:var(--card);text-decoration:none}
+details.states .menu a.all{border-top:1px solid var(--line);margin-top:4px;padding-top:9px;
+color:var(--muted);font-size:13px}
+form.find{position:relative;flex:1 1 220px;max-width:280px;margin-left:auto}
+form.find input{width:100%;font:inherit;font-size:14px;padding:7px 10px;color:var(--fg);
+background:var(--card);border:1px solid var(--line);border-radius:8px}
+form.find input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.results{position:absolute;z-index:20;top:calc(100% + 4px);left:0;right:0;max-height:340px;
+overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:8px;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.results a{display:block;padding:7px 10px;color:var(--fg);text-decoration:none;font-size:14px}
+.results a small{display:block;color:var(--muted);font-size:12px}
+.results a.on,.results a:hover{background:var(--card)}
+.results p{margin:0;padding:8px 10px;font-size:13px;color:var(--muted)}
+.fnav{font-size:13px}
+.fnav a{margin-right:12px}
+nav.jump{margin:12px 0 4px;line-height:2.2}
+nav.jump a{white-space:nowrap}
+ul.cols{columns:2;column-gap:28px;padding-left:18px;margin:.4em 0}
+ul.cols li{break-inside:avoid;margin:0 0 4px}
+@media (max-width:560px){form.find{max-width:none;flex-basis:100%;order:3}
+nav.main{gap:12px}ul.cols{columns:1}}
+
+.multi{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin:12px 0 6px}
+.panel h3{font-size:14px;margin:0;line-height:1.35}
+.panel p{margin:0 0 2px;font-size:12.5px;color:var(--muted)}
+.panel svg{width:100%;height:auto;display:block;overflow:visible}
+.wash{fill:var(--accent);opacity:.12}
+.alertband{fill:var(--muted);opacity:.12}
+.peak{fill:var(--accent);stroke:var(--bg);stroke-width:2}
+.panel{position:relative}
+.hov{cursor:crosshair;touch-action:pan-y}
+.xh{stroke:var(--muted);stroke-width:1}
+.tip{position:absolute;pointer-events:none;background:var(--bg);border:1px solid var(--line);
+border-radius:6px;padding:4px 7px;font-size:12px;line-height:1.35;white-space:nowrap;
+box-shadow:0 4px 12px rgba(0,0,0,.12);z-index:5}
+.stem{stroke:var(--line);stroke-width:1.5}
+.hollow{fill:var(--bg);stroke:var(--accent);stroke-width:2}
+.feature{border:1px solid var(--line);border-radius:10px;padding:14px 16px 10px;margin:18px 0}
+.feature h2{border:0;margin:0 0 .2em;padding:0}
+@media (max-width:560px){.multi{grid-template-columns:1fr}}
+
+.regions{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:6px 0 4px}
+.regions a{display:block;border:1px solid var(--line);border-radius:8px;padding:8px 10px;
+text-decoration:none;color:var(--fg);font-weight:550;font-size:14px;line-height:1.3}
+.regions a:hover{border-color:var(--accent)}
+.regions small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:2px}
+h3.state{margin:1.1em 0 .1em;font-size:15px}
+h3.state a{color:var(--fg)}
+@media (max-width:760px){.regions{grid-template-columns:1fr 1fr}}
+</style><script type="application/ld+json">[{"@context":"https://schema.org","@type":"Dataset","name":"Barker Reservoir water surface elevation and storage","description":"Daily water surface elevation and storage for Barker Reservoir from USGS station 08072500 (Barker Res nr Addicks, TX), with current readings.","url":"https://gulfcoastgauges.com/lakes/barker-reservoir.html","isAccessibleForFree":true,"creditText":"U.S. Geological Survey","creator":{"@type":"Organization","name":"U.S. Geological Survey","url":"https://www.usgs.gov/"},"license":"https://www.usgs.gov/information-policies-and-instructions/copyrights-and-credits","isBasedOn":"https://waterdata.usgs.gov/monitoring-location/08072500/","spatialCoverage":{"@type":"Place","name":"Barker Reservoir","geo":{"@type":"GeoCoordinates","latitude":29.7699512944914,"longitude":-95.647168186903}},"distribution":{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://gulfcoastgauges.com/lakes/barker-reservoir.csv"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Gulf Coast Gauges","item":"https://gulfcoastgauges.com/"},{"@type":"ListItem","position":2,"name":"Lakes and reservoirs","item":"https://gulfcoastgauges.com/lakes/"},{"@type":"ListItem","position":3,"name":"Barker Reservoir"}]}]</script><script src="/assets/find.js" defer></script></head><body><div class="wrap"><header class="top"><a class="brand" href="/"><picture><source srcset="/assets/logo-dark.png" media="(prefers-color-scheme: dark)"><img src="/assets/logo.png" width="192" height="30" alt="Gulf Coast Gauges"></picture></a><nav class="main" aria-label="Sections"><a href="/texas-coast/houston-galveston/">Houston</a><details class="states"><summary>States</summary><div class="menu"><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/" class="all">All regions</a></div></details><a href="/tides/">Tides</a><a href="/storms/">Storms</a><a href="/alerts/">Alerts</a></nav><form class="find" action="/gauges/" role="search"><input type="search" name="q" placeholder="Find a gauge, creek or road" aria-label="Find a gauge" autocomplete="off" spellcheck="false"><div class="results" role="listbox" hidden></div></form></header>
+<nav class="crumb"><a href="https://gulfcoastgauges.com/">Gulf Coast Gauges</a> &rsaquo; <a href="https://gulfcoastgauges.com/lakes/">Lakes and reservoirs</a> &rsaquo; Barker Reservoir</nav>
+<h1>Barker Reservoir water level</h1>
+<p class="sub">Flood-control reservoir run by the U.S. Army Corps of Engineers &middot; USGS station 08072500 &middot; NWS gauge BAKT2</p>
+<div class="now">
+<div class="big">69.43 ft</div>
+<p class="muted" style="margin:.2em 0 0">water surface elevation (NAVD88), Oct 30, 2026 at 9:15 PM CDT</p>
+<dl>
+<dt>Water stored</dt><dd>1.9 acre-feet</dd>
+<dt>Below NWS minor flood stage</dt><dd>23.8 ft</dd>
+<dt>NWS action stage</dt><dd>90.2 ft</dd>
+<dt>NWS minor flood stage</dt><dd>93.2 ft</dd>
+<dt>Highest daily high since 2008</dt><dd>101.59 ft (August 30, 2017)</dd>
+</dl></div>
+<p>Barker Reservoir is a <strong>flood-control reservoir</strong>, run by the U.S. Army Corps of Engineers. It is dry or nearly dry most of the time and holds water only after heavy rain, so a low level and little stored water are its normal state, not a drought. The most it has held in the USGS record was 169,800 acre-feet on August 30, 2017.</p>
+<p class="muted">Elevation is the height of the lake surface above NAVD88 (a fixed survey reference), not a water depth. Storage is USGS's estimate of the water held, in acre-feet (one acre-foot covers an acre a foot deep).</p>
+<div class="note">No National Weather Service alert covering Harris County was active when this page was generated (Oct 30, 2026 at 9:35 PM CDT). Alerts are issued and expire at any time; the current list is at <a href="https://alerts.weather.gov/" rel="nofollow noopener">alerts.weather.gov</a>.</div>
+<nav class="fnav jump" aria-label="On this page"><a href="#week">7 days</a> <a href="#peaks">Yearly highs</a> <a href="#crests">Historic crests</a> <a href="#storms">Past storms</a> <a href="#download">Download</a></nav>
+<h2 id="week">Last 7 days</h2>
+<svg viewBox="0 0 720 220" class="chart" role="img" aria-label="Barker Reservoir elevation, last 7 days">
+<line x1="52" y1="186.0" x2="708" y2="186.0" class="grid"/>
+<text x="4" y="190.0" class="ylab">69.2</text>
+<line x1="52" y1="100.0" x2="708" y2="100.0" class="grid"/>
+<text x="4" y="104.0" class="ylab">69.8</text>
+<line x1="52" y1="14.0" x2="708" y2="14.0" class="grid"/>
+<text x="4" y="18.0" class="ylab">70.5</text>
+<line x1="63.7" y1="14" x2="63.7" y2="186" class="grid"/>
+<text x="67.7" y="208" class="xlab">Oct 24</text>
+<line x1="157.4" y1="14" x2="157.4" y2="186" class="grid"/>
+<text x="161.4" y="208" class="xlab">Oct 25</text>
+<line x1="251.1" y1="14" x2="251.1" y2="186" class="grid"/>
+<text x="255.1" y="208" class="xlab">Oct 26</text>
+<line x1="344.9" y1="14" x2="344.9" y2="186" class="grid"/>
+<text x="348.9" y="208" class="xlab">Oct 27</text>
+<line x1="438.6" y1="14" x2="438.6" y2="186" class="grid"/>
+<text x="442.6" y="208" class="xlab">Oct 28</text>
+<line x1="532.3" y1="14" x2="532.3" y2="186" class="grid"/>
+<text x="536.3" y="208" class="xlab">Oct 29</text>
+<line x1="626.0" y1="14" x2="626.0" y2="186" class="grid"/>
+<text x="630.0" y="208" class="xlab">Oct 30</text>
+<polyline points="52.0,130.0 55.9,130.0 59.8,130.0 63.7,131.4 67.6,132.8 71.5,134.1 75.4,134.1 79.3,135.5 83.2,135.5 87.1,136.9 91.0,136.9 95.0,138.2 98.9,141.0 102.8,143.7 106.7,142.3 110.6,141.0 114.5,142.3 118.4,141.0 122.3,141.0 126.2,141.0 130.1,141.0 134.0,139.6 137.9,139.6 141.8,141.0 145.7,141.0 149.6,141.0 153.5,141.0 157.4,142.3 161.3,142.3 165.2,142.3 169.1,142.3 173.0,143.7 177.0,143.7 180.9,143.7 184.8,143.7 188.7,143.7 192.6,143.7 196.5,146.4 200.4,149.1 204.3,149.1 208.2,147.8 212.1,145.0 216.0,145.0 219.9,145.0 223.8,142.3 227.7,131.4 231.6,108.2 235.5,82.3 239.4,56.3 243.3,44.0 247.2,31.7 251.1,22.2 255.0,15.4 259.0,14.0 262.9,18.1 266.8,22.2 270.7,27.7 274.6,31.7 278.5,37.2 282.4,41.3 286.3,46.8 290.2,121.8 294.1,109.6 298.0,113.7 301.9,116.4 305.8,116.4 309.7,117.7 313.6,116.4 317.5,123.2 321.4,124.6 325.3,127.3 329.2,130.0 333.1,131.4 337.0,134.1 341.0,135.5 344.9,135.5 348.8,138.2 352.7,138.2 356.6,142.3 360.5,143.7 364.4,146.4 368.3,149.1 372.2,149.1 376.1,150.5 380.0,156.0 383.9,166.9 387.8,153.2 391.7,154.6 395.6,154.6 399.5,153.2 403.4,156.0 407.3,157.3 411.2,158.7 415.1,160.1 419.0,158.7 423.0,161.4 426.9,161.4 430.8,161.4 434.7,162.8 438.6,162.8 442.5,164.2 446.4,164.2 450.3,165.5 454.2,164.2 458.1,162.8 462.0,164.2 465.9,165.5 469.8,165.5 473.7,168.3 477.6,171.0 481.5,168.3 485.4,168.3 489.3,166.9 493.2,168.3 497.1,168.3 501.0,169.6 505.0,168.3 508.9,168.3 512.8,168.3 516.7,169.6 520.6,168.3 524.5,168.3 528.4,168.3 532.3,166.9 536.2,166.9 540.1,165.5 544.0,164.2 547.9,162.8 551.8,161.4 555.7,162.8 559.6,162.8 563.5,162.8 567.4,162.8 571.3,165.5 575.2,164.2 579.1,165.5 583.0,164.2 587.0,184.6 590.9,34.5 594.8,186.0 598.7,161.4 602.6,162.8 606.5,160.1 610.4,158.7 614.3,158.7 618.2,156.0 622.1,157.3 626.0,156.0 629.9,156.0 633.8,156.0 637.7,154.6 641.6,153.2 645.5,154.6 649.4,154.6 653.3,156.0 657.2,156.0 661.1,156.0 665.0,157.3 669.0,156.0 672.9,157.3 676.8,156.0 680.7,157.3 684.6,154.6 688.5,154.6 692.4,153.2 696.3,153.2 700.2,151.9 704.1,154.6 708.0,151.9" class="trace"/>
+</svg>
+<p class="muted">Hourly averages of USGS readings.</p>
+<h2 id="peaks">Highest level each year since 2009</h2>
+<svg viewBox="0 0 720 250" class="chart" role="img" aria-label="Highest gage height each water year, 2009 to 2027">
+<line x1="46" x2="624" y1="224.0" y2="224.0" class="grid"/><text x="40" y="227.5" class="ylab" text-anchor="end">79</text>
+<line x1="46" x2="624" y1="172.0" y2="172.0" class="grid"/><text x="40" y="175.5" class="ylab" text-anchor="end">85</text>
+<line x1="46" x2="624" y1="120.0" y2="120.0" class="grid"/><text x="40" y="123.5" class="ylab" text-anchor="end">91</text>
+<line x1="46" x2="624" y1="68.0" y2="68.0" class="grid"/><text x="40" y="71.5" class="ylab" text-anchor="end">97</text>
+<line x1="46" x2="624" y1="16.0" y2="16.0" class="grid"/><text x="40" y="19.5" class="ylab" text-anchor="end">103</text>
+<text x="78.1" y="242" class="xlab" text-anchor="middle">2010</text>
+<text x="238.7" y="242" class="xlab" text-anchor="middle">2015</text>
+<text x="399.2" y="242" class="xlab" text-anchor="middle">2020</text>
+<text x="559.8" y="242" class="xlab" text-anchor="middle">2025</text>
+<line x1="46" x2="624" y1="101.8" y2="101.8" class="bank"/><text x="630" y="105.3" class="banklab">minor 93.2 ft</text>
+<line x1="46" x2="624" y1="127.3" y2="127.3" class="bank"/><text x="630" y="130.8" class="banklab">action 90.2 ft</text>
+<line x1="46.0" x2="46.0" y1="118.7" y2="224" class="stem"/><circle cx="46.0" cy="118.7" r="4" class="peak"><title>Water year 2009: 91.21 ft on May 1, 2009</title></circle>
+<line x1="78.1" x2="78.1" y1="140.7" y2="224" class="stem"/><circle cx="78.1" cy="140.7" r="4" class="peak"><title>Water year 2010: 88.63 ft on November 1, 2009</title></circle>
+<line x1="110.2" x2="110.2" y1="209.7" y2="224" class="stem"/><circle cx="110.2" cy="209.7" r="4" class="peak"><title>Water year 2011: 80.53 ft on January 10, 2011</title></circle>
+<line x1="142.3" x2="142.3" y1="136.5" y2="224" class="stem"/><circle cx="142.3" cy="136.5" r="4" class="peak"><title>Water year 2012: 89.12 ft on July 17, 2012</title></circle>
+<line x1="174.4" x2="174.4" y1="157.5" y2="224" class="stem"/><circle cx="174.4" cy="157.5" r="4" class="peak"><title>Water year 2013: 86.66 ft on May 2, 2013</title></circle>
+<line x1="206.6" x2="206.6" y1="120.8" y2="224" class="stem"/><circle cx="206.6" cy="120.8" r="4" class="peak"><title>Water year 2014: 90.97 ft on June 1, 2014</title></circle>
+<line x1="238.7" x2="238.7" y1="113.1" y2="224" class="stem"/><circle cx="238.7" cy="113.1" r="4" class="peak"><title>Water year 2015: 91.87 ft on May 31, 2015</title></circle>
+<line x1="270.8" x2="270.8" y1="84.3" y2="224" class="stem"/><circle cx="270.8" cy="84.3" r="4" class="peak"><title>Water year 2016: 95.25 ft on April 25, 2016</title></circle>
+<line x1="302.9" x2="302.9" y1="30.3" y2="224" class="stem"/><circle cx="302.9" cy="30.3" r="4" class="peak"><title>Water year 2017: 101.59 ft on August 30, 2017</title></circle>
+<line x1="335.0" x2="335.0" y1="128.1" y2="224" class="stem"/><circle cx="335.0" cy="128.1" r="4" class="peak"><title>Water year 2018: 90.11 ft on October 1, 2017</title></circle>
+<line x1="367.1" x2="367.1" y1="148.7" y2="224" class="stem"/><circle cx="367.1" cy="148.7" r="4" class="peak"><title>Water year 2019: 87.69 ft on May 12, 2019</title></circle>
+<line x1="399.2" x2="399.2" y1="131.8" y2="224" class="stem"/><circle cx="399.2" cy="131.8" r="4" class="peak"><title>Water year 2020: 89.67 ft on June 27, 2020</title></circle>
+<line x1="431.3" x2="431.3" y1="114.0" y2="224" class="stem"/><circle cx="431.3" cy="114.0" r="4" class="peak"><title>Water year 2021: 91.77 ft on June 6, 2021</title></circle>
+<line x1="463.4" x2="463.4" y1="147.0" y2="224" class="stem"/><circle cx="463.4" cy="147.0" r="4" class="peak"><title>Water year 2022: 87.89 ft on October 3, 2021</title></circle>
+<line x1="495.6" x2="495.6" y1="141.6" y2="224" class="stem"/><circle cx="495.6" cy="141.6" r="4" class="peak"><title>Water year 2023: 88.52 ft on February 3, 2023</title></circle>
+<line x1="527.7" x2="527.7" y1="130.9" y2="224" class="stem"/><circle cx="527.7" cy="130.9" r="4" class="peak"><title>Water year 2024: 89.78 ft on January 28, 2024</title></circle>
+<line x1="559.8" x2="559.8" y1="174.3" y2="224" class="stem"/><circle cx="559.8" cy="174.3" r="4" class="peak"><title>Water year 2025: 84.68 ft on June 18, 2025</title></circle>
+<line x1="591.9" x2="591.9" y1="158.3" y2="224" class="stem"/><circle cx="591.9" cy="158.3" r="4" class="peak"><title>Water year 2026: 86.56 ft on June 7, 2026</title></circle>
+<line x1="624.0" x2="624.0" y1="159.3" y2="224" class="stem"/><circle cx="624.0" cy="159.3" r="4" class="hollow"><title>Water year 2027 so far: 86.44 ft on October 6, 2026</title></circle>
+<text x="302.9" y="21.3" class="xlab" text-anchor="middle" style="fill:var(--fg)">2017</text>
+<text x="270.8" y="75.3" class="xlab" text-anchor="middle" style="fill:var(--fg)">2016</text>
+<text x="238.7" y="104.1" class="xlab" text-anchor="middle" style="fill:var(--fg)">2015</text>
+</svg>
+<p class="muted">Each dot is the highest USGS daily high of a water year (October to September); the hollow dot is this year so far. Dashed lines are NWS references. Hover a dot for its date.</p>
+<h2 id="crests">NWS historic crests</h2>
+<div class="scroll"><table><thead><tr><th>Date</th><th class="n">Crest</th></tr></thead><tbody>
+<tr><td>August 27, 2017</td><td class="n">101.60 ft</td></tr>
+<tr><td>April 25, 2016</td><td class="n">95.25 ft</td></tr>
+<tr><td>March 6, 1992</td><td class="n">93.60 ft</td></tr>
+<tr><td>November 7, 2002</td><td class="n">93.20 ft</td></tr>
+<tr><td>November 17, 1998</td><td class="n">92.30 ft</td></tr>
+<tr><td>July 9, 2007</td><td class="n">91.90 ft</td></tr>
+<tr><td>June 1, 2015</td><td class="n">91.90 ft</td></tr>
+<tr><td>November 28, 2004</td><td class="n">91.70 ft</td></tr>
+</tbody></table></div>
+<p class="muted">As published by the National Weather Service. They can differ slightly from USGS daily values: a crest is the single highest reading.</p>
+<h2 id="storms">In past storms</h2>
+<div class="scroll"><table><thead><tr><th>Storm</th><th class="n">Highest</th><th>Day</th><th class="n">Rise</th></tr></thead><tbody>
+<tr><td><a href="/storms/2026-10-01.html">October 1–2, 2026</a></td><td class="n">86.20 ft</td><td>October 5, 2026</td><td class="n">16.8 ft</td></tr>
+</tbody></table></div>
+<p class="muted">From USGS daily highs across each storm's window.</p>
+<h2>The county's reading</h2><ul>
+<li>Barker Dam (Harris County Flood Warning System site 2010): 69.42 ft at Oct 30, 2026 at 7:59 PM CDT; highest since September 11, 2026: 86.35 ft on Oct 7, 2026 at 6:25 AM CDT.</li>
+</ul><p class="muted">A separate instrument; small differences from USGS are normal.</p>
+<h2 id="download">Download</h2>
+<p><a href="/lakes/barker-reservoir.csv" download>barker-reservoir.csv</a> (CSV): the USGS daily record for Barker Reservoir, one row per day with the daily high elevation and daily average storage.</p>
+<p class="muted"><strong>Source.</strong> Elevation and storage from the <a href="https://waterdata.usgs.gov/monitoring-location/08072500/" rel="nofollow noopener">U.S. Geological Survey</a>; NWS references from the <a href="https://water.noaa.gov/gauges/bakt2" rel="nofollow noopener">National Water Prediction Service</a>. Recent USGS values are provisional.</p>
+<footer>
+<p class="fnav"><a href="/">Home</a><a href="/texas-coast/houston-galveston/">Houston</a><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/storms/">Storms</a><a href="/tides/">Tide gauges</a><a href="/gauges/">All gauges</a><a href="/army-corps/">Army Corps gauges</a><a href="/lakes/">Lakes</a><a href="/alerts/">Active alerts</a><a href="/rainfall/">Houston rainfall</a><a href="/rainfall/gulf-coast/">Gulf Coast rainfall</a><a href="/water-temperature/">Water temperature</a><a href="/floods/">Historic floods</a><a href="/usgs/">USGS gauges</a><a href="/embed/">Embed a gauge</a><a href="/about/">How this site works</a> Contact: <a class="mail" href="/about/#contact" data-u="contact" data-d="gulfcoastgauges.com">contact [at] gulfcoastgauges.com</a></p>
+<p><strong>Sources.</strong> Gage height from the <a href="https://waterdata.usgs.gov/" rel="nofollow noopener">U.S. Geological Survey</a>; tide gauge water levels from NOAA Tides &amp; Currents; stage at locks, floodgates and the lower Mississippi from the U.S. Army Corps of Engineers; in the Houston area, stage readings from the <a href="https://www.harriscountyfws.org/" rel="nofollow noopener">Harris County Flood Warning System</a>; flood stages, crests, watches, advisories and warnings from the National Weather Service. This site is not affiliated with any of them.</p>
+<p><strong>No guidance, no forecast.</strong> This site reports measurements and official alert text only. It does not predict water levels, assess whether any road, property or route is passable, or advise any action. For decisions about safety, use <a href="https://alerts.weather.gov/" rel="nofollow noopener">official sources</a> and local emergency management.</p>
+<p><strong>Accuracy.</strong> Gauges can fail, report late, or report in error, and recent USGS readings are provisional. HCFCD makes no representations, guarantees or warranties as to the availability, accuracy, completeness, currency or suitability of Flood Warning System data, and disclaims liability for actions taken or not taken based on it. Nothing here is verified independently.</p>
+<p>Page generated Oct 30, 2026 at 9:35 PM CDT.</p>
+</footer></div></body></html>
