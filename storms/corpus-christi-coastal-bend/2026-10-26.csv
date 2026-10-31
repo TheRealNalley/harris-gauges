@@ -1,5 +1,5 @@
 gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
-Nueces River at Calallen,08211500,Nueces County,https://gulfcoastgauges.com/usgs/nueces-river-at-calallen.html,3.29,4.21,2026-10-31T10:30:00Z,2026-10-31 05:30:00 CDT,0.92,7
+Nueces River at Calallen,08211500,Nueces County,https://gulfcoastgauges.com/usgs/nueces-river-at-calallen.html,3.29,4.23,2026-10-31T11:30:00Z,2026-10-31 06:30:00 CDT,0.94,7
 San Diego Creek at Alice,08211800,Jim Wells County,https://gulfcoastgauges.com/usgs/san-diego-creek-at-alice.html,7.08,7.09,2026-10-25T19:00:00Z,2026-10-25 14:00:00 CDT,0.01,11
 Copano Creek near Refugio,08189200,Refugio County,https://gulfcoastgauges.com/usgs/copano-creek-near-refugio.html,2.34,3.21,2026-10-30T18:30:00Z,2026-10-30 13:30:00 CDT,0.87,12
 Nueces River at Bluntzer,08211200,Nueces County,https://gulfcoastgauges.com/usgs/nueces-river-at-bluntzer.html,7.65,8.29,2026-10-31T04:00:00Z,2026-10-30 23:00:00 CDT,0.64,18

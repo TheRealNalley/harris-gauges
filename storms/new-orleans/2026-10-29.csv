@@ -1,7 +1,7 @@
 gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
 Bogue Falaya River at Boston St. at Covington,07375175,St. Tammany Parish,https://gulfcoastgauges.com/usgs/bogue-falaya-river-at-boston-st-at-covington.html,1.73,2.55,2026-10-30T17:30:00Z,2026-10-30 12:30:00 CDT,0.82,6
-Bayou Liberty near Slidell,07374581,St. Tammany Parish,https://gulfcoastgauges.com/usgs/bayou-liberty-near-slidell.html,1.94,2.45,2026-10-30T16:45:00Z,2026-10-30 11:45:00 CDT,0.51,7
-Pearl River at I-10 near Slidell,02492700,St. Tammany Parish,https://gulfcoastgauges.com/usgs/pearl-river-at-i-10-near-slidell.html,2.69,3.05,2026-10-30T15:45:00Z,2026-10-30 10:45:00 CDT,0.36,10
+Bayou Liberty near Slidell,07374581,St. Tammany Parish,https://gulfcoastgauges.com/usgs/bayou-liberty-near-slidell.html,1.94,2.53,2026-10-31T11:45:00Z,2026-10-31 06:45:00 CDT,0.59,7
+Pearl River at I-10 near Slidell,02492700,St. Tammany Parish,https://gulfcoastgauges.com/usgs/pearl-river-at-i-10-near-slidell.html,2.69,3.07,2026-10-31T11:45:00Z,2026-10-31 06:45:00 CDT,0.38,10
 Bogue Chitto River near Bush,02492000,St. Tammany Parish,https://gulfcoastgauges.com/usgs/bogue-chitto-river-near-bush.html,2.64,2.64,2026-10-29T06:15:00Z,2026-10-29 01:15:00 CDT,0.0,11
 Tangipahoa River at Robert,07375500,Tangipahoa Parish,https://gulfcoastgauges.com/usgs/tangipahoa-river-at-robert.html,6.36,6.4,2026-10-29T16:45:00Z,2026-10-29 11:45:00 CDT,0.04,15
 Pearl River at Pearl River,02492600,St. Tammany Parish,https://gulfcoastgauges.com/usgs/pearl-river-at-pearl-river.html,4.86,5.03,2026-10-30T19:00:00Z,2026-10-30 14:00:00 CDT,0.17,14
