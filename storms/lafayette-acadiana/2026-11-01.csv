@@ -1,0 +1,38 @@
+gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
+Vermilion Bay near Cypremort Point,07387040,St. Mary Parish,https://gulfcoastgauges.com/usgs/vermilion-bay-near-cypremort-point.html,2.15,4.33,2026-11-03T09:15:00Z,2026-11-03 03:15:00 CST,2.18,4
+Vermilion River at Surrey St. at Lafayette,07386880,Lafayette Parish,https://gulfcoastgauges.com/usgs/vermilion-river-at-surrey-st-at-lafayette.html,6.37,6.78,2026-11-03T15:15:00Z,2026-11-03 09:15:00 CST,0.41,10
+Bayou Plaquemine Brule at Esterwood,08011020,Acadia Parish,https://gulfcoastgauges.com/usgs/bayou-plaquemine-brule-at-esterwood.html,7.64,7.88,2026-11-03T03:00:00Z,2026-11-02 21:00:00 CST,0.24,12
+Bayou Queue De Tortue at Riceville,08012300,Acadia Parish,https://gulfcoastgauges.com/usgs/bayou-queue-de-tortue-at-riceville.html,4.78,4.95,2026-11-01T17:00:00Z,2026-11-01 11:00:00 CST,0.17,11
+Vermilion River near Lafayette,07386850,St. Martin Parish,https://gulfcoastgauges.com/usgs/vermilion-river-near-lafayette.html,4.01,4.27,2026-11-03T15:00:00Z,2026-11-03 09:00:00 CST,0.26,11
+Bayou Mallet at Highway 91 north of Iota,08010120,Acadia Parish,https://gulfcoastgauges.com/usgs/bayou-mallet-at-highway-91-north-of-iota.html,2.52,3.11,2026-11-03T04:00:00Z,2026-11-02 22:00:00 CST,0.59,12
+Vermillion River north of I-10 at Lafayette,07386655,Lafayette Parish,https://gulfcoastgauges.com/usgs/vermillion-river-north-of-i-10-at-lafayette.html,5.66,5.81,2026-11-03T15:15:00Z,2026-11-03 09:15:00 CST,0.15,15
+Bayou Courtableau at Washington,07382500,St. Landry Parish,https://gulfcoastgauges.com/usgs/bayou-courtableau-at-washington.html,18.33,18.47,2026-11-01T18:45:00Z,2026-11-01 12:45:00 CST,0.14,28
+Vermilion River (B. Vermilion) near Carencro,07386600,Lafayette Parish,https://gulfcoastgauges.com/usgs/vermilion-river-b-vermilion-near-carencro.html,5.99,6.15,2026-11-02T05:15:00Z,2026-11-01 23:15:00 CST,0.16,17
+Bayou Des Cannes west of Iota,08010050,Acadia Parish,https://gulfcoastgauges.com/usgs/bayou-des-cannes-west-of-iota.html,11.26,11.67,2026-11-03T06:45:00Z,2026-11-03 00:45:00 CST,0.41,23
+Atchafalaya River at Butte La Rose,07381515,St. Martin Parish,https://gulfcoastgauges.com/usgs/atchafalaya-river-at-butte-la-rose.html,4.02,4.45,2026-11-01T10:00:00Z,2026-11-01 04:00:00 CST,0.43,20
+Bayou Des Cannes near Eunice,08010000,St. Landry Parish,https://gulfcoastgauges.com/usgs/bayou-des-cannes-near-eunice.html,0.09,0.21,2026-11-02T10:15:00Z,2026-11-02 04:15:00 CST,0.12,16
+Bayou Milhomme near Stephensville,07381460,St. Martin Parish,https://gulfcoastgauges.com/usgs/bayou-milhomme-near-stephensville.html,1.33,1.58,2026-11-03T12:30:00Z,2026-11-03 06:30:00 CST,0.25,
+Atchafalaya River at Krotz Springs,07381500,St. Landry Parish,https://gulfcoastgauges.com/usgs/atchafalaya-river-at-krotz-springs.html,1.36,1.65,2026-11-01T11:00:00Z,2026-11-01 05:00:00 CST,0.29,
+Chicot Pass near Myette Point near Charenton,073815450,St. Mary Parish,https://gulfcoastgauges.com/usgs/chicot-pass-near-myette-point-near-charenton.html,2.04,2.79,2026-11-01T08:30:00Z,2026-11-01 02:30:00 CST,0.75,
+Buffalo Cove at Round Island near Charenton,07381567,St. Martin Parish,https://gulfcoastgauges.com/usgs/buffalo-cove-at-round-island-near-charenton.html,2.52,2.84,2026-11-03T14:45:00Z,2026-11-03 08:45:00 CST,0.32,
+Wax Lake Outlet at Calumet,07381590,St. Mary Parish,https://gulfcoastgauges.com/usgs/wax-lake-outlet-at-calumet.html,2.57,4.04,2026-11-01T05:45:00Z,2026-11-01 00:45:00 CDT,1.47,
+Bayou Teche east of Calumet Flood Gate at Calumet,073815945,St. Mary Parish,https://gulfcoastgauges.com/usgs/bayou-teche-east-of-calumet-flood-gate-at-calumet.html,2.74,2.81,2026-11-02T00:30:00Z,2026-11-01 18:30:00 CST,0.07,
+Murphy Lake near Bayou Sorrel,073815963,Iberia Parish,https://gulfcoastgauges.com/usgs/murphy-lake-near-bayou-sorrel.html,9.34,9.39,2026-11-01T21:15:00Z,2026-11-01 15:15:00 CST,0.05,
+Lower Atchafalaya River at Morgan City,07381600,St. Mary Parish,https://gulfcoastgauges.com/usgs/lower-atchafalaya-river-at-morgan-city.html,2.68,3.99,2026-11-01T07:00:00Z,2026-11-01 01:00:00 CST,1.31,
+Mouth of Atchafalaya River at Atchafalaya Bay,073816525,St. Mary Parish,https://gulfcoastgauges.com/usgs/mouth-of-atchafalaya-river-at-atchafalaya-bay.html,5.56,6.69,2026-11-01T03:45:00Z,2026-10-31 22:45:00 CDT,1.13,
+GIWW at Bayou Sale Ridge near Franklin,07381670,St. Mary Parish,https://gulfcoastgauges.com/usgs/giww-at-bayou-sale-ridge-near-franklin.html,2.4,3.83,2026-11-03T07:15:00Z,2026-11-03 01:15:00 CST,1.43,
+State Canal near Krotz Springs,07384400,St. Landry Parish,https://gulfcoastgauges.com/usgs/state-canal-near-krotz-springs.html,10.13,10.29,2026-11-03T15:15:00Z,2026-11-03 09:15:00 CST,0.16,
+Bayou Teche at Arnaudville,07385500,St. Landry Parish,https://gulfcoastgauges.com/usgs/bayou-teche-at-arnaudville.html,13.27,13.39,2026-11-01T21:45:00Z,2026-11-01 15:45:00 CST,0.12,
+Bayou Teche at Keystone Lock and Dam near St. Martinville,07385700,St. Martin Parish,https://gulfcoastgauges.com/usgs/bayou-teche-at-keystone-lock-and-dam-near-st-martinville.html,9.97,10.03,2026-11-01T22:45:00Z,2026-11-01 16:45:00 CST,0.06,
+Bayou Teche below Keystone Lock and Dam near St. Martinville,07385702,St. Martin Parish,https://gulfcoastgauges.com/usgs/bayou-teche-below-keystone-lock-and-dam-near-st-martinville.html,3.75,4.18,2026-11-03T14:45:00Z,2026-11-03 08:45:00 CST,0.43,
+Bayou Teche at Adeline Bridge near Jeanerette,07385765,St. Mary Parish,https://gulfcoastgauges.com/usgs/bayou-teche-at-adeline-bridge-near-jeanerette.html,2.15,2.79,2026-11-03T11:30:00Z,2026-11-03 05:30:00 CST,0.64,
+Bayou Teche west of Calumet Flood Gate at Calumet,07385820,St. Mary Parish,https://gulfcoastgauges.com/usgs/bayou-teche-west-of-calumet-flood-gate-at-calumet.html,2.89,3.51,2026-11-03T15:30:00Z,2026-11-03 09:30:00 CST,0.62,
+Ruth Canal near Ruth,07386700,St. Martin Parish,https://gulfcoastgauges.com/usgs/ruth-canal-near-ruth.html,8.62,8.74,2026-11-01T20:15:00Z,2026-11-01 14:15:00 CST,0.12,
+Vermilion River at Highway 733 near Lafayette,07386940,Lafayette Parish,https://gulfcoastgauges.com/usgs/vermilion-river-at-highway-733-near-lafayette.html,4.38,5.62,2026-11-03T14:00:00Z,2026-11-03 08:00:00 CST,1.24,
+Vermilion Bay(B. Fearman) near Intracoastal City,07387050,Vermilion Parish,https://gulfcoastgauges.com/usgs/vermilion-bay-b-fearman-near-intracoastal-city.html,6.27,8.49,2026-11-03T09:15:00Z,2026-11-03 03:15:00 CST,2.22,
+Little Bayou Long North of Duck Lake,295011091184300,St. Martin Parish,https://gulfcoastgauges.com/usgs/little-bayou-long-north-of-duck-lake.html,3.25,3.57,2026-11-03T14:45:00Z,2026-11-03 08:45:00 CST,0.32,
+Middle Fork Bayou Long at Bayou Long,295447091191500,St. Martin Parish,https://gulfcoastgauges.com/usgs/middle-fork-bayou-long-at-bayou-long.html,3.24,3.34,2026-11-01T17:30:00Z,2026-11-01 11:30:00 CST,0.1,
+Arm of Grand Lake near Crook Chene Cove,300312091320000,St. Martin Parish,https://gulfcoastgauges.com/usgs/arm-of-grand-lake-near-crook-chene-cove.html,2.73,2.87,2026-11-02T06:45:00Z,2026-11-02 00:45:00 CST,0.14,
+Bayou Darby near Lake Fausse Point Cut,300507091355600,St. Martin Parish,https://gulfcoastgauges.com/usgs/bayou-darby-near-lake-fausse-point-cut.html,8.61,8.99,2026-11-03T14:15:00Z,2026-11-03 08:15:00 CST,0.38,
+Pontoon Bridge Canal near Butte Larose,301655091440800,St. Martin Parish,https://gulfcoastgauges.com/usgs/pontoon-bridge-canal-near-butte-larose.html,5.58,5.86,2026-11-03T13:30:00Z,2026-11-03 07:30:00 CST,0.28,
+Lake Pelba at I-10 near Henderson,302020091435700,St. Martin Parish,https://gulfcoastgauges.com/usgs/lake-pelba-at-i-10-near-henderson.html,6.5,6.74,2026-11-03T12:45:00Z,2026-11-03 06:45:00 CST,0.24,

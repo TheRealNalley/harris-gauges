@@ -1,0 +1,194 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Falcon Reservoir Water Level and Percent Full</title><meta name="description" content="Texas's share of Falcon Reservoir is 20.8% full (Texas Water Development Board, November 6, 2026). Its surface was at 260.76 ft (NGVD29) on Nov 6, 2026 at 7:45 PM CST. Live readings, the last 7 days, NWS historic crests and NWS references."><link rel="canonical" href="https://gulfcoastgauges.com/lakes/falcon-reservoir.html"><meta property="og:title" content="Falcon Reservoir Water Level and Percent Full"><meta property="og:description" content="Texas's share of Falcon Reservoir is 20.8% full (Texas Water Development Board, November 6, 2026). Its surface was at 260.76 ft (NGVD29) on Nov 6, 2026 at 7:45 PM CST. Live readings, the last 7 days, NWS historic crests and NWS references."><meta property="og:type" content="website"><meta property="og:url" content="https://gulfcoastgauges.com/lakes/falcon-reservoir.html"><meta property="og:site_name" content="Gulf Coast Gauges"><link rel="icon" href="/assets/favicon.ico" sizes="any"><link rel="icon" href="/assets/favicon-32.png" type="image/png"><link rel="apple-touch-icon" href="/assets/apple-touch-icon.png"><style>
+:root{--bg:#fff;--fg:#14181f;--muted:#5b6472;--line:#e3e7ee;--accent:#1d4ed8;--warn:#b45309;
+--card:#f7f9fc}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--fg:#e8edf5;--muted:#9aa6b5;
+--line:#232b36;--accent:#7aa2ff;--card:#141b24}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 ui-sans-serif,system-ui,
+-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:780px;margin:0 auto;padding:20px 18px 56px}
+a{color:var(--accent)}
+nav.crumb{font-size:13px;color:var(--muted);margin-bottom:14px}
+h1{font-size:27px;line-height:1.25;margin:.2em 0 .1em}
+h2{font-size:19px;margin:2em 0 .5em;padding-top:.6em;border-top:1px solid var(--line)}
+.sub{color:var(--muted);margin:0 0 18px}
+.now{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.big{font-size:38px;font-weight:650;letter-spacing:-.02em;line-height:1.1}
+.now dl{display:grid;grid-template-columns:1fr 1fr;gap:10px 18px;margin:14px 0 0}
+.now dt{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+.now dd{margin:2px 0 0;font-size:16px;font-weight:550}
+table{border-collapse:collapse;width:100%;font-size:14px;margin-top:8px}
+th,td{text-align:left;padding:7px 9px;border-bottom:1px solid var(--line)}
+th{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:.04em}
+td.n,th.n{text-align:right;font-variant-numeric:tabular-nums}
+.scroll{overflow-x:auto}
+.chart{width:100%;height:auto;display:block;margin:10px 0 4px}
+.grid{stroke:var(--line);stroke-width:1}
+.trace{fill:none;stroke:var(--accent);stroke-width:2}
+.bar{fill:var(--accent);opacity:.75}
+.band{fill:var(--accent);opacity:.1}
+.rain{fill:#0891b2;opacity:.7}
+.bank{stroke:var(--warn);stroke-width:1.5;stroke-dasharray:5 4}
+.banklab,.ylab,.xlab{font-size:10px;fill:var(--muted)}
+.banklab{fill:var(--warn)}
+.muted{color:var(--muted)}
+.note{background:var(--card);border-left:3px solid var(--warn);padding:12px 14px;
+border-radius:0 8px 8px 0;font-size:14px}
+footer{margin-top:2.5em;padding-top:1em;border-top:1px solid var(--line);font-size:13px;
+color:var(--muted)}
+footer p{margin:.5em 0}
+h3{font-size:16px;margin:1.6em 0 .2em}
+td.n,td.nw{white-space:nowrap}
+@media (max-width:560px){table{font-size:13px}th,td{padding:6px 5px}}
+.brand{display:inline-block;margin:0 0 14px}.brand img{display:block;height:30px;width:auto}
+.hero{display:block;width:100%;height:auto;border-radius:10px;margin:14px 0 18px}
+
+textarea.snip{width:100%;font:12px/1.5 ui-monospace,Consolas,monospace;padding:10px;
+border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);resize:vertical}
+button.copy{font:inherit;font-size:14px;padding:6px 14px;border-radius:8px;border:1px solid var(--line);
+background:var(--card);color:var(--fg);cursor:pointer;margin:6px 0 14px}
+iframe.preview{border:0;max-width:100%;display:block;margin:8px 0}
+
+.top{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:0 0 16px;
+padding-bottom:12px;border-bottom:1px solid var(--line)}
+.top .brand{margin:0}
+nav.main{display:flex;align-items:center;gap:16px;font-size:14px}
+nav.main a,nav.main summary{color:var(--fg);text-decoration:none;font-weight:550}
+nav.main a:hover,nav.main summary:hover{color:var(--accent);text-decoration:underline}
+details.states{position:relative}
+details.states summary{cursor:pointer;list-style:none;padding-right:13px;position:relative}
+details.states summary::-webkit-details-marker{display:none}
+details.states summary::after{content:"";position:absolute;right:0;top:45%;border:4px solid transparent;
+border-top-color:currentColor}
+details.states[open] summary::after{top:15%;border-top-color:transparent;border-bottom-color:currentColor}
+details.states .menu{position:absolute;z-index:30;top:calc(100% + 8px);left:-10px;min-width:150px;
+background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:5px 0;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+details.states .menu a{display:block;padding:8px 14px;font-weight:500}
+details.states .menu a:hover{background:var(--card);text-decoration:none}
+details.states .menu a.all{border-top:1px solid var(--line);margin-top:4px;padding-top:9px;
+color:var(--muted);font-size:13px}
+form.find{position:relative;flex:1 1 220px;max-width:280px;margin-left:auto}
+form.find input{width:100%;font:inherit;font-size:14px;padding:7px 10px;color:var(--fg);
+background:var(--card);border:1px solid var(--line);border-radius:8px}
+form.find input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.results{position:absolute;z-index:20;top:calc(100% + 4px);left:0;right:0;max-height:340px;
+overflow:auto;background:var(--bg);border:1px solid var(--line);border-radius:8px;
+box-shadow:0 8px 24px rgba(0,0,0,.12)}
+.results a{display:block;padding:7px 10px;color:var(--fg);text-decoration:none;font-size:14px}
+.results a small{display:block;color:var(--muted);font-size:12px}
+.results a.on,.results a:hover{background:var(--card)}
+.results p{margin:0;padding:8px 10px;font-size:13px;color:var(--muted)}
+.fnav{font-size:13px}
+.fnav a{margin-right:12px}
+nav.jump{margin:12px 0 4px;line-height:2.2}
+nav.jump a{white-space:nowrap}
+ul.cols{columns:2;column-gap:28px;padding-left:18px;margin:.4em 0}
+ul.cols li{break-inside:avoid;margin:0 0 4px}
+@media (max-width:560px){form.find{max-width:none;flex-basis:100%;order:3}
+nav.main{gap:12px}ul.cols{columns:1}}
+
+.multi{display:grid;grid-template-columns:1fr 1fr;gap:16px 22px;margin:12px 0 6px}
+.panel h3{font-size:14px;margin:0;line-height:1.35}
+.panel p{margin:0 0 2px;font-size:12.5px;color:var(--muted)}
+.panel svg{width:100%;height:auto;display:block;overflow:visible}
+.wash{fill:var(--accent);opacity:.12}
+.alertband{fill:var(--muted);opacity:.12}
+.peak{fill:var(--accent);stroke:var(--bg);stroke-width:2}
+.panel{position:relative}
+.hov{cursor:crosshair;touch-action:pan-y}
+.xh{stroke:var(--muted);stroke-width:1}
+.tip{position:absolute;pointer-events:none;background:var(--bg);border:1px solid var(--line);
+border-radius:6px;padding:4px 7px;font-size:12px;line-height:1.35;white-space:nowrap;
+box-shadow:0 4px 12px rgba(0,0,0,.12);z-index:5}
+.stem{stroke:var(--line);stroke-width:1.5}
+.hollow{fill:var(--bg);stroke:var(--accent);stroke-width:2}
+.feature{border:1px solid var(--line);border-radius:10px;padding:14px 16px 10px;margin:18px 0}
+.feature h2{border:0;margin:0 0 .2em;padding:0}
+@media (max-width:560px){.multi{grid-template-columns:1fr}}
+
+.regions{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;margin:6px 0 4px}
+.regions a{display:block;border:1px solid var(--line);border-radius:8px;padding:8px 10px;
+text-decoration:none;color:var(--fg);font-weight:550;font-size:14px;line-height:1.3}
+.regions a:hover{border-color:var(--accent)}
+.regions small{display:block;font-weight:400;color:var(--muted);font-size:12px;margin-top:2px}
+h3.state{margin:1.1em 0 .1em;font-size:15px}
+h3.state a{color:var(--fg)}
+@media (max-width:760px){.regions{grid-template-columns:1fr 1fr}}
+</style><script type="application/ld+json">[{"@context":"https://schema.org","@type":"Dataset","name":"Falcon Reservoir water surface elevation","description":"Daily water surface elevation for Falcon Reservoir from the International Boundary and Water Commission's gauge, as published by the National Weather Service (gauge FALT2), with current readings.","url":"https://gulfcoastgauges.com/lakes/falcon-reservoir.html","isAccessibleForFree":true,"creditText":"International Boundary and Water Commission","creator":{"@type":"Organization","name":"International Boundary and Water Commission","url":"https://www.ibwc.gov/"},"license":"https://gulfcoastgauges.com/about/#using-the-data","isBasedOn":"https://water.noaa.gov/gauges/falt2","spatialCoverage":{"@type":"Place","name":"Falcon Reservoir","geo":{"@type":"GeoCoordinates","latitude":26.559722222222,"longitude":-99.166666666667}},"distribution":{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://gulfcoastgauges.com/lakes/falcon-reservoir.csv"}},{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Gulf Coast Gauges","item":"https://gulfcoastgauges.com/"},{"@type":"ListItem","position":2,"name":"Lakes and reservoirs","item":"https://gulfcoastgauges.com/lakes/"},{"@type":"ListItem","position":3,"name":"Falcon Reservoir"}]}]</script><script src="/assets/find.js" defer></script></head><body><div class="wrap"><header class="top"><a class="brand" href="/"><picture><source srcset="/assets/logo-dark.png" media="(prefers-color-scheme: dark)"><img src="/assets/logo.png" width="192" height="30" alt="Gulf Coast Gauges"></picture></a><nav class="main" aria-label="Sections"><a href="/texas-coast/houston-galveston/">Houston</a><details class="states"><summary>States</summary><div class="menu"><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/" class="all">All regions</a></div></details><a href="/tides/">Tides</a><a href="/storms/">Storms</a><a href="/alerts/">Alerts</a></nav><form class="find" action="/gauges/" role="search"><input type="search" name="q" placeholder="Find a gauge, creek or road" aria-label="Find a gauge" autocomplete="off" spellcheck="false"><div class="results" role="listbox" hidden></div></form></header>
+<nav class="crumb"><a href="https://gulfcoastgauges.com/">Gulf Coast Gauges</a> &rsaquo; <a href="https://gulfcoastgauges.com/lakes/">Lakes and reservoirs</a> &rsaquo; Falcon Reservoir</nav>
+<h1>Falcon Reservoir water level</h1>
+<p class="sub">International reservoir run by the International Boundary and Water Commission &middot; NWS gauge FALT2</p>
+<div class="now">
+<div class="big">260.76 ft</div>
+<p class="muted" style="margin:.2em 0 0">water surface elevation (NGVD29), Nov 6, 2026 at 7:45 PM CST</p>
+<p style="margin:.7em 0 0;font-size:24px;font-weight:650">20.8% full</p>
+<p class="muted" style="margin:.1em 0 0">Texas Water Development Board, November 6, 2026: 324,777 of 1,562,367 acre-feet of conservation storage</p>
+<dl>
+<dt>Below NWS minor flood stage</dt><dd>40.4 ft</dd>
+<dt>NWS action stage</dt><dd>299.0 ft</dd>
+<dt>NWS minor flood stage</dt><dd>301.2 ft</dd>
+<dt>NWS moderate flood stage</dt><dd>306.7 ft</dd>
+<dt>NWS major flood stage</dt><dd>314.2 ft</dd>
+</dl></div>
+<p>Falcon Reservoir is an <strong>international reservoir</strong> on the Rio Grande, shared by the United States and Mexico and run by the two countries' sections of the International Boundary and Water Commission, for water conservation, flood control and hydropower. Its level rises after heavy rain in the Rio Grande basin upstream and falls as water is released and used downstream.</p>
+<p class="muted">Elevation is the height of the lake surface above NGVD29 (a fixed survey reference), not a water depth.</p>
+<div class="note">No National Weather Service alert covering Starr and Zapata counties was active when this page was generated (Nov 6, 2026 at 8:35 PM CST). Alerts are issued and expire at any time; the current list is at <a href="https://alerts.weather.gov/" rel="nofollow noopener">alerts.weather.gov</a>.</div>
+<h2>How full Falcon Reservoir is</h2>
+<p>Texas's share of Falcon Reservoir is <strong>20.8% full</strong>, by the Texas Water Development Board's estimate for November 6, 2026, up from 20.3% a month ago.</p>
+<div class="scroll"><table><thead><tr><th>When</th><th>Day</th><th class="n">Percent full</th></tr></thead><tbody>
+<tr><td>Latest</td><td>November 6, 2026</td><td class="n"><strong>20.8%</strong></td></tr>
+<tr><td>A week ago</td><td>October 30, 2026</td><td class="n">20.8%</td></tr>
+<tr><td>A month ago</td><td>October 6, 2026</td><td class="n">20.3%</td></tr>
+<tr><td>Three months ago</td><td>August 6, 2026</td><td class="n">26.1%</td></tr>
+<tr><td>A year ago</td><td>November 6, 2025</td><td class="n">15.0%</td></tr>
+</tbody></table></div>
+<p class="muted">Percent full is the Texas Water Development Board's measure: the water in the lake's conservation pool (the part kept for water supply, above any dead pool that can't be drawn) as a share of what that pool holds when full. It stops at 100%: water above the conservation pool is in flood storage. The figures are daily estimates worked out from the lake's latest survey. For Falcon, every TWDB figure is Texas's share: by treaty, 58.6% of the lake's conservation capacity, measured against the share of the water IBWC assigns to Texas every two weeks. <a href="https://www.waterdatafortexas.org/reservoirs/individual/falcon" rel="nofollow noopener">TWDB's page for Falcon Reservoir</a> has its full record.</p>
+<nav class="fnav jump" aria-label="On this page"><a href="#week">7 days</a> <a href="#crests">Historic crests</a> <a href="#download">Download</a></nav>
+<h2 id="week">Last 7 days</h2>
+<svg viewBox="0 0 720 220" class="chart" role="img" aria-label="Falcon Reservoir elevation, last 7 days">
+<line x1="52" y1="186.0" x2="708" y2="186.0" class="grid"/>
+<text x="4" y="190.0" class="ylab">260.6</text>
+<line x1="52" y1="100.0" x2="708" y2="100.0" class="grid"/>
+<text x="4" y="104.0" class="ylab">260.9</text>
+<line x1="52" y1="14.0" x2="708" y2="14.0" class="grid"/>
+<text x="4" y="18.0" class="ylab">261.1</text>
+<line x1="63.8" y1="14" x2="63.8" y2="186" class="grid"/>
+<text x="67.8" y="208" class="xlab">Oct 31</text>
+<line x1="158.1" y1="14" x2="158.1" y2="186" class="grid"/>
+<text x="162.1" y="208" class="xlab">Nov 1</text>
+<line x1="256.3" y1="14" x2="256.3" y2="186" class="grid"/>
+<text x="260.3" y="208" class="xlab">Nov 2</text>
+<line x1="350.5" y1="14" x2="350.5" y2="186" class="grid"/>
+<text x="354.5" y="208" class="xlab">Nov 3</text>
+<line x1="444.8" y1="14" x2="444.8" y2="186" class="grid"/>
+<text x="448.8" y="208" class="xlab">Nov 4</text>
+<line x1="539.1" y1="14" x2="539.1" y2="186" class="grid"/>
+<text x="543.1" y="208" class="xlab">Nov 5</text>
+<line x1="633.4" y1="14" x2="633.4" y2="186" class="grid"/>
+<text x="637.4" y="208" class="xlab">Nov 6</text>
+<polyline points="52.0,137.8 55.9,137.8 59.9,137.8 63.8,137.8 67.7,141.3 71.6,141.3 75.6,141.3 79.5,141.3 83.4,141.3 87.4,141.3 91.3,141.3 95.2,141.3 99.1,141.3 103.1,141.3 107.0,141.3 110.9,141.3 114.9,144.7 118.8,144.7 122.7,144.7 126.6,144.7 130.6,144.7 134.5,144.7 138.4,144.7 142.3,144.7 146.3,144.7 150.2,148.2 154.1,148.2 158.1,148.2 162.0,148.2 165.9,148.2 169.8,148.2 173.8,151.6 177.7,151.6 181.6,151.6 185.6,151.6 189.5,151.6 193.4,151.6 197.3,151.6 201.3,155.0 205.2,155.0 209.1,155.0 213.1,155.0 217.0,155.0 220.9,155.0 224.8,158.5 228.8,158.5 232.7,158.5 236.6,158.5 240.6,158.5 244.5,158.5 248.4,158.5 252.3,161.9 256.3,161.9 260.2,161.9 264.1,165.4 268.0,165.4 272.0,165.4 275.9,168.8 279.8,168.8 283.8,168.8 287.7,175.7 291.6,182.6 295.5,182.6 299.5,182.6 303.4,182.6 307.3,182.6 311.3,186.0 315.2,186.0 319.1,186.0 323.0,186.0 327.0,186.0 330.9,186.0 334.8,186.0 338.8,186.0 342.7,186.0 346.6,186.0 350.5,186.0 354.5,186.0 358.4,186.0 362.3,186.0 366.3,186.0 370.2,186.0 374.1,186.0 378.0,186.0 382.0,182.6 385.9,182.6 389.8,182.6 393.7,179.1 397.7,175.7 401.6,175.7 405.5,172.2 409.5,172.2 413.4,172.2 417.3,172.2 421.2,172.2 425.2,168.8 429.1,168.8 433.0,168.8 437.0,168.8 440.9,165.4 444.8,165.4 448.7,165.4 452.7,165.4 456.6,161.9 460.5,161.9 464.5,161.9 468.4,161.9 472.3,158.5 476.2,158.5 480.2,158.5 484.1,158.5 488.0,158.5 492.0,158.5 495.9,158.5 499.8,158.5 503.7,158.5 507.7,158.5 511.6,158.5 515.5,158.5 519.4,158.5 523.4,158.5 527.3,158.5 531.2,158.5 535.2,158.5 539.1,158.5 543.0,158.5 546.9,158.5 550.9,158.5 554.8,155.0 558.7,155.0 562.7,155.0 566.6,155.0 570.5,155.0 574.4,155.0 578.4,155.0 582.3,155.0 586.2,155.0 590.2,155.0 594.1,155.0 598.0,155.0 601.9,155.0 605.9,155.0 609.8,155.0 613.7,155.0 617.7,151.6 621.6,151.6 625.5,151.6 629.4,151.6 633.4,151.6 637.3,151.6 641.2,151.6 645.1,148.2 649.1,148.2 653.0,148.2 656.9,148.2 660.9,148.2 664.8,144.7 668.7,137.8 672.6,137.8 676.6,137.8 680.5,137.8 684.4,137.8 688.4,137.8 692.3,137.8 696.2,137.8 700.1,137.8 704.1,137.8 708.0,137.8" class="trace"/>
+</svg>
+<p class="muted">Hourly averages of the readings the National Weather Service publishes for IBWC's gauge.</p>
+<h2 id="crests">NWS historic crests</h2>
+<div class="scroll"><table><thead><tr><th>Date</th><th class="n">Crest</th></tr></thead><tbody>
+<tr><td>July 17, 2010</td><td class="n">309.31 ft</td></tr>
+<tr><td>October 19, 1958</td><td class="n">308.10 ft</td></tr>
+<tr><td>September 29, 2010</td><td class="n">304.66 ft</td></tr>
+<tr><td>September 7, 2010</td><td class="n">304.43 ft</td></tr>
+<tr><td>December 10, 2008</td><td class="n">303.73 ft</td></tr>
+<tr><td>August 19, 2010</td><td class="n">301.20 ft</td></tr>
+<tr><td>July 18, 1954</td><td class="n">292.94 ft</td></tr>
+<tr><td>June 30, 1954</td><td class="n">279.27 ft</td></tr>
+</tbody></table></div>
+<p class="muted">As published by the National Weather Service. They can differ slightly from the daily values: a crest is the single highest reading.</p>
+<h2 id="download">Download</h2>
+<p><a href="/lakes/falcon-reservoir.csv" download>falcon-reservoir.csv</a> (CSV): the daily record collected here from the NWS since October 4, 2026 for Falcon Reservoir, one row per day with the daily high elevation.</p>
+<p class="muted"><strong>Source.</strong> Elevation from the International Boundary and Water Commission's gauge, as published by the <a href="https://water.noaa.gov/gauges/falt2" rel="nofollow noopener">National Weather Service</a>, which also publishes the flood categories and crests; percent full from the <a href="https://www.waterdatafortexas.org/reservoirs/individual/falcon" rel="nofollow noopener">Texas Water Development Board</a>. Recent readings are provisional. IBWC holds the official record for this lake.</p>
+<footer>
+<p class="fnav"><a href="/">Home</a><a href="/texas-coast/houston-galveston/">Houston</a><a href="/texas-coast/">Texas</a><a href="/louisiana/">Louisiana</a><a href="/mississippi/">Mississippi</a><a href="/alabama/">Alabama</a><a href="/florida/">Florida</a><a href="/storms/">Storms</a><a href="/tides/">Tide gauges</a><a href="/gauges/">All gauges</a><a href="/army-corps/">Army Corps gauges</a><a href="/lakes/">Lakes</a><a href="/alerts/">Active alerts</a><a href="/rainfall/">Houston rainfall</a><a href="/rainfall/gulf-coast/">Gulf Coast rainfall</a><a href="/water-temperature/">Water temperature</a><a href="/floods/">Historic floods</a><a href="/usgs/">USGS gauges</a><a href="/embed/">Embed a gauge</a><a href="/about/">How this site works</a> Contact: <a class="mail" href="/about/#contact" data-u="contact" data-d="gulfcoastgauges.com">contact [at] gulfcoastgauges.com</a></p>
+<p><strong>Sources.</strong> Gage height from the <a href="https://waterdata.usgs.gov/" rel="nofollow noopener">U.S. Geological Survey</a>; tide gauge water levels from NOAA Tides &amp; Currents; stage at locks, floodgates and the lower Mississippi from the U.S. Army Corps of Engineers; more gauges from drainage districts, parishes, Florida agencies and others as the National Weather Service publishes them; in the Houston area, stage readings from the <a href="https://www.harriscountyfws.org/" rel="nofollow noopener">Harris County Flood Warning System</a>; flood stages, crests, watches, advisories and warnings from the National Weather Service. This site is not affiliated with any of them.</p>
+<p><strong>No guidance, no forecast.</strong> This site reports measurements and official alert text only. It does not predict water levels, assess whether any road, property or route is passable, or advise any action. For decisions about safety, use <a href="https://alerts.weather.gov/" rel="nofollow noopener">official sources</a> and local emergency management.</p>
+<p><strong>Accuracy.</strong> Gauges can fail, report late, or report in error, and recent USGS readings are provisional. HCFCD makes no representations, guarantees or warranties as to the availability, accuracy, completeness, currency or suitability of Flood Warning System data, and disclaims liability for actions taken or not taken based on it. Nothing here is verified independently.</p>
+<p>Page generated Nov 6, 2026 at 8:35 PM CST.</p>
+</footer></div></body></html>

@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /*.csv$
+
+Sitemap: https://gulfcoastgauges.com/sitemap.xml
