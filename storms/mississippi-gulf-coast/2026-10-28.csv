@@ -1,0 +1,18 @@
+gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
+West Hobolochitto Creek near Mcneill,02492360,Pearl River County,https://gulfcoastgauges.com/usgs/west-hobolochitto-creek-near-mcneill.html,5.51,18.01,2026-11-01T16:45:00Z,2026-11-01 10:45:00 CST,12.5,15
+Jourdan River near Bay St Louis,02481660,Hancock County,https://gulfcoastgauges.com/usgs/jourdan-river-near-bay-st-louis.html,0.65,3.72,2026-11-02T11:45:00Z,2026-11-02 05:45:00 CST,3.07,6
+Wolf River at Belle Ferry Road near Long Beach,02481521,Harrison County,https://gulfcoastgauges.com/usgs/wolf-river-at-belle-ferry-road-near-long-beach.html,1.95,4.96,2026-11-02T11:45:00Z,2026-11-02 05:45:00 CST,3.01,8
+Tchoutacabouffa River near D'iberville,02480590,Harrison County,https://gulfcoastgauges.com/usgs/tchoutacabouffa-river-near-diberville.html,0.43,3.92,2026-10-31T08:30:00Z,2026-10-31 03:30:00 CDT,3.49,8
+Escatawpa River at I-10 near Orange Grove,0248018020,Jackson County,https://gulfcoastgauges.com/usgs/escatawpa-river-at-i-10-near-orange-grove.html,0.71,3.12,2026-10-31T11:30:00Z,2026-10-31 06:30:00 CDT,2.41,8
+East Hobolochitto Creek near Caesar,02492343,Pearl River County,https://gulfcoastgauges.com/usgs/east-hobolochitto-creek-near-caesar.html,3.79,4.35,2026-11-02T22:45:00Z,2026-11-02 16:45:00 CST,0.56,15
+Pascagoula River at Graham Ferry,02479310,Jackson County,https://gulfcoastgauges.com/usgs/pascagoula-river-at-graham-ferry.html,2.32,3.48,2026-10-31T12:45:00Z,2026-10-31 07:45:00 CDT,1.16,16
+Biloxi River at Wortham,02481000,Harrison County,https://gulfcoastgauges.com/usgs/biloxi-river-at-wortham.html,-0.93,-0.31,2026-11-03T06:00:00Z,2026-11-03 00:00:00 CST,0.62,16
+Pascagoula River at Merrill,02479000,George County,https://gulfcoastgauges.com/usgs/pascagoula-river-at-merrill.html,1.91,1.99,2026-11-04T23:15:00Z,2026-11-04 17:15:00 CST,0.08,22
+Wolf River near Landon,02481510,Harrison County,https://gulfcoastgauges.com/usgs/wolf-river-near-landon.html,4.11,6.33,2026-11-02T04:15:00Z,2026-11-01 22:15:00 CST,2.22,27
+Red Creek at Vestry,02479300,George County,https://gulfcoastgauges.com/usgs/red-creek-at-vestry.html,4.34,5.41,2026-11-03T13:45:00Z,2026-11-03 07:45:00 CST,1.07,
+Biloxi River near Lyman,02481130,Harrison County,https://gulfcoastgauges.com/usgs/biloxi-river-near-lyman.html,4.04,7.29,2026-10-31T08:30:00Z,2026-10-31 03:30:00 CDT,3.25,
+Old Fort Bayou at Ocean Springs,02481299,Jackson County,https://gulfcoastgauges.com/usgs/old-fort-bayou-at-ocean-springs.html,0.01,2.9,2026-10-31T07:15:00Z,2026-10-31 02:15:00 CDT,2.89,
+East Pearl River at Csx Railroad near Claiborne,301141089320300,Hancock County,https://gulfcoastgauges.com/usgs/east-pearl-river-at-csx-railroad-near-claiborne.html,0.94,3.43,2026-11-02T11:45:00Z,2026-11-02 05:45:00 CST,2.49,
+Mississippi Sound at USGS Merrill Shell Bank Light,301429089145600,Jackson County,https://gulfcoastgauges.com/usgs/mississippi-sound-at-usgs-merrill-shell-bank-light.html,2.83,5.63,2026-11-02T09:45:00Z,2026-11-02 03:45:00 CST,2.8,
+Mississippi Sound at USGS Round Island Light,301849088350000,Jackson County,https://gulfcoastgauges.com/usgs/mississippi-sound-at-usgs-round-island-light.html,1.95,4.5,2026-10-31T05:45:00Z,2026-10-31 00:45:00 CDT,2.55,
+Biloxi Bay at Point Cadet Harbor at Biloxi,302318088512600,Harrison County,https://gulfcoastgauges.com/usgs/biloxi-bay-at-point-cadet-harbor-at-biloxi.html,0.03,2.79,2026-10-31T06:15:00Z,2026-10-31 01:15:00 CDT,2.76,
