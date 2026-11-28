@@ -1,0 +1,19 @@
+gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
+Mermentau River at Mermentau,08012150,Jefferson Davis Parish,https://gulfcoastgauges.com/usgs/mermentau-river-at-mermentau.html,2.05,2.3,2026-11-04T05:15:00Z,2026-11-03 23:15:00 CST,0.25,4
+Calcasieu River near Oakdale,08013250,Allen Parish,https://gulfcoastgauges.com/usgs/calcasieu-river-near-oakdale.html,8.01,8.31,2026-11-02T20:30:00Z,2026-11-02 14:30:00 CST,0.3,17
+Calcasieu River near Oberlin,08013500,Allen Parish,https://gulfcoastgauges.com/usgs/calcasieu-river-near-oberlin.html,1.02,1.43,2026-11-04T12:15:00Z,2026-11-04 06:15:00 CST,0.41,13
+Ouiska Chitto Creek near Oberlin,08014500,Allen Parish,https://gulfcoastgauges.com/usgs/ouiska-chitto-creek-near-oberlin.html,2.72,2.79,2026-11-01T09:15:00Z,2026-11-01 03:15:00 CST,0.07,15
+Bayou Nezpique near Basile,08012000,Jefferson Davis Parish,https://gulfcoastgauges.com/usgs/bayou-nezpique-near-basile.html,1.48,7.9,2026-11-05T16:15:00Z,2026-11-05 10:15:00 CST,6.42,22
+Calcasieu River near Kinder,08015500,Allen Parish,https://gulfcoastgauges.com/usgs/calcasieu-river-near-kinder.html,1.45,1.84,2026-11-05T18:15:00Z,2026-11-05 12:15:00 CST,0.39,16
+Buxton Creek at Highway 27 near DeQuincy,08016910,Calcasieu Parish,https://gulfcoastgauges.com/usgs/buxton-creek-at-highway-27-near-dequincy.html,1.51,2.16,2026-11-04T10:00:00Z,2026-11-04 04:00:00 CST,0.65,18
+Bundick Creek near DeRidder,08014800,Beauregard Parish,https://gulfcoastgauges.com/usgs/bundick-creek-near-deridder.html,2.25,2.84,2026-11-04T14:15:00Z,2026-11-04 08:15:00 CST,0.59,20
+Mermentau River at Lake Arthur,08012400,Jefferson Davis Parish,https://gulfcoastgauges.com/usgs/mermentau-river-at-lake-arthur.html,22.38,22.67,2026-11-04T04:15:00Z,2026-11-03 22:15:00 CST,0.29,
+Bayou Lacassine near Lake Arthur,08012470,Jefferson Davis Parish,https://gulfcoastgauges.com/usgs/bayou-lacassine-near-lake-arthur.html,10.2,10.47,2026-11-02T23:00:00Z,2026-11-02 17:00:00 CST,0.27,
+Intracoastal Canal at Creole Ferry at Gibbstown,08012540,Cameron Parish,https://gulfcoastgauges.com/usgs/intracoastal-canal-at-creole-ferry-at-gibbstown.html,3.9,4.17,2026-11-04T05:45:00Z,2026-11-03 23:45:00 CST,0.27,
+Bundick Lake at Spillway near DeRidder,08014881,Beauregard Parish,https://gulfcoastgauges.com/usgs/bundick-lake-at-spillway-near-deridder.html,6.01,6.07,2026-11-04T11:00:00Z,2026-11-04 05:00:00 CST,0.06,
+Calcasieu River at Highway 171 at Moss Bluff,08015910,Calcasieu Parish,https://gulfcoastgauges.com/usgs/calcasieu-river-at-highway-171-at-moss-bluff.html,26.09,27.04,2026-11-03T22:30:00Z,2026-11-03 16:30:00 CST,0.95,
+Hickory Branch near Kernan,08016600,Beauregard Parish,https://gulfcoastgauges.com/usgs/hickory-branch-near-kernan.html,0.48,0.59,2026-11-04T04:45:00Z,2026-11-03 22:45:00 CST,0.11,
+West Fork Calcasieu River at Moss Bluff,08017028,Calcasieu Parish,https://gulfcoastgauges.com/usgs/west-fork-calcasieu-river-at-moss-bluff.html,16.86,17.85,2026-11-03T22:30:00Z,2026-11-03 16:30:00 CST,0.99,
+Calcasieu River at I-10 at Lake Charles,08017044,Calcasieu Parish,https://gulfcoastgauges.com/usgs/calcasieu-river-at-i-10-at-lake-charles.html,1.82,3.39,2026-11-03T11:15:00Z,2026-11-03 05:15:00 CST,1.57,
+North Calcasieu Lake near Hackberry,08017095,Cameron Parish,https://gulfcoastgauges.com/usgs/north-calcasieu-lake-near-hackberry.html,3.88,5.39,2026-11-03T10:15:00Z,2026-11-03 04:15:00 CST,1.51,
+Calcasieu River at Cameron,08017118,Cameron Parish,https://gulfcoastgauges.com/usgs/calcasieu-river-at-cameron.html,6.94,7.86,2026-11-03T08:00:00Z,2026-11-03 02:00:00 CST,0.92,

@@ -1,0 +1,11 @@
+gauge,usgs_site,county,page,level_before_ft,peak_ft,peak_time_utc,peak_time_local,rise_ft,nws_minor_flood_stage_ft
+Donna ID Canal at E Levee Rd near Donna,08473251,Hidalgo County,https://gulfcoastgauges.com/usgs/donna-id-canal-at-e-levee-rd-near-donna.html,85.29,85.34,2026-11-24T11:30:00Z,2026-11-24 05:30:00 CST,0.05,
+"N Main Drain at Boca Chica Hwy, Brownsville",08474095,Cameron County,https://gulfcoastgauges.com/usgs/n-main-drain-at-boca-chica-hwy-brownsville.html,17,17.8,2026-11-24T15:45:00Z,2026-11-24 09:45:00 CST,0.8,
+"Town Resaca at E 6th St, Brownsville",08474107,Cameron County,https://gulfcoastgauges.com/usgs/town-resaca-at-e-6th-st-brownsville.html,20.59,21.05,2026-11-24T15:30:00Z,2026-11-24 09:30:00 CST,0.46,
+"N Main Drain at Manzano St, Brownsville",08474108,Cameron County,https://gulfcoastgauges.com/usgs/n-main-drain-at-manzano-st-brownsville.html,13.89,14.87,2026-11-24T20:15:00Z,2026-11-24 14:15:00 CST,0.98,
+"Cameron County Ditch 1 at FM 802, Brownsville",08474110,Cameron County,https://gulfcoastgauges.com/usgs/cameron-county-ditch-1-at-fm-802-brownsville.html,2.24,4.08,2026-11-24T19:15:00Z,2026-11-24 13:15:00 CST,1.84,
+"Resaca del Rancho Viejo, Brownsville",08474115,Cameron County,https://gulfcoastgauges.com/usgs/resaca-del-rancho-viejo-brownsville.html,17.24,17.28,2026-11-25T00:00:00Z,2026-11-24 18:00:00 CST,0.04,
+Cameron County Ditch 2 at FM 1847 near Los Fresnos,08474118,Cameron County,https://gulfcoastgauges.com/usgs/cameron-county-ditch-2-at-fm-1847-near-los-fresnos.html,1.94,2.13,2026-11-25T10:30:00Z,2026-11-25 04:30:00 CST,0.19,
+"Old Main Drain No 2 at SH 4, Brownsville",08474300,Cameron County,https://gulfcoastgauges.com/usgs/old-main-drain-no-2-at-sh-4-brownsville.html,1.61,2.22,2026-11-25T02:30:00Z,2026-11-24 20:30:00 CST,0.61,
+"North Main Drain at Ostos Rd, Brownsville",08474320,Cameron County,https://gulfcoastgauges.com/usgs/north-main-drain-at-ostos-rd-brownsville.html,1.15,2.07,2026-11-25T01:00:00Z,2026-11-24 19:00:00 CST,0.92,
+Brazos Santiago Pass at South Padre Island,08474395,Cameron County,https://gulfcoastgauges.com/usgs/brazos-santiago-pass-at-south-padre-island.html,1.37,1.89,2026-11-25T00:20:00Z,2026-11-24 18:20:00 CST,0.52,
